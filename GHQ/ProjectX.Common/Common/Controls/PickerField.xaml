@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Controls.PickerField"
+               xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
+             x:Name="ParentView">
+
+  <StackLayout Orientation="Vertical" >
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+
+      <Label
+        Text="*"
+        Style="{StaticResource LabelRquired}"
+        IsVisible="{Binding IsRequired,Source={x:Reference ParentView}}"/>
+
+      <Label
+        Text="{Binding Placeholder,Source={x:Reference ParentView}}"
+        Style="{StaticResource LabelHeaderEntryStyle}"/>
+
+    </StackLayout>
+
+    <controls:BindablePicker  ItemsSource="{Binding LookupValues,Source={x:Reference ParentView}}"
+                              Style="{StaticResource PickerStyle}"
+                              SelectedIndex="{Binding SelectedLookupValueIndex,Mode=TwoWay,Source={x:Reference ParentView}}"
+                              SelectedItem="{Binding SelectedLookupValue,Mode=TwoWay,Source={x:Reference ParentView}}"/>
+
+
+    <Label
+      Text="{Binding ValidationMessage,Source={x:Reference ParentView}}"
+      IsVisible="{Binding ShowValidation,Source={x:Reference ParentView}}"
+      Style="{StaticResource LabelHeaderEntryStyle}"/>
+
+  </StackLayout>
+
+</ContentView>

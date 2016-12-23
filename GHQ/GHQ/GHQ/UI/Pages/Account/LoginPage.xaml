@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             IsEnabled="{Binding IsPageEnabled}"
+             x:Class="GHQ.UI.Pages.Account.LoginPage">
+
+  <Grid Style="{StaticResource MainGridStyle}">
+
+    <Image HorizontalOptions="Fill" VerticalOptions="Fill"  Aspect="Fill" >
+      <Image.Source>
+        <OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/bacground.png" Android="bacground.png" iOS="bacground"/>
+      </Image.Source>
+    </Image>
+
+    <ActivityIndicator IsRunning="{Binding IsLoading}" HeightRequest="60" WidthRequest="60"  VerticalOptions="Start" HorizontalOptions="Center" />
+
+    <Grid Style="{StaticResource GridContentStyle}">
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+
+      <Grid Grid.Row="0" Padding="0,40,0,40" >
+
+        <Image  HorizontalOptions="Center" VerticalOptions="Center"  Aspect="Fill" >
+          <Image.Source>
+            <OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/logo.png" Android="login.png" iOS="login"/>
+          </Image.Source>
+        </Image>
+
+      </Grid>
+
+      <StackLayout Grid.Row="1" Style="{StaticResource FormStackLayoutStyle}" Orientation="Vertical">
+
+        <Entry Placeholder="رقم الموبايل"  Text="{Binding LoginData.Mobile}"  Style="{StaticResource EntryStyle}" />
+
+        <Entry Placeholder="إسم الأول"  Text="{Binding LoginData.Password}"  Style="{StaticResource EntryStyle}" />
+
+      </StackLayout>
+
+      <Grid Grid.Row="2" Padding="0,20,0,30" >
+        <Button Style="{StaticResource ButtonSolidStyle}" Text="Login"  Command="{Binding OnLoginCommand}"></Button>
+      </Grid>
+
+      <Grid Grid.Row="3">
+        <Label Text="Forget Password" HorizontalOptions="Center"/>
+
+        <!--<Button Style="{StaticResource ButtonSolidStyle}" Text="Forget Password"  Command="{Binding OnLoginCommand}"></Button>-->
+      </Grid>
+
+      <Grid Grid.Row="4" Padding="0,30,0,30" >
+        <Button Style="{StaticResource ButtonBrightStyle}"  Text="New Account"  Command="{Binding OnLoginCommand}"></Button>
+      </Grid>
+
+    </Grid>
+
+  </Grid>
+
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.LinkDev.GHQ" android:installLocation="auto" android:versionCode="1" android:versionName="1.0.0.1">
+	<uses-sdk android:minSdkVersion="15" />
+	<!--Push Notification-->
+	<permission android:name="com.LinkDev.GHQ.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="com.LinkDev.GHQ.permission.C2D_MESSAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<!-- Google Maps for Android v2 requires OpenGL ES v2 -->
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+	<!-- We need to be able to download map tiles and access Google Play Services-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Allow the application to access Google web-based services. -->
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<!-- Google Maps for Android v2 will cache map tiles on external storage -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- Google Maps for Android v2 needs this permission so that it may check the connection state as it must download data -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<!-- Permission to receive remote notifications from Google Play Services -->
+	<!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
+	<uses-permission android:name="com.LinkDev.GHQ.permission.MAPS_RECEIVE" />
+	<permission android:name="com.LinkDev.GHQ.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+	<!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<application android:label="GHQ.Droid" android:icon="@drawable/icon">
+		<!--<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAvsL5LIzUGNQ8Vh53YG1qrlntHRhtvIS8" />-->
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAvsL5LIzUGNQ8Vh53YG1qrlntHRhtvIS8" />
+		<receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<category android:name="com.LinkDev.GHQ" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+		<service android:name="com.onesignal.GcmIntentService" />
+		<service android:name="com.onesignal.SyncService" android:stopWithTask="false" />
+		<activity android:name="com.onesignal.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+	</application>
+</manifest>

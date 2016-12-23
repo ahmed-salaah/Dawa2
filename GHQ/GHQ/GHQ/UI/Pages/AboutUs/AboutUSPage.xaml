@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               x:Class="GHQ.UI.Pages.AboutUs.AboutUSPage"
+               Title="{i18n:Translate PageHeader_AboutUs}"
+           	 xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ">
+  <RelativeLayout>
+    <Image Opacity="0.3" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+      <Image.Source>
+        <OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/background.png" Android="background.png" iOS="background" />
+      </Image.Source>
+    </Image>
+    <Grid Style="{StaticResource MainGridStyle}" Padding="20" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+      <ScrollView>
+        <Grid Style="{StaticResource GridContentStyle}" BackgroundColor="{StaticResource ContactUsBGColor}">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*" />
+
+          </Grid.RowDefinitions>
+          <Image Grid.Row="0" Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Image.Source>
+              <OnPlatform x:TypeArguments="ImageSource" WinPhone="Image.png" Android="Image.png" iOS="Image" />
+            </Image.Source>
+          </Image>
+
+          <Label  VerticalOptions = "FillAndExpand" Grid.Row="1"  HorizontalOptions="End" Text="{i18n:Translate AboutUs_Description}" BackgroundColor = "Transparent" IsEnabled = "true" XAlign="End" ></Label>
+        </Grid>
+      </ScrollView>
+    </Grid>
+  </RelativeLayout>
+</Base:BasePage>

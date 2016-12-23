@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
+               xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
+               Title="{i18n:Translate PageHeader_NewAccount}"
+             x:Class="GHQ.UI.Pages.Account.NewAccountStep1Page">
+
+  <RelativeLayout>
+    <Image  Opacity="0.3"  Aspect="AspectFill"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+      <Image.Source>
+        <OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/background.png" Android="background.png" iOS="background"/>
+      </Image.Source>
+    </Image>
+
+    <Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height="40" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+
+      <Grid  Grid.Row="0" BackgroundColor="{StaticResource GoldColor}">
+        <Image HorizontalOptions="Center" VerticalOptions="Center"  Aspect="AspectFit" >
+          <Image.Source>
+            <OnPlatform x:TypeArguments="ImageSource" WinPhone="AccountStep1.png" Android="AccountStep1.png" iOS="AccountStep1"/>
+          </Image.Source>
+        </Image>
+      </Grid>
+
+      <StackLayout Grid.Row="1" Orientation="Vertical" IsVisible="{Binding IsLoading}">
+
+        <ActivityIndicator  IsRunning="{Binding IsLoading}" Style="{StaticResource ActivityIndicatorStyle}" />
+
+        <Label TextColor="Black" Text="{i18n:TranslateExtension Text=NewAccount_LoadingMessage}" HorizontalOptions="Center"  VerticalOptions="Center"></Label>
+
+      </StackLayout>
+      
+      <Grid  Grid.Row="2" Style="{StaticResource GridContentStyle}">
+
+        <ScrollView>
+          <Grid >
+            <StackLayout Style="{StaticResource FormStackLayoutStyle}" Orientation="Vertical" >
+
+              <StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="0,0,0,15">
+
+                <Label TextColor="White" Text="{i18n:TranslateExtension Text=NewAccount_Step1Header}" HorizontalOptions="End"  VerticalOptions="Center"></Label>
+
+                <Image Style="{StaticResource HeaderImageStyle}">
+                  <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource" WinPhone="info.png" Android="info.png" iOS="info"/>
+                  </Image.Source>
+                </Image>
+
+              </StackLayout>
+
+              <controls:InputField IsRequired="True" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage=""
+                                   Placeholder="{i18n:Translate NewAccount_Entry_PlaceHolder_EmiratesID}"
+                                   Title="{Binding NewAccount.NewAccountStep1.EmiratesID,Mode=TwoWay}"/>
+
+              <controls:InputField IsRequired="True" MaxLength="80" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage=""
+                                   Placeholder="{i18n:Translate NewAccount_Entry_PlaceHolder_IdentityNumber}"
+                                   Title="{Binding NewAccount.NewAccountStep1.UnifiedNumber,Mode=TwoWay}" Keyboard ="Numeric"/>
+
+            </StackLayout>
+          </Grid>
+        </ScrollView>
+      </Grid>
+
+      <Button Grid.Row="3" Style="{StaticResource ButtonSolidStyle}"  VerticalOptions="End" Text="{i18n:TranslateExtension Text=NewAccount_Btn_Send}"  Command="{Binding OnNextFirstStepCommand}"></Button>
+
+    </Grid>
+  </RelativeLayout>
+
+</Base:BasePage>

@@ -1,0 +1,287 @@
+﻿<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:Converter="clr-namespace:Convertes;assembly=ProjectX.Common"
+             x:Class="GHQ.App">
+
+  <Application.Resources>
+
+    <ResourceDictionary>
+
+      <Converter:BooleanNegateConverter x:Key="BooleanNegateConverter" />
+
+      <DataTemplate x:Key="AlbumLibraryTemplate">
+        <ViewCell>
+          <ViewCell.View>
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+              </Grid.RowDefinitions>
+              <Label  HorizontalOptions="Center" TextColor="Black" BackgroundColor="Transparent"  Text="{Binding DisplayName}"/>
+              <Image  Margin="0,5,0,0" Grid.Row="1" Source="{Binding Image}" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFit" MinimumWidthRequest="200" MinimumHeightRequest="100"/>
+            </Grid>
+
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+      <DataTemplate x:Key="ImaaeLibraryTemplate">
+        <ViewCell>
+          <ViewCell.View>
+            <Grid>
+              <Image Source="{Binding Image}" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFit" MinimumWidthRequest="200" MinimumHeightRequest="100"/>
+            </Grid>
+
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+
+      <DataTemplate x:Key="NewsTemplate">
+        <ViewCell>
+          <ViewCell.View>
+            <Grid Padding="20,10">
+              <Grid BackgroundColor="{StaticResource NewsTemplateBGColor}" >
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="70" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="End" HorizontalTextAlignment="End" TextColor="Green" BackgroundColor="Transparent" LineBreakMode = "TailTruncation" Text="{Binding Title}" Margin="0,10,0,0"/>
+                <Label Grid.Row="1" Grid.Column="0" HorizontalOptions="End" HorizontalTextAlignment="End" TextColor="Gray" BackgroundColor="Transparent" LineBreakMode = "TailTruncation" Text="{Binding ShortDescription}"/>
+                <Label Margin="20,0,0,0" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" TextColor="Gray" BackgroundColor="Transparent" FontSize="Small" Text="{Binding DateString}"/>
+
+                <Image Source = "{Binding Image}" Grid.Row="0" Grid.RowSpan="3" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  Grid.Column="1" Margin="5,0,0,0">
+                </Image>
+
+              </Grid>
+            </Grid>
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+
+      <DataTemplate x:Key="NotificationTemplate">
+        <ViewCell>
+          <ViewCell.View>
+            <Grid Padding="20,10">
+              <Grid BackgroundColor="{StaticResource NewsTemplateBGColor}" >
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="30" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0"  HorizontalOptions="End" TextColor="Green" BackgroundColor="Transparent" LineBreakMode = "TailTruncation" Text="{Binding Title}" Margin="0,10,0,0"/>
+                <Label Grid.Row="1" Grid.Column="0"  HorizontalOptions="End" TextColor="Gray"  BackgroundColor="Transparent"  Text="{Binding Description}"/>
+                <Image Source = "{Binding Image}"  Grid.RowSpan="2" VerticalOptions="Center" HorizontalOptions="Center"  Grid.Column="1">
+                </Image>
+
+              </Grid>
+            </Grid>
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Colors  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Color x:Key="GoldColor">#ae803a</Color>
+      <Color x:Key="GoldLightColor">#b9904d</Color>
+      <Color x:Key="GreenColor">#347249</Color>
+      <Color x:Key="GrayColor">#cac6c1</Color>
+      <Color x:Key="GrayLightColor">#f5f0ea</Color>
+      <Color x:Key="NewsTemplateBGColor">#ecdcc5</Color>
+      <Color x:Key="ContactUsBGColor">#fef5ec</Color>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  ActivityIndicator  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="ActivityIndicatorStyle" TargetType="ActivityIndicator">
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+
+        <Setter Property="HeightRequest" Value="30" />
+        <Setter Property="WidthRequest" Value="30" />
+      </Style>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Label  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="LabelHint" TargetType="Label">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="WidthRequest" Value="400" />
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="Margin" Value="0,0,0,10" />
+        <Setter Property="TextColor" Value="White" />
+      </Style>
+      
+      <Style x:Key="LabelRquired" TargetType="Label">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="Margin" Value="0,0,5,0" />
+        <Setter Property="TextColor" Value="Red" />
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+        <Setter Property="HorizontalOptions" Value="End" />
+      </Style>
+
+
+      <Style x:Key="LabelHeaderEntryStyle" TargetType="Label">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <!--<Setter Property="WidthRequest" Value="400" />-->
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+        <Setter Property="HorizontalOptions" Value="End" />
+        <Setter Property="Margin" Value="0,0,0,10" />
+        <Setter Property="TextColor" Value="White" />
+      </Style>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Entry  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+      <Style x:Key="EntryStyle" TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="{StaticResource GrayLightColor}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource GrayColor}" />
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="WidthRequest" Value="400" />
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="Margin" Value="0,0,0,20" />
+        <Setter Property="TextColor" Value="{StaticResource GreenColor}" />
+      </Style>
+
+      <Style x:Key="MultiLineEntryStyle" TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="{StaticResource GrayLightColor}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource GrayColor}" />
+        <Setter Property="HeightRequest" Value="150" />
+        <Setter Property="WidthRequest" Value="400" />
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="Margin" Value="0,0,0,20" />
+        <Setter Property="TextColor" Value="{StaticResource GreenColor}" />
+      </Style>
+
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Picker  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="PickerStyle" TargetType="Picker">
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="{StaticResource GreenColor}" />
+        <Setter Property="Margin" Value="0,0,0,20" />
+        <Setter Property="WidthRequest" Value="400" />
+      </Style>
+
+      <Style x:Key="DatePickerStyle" TargetType="DatePicker">
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="{StaticResource GreenColor}" />
+        <Setter Property="Margin" Value="0,0,0,20" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+      </Style>
+
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Button  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="ButtonSolidStyle" TargetType="Button">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{StaticResource GoldColor}" />
+        <Setter Property="HorizontalOptions" Value="Fill" />
+        <Setter Property="HeightRequest" Value="60" />
+      </Style>
+
+      <Style x:Key="ButtonSolidStyle_Small" TargetType="Button">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{StaticResource GoldColor}" />
+        <Setter Property="HorizontalOptions" Value="Fill" />
+        <Setter Property="HeightRequest" Value="50" />
+      </Style>
+
+      <Style x:Key="ButtonLightSolidStyle" TargetType="Button">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{StaticResource GoldLightColor}" />
+        <Setter Property="HorizontalOptions" Value="Fill" />
+        <Setter Property="HeightRequest" Value="70" />
+      </Style>
+
+      <Style x:Key="ButtonBrightStyle" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource GoldColor}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="HorizontalOptions" Value="Fill" />
+        <Setter Property="HeightRequest" Value="70" />
+        <Setter Property="BorderColor" Value="{StaticResource GoldColor}" />
+
+      </Style>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  StackLayout  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="FormStackLayoutStyle" TargetType="StackLayout">
+        <Setter Property="BackgroundColor" Value="{StaticResource GreenColor}" />
+        <Setter Property="Padding" Value="20,20" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+      </Style>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Grid  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="MainGridStyle" TargetType="Grid">
+        <Setter Property="VerticalOptions" Value="Fill" />
+      </Style>
+
+
+      <Style x:Key="GridContentStyle" TargetType="Grid">
+        <Setter Property="Padding" Value="6,6,6,6" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+      </Style>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Error  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="ErrorListViewStyle" TargetType="ListView">
+        <Setter Property="HeightRequest" Value="70" />
+      </Style>
+
+      <Style x:Key="ErrorLabelStyle" TargetType="Label">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="TextColor" Value="Red" />
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+      </Style>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Radio Button  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="RadioButtonLabelStyle" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="End" />
+      </Style>
+
+      <Style x:Key="RadioButtonStyle" TargetType="Switch">
+        <Setter Property="HorizontalOptions" Value="Start" />
+      </Style>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Image  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="HeaderImageStyle" TargetType="Image">
+        <Setter Property="Aspect" Value="AspectFit" />
+        <Setter Property="WidthRequest" Value="25" />
+        <Setter Property="HeightRequest" Value="25" />
+        <Setter Property="HorizontalOptions" Value="End" />
+        <Setter Property="VerticalOptions" Value="Center" />
+      </Style>
+
+
+      <Style x:Key="ArrowImageStyle" TargetType="Image">
+        <Setter Property="Aspect" Value="AspectFit" />
+        <Setter Property="WidthRequest" Value="12" />
+        <Setter Property="HeightRequest" Value="12" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+      </Style>
+
+
+      <Style x:Key="EditImageStyle" TargetType="Image">
+        <Setter Property="Aspect" Value="AspectFit" />
+        <Setter Property="WidthRequest" Value="15" />
+        <Setter Property="HeightRequest" Value="15" />
+        <Setter Property="HorizontalOptions" Value="End" />
+        <Setter Property="VerticalOptions" Value="Center" />
+      </Style>
+
+    </ResourceDictionary>
+
+  </Application.Resources>
+
+</Application>

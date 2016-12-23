@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
+             Title="{i18n:Translate PageHeader_Home}"
+             x:Class="GHQ.UI.Pages.Home.HomePage">
+  <RelativeLayout>
+    <Image Opacity="0.3" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+      <Image.Source>
+        <OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/background.png" Android="background.png" iOS="background" />
+      </Image.Source>
+    </Image>
+    <Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+      <ScrollView>
+        <Grid Style="{StaticResource GridContentStyle}">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="300" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+            <Image HeightRequest="120">
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OnHomeNavigationCommand}" CommandParameter="ContactUs" />
+              </Image.GestureRecognizers>
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="HomeContactUs.png" Android="HomeContactUs.png" iOS="HomeContactUs" />
+              </Image.Source>
+            </Image>
+            <Label TextColor="Black" Text="{i18n:Translate Home_Navigation_ContactUs}" HorizontalTextAlignment="Center" />
+          </StackLayout>
+          <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+            <Image HeightRequest="120">
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OnHomeNavigationCommand}" CommandParameter="About" />
+              </Image.GestureRecognizers>
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="HomeInfo.png" Android="HomeInfo.png" iOS="HomeInfo" />
+              </Image.Source>
+            </Image>
+            <Label TextColor="Black" Text="{i18n:Translate Home_Navigation_GeneralInfo}" HorizontalTextAlignment="Center" />
+          </StackLayout>
+          <StackLayout Grid.Row="0" Grid.Column="2" Orientation="Vertical">
+            <Image HeightRequest="120">
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OnHomeNavigationCommand}" CommandParameter="Lawaa" />
+              </Image.GestureRecognizers>
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="HomeLawaa.png" Android="HomeLawaa.png" iOS="HomeLawaa" />
+              </Image.Source>
+            </Image>
+            <Label TextColor="Black" Text="{i18n:Translate Home_Navigation_GeneralDept}" HorizontalTextAlignment="Center" />
+          </StackLayout>
+          <StackLayout IsVisible="{Binding IsLogin,Converter={StaticResource BooleanNegateConverter}" Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+            <Image HeightRequest="120">
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OnHomeNavigationCommand}" CommandParameter="NewAccount" />
+              </Image.GestureRecognizers>
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="HomeNewUser.png" Android="HomeNewUser.png" iOS="HomeNewUser.png" />
+              </Image.Source>
+            </Image>
+            <Label TextColor="Black" Text="{i18n:Translate Home_Navigation_NewUser}" HorizontalTextAlignment="Center" />
+          </StackLayout>
+          <StackLayout IsVisible="{Binding IsLogin,Converter={StaticResource BooleanNegateConverter}" Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <Image HeightRequest="120">
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OnHomeNavigationCommand}" CommandParameter="Login" />
+              </Image.GestureRecognizers>
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="HomeLogin.png" Android="HomeLogin.png" iOS="HomeLogin.png" />
+              </Image.Source>
+            </Image>
+            <Label TextColor="Black" Text="{i18n:Translate Home_Navigation_Login}" HorizontalTextAlignment="Center" />
+          </StackLayout>
+          <StackLayout IsVisible="{Binding IsLogin}" Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <Image HeightRequest="120">
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OnHomeNavigationCommand}" CommandParameter="ServiceRegisteration" />
+              </Image.GestureRecognizers>
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="HomeRegister.png" Android="HomeRegister.png" iOS="HomeRegister.png" />
+              </Image.Source>
+            </Image>
+            <Label TextColor="Black" Text="{i18n:Translate Home_Navigation_ServiceRegistration}" HorizontalTextAlignment="Center" />
+          </StackLayout>
+          <StackLayout Grid.Row="1" Grid.Column="2" Orientation="Vertical">
+            <Image HeightRequest="120">
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding OnHomeNavigationCommand}" CommandParameter="Media" />
+              </Image.GestureRecognizers>
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="HomeMedia.png" Android="HomeMedia.png" iOS="HomeMedia.png" />
+              </Image.Source>
+            </Image>
+            <Label TextColor="Black" Text="{i18n:Translate Home_Navigation_MediaCenter}" HorizontalTextAlignment="Center" />
+          </StackLayout>
+
+          <Grid Grid.Row="2"   Grid.ColumnSpan="3" BackgroundColor="#fef5ec" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="40" />
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row = "0" Grid.Column = "0" Margin="15,0,0,0"  Aspect="AspectFit" HorizontalOptions = "Start" HeightRequest = "22" WidthRequest = "22" VerticalOptions="Center">
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="arrow.png" Android="arrow.png" iOS="arrow.png"/>
+              </Image.Source>
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Command="{Binding OnHomeNavigationCommand}"
+                    CommandParameter="News" />
+              </Image.GestureRecognizers>
+            </Image>
+
+            <Label Grid.Row = "0" Grid.Column = "1"  TextColor="Black" HorizontalTextAlignment = "Center" Text="{i18n:Translate News_ViewAll}" VerticalOptions="Center" HorizontalOptions = "Center"/>
+
+            <Label TextColor="Black"  Grid.Column = "2" Text="{i18n:Translate News_LatesNews}" HorizontalTextAlignment="End" VerticalOptions="Center" HorizontalOptions = "End" Margin="0,0,10,0" />
+
+            <ListView Grid.Row="1" Grid.ColumnSpan = "3" ItemsSource="{Binding News}" ItemTemplate="{StaticResource NewsTemplate}" ItemSelected="Handle_ItemSelected" SelectedItem="{Binding SelectedNews}" HorizontalOptions="Fill" RowHeight="100" BackgroundColor="#fef5ec">
+            </ListView>
+
+          </Grid>
+
+        </Grid>
+      </ScrollView>
+    </Grid>
+  </RelativeLayout>
+</ContentPage>
