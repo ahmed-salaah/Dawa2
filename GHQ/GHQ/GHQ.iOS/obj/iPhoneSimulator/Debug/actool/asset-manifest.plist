@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.actool.compilation-results</key>
+	<dict>
+		<key>output-files</key>
+		<array>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage@2x.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-568h@2x.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-Portrait~ipad.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-Portrait@2x~ipad.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-800-Portrait-736h@3x.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-800-667h@2x.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-700@2x.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-700-568h@2x.png</string>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
+		</array>
+	</dict>
+</dict>
+</plist>

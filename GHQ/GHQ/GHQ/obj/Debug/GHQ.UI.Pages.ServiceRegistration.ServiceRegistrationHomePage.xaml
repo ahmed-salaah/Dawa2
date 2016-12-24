@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
+              Title="{i18n:Translate PageHeader_WorkSpace}"
+             x:Class="GHQ.UI.Pages.ServiceRegistration.ServiceRegistrationHomePage">
+
+  <RelativeLayout>
+    <Image  Opacity="0.3"  Aspect="AspectFill"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+      <Image.Source>
+        <OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/background.png" Android="background.png" iOS="background"/>
+      </Image.Source>
+    </Image>
+
+    <Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint=
+              "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+      <ScrollView>
+
+        <Grid Style="{StaticResource GridContentStyle}">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+
+          <Grid Grid.Row="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Grid.ColumnSpacing="0" >
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+              </Grid.ColumnDefinitions>
+
+              <Grid Grid.Column="0" BackgroundColor="{StaticResource GoldColor}"  HorizontalOptions="Fill" >
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"  Text="{i18n:Translate ServiceRegistration_UpdateInfo}" TextColor="White" HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
+                <Image Grid.Column="1"  Style="{StaticResource EditImageStyle}" HorizontalOptions="End" IsVisible="{Binding CanUpdateContactList}}">
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding OnHomeNavigationCommand}"
+                        CommandParameter="UpdateContact" />
+                  </Image.GestureRecognizers>
+                  <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource" WinPhone="edit.png" Android="edit.png" iOS="edit"/>
+                  </Image.Source>
+                </Image>
+              </Grid>
+
+              <Grid Grid.Column="1" BackgroundColor="{StaticResource GoldColor}"  HorizontalOptions="Fill">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="{Binding UserData.FullName}" TextColor="White" VerticalOptions="Center"  HorizontalOptions="End" HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Column="1" Text="{i18n:Translate ServiceRegistration_Welcome}" TextColor="White" VerticalOptions="Center" HorizontalOptions="End" HorizontalTextAlignment="End" Margin="0,0,5,0"></Label>
+              </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.ColumnSpacing="0" BackgroundColor="{StaticResource NewsTemplateBGColor}">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+
+              <Grid Grid.Column="0" HorizontalOptions="End">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" Text="{i18n:Translate ServiceRegistration_Status}" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Label Grid.Column="0" Grid.Row="1" Text="{Binding UserData.RegStatus}" TextColor="{StaticResource GoldColor}" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Image Grid.Column="1" Grid.RowSpan="2"  HorizontalOptions="End" VerticalOptions="Center">
+                  <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource" WinPhone="MenuTasgel.png" Android="MenuTasgel.png" iOS="MenuTasgel"/>
+                  </Image.Source>
+                </Image>
+              </Grid>
+
+              <Grid Grid.Column="1" HorizontalOptions="Center">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" Text="{i18n:Translate ServiceRegistration_DOB}" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Label Grid.Column="0" Grid.Row="1" Text="{Binding UserData.FormatedBirthDate}" TextColor="{StaticResource GoldColor}" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <Image Grid.Column="1" Grid.RowSpan="2"  HorizontalOptions="End" VerticalOptions="Center">
+                  <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource" WinPhone="calender.png" Android="calender.png" iOS="calender"/>
+                  </Image.Source>
+                </Image>
+              </Grid>
+
+            </Grid>
+
+          </Grid>
+
+          <Grid Grid.Row="1" BackgroundColor="#256439"  IsVisible="{Binding UserData.IsRegistrationSubmitted,Converter={StaticResource BooleanNegateConverter}}">
+            <Grid.GestureRecognizers>
+              <TapGestureRecognizer
+                  Command="{Binding OnHomeNavigationCommand}"
+                  CommandParameter="ServiceRegistration" />
+            </Grid.GestureRecognizers>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0"  HorizontalOptions="Start" Margin="10,0,0,0" Style="{StaticResource ArrowImageStyle}">
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="back.png" Android="back.png" iOS="back"/>
+              </Image.Source>
+            </Image>
+
+            <Label Grid.Column="1" Text="{i18n:Translate ServiceRegistration_RegisterNow}" TextColor="White" VerticalOptions="Center"></Label>
+
+            <Image Grid.Column="2"  HorizontalOptions="Start" VerticalOptions="Center" Margin="0,0,10,0">
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="MenuTasgel.png" Android="MenuTasgel.png" iOS="MenuTasgel"/>
+              </Image.Source>
+            </Image>
+
+          </Grid>
+
+          <Grid Grid.Row="2"  BackgroundColor="#fef5ec" Margin="0,20,0,0" IsVisible="{Binding ShowNotifications}">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="40" />
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row = "0" Grid.Column = "0" Margin="15,0,0,0"  Aspect="AspectFit" HorizontalOptions = "Start" HeightRequest = "22" WidthRequest = "22" VerticalOptions="Center">
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="arrow.png" Android="arrow.png" iOS="arrow.png"/>
+              </Image.Source>
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Command="{Binding OnHomeNavigationCommand}"
+                    CommandParameter="Notifications" />
+              </Image.GestureRecognizers>
+            </Image>
+
+            <Label Grid.Row = "0" Grid.Column = "1"  TextColor="Black" HorizontalTextAlignment = "Center" Text="{i18n:Translate Notification_ViewAll}" VerticalOptions="Center" HorizontalOptions = "Center"/>
+
+            <Label TextColor="Black"  Grid.Column = "2" Text="{i18n:Translate Notification_LatestNotifications}" HorizontalTextAlignment="End" VerticalOptions="Center" HorizontalOptions = "End" Margin="0,0,10,0" />
+
+            <ListView  Grid.Row="1" Grid.ColumnSpan = "3"  ItemsSource="{Binding Notifications}" ItemTemplate="{StaticResource NotificationTemplate }" SelectedItem = "{Binding SelectedNotification}" HeightRequest="210" HorizontalOptions="Fill"  RowHeight="100" BackgroundColor="#fef5ec">
+            </ListView>
+
+          </Grid>
+
+          <Grid Grid.Row="3"  BackgroundColor="#fef5ec" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="40" />
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row = "0" Grid.Column = "0" Margin="15,0,0,0"  Aspect="AspectFit" HorizontalOptions = "Start" HeightRequest = "22" WidthRequest = "22" VerticalOptions="Center">
+              <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource" WinPhone="arrow.png" Android="arrow.png" iOS="arrow.png"/>
+              </Image.Source>
+              <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Command="{Binding OnHomeNavigationCommand}"
+                    CommandParameter="News" />
+              </Image.GestureRecognizers>
+            </Image>
+
+            <Label Grid.Row = "0" Grid.Column = "1"  TextColor="Black" HorizontalTextAlignment = "Center" Text="{i18n:Translate News_ViewAll}" VerticalOptions="Center" HorizontalOptions = "Center"/>
+
+            <Label TextColor="Black"  Grid.Column = "2" Text="{i18n:Translate News_LatesNews}" HorizontalTextAlignment="End" VerticalOptions="Center" HorizontalOptions = "End" Margin="0,0,10,0" />
+
+            <ListView  Grid.Row="1" Grid.ColumnSpan = "3" ItemsSource="{Binding News}" ItemSelected ="Handle_ItemSelected" ItemTemplate="{StaticResource NewsTemplate}"  SelectedItem = "{Binding SelectedNews}" HeightRequest="210" HorizontalOptions="Fill"  RowHeight="100" BackgroundColor="#fef5ec">
+
+            </ListView>
+
+
+          </Grid>
+
+        </Grid>
+
+      </ScrollView>
+
+    </Grid>
+
+  </RelativeLayout>
+
+</Base:BasePage>

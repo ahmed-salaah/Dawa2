@@ -8,17 +8,19 @@ namespace GHQ
         public App()
         {
             InitializeComponent();
-            Logic.Locator locator = new Logic.Locator();
-            bool IsLogIn = true;
-            if (IsLogIn)
-            {
-                MainPage = new GHQ.UI.Pages.Master.MainPage();
+			Logic.Locator locator = new Logic.Locator();
+            //bool IsLogIn = true;
+            //if (IsLogIn)
+            //{
+            //    MainPage = new GHQ.UI.Pages.Master.MainPage();
 
-            }
-            else
-            {
-                MainPage = new NavigationPage(new UI.Pages.Account.LoginPage());
-            }
+            //}
+            //else
+            //{
+            //    MainPage = new NavigationPage(new UI.Pages.Account.LoginPage());
+            //}
+
+			MainPage = new NavigationPage(new UI.Pages.Account.LoginPage());
         }
 
         protected override void OnStart()

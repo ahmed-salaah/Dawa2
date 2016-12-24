@@ -1,9 +1,17 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
-  <MonoDevelop.Ide.ItemProperties.GHQ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.e5d3649ddb9ce929c942cd7b6ffe3703d4d64fe8" />
-  <MonoDevelop.Ide.Workbench />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.GHQ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.59D55068-91F8-4A46-9200-36D9FDB8C6B8" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/App.xaml">
+    <Files>
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="70" Column="25" />
+      <File FileName="GHQ/GHQ/App.xaml" Line="126" Column="46" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ahmedsalah/Desktop/Dawa2/GHQ/ProjectX.Common/Common/Service/Naviagtion/NavigationService.cs" line="45" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.GHQ.Droid PreferredExecutionTarget="Android.Android_ARMv7a" />
 </Properties>

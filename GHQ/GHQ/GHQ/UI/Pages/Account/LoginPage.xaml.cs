@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace GHQ.UI.Pages.Account
 {
-    public partial class LoginPage : ContentPage
+	public partial class LoginPage : BasePage
     {
         readonly LoginViewModel LoginViewModel = Locator.Default.LoginViewModel;
         public LoginPage()

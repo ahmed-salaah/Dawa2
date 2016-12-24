@@ -1,9 +1,12 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Models.Data.Account;
 using GHQ.Logic.Service.Account;
+using GHQ.UI.Pages.Account;
 using GHQ.UI.Pages.Master;
 using Models;
+using Service.Localization;
 using Service.Naviagtion;
+using Xamarin.Forms;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -64,6 +67,8 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+				DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
+
                 //IsLoading = true;
             }
             catch (System.Exception ex)
@@ -99,7 +104,7 @@ namespace GHQ.Logic.ViewModels.Account
                 IsPageEnabled = false;
                 ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
 
-                navigationService.SetAppCurrentPage(typeof(MainPage));
+				navigationService.NavigateToPage(typeof(NewAccountStep1Page));
             }
             catch (System.Exception ex)
             {

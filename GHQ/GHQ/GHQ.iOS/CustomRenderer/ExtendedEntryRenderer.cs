@@ -37,6 +37,7 @@ namespace GHQ.iOS
 
             if (view != null)
             {
+				view.HasBorder = false;
                 SetFont(view);
                 SetTextAlignment(view);
                 SetBorder(view);
@@ -60,12 +61,19 @@ namespace GHQ.iOS
 
                 Control.AddGestureRecognizer(_leftSwipeGestureRecognizer);
                 Control.AddGestureRecognizer(_rightSwipeGestureRecognizer);
-            }
+				Control.TextAlignment = UITextAlignment.Right;
+				Control.Layer.BorderWidth = 1;
+				Control.Layer.BorderColor = UIColor.FromRGB(((float)207 / (float)255), ((float)204 / (float)255), ((float)204 / (float)255)).CGColor;
+				UIView paddingView = new UIView(new CGRect(0, 0, 10, 20));
+				Control.RightView = paddingView;
+				Control.RightViewMode = UITextFieldViewMode.Always;
+			}
 
             if (e.NewElement == null)
             {
                 Control.RemoveGestureRecognizer(_leftSwipeGestureRecognizer);
                 Control.RemoveGestureRecognizer(_rightSwipeGestureRecognizer);
+				Control.BorderStyle = UITextBorderStyle.Line;
             }
         }
 

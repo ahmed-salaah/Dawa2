@@ -5,17 +5,17 @@ namespace GHQ.UI.Pages.Account
 {
     public partial class NewAccountStep1Page : BasePage
     {
-        readonly NewAccountViewModel AccountVM = Locator.Default.NewAccountViewModel;
+        //readonly NewAccountViewModel AccountVM = Locator.Default.NewAccountViewModel;
         public NewAccountStep1Page()
         {
             InitializeComponent();
-            BindingContext = AccountVM;
+            //BindingContext = AccountVM;
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            AccountVM.OnIntializeCommand.Execute(null);
+            //AccountVM.OnIntializeCommand.Execute(null);
         }
     }
 }

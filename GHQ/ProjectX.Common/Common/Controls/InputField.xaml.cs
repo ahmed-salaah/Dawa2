@@ -9,6 +9,18 @@ namespace Controls
             InitializeComponent();
         }
 
+        #region ShowHeader p
+
+
+        public static readonly BindableProperty ShowHeaderProperty = BindableProperty.Create<InputField, bool>(p => p.ShowHeader, true);
+        public bool ShowHeader
+        {
+            get { return (bool)GetValue(ShowHeaderProperty); }
+            set { SetValue(ShowHeaderProperty, value); }
+        }
+
+        #endregion
+
         #region Placeholder p
 
 
