@@ -1762,5 +1762,71 @@ namespace GHQ.Resources.Strings {
                 return ResourceManager.GetString("login_NewAccountButton", resourceCulture);
             }
         }
+        
+        internal static string signUp_firstName {
+            get {
+                return ResourceManager.GetString("signUp_firstName", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_middleName {
+            get {
+                return ResourceManager.GetString("signUp_middleName", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_lastName {
+            get {
+                return ResourceManager.GetString("signUp_lastName", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_age {
+            get {
+                return ResourceManager.GetString("signUp_age", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_gender {
+            get {
+                return ResourceManager.GetString("signUp_gender", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_uploadPhotos {
+            get {
+                return ResourceManager.GetString("signUp_uploadPhotos", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_eatingTitle {
+            get {
+                return ResourceManager.GetString("signUp_eatingTitle", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_breakFastTitle {
+            get {
+                return ResourceManager.GetString("signUp_breakFastTitle", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_launchTitle {
+            get {
+                return ResourceManager.GetString("signUp_launchTitle", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_dinnerTitle {
+            get {
+                return ResourceManager.GetString("signUp_dinnerTitle", resourceCulture);
+            }
+        }
+        
+        internal static string signUp_buttonTitle {
+            get {
+                return ResourceManager.GetString("signUp_buttonTitle", resourceCulture);
+            }
+        }
     }
 }

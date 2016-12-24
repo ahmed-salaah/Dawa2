@@ -391,6 +391,9 @@
   <data name="ServiceRegistration_Entry_PlaceHolder_EducationFinished" xml:space="preserve">
     <value>انهيت الدراسة</value>
   </data>
+  <data name="signUp_middleName" xml:space="preserve">
+    <value>الإسم الأوسط</value>
+  </data>
   <data name="ServiceRegistration_Picker_NationlaityDate" xml:space="preserve">
     <value>تاريخ الجنسية</value>
   </data>
@@ -402,6 +405,9 @@
   </data>
   <data name="Error_Validation_EmailConfirmation_Empty" xml:space="preserve">
     <value>يجب ادخال رمز التحقق </value>
+  </data>
+  <data name="signUp_uploadPhotos" xml:space="preserve">
+    <value>إرفع صورتك الشخصية لإضافتها لحسابك</value>
   </data>
   <data name="ServiceRegistration_Btn_Submit" xml:space="preserve">
     <value>تسجيل</value>
@@ -445,6 +451,9 @@
   <data name="login_ForgotButton" xml:space="preserve">
     <value>نسيت كلمه المرور الخاصه بي</value>
   </data>
+  <data name="signUp_gender" xml:space="preserve">
+    <value>النوع</value>
+  </data>
   <data name="Home_Navigation_ForgetPassword" xml:space="preserve">
     <value>نسيت كلمة المرور</value>
   </data>
@@ -465,6 +474,9 @@
   </data>
   <data name="ServiceRegistration_Picker_PassportIssuancePlace" xml:space="preserve">
     <value>مكان الإصدار</value>
+  </data>
+  <data name="signUp_launchTitle" xml:space="preserve">
+    <value>الغداء في الساعه</value>
   </data>
   <data name="ServiceRegistration_Header_AddNewWorkDetails" xml:space="preserve">
     <value>إضافة بيانات العمل</value>
@@ -522,6 +534,9 @@
   </data>
   <data name="Error_NoInternet" xml:space="preserve">
     <value>لا يوجد اتصال بالانترنت</value>
+  </data>
+  <data name="signUp_breakFastTitle" xml:space="preserve">
+    <value>الإفطار في الساعه</value>
   </data>
   <data name="News_LatesNews" xml:space="preserve">
     <value>أخر الأخبار</value>
@@ -595,6 +610,9 @@
   <data name="NewAccount_Entry_Hint_Password" xml:space="preserve">
     <value>يجب أن تكون على الاقل  8 أحرف أو أرقام ،يجب أن تحتوي على الأحرف التالية (حرف إنجليزي كبير (A-Z)، حرف إنجليزي صغير (a-z)، رقم (0-9)، رمز مثل (!,$,#,%)</value>
   </data>
+  <data name="signUp_buttonTitle" xml:space="preserve">
+    <value>أنشئ الحساب</value>
+  </data>
   <data name="ServiceRegistration_Header_GeneralData" xml:space="preserve">
     <value>بيانات عامة</value>
   </data>
@@ -624,6 +642,9 @@
   </data>
   <data name="ServiceRegistration_Header_Name" xml:space="preserve">
     <value>الاسم</value>
+  </data>
+  <data name="signUp_firstName" xml:space="preserve">
+    <value>الإسم الأول</value>
   </data>
   <data name="Inquiry_Entry_PlaceHolder_FullName" xml:space="preserve">
     <value>الإسم بالكامل</value>
@@ -730,6 +751,9 @@
   <data name="ServiceRegistration_DeleteRelativeMessage_Title" xml:space="preserve">
     <value>هل انت متأكد أنك تريد حذف القريب؟</value>
   </data>
+  <data name="signUp_age" xml:space="preserve">
+    <value>السن </value>
+  </data>
   <data name="ServiceRegistration_Entry_PlaceHolder_EmployeeID" xml:space="preserve">
     <value>الرقم التعريفي</value>
   </data>
@@ -775,6 +799,9 @@
   <data name="ServiceRegistration_Entry_PlaceHolder_AddressText" xml:space="preserve">
     <value>العنوان</value>
   </data>
+  <data name="signUp_eatingTitle" xml:space="preserve">
+    <value>أنت عاده تأخذ</value>
+  </data>
   <data name="Notification_LatestNotifications" xml:space="preserve">
     <value>أحدث الإشعارات</value>
   </data>
@@ -816,6 +843,9 @@
   </data>
   <data name="ServiceRegistration_NoWork" xml:space="preserve">
     <value>لا يوجد بيانات عمل</value>
+  </data>
+  <data name="signUp_dinnerTitle" xml:space="preserve">
+    <value>العشاء في الساعه</value>
   </data>
   <data name="ServiceRegistration_Entry_PlaceHolder_BirthPlace" xml:space="preserve">
     <value>مكان الولادة</value>
@@ -969,6 +999,9 @@
   </data>
   <data name="ServiceRegistration_Picker_MaritalStatus" xml:space="preserve">
     <value>الحالة الإجتماعية</value>
+  </data>
+  <data name="signUp_lastName" xml:space="preserve">
+    <value>الإسم العائلة</value>
   </data>
   <data name="ServiceRegistration_Entry_PlaceHolder_GuardianNumber" xml:space="preserve">
     <value>هاتف الوالد / الوصي</value>

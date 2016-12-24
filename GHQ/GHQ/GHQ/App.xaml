@@ -7,8 +7,6 @@
     <ResourceDictionary>
       <Converter:BooleanNegateConverter x:Key="BooleanNegateConverter" />
 
-
-
       <DataTemplate x:Key="MedicineHistoryTemplate">
         <ViewCell>
           <ViewCell.View>
