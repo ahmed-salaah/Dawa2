@@ -1,5 +1,6 @@
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\GHQ.Droid.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\FormsViewGroup.dll
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\OneSignal.Android.Binding.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Plugin.Connectivity.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll
@@ -35,7 +36,6 @@ C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Sys
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\System.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\System.Xml.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\System.Xml.Linq.dll
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\OneSignal.Android.Binding.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\ProjectX.Common.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\System.Runtime.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll

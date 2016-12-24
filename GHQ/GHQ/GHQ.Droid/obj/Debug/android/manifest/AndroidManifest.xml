@@ -29,7 +29,7 @@
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <application android:label="GHQ.Droid" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+  <application android:label="Dawaa.Droid" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <!--<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAvsL5LIzUGNQ8Vh53YG1qrlntHRhtvIS8" />-->
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAvsL5LIzUGNQ8Vh53YG1qrlntHRhtvIS8" />
@@ -44,8 +44,8 @@
     <service android:name="com.onesignal.SyncService" android:stopWithTask="false" />
     <activity android:name="com.onesignal.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="GHQ" android:theme="@style/MainTheme" android:name="md5f187a671dd0a5505795d523bfabaa888.MainActivity" />
-    <activity android:icon="@drawable/icon" android:label="GHQ" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5f187a671dd0a5505795d523bfabaa888.SplashActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="Dawaa" android:theme="@style/MainTheme" android:name="md5f187a671dd0a5505795d523bfabaa888.MainActivity" />
+    <activity android:icon="@drawable/icon" android:label="Dawaa" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5f187a671dd0a5505795d523bfabaa888.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -100,6 +100,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "GHQ.Droid.dll" comes first in this list. */
 		"GHQ.Droid.dll",
 		"FormsViewGroup.dll",
+		"OneSignal.Android.Binding.dll",
 		"Plugin.Connectivity.Abstractions.dll",
 		"Plugin.Connectivity.dll",
 		"Plugin.Settings.Abstractions.dll",
@@ -128,7 +129,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Maps.dll",
 		"Xamarin.GooglePlayServices.Measurement.dll",
 		"GHQ.dll",
-		"OneSignal.Android.Binding.dll",
 		"ProjectX.Common.dll",
 		"System.Runtime.dll",
 		"System.Resources.ResourceManager.dll",
