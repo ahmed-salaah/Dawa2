@@ -3,8 +3,6 @@ using UIKit;
 using Xamarin.Forms;
 using Plugin.Toasts;
 using UserNotifications;
-using Com.OneSignal;
-using System.Collections.Generic;
 
 namespace GHQ.iOS
 {
@@ -48,56 +46,8 @@ namespace GHQ.iOS
                 app.RegisterUserNotificationSettings(notificationSettings);
             }
 
-            OneSignal.NotificationReceived exampleNotificationReceivedDelegate = delegate (OSNotification notification)
-            {
-                try
-                {
-                    System.Console.WriteLine("OneSignal Notification Received: {0}", notification.payload.body);
-                    Dictionary<string, object> additionalData = notification.payload.additionalData;
-
-                    if (additionalData.Count > 0)
-                        System.Console.WriteLine("additionalData: {0}", additionalData);
-                }
-                catch (System.Exception e)
-                {
-                    System.Console.WriteLine(e.StackTrace);
-                }
-            };
-
-            // Notification Opened Delegate
-            OneSignal.NotificationOpened exampleNotificationOpenedDelegate = delegate (OSNotificationOpenedResult result)
-            {
-                try
-                {
-                    System.Console.WriteLine("OneSignal Notification opened: {0}", result.notification.payload.body);
-
-                    Dictionary<string, object> additionalData = result.notification.payload.additionalData;
-                    List<Dictionary<string, object>> actionButtons = result.notification.payload.actionButtons;
-
-                    if (additionalData.Count > 0)
-                        System.Console.WriteLine("additionalData: {0}", additionalData);
-
-                    if (actionButtons.Count > 0)
-                        System.Console.WriteLine("actionButtons: {0}", actionButtons);
-                }
-                catch (System.Exception e)
-                {
-                    System.Console.WriteLine(e.StackTrace);
-                }
-            };
-
-            // Initialize OneSignal
-            OneSignal.StartInit("4a698011-683a-4476-9882-f3a3ea948523")
-              .HandleNotificationReceived(exampleNotificationReceivedDelegate)
-              .HandleNotificationOpened(exampleNotificationOpenedDelegate)
-              .EndInit();
-
             return base.FinishedLaunching(app, options);
         }
 
-        public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
-        {
-            // Local Notifications are received here
-        }
     }
 }

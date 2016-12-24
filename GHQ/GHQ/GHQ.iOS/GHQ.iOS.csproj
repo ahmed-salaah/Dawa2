@@ -108,7 +108,6 @@
     <Compile Include="CustomRenderer\ExtendedEntryRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="OneSignalIOS.cs" />
     <Compile Include="Services\MediaPicker.cs" />
     <Compile Include="Services\Localize.cs" />
     <Compile Include="Services\Reflection.cs" />
@@ -256,7 +255,6 @@
       <InProject>false</InProject>
     </ImageAsset>
   </ItemGroup>
-  <Import Project="..\..\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.projitems" Label="Shared" Condition="Exists('..\..\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
