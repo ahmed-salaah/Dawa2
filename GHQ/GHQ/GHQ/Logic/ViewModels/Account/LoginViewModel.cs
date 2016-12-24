@@ -1,9 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
-using GHQ.Logic.Models.Data.Account;
 using GHQ.Logic.Service.Account;
-using GHQ.UI.Pages.Account;
-using GHQ.UI.Pages.Home;
-using GHQ.UI.Pages.Master;
 using Models;
 using Service.Localization;
 using Service.Naviagtion;
@@ -17,7 +13,6 @@ namespace GHQ.Logic.ViewModels.Account
         {
             navigationService = _navigationService;
             accountService = _accountService;
-            LoginData = new LoginData();
         }
 
         #region Private Members
@@ -28,19 +23,6 @@ namespace GHQ.Logic.ViewModels.Account
         #endregion
 
         #region Properties
-
-        private LoginData _LoginData;
-        public LoginData LoginData
-        {
-            get
-            {
-                return _LoginData;
-            }
-            set
-            {
-                Set(() => LoginData, ref _LoginData, value);
-            }
-        }
 
         #endregion
 
@@ -68,7 +50,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-				DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
+                DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
 
                 //IsLoading = true;
             }
@@ -83,76 +65,6 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
-        #region Login Command
-
-        private RelayCommand _OnLoginCommand;
-        public RelayCommand OnLoginCommand
-        {
-            get
-            {
-                if (_OnLoginCommand == null)
-                {
-                    _OnLoginCommand = new RelayCommand(OnLogin);
-                }
-                return _OnLoginCommand;
-            }
-        }
-
-		private RelayCommand _OnSignUpCommand;
-		public RelayCommand OnSignUpCommand
-		{
-			get
-			{
-				if (_OnSignUpCommand == null)
-				{
-					_OnSignUpCommand = new RelayCommand(OnSignUp);
-				}
-				return _OnSignUpCommand;
-			}
-		}
-        private async void OnLogin()
-        {
-            try
-            {
-                IsLoading = true;
-                IsPageEnabled = false;
-                ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
-
-				navigationService.NavigateToPage(typeof(HomePage));
-            }
-            catch (System.Exception ex)
-            {
-            }
-            finally
-            {
-                IsLoading = false;
-                IsPageEnabled = true;
-            }
-        }
-
-		private async void OnSignUp()
-		{
-			try
-			{
-				IsLoading = true;
-				IsPageEnabled = false;
-				ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
-
-				navigationService.NavigateToPage(typeof(NewAccountStep1Page));
-			}
-			catch (System.Exception ex)
-			{
-			}
-			finally
-			{
-				IsLoading = false;
-				IsPageEnabled = true;
-			}
-		}
-
-
-		#endregion
-
-		#endregion
-	}
+        #endregion
+    }
 }
