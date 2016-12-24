@@ -41,8 +41,11 @@
     <Compile Include="Common\DialogService.cs" />
     <Compile Include="Common\TranslateExtension.cs" />
     <Compile Include="Logic\Models\Data\Medicine.cs" />
+    <Compile Include="Logic\Services\MedicineService\IMedicineService.cs" />
+    <Compile Include="Logic\Services\MedicineService\MedicineService.cs" />
     <Compile Include="Logic\Services\LookupService\ILookupService.cs" />
     <Compile Include="Logic\Services\LookupService\LookupService.cs" />
+    <Compile Include="Logic\ViewModels\Medicine\MedicineHistoryViewModel.cs" />
     <Compile Include="Resources\Strings\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

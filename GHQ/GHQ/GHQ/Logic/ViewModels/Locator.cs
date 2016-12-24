@@ -47,6 +47,8 @@ namespace GHQ.Logic
             SimpleIoc.Default.Register<LoginViewModel>();
             SimpleIoc.Default.Register<NewAccountViewModel>();
             SimpleIoc.Default.Register<ContactUsViewModel>();
+            SimpleIoc.Default.Register<MedicineHistoryViewModel>();
+
         }
 
         #endregion
@@ -96,6 +98,7 @@ namespace GHQ.Logic
         #endregion
 
 
+
         #region View Model Properties
 
         #region Home
@@ -137,6 +140,16 @@ namespace GHQ.Logic
         }
 
         #endregion
+
+        public MedicineHistoryViewModel MedicineHistoryViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<MedicineHistoryViewModel>();
+            }
+        }
+
+
 
         #endregion
 

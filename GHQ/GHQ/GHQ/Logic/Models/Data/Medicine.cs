@@ -5,29 +5,68 @@ namespace Logic.Models.Data
 {
     public class Medicine : BaseModel
     {
-        private string _UnifiedNumber;
-        public string UnifiedNumber
+        private int _Id;
+        public int Id
         {
             get
             {
-                return _UnifiedNumber;
+                return _Id;
             }
             set
             {
-                Set(() => UnifiedNumber, ref _UnifiedNumber, value);
+                Set(() => Id, ref _Id, value);
             }
         }
 
-        private string _EmiratesID;
-        public string EmiratesID
+        private string _Name;
+        public string Name
         {
             get
             {
-                return _EmiratesID;
+                return _Name;
             }
             set
             {
-                Set(() => EmiratesID, ref _EmiratesID, value);
+                Set(() => Name, ref _Name, value);
+            }
+        }
+
+        private string _DoctorName;
+        public string DoctorName
+        {
+            get
+            {
+                return _DoctorName;
+            }
+            set
+            {
+                Set(() => DoctorName, ref _DoctorName, value);
+            }
+        }
+
+        private string _Image;
+        public string Image
+        {
+            get
+            {
+                return _Image;
+            }
+            set
+            {
+                Set(() => Image, ref _Image, value);
+            }
+        }
+
+        private string _Note;
+        public string Note
+        {
+            get
+            {
+                return _Note;
+            }
+            set
+            {
+                Set(() => Note, ref _Note, value);
             }
         }
 
