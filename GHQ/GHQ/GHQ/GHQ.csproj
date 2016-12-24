@@ -39,187 +39,58 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\DialogService.cs" />
-    <Compile Include="Common\SideMenuService.cs" />
     <Compile Include="Common\TranslateExtension.cs" />
-    <Compile Include="Logic\Enum\WorkStatusEnum.cs" />
-    <Compile Include="Logic\Models\Data\Gallery\PhotoAlbum.cs" />
-    <Compile Include="Logic\Models\Data\News\NewsData.cs" />
-    <Compile Include="Logic\Models\Data\Registration\ServiceAttachementData.cs" />
-    <Compile Include="Logic\Models\Data\Account\UserData.cs" />
-    <Compile Include="Logic\Models\Requests\Account\UpdateAttachmentRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\UploadImageRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\UpdateRelativeRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\UpdateAcademicQualificationRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\UpdateAddressRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\UpdateWorkRequest.cs" />
-    <Compile Include="Logic\Models\Response\PhotoAlbumResponse.cs" />
-    <Compile Include="Logic\Models\Response\PhtotGalleryRespose.cs" />
-    <Compile Include="Logic\Models\Response\NotificationResponse.cs" />
-    <Compile Include="Logic\Models\Data\Registration\UpdateContactData.cs" />
-    <Compile Include="Logic\Models\Response\UserResponse.cs" />
-    <Compile Include="Logic\Models\Response\GetServiceAttachementResponse.cs" />
-    <Compile Include="Logic\Models\Response\UploadFile.cs" />
-    <Compile Include="Logic\Models\Response\ImageFile.cs" />
+    <Compile Include="Logic\Models\Data\Medicine.cs" />
+    <Compile Include="Logic\Services\MedicineService\IMedicineService.cs" />
+    <Compile Include="Logic\Services\MedicineService\MedicineService.cs" />
     <Compile Include="Logic\Services\LookupService\ILookupService.cs" />
     <Compile Include="Logic\Services\LookupService\LookupService.cs" />
-    <Compile Include="Logic\Services\Notification\INotificationService.cs" />
-    <Compile Include="Logic\Services\Notification\NotificationService.cs" />
-    <Compile Include="Logic\Translators\NotificationTranslator.cs" />
-    <Compile Include="Logic\Translators\PhotoAlbumTranslator.cs" />
-    <Compile Include="Logic\Translators\ServiceAttachementTranslator.cs" />
-    <Compile Include="Logic\ViewModels\Notification\NotificationViewModel.cs" />
-    <Compile Include="Logic\ViewModels\PhotoGallery\PhotoAlbumViewMiodel.cs" />
-    <Compile Include="Logic\ViewModels\PhotoGallery\PhotoDetailsViewModel.cs" />
-    <Compile Include="Logic\ViewModels\ServiceRegistration\UpdateContactViewModel.cs" />
-    <Compile Include="Logic\ViewModels\ServiceRegistration\ServiceRegistrationHomeViewModel.cs" />
+    <Compile Include="Logic\ViewModels\Medicine\MedicineHistoryViewModel.cs" />
     <Compile Include="Resources\Strings\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Logic\Models\Data\Account\ForgetPasswordData.cs" />
-    <Compile Include="Logic\Models\Data\Registration\BREData.cs" />
-    <Compile Include="Logic\Models\Data\Registration\RegistrationData.cs" />
-    <Compile Include="Logic\Models\Requests\Account\AddAccountRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\GetStepOfAccountCreationRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\GetMOIUserInfoRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\UpdateAccountRequest.cs" />
-    <Compile Include="Logic\Models\Response\LookupValueResponse.cs" />
-    <Compile Include="Logic\Translators\LookupTranslator.cs" />
-    <Compile Include="Logic\Translators\NewsTranslator.cs" />
     <Compile Include="Logic\ViewModels\Account\ForgetPasswordViewModel.cs" />
-    <Compile Include="Logic\Models\Response\NewsResponse.cs" />
-    <Compile Include="Logic\Models\Response\UserInfoResponse.cs" />
-    <Compile Include="Logic\Translators\UserInfoTranslator.cs" />
-    <Compile Include="Logic\ViewModels\ServiceRegistration\ServiceRegistrationViewModel.cs" />
-    <Compile Include="UI\Pages\AboutUs\WalaaPage.xaml.cs">
-      <DependentUpon>WalaaPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\Account\ForgetPasswordConfirmationPage.xaml.cs">
-      <DependentUpon>ForgetPasswordConfirmationPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\Pages\Account\ForgetPasswordPage.xaml.cs">
       <DependentUpon>ForgetPasswordPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Pages\Account\LogoutPage.xaml.cs">
-      <DependentUpon>LogoutPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\Pages\BasePage.cs" />
-    <Compile Include="UI\Pages\Notifications\NotificationsPage.xaml.cs">
-      <DependentUpon>NotificationsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\News\NewsDetailsPage.xaml.cs">
-      <DependentUpon>NewsDetailsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\News\NewsPage.xaml.cs">
-      <DependentUpon>NewsPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Logic\Constant\Constant.cs" />
     <Compile Include="Logic\Constant\ServiceConstant.cs" />
-    <Compile Include="Logic\Models\Data\Account\UserMobileData.cs" />
-    <Compile Include="Logic\Models\Data\Account\NewAccountData.cs" />
-    <Compile Include="Logic\Models\Data\Notification\NotificationData.cs" />
-    <Compile Include="Logic\Models\Requests\Account\VerifyMyCodeRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\IsEmailRequiredRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\SendVerificationCodeByEmailRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\SendVerificationCodeBySMSRequest.cs" />
-    <Compile Include="Logic\Models\Requests\Account\GetUserMobileNumbersRequest.cs" />
-    <Compile Include="Logic\Models\Response\GetUserMobileNumbersResponse.cs" />
-    <Compile Include="Logic\Models\Data\Account\LoginData.cs" />
-    <Compile Include="Logic\Models\Requests\Account\LoginRequest.cs" />
     <Compile Include="Logic\Services\Account\AccountService.cs" />
     <Compile Include="Logic\Services\Account\IAccountService.cs" />
-    <Compile Include="Logic\Services\Inquiry\IInquiryService.cs" />
-    <Compile Include="Logic\Services\Inquiry\InquiryService.cs" />
-    <Compile Include="Logic\Services\News\INewsService.cs" />
-    <Compile Include="Logic\Services\News\NewsService.cs" />
-    <Compile Include="Logic\Services\PhotoGallery\IPhotoGalleryService.cs" />
-    <Compile Include="Logic\Services\PhotoGallery\PhotoGalleryService.cs" />
-    <Compile Include="Logic\Services\Registration\IServiceRegistrationService.cs" />
-    <Compile Include="Logic\Services\Registration\ServiceRegistrationService.cs" />
-    <Compile Include="Logic\Translators\UserMobileTranslator.cs" />
     <Compile Include="Logic\ViewModels\Home\HomeViewModel.cs" />
     <Compile Include="Logic\ViewModels\Account\LoginViewModel.cs" />
-    <Compile Include="Logic\ViewModels\Inquiry\InquiryViewModel.cs" />
-    <Compile Include="Logic\ViewModels\News\NewsViewModel.cs" />
-    <Compile Include="Logic\ViewModels\PhotoGallery\PhotoGalleryViewModel.cs" />
     <Compile Include="Logic\ViewModels\Account\NewAccountViewModel.cs" />
     <Compile Include="Logic\ViewModels\Locator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\Pages\Account\IdentityLoginPage.xaml.cs">
-      <DependentUpon>IdentityLoginPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\Pages\Account\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Pages\Home\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Pages\Inquiry\InquiryPage.xaml.cs">
-      <DependentUpon>InquiryPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\Master\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\Master\MasterPage.xaml.cs">
-      <DependentUpon>MasterPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\Account\NewAccountStep4Page.xaml.cs">
-      <DependentUpon>NewAccountStep4Page.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\Account\NewAccountStep3Page.xaml.cs">
-      <DependentUpon>NewAccountStep3Page.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\Account\NewAccountStep2Page.xaml.cs">
-      <DependentUpon>NewAccountStep2Page.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\Pages\Account\NewAccountStep1Page.xaml.cs">
       <DependentUpon>NewAccountStep1Page.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Pages\PhotoGallery\AlbumLibraryPage.xaml.cs">
-      <DependentUpon>AlbumLibraryPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\ServiceRegistration\UpdateContactPage.xaml.cs">
-      <DependentUpon>UpdateContactPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\ServiceRegistration\ServiceRegistrationWebPage.xaml.cs">
-      <DependentUpon>ServiceRegistrationWebPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\ServiceRegistration\ServiceRegistrationHomePage.xaml.cs">
-      <DependentUpon>ServiceRegistrationHomePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\ServiceRegistration\ServiceRegistrationPage.xaml.cs">
-      <DependentUpon>ServiceRegistrationPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Pages\PhotoGallery\ImagesLibraryPage.xaml.cs">
-      <DependentUpon>ImagesLibraryPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Logic\Models\Data\Gallery\PhotosData.cs" />
-    <Compile Include="UI\Pages\MapLocation\MapPage.cs" />
-    <Compile Include="Logic\ViewModels\Map\MapViewModel.cs" />
     <Compile Include="Logic\ViewModels\ContactUs\ContactUsViewModel.cs" />
-    <Compile Include="Logic\Services\Map\IMapService.cs" />
-    <Compile Include="Logic\Services\Map\MapService.cs" />
     <Compile Include="UI\Pages\AboutUs\AboutUSPage.xaml.cs">
       <DependentUpon>AboutUSPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Pages\ContactUS\ContactUSPage.xaml.cs">
       <DependentUpon>ContactUSPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Pages\PhotoGallery\GridView.cs" />
-    <Compile Include="UI\Pages\WebPages\InquiryWebPage.xaml.cs">
-      <DependentUpon>InquiryWebPage.xaml</DependentUpon>
+    <Compile Include="UI\Pages\Medicine\MedicineSchedule.xaml.cs">
+      <DependentUpon>MedicineSchedule.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Pages\WebPages\GHQWebPage.xaml.cs">
-      <DependentUpon>GHQWebPage.xaml</DependentUpon>
+    <Compile Include="UI\Pages\Medicine\MedicineAddNew.xaml.cs">
+      <DependentUpon>MedicineAddNew.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Pages\PhotoGallery\ImagePage.xaml.cs">
-      <DependentUpon>ImagePage.xaml</DependentUpon>
+    <Compile Include="UI\Pages\Medicine\MedicineHistory.xaml.cs">
+      <DependentUpon>MedicineHistory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Logic\ViewModels\News\NewsDetailsViewModel.cs" />
-    <Compile Include="Logic\Translators\PhotoGalleryTranslator.cs" />
-    <Compile Include="Logic\Models\Data\Map\MapData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -318,9 +189,12 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="GettingStarted.Xamarin" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Logic\Enum\" />
+    <Folder Include="Logic\Models\Requests\" />
+    <Folder Include="Logic\Models\Response\" />
+    <Folder Include="Logic\Translators\" />
     <Folder Include="Resources\Images\" />
   </ItemGroup>
   <ItemGroup>
@@ -334,33 +208,15 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Pages\PhotoGallery\ImagesLibraryPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Pages\AboutUs\AboutUSPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Pages\ContactUS\ContactUSPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Pages\PhotoGallery\ImagePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Master\MainPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Master\MasterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -372,49 +228,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Inquiry\InquiryPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="UI\Pages\Account\NewAccountStep1Page.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Account\NewAccountStep2Page.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Account\NewAccountStep3Page.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Account\NewAccountStep4Page.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Account\IdentityLoginPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\News\NewsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\ServiceRegistration\ServiceRegistrationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -426,79 +240,28 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Account\ForgetPasswordConfirmationPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\News\NewsDetailsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Notifications\NotificationsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\ServiceRegistration\ServiceRegistrationHomePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\WebPages\GHQWebPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\WebPages\InquiryWebPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\AboutUs\WalaaPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>
-      </SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\Account\LogoutPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\ServiceRegistration\ServiceRegistrationWebPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>
-      </SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\PhotoGallery\AlbumLibraryPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>
-      </SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UI\Pages\ServiceRegistration\UpdateContactPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\ProjectX.Common\ProjectX.Common.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>ProjectX.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Pages\Medicine\MedicineHistory.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Pages\Medicine\MedicineAddNew.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Pages\Medicine\MedicineSchedule.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

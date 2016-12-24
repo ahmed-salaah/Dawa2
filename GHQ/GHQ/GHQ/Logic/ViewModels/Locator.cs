@@ -1,20 +1,8 @@
 ﻿using GalaSoft.MvvmLight.Ioc;
 using GHQ.Logic.Service.Account;
-using GHQ.Logic.Service.Inquiry;
 using GHQ.Logic.Service.Lookup;
-using GHQ.Logic.Service.Map;
-using GHQ.Logic.Service.News;
-using GHQ.Logic.Service.Notification;
-using GHQ.Logic.Service.PhotoGallery;
-using GHQ.Logic.Service.ServiceRegistration;
 using GHQ.Logic.ViewModels.Account;
 using GHQ.Logic.ViewModels.ContactUs;
-using GHQ.Logic.ViewModels.Inquiry;
-using GHQ.Logic.ViewModels.Map;
-using GHQ.Logic.ViewModels.News;
-using GHQ.Logic.ViewModels.Notification;
-using GHQ.Logic.ViewModels.PhotoGallery;
-using GHQ.Logic.ViewModels.ServiceRegistration;
 using GHQ.Resources.Strings;
 using Microsoft.Practices.ServiceLocation;
 using Service.Dialog;
@@ -46,38 +34,21 @@ namespace GHQ.Logic
             SimpleIoc.Default.Register<INavigationService, NavigationService>();
             SimpleIoc.Default.Register<INetworkService, NetworkService>();
             SimpleIoc.Default.Register<IAccountService, AccountService>();
-            SimpleIoc.Default.Register<INewsService, NewsService>();
-            SimpleIoc.Default.Register<IPhotoGalleryService, PhotoGalleryService>();
-            SimpleIoc.Default.Register<IServiceRegistrationService, ServiceRegistrationService>();
-            SimpleIoc.Default.Register<IInquiryService, InquiryService>();
             SimpleIoc.Default.Register<IDialogService, DialogService>();
             SimpleIoc.Default.Register<IExceptionService, ExceptionService>();
             SimpleIoc.Default.Register<IInternetService, InternetService>();
             SimpleIoc.Default.Register<ILookupService, LookupService>();
-            SimpleIoc.Default.Register<IMapService, MapService>();
-            SimpleIoc.Default.Register<INotificationService, NotificationService>();
-            SimpleIoc.Default.Register<ISideMenuService, SideMenuService>();
         }
 
         private void RegisterViewModels()
         {
-            SimpleIoc.Default.Register<ServiceRegistrationViewModel>();
-            SimpleIoc.Default.Register<ServiceRegistrationHomeViewModel>();
-            SimpleIoc.Default.Register<UpdateContactViewModel>();
             SimpleIoc.Default.Register<HomeViewModel>();
             SimpleIoc.Default.Register<ForgetPasswordViewModel>();
             SimpleIoc.Default.Register<LoginViewModel>();
-            SimpleIoc.Default.Register<NewsViewModel>();
-            SimpleIoc.Default.Register<NewsDetailsViewModel>();
-            SimpleIoc.Default.Register<InquiryViewModel>();
-            SimpleIoc.Default.Register<PhotoGalleryViewModel>();
             SimpleIoc.Default.Register<NewAccountViewModel>();
-            SimpleIoc.Default.Register<PhotoAlbumViewMiodel>();
-            SimpleIoc.Default.Register<PhotoGalleryViewModel>();
-            SimpleIoc.Default.Register<PhotoDetailsViewModel>();
-            SimpleIoc.Default.Register<MapViewModel>();
             SimpleIoc.Default.Register<ContactUsViewModel>();
-            SimpleIoc.Default.Register<NotificationViewModel>();
+            SimpleIoc.Default.Register<MedicineHistoryViewModel>();
+
         }
 
         #endregion
@@ -107,13 +78,6 @@ namespace GHQ.Logic
             }
         }
 
-        public INotificationService NotificationService
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<INotificationService>();
-            }
-        }
 
         public IAccountService AccountService
         {
@@ -132,6 +96,7 @@ namespace GHQ.Logic
         }
 
         #endregion
+
 
 
         #region View Model Properties
@@ -176,111 +141,16 @@ namespace GHQ.Logic
 
         #endregion
 
-        #region Registration
-
-
-        public UpdateContactViewModel UpdateContactViewModel
+        public MedicineHistoryViewModel MedicineHistoryViewModel
         {
             get
             {
-                return ServiceLocator.Current.GetInstance<UpdateContactViewModel>();
+                return ServiceLocator.Current.GetInstance<MedicineHistoryViewModel>();
             }
         }
 
 
-        public ServiceRegistrationHomeViewModel ServiceRegistrationHomeViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<ServiceRegistrationHomeViewModel>();
-            }
-        }
 
-        public ServiceRegistrationViewModel ServiceRegistrationViewModel
-        {
-            get
-            {
-                //Workaround: to fix crash on second time, it must be enhanced
-                return new ServiceRegistrationViewModel(ServiceLocator.Current.GetInstance<INavigationService>(), ServiceLocator.Current.GetInstance<IServiceRegistrationService>(),
-                    ServiceLocator.Current.GetInstance<ILookupService>(), ServiceLocator.Current.GetInstance<IDialogService>(), ServiceLocator.Current.GetInstance<IExceptionService>(), ServiceLocator.Current.GetInstance<IAccountService>());
-                //return ServiceLocator.Current.GetInstance<ServiceRegistrationViewModel>();
-            }
-        }
-
-        #endregion
-
-        #region News
-
-        public NewsViewModel NewsViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<NewsViewModel>();
-            }
-        }
-
-        #endregion
-
-        #region NewsDetails
-
-        public NewsDetailsViewModel NewsDetailsViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<NewsDetailsViewModel>();
-            }
-        }
-
-        #endregion
-
-        #region Inquiry
-
-        public InquiryViewModel InquiryViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<InquiryViewModel>();
-            }
-        }
-
-        #endregion
-
-        #region PhotoGallery
-
-        public PhotoAlbumViewMiodel PhotoAlbumViewMiodel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<PhotoAlbumViewMiodel>();
-            }
-        }
-        public PhotoGalleryViewModel PhotoGalleryViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<PhotoGalleryViewModel>();
-            }
-        }
-
-        public PhotoDetailsViewModel PhotoDetailsViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<PhotoDetailsViewModel>();
-            }
-        }
-
-        #endregion
-
-        #region Map
-
-        public MapViewModel MapViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<MapViewModel>();
-            }
-        }
         #endregion
 
         #region ContactUs
@@ -296,16 +166,9 @@ namespace GHQ.Logic
 
         #region News
 
-        public NotificationViewModel NotificationViewModel
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<NotificationViewModel>();
-            }
-        }
+
 
         #endregion
 
-        #endregion
     }
 }

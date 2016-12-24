@@ -90,7 +90,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <None Include="GHQ.UWP.nuget.targets" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -112,82 +111,12 @@
     <None Include="Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AccountStep1.png" />
-    <Content Include="AccountStep2.png" />
-    <Content Include="AccountStep3.png" />
-    <Content Include="AccountStep4.png" />
-    <Content Include="add.png" />
-    <Content Include="address.png" />
-    <Content Include="arrow.png" />
-    <Content Include="Assets\bacground.png" />
-    <Content Include="Assets\background.png" />
-    <Content Include="Assets\home-icon.png" />
-    <Content Include="Assets\logo.png" />
-    <Content Include="Assets\SplashScreen.scale-400.png" />
-    <Content Include="Assets\Splash\1240_600.png" />
-    <Content Include="Assets\Splash\2480_1200.png" />
-    <Content Include="back.png" />
-    <Content Include="background.png" />
-    <Content Include="calender.png" />
-    <Content Include="ContactUs.png" />
-    <Content Include="delete.png" />
-    <Content Include="edit.png" />
-    <Content Include="education.png" />
-    <Content Include="email.png" />
-    <Content Include="f.png" />
-    <Content Include="forword.png" />
-    <Content Include="g.png" />
-    <Content Include="HomeContactUs.png" />
-    <Content Include="HomeInfo.png" />
-    <Content Include="HomeLawaa.png" />
-    <Content Include="HomeLogin.png" />
-    <Content Include="HomeMedia.png" />
-    <Content Include="HomeNewUser.png" />
-    <Content Include="HomeRegister.png" />
-    <Content Include="i.png" />
-    <Content Include="icon.png" />
-    <Content Include="Image.png" />
-    <Content Include="info.png" />
-    <Content Include="Inquiry.png" />
-    <Content Include="logout.png" />
-    <Content Include="MenuContact.png" />
-    <Content Include="MenuHeader.png" />
-    <Content Include="MenuHeaderBG.png" />
-    <Content Include="MenuHome.png" />
-    <Content Include="MenuInfo.png" />
-    <Content Include="MenuLawaa.png" />
-    <Content Include="MenuMap.png" />
-    <Content Include="MenuMedia.png" />
-    <Content Include="MenuMembers.png" />
-    <Content Include="MenuNewUser.png" />
-    <Content Include="MenuTasgel.png" />
-    <Content Include="MenuWeb.png" />
-    <Content Include="mobile.png" />
-    <Content Include="notification.png" />
-    <Content Include="pass.png" />
-    <Content Include="personal.png" />
-    <Content Include="police.png" />
-    <Content Include="Properties\Default.rd.xml" />
-    <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="refresh.png" />
-    <Content Include="RegisterationStep1.png" />
-    <Content Include="RegisterationStep2.png" />
-    <Content Include="RegisterationStep3.png" />
-    <Content Include="RegisterationStep4.png" />
-    <Content Include="RegisterationStep5.png" />
-    <Content Include="RegisterationStep6.png" />
-    <Content Include="RegisterationStep7.png" />
-    <Content Include="splash.jpg" />
-    <Content Include="t.png" />
-    <Content Include="varification.png" />
-    <Content Include="work.png" />
-    <Content Include="zoga.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

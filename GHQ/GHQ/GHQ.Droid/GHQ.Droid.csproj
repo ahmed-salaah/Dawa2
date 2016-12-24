@@ -193,7 +193,6 @@
     <Compile Include="Services\MediaPicker\TaskUtils.cs" />
     <Compile Include="Services\Reflection.cs" />
     <Compile Include="Services\Localize.cs" />
-    <Compile Include="CustomRenderer\GridView\GridViewRenderer.cs" />
     <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -959,6 +958,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\calender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomRenderer\GridView\" />
   </ItemGroup>
   <Import Project="..\..\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.projitems" Label="Shared" Condition="Exists('..\..\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

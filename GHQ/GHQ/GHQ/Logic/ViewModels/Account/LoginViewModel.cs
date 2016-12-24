@@ -1,9 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
-using GHQ.Logic.Models.Data.Account;
 using GHQ.Logic.Service.Account;
-using GHQ.UI.Pages.Account;
-using GHQ.UI.Pages.Home;
-using GHQ.UI.Pages.Master;
 using Models;
 using Service.Localization;
 using Service.Naviagtion;
@@ -17,7 +13,6 @@ namespace GHQ.Logic.ViewModels.Account
         {
             navigationService = _navigationService;
             accountService = _accountService;
-            LoginData = new LoginData();
         }
 
         #region Private Members
@@ -28,19 +23,6 @@ namespace GHQ.Logic.ViewModels.Account
         #endregion
 
         #region Properties
-
-        private LoginData _LoginData;
-        public LoginData LoginData
-        {
-            get
-            {
-                return _LoginData;
-            }
-            set
-            {
-                Set(() => LoginData, ref _LoginData, value);
-            }
-        }
 
         #endregion
 
@@ -68,7 +50,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-				DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
+                DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
 
                 //IsLoading = true;
             }
@@ -83,6 +65,7 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
+<<<<<<< HEAD
         #region Login Command
 
         private RelayCommand _OnLoginCommand;
@@ -159,4 +142,8 @@ namespace GHQ.Logic.ViewModels.Account
 
 		#endregion
 	}
+=======
+        #endregion
+    }
+>>>>>>> 6534f0f0f4f0bc6d748d039739e3355e44fe6425
 }
