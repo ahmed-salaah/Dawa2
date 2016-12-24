@@ -1,5 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
+using GHQ.UI.Pages.Account;
+using GHQ.UI.Pages.Home;
 using Models;
 using Service.Localization;
 using Service.Naviagtion;
@@ -89,7 +91,7 @@ namespace GHQ.Logic.ViewModels.Account
                 IsPageEnabled = false;
                 //ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
 
-                //navigationService.NavigateToPage(typeof(HomePage));
+                navigationService.NavigateToPage(typeof(HomePage));
             }
             catch (System.Exception ex)
             {
@@ -124,7 +126,7 @@ namespace GHQ.Logic.ViewModels.Account
                 IsPageEnabled = false;
                 //ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
 
-                //navigationService.NavigateToPage(typeof(NewAccountStep1Page));
+                navigationService.NavigateToPage(typeof(NewAccountStep1Page));
             }
             catch (System.Exception ex)
             {
