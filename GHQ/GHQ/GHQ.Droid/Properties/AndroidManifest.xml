@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.LinkDev.GHQ" android:installLocation="auto" android:versionCode="1" android:versionName="1.0.0.1">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.Shafafeya.Dawaa" android:installLocation="auto" android:versionCode="1" android:versionName="1.0.0.1">
 	<uses-sdk android:minSdkVersion="15" />
 	<!--Push Notification-->
 	<permission android:name="com.LinkDev.GHQ.permission.C2D_MESSAGE" android:protectionLevel="signature" />

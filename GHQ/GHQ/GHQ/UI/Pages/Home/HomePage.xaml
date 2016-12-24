@@ -40,9 +40,9 @@
 					<RowDefinition Height="Auto" />
 					<RowDefinition Height="Auto" />
 				</Grid.RowDefinitions>
-			<Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  />
-			<Button Grid.Row="1" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  />
-			<Button Grid.Row="2" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  />
+			<Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  Command="{Binding OnHomeNavigationCommand}" CommandParameter="History"/>
+			<Button Grid.Row="1" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  Command="{Binding OnHomeNavigationCommand}" CommandParameter="Schedule"/>
+			<Button Grid.Row="2" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  Command="{Binding OnHomeNavigationCommand}" CommandParameter="History"/>
 			</Grid>
 		</Grid>
 	</RelativeLayout>

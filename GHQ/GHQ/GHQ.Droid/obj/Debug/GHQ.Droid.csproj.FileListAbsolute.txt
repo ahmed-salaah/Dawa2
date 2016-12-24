@@ -5,8 +5,6 @@ C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\Resources\Strings\
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GHQ.Droid.dll.config
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GHQ.Droid.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GHQ.Droid.pdb
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\com.LinkDev.GHQ.apk
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\com.LinkDev.GHQ-Signed.apk
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\FormsViewGroup.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GHQ.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\OneSignal.Android.Binding.dll
@@ -77,7 +75,6 @@ C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\Microsoft.Practice
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GalaSoft.MvvmLight.Extras.xml
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\GHQ.Droid.pdb
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\bin\com.LinkDev.GHQ.apk
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\res\drawable\icon.png
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\res\drawable-xhdpi\icon.png
@@ -375,5 +372,8 @@ C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\Microsoft.Practice
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\GalaSoft.MvvmLight.dll.mdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\GalaSoft.MvvmLight.Extras.dll.mdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Microsoft.Practices.ServiceLocation.dll.mdb
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\com.Shafafeya.Dawaa.apk
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\com.Shafafeya.Dawaa-Signed.apk
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\bin\com.Shafafeya.Dawaa.apk
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\GHQ.Droid.dll.mdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GHQ.Droid.dll.mdb
