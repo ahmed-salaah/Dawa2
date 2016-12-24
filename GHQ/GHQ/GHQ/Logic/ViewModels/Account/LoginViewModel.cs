@@ -65,6 +65,85 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
+<<<<<<< HEAD
+        #region Login Command
+
+        private RelayCommand _OnLoginCommand;
+        public RelayCommand OnLoginCommand
+        {
+            get
+            {
+                if (_OnLoginCommand == null)
+                {
+                    _OnLoginCommand = new RelayCommand(OnLogin);
+                }
+                return _OnLoginCommand;
+            }
+        }
+
+
+        private async void OnLogin()
+        {
+            try
+            {
+                IsLoading = true;
+                IsPageEnabled = false;
+                ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
+
+				navigationService.NavigateToPage(typeof(HomePage));
+            }
+            catch (System.Exception ex)
+            {
+            }
+            finally
+            {
+                IsLoading = false;
+                IsPageEnabled = true;
+            }
+        }
+		#endregion
+
+		#region SignUP Command
+		private RelayCommand _OnSignUpCommand;
+		public RelayCommand OnSignUpCommand
+		{
+			get
+			{
+				if (_OnSignUpCommand == null)
+				{
+					_OnSignUpCommand = new RelayCommand(OnSignUp);
+				}
+				return _OnSignUpCommand;
+			}
+		}
+
+		private async void OnSignUp()
+		{
+			try
+			{
+				IsLoading = true;
+				IsPageEnabled = false;
+				ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
+
+				navigationService.NavigateToPage(typeof(NewAccountStep1Page));
+			}
+			catch (System.Exception ex)
+			{
+			}
+			finally
+			{
+				IsLoading = false;
+				IsPageEnabled = true;
+			}
+		}
+
+
+		#endregion
+
+		#endregion
+	}
+=======
         #endregion
     }
+>>>>>>> 6534f0f0f4f0bc6d748d039739e3355e44fe6425
 }

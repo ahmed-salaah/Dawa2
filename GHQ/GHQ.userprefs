@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
   <MonoDevelop.Ide.ItemProperties.GHQ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.59D55068-91F8-4A46-9200-36D9FDB8C6B8" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ.iOS/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/App.xaml">
     <Files>
-      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="74" Column="132" />
-      <File FileName="GHQ/GHQ/App.xaml" Line="168" Column="51" />
+      <File FileName="GHQ/GHQ/Resources/Strings/AppResources.resx" Line="1018" Column="32" />
       <File FileName="GHQ/GHQ/UI/Pages/Home/HomePage.xaml" Line="45" Column="110" />
-      <File FileName="GHQ/GHQ/UI/Pages/Account/LoginPage.xaml.cs" Line="9" Column="28" />
-      <File FileName="GHQ/GHQ/Logic/ViewModels/Account/LoginViewModel.cs" Line="159" Column="1" />
-      <File FileName="GHQ/GHQ/UI/Pages/Account/LoginPage.xaml" Line="42" Column="36" />
-      <File FileName="GHQ/GHQ.iOS/Info.plist" />
-      <File FileName="GHQ/GHQ.iOS/AppDelegate.cs" Line="24" Column="47" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="60" Column="79" />
+      <File FileName="GHQ/GHQ/App.xaml" Line="144" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
