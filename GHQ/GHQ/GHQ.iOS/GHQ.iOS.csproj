@@ -121,12 +121,6 @@
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
-    <Compile Include="CustomRenderer\GridView\GridCollectionView.cs" />
-    <Compile Include="CustomRenderer\GridView\GridDataSource.cs" />
-    <Compile Include="CustomRenderer\GridView\GridItemSelectedViewOverlay.cs" />
-    <Compile Include="CustomRenderer\GridView\GridViewCell.cs" />
-    <Compile Include="CustomRenderer\GridView\GridViewDelegate.cs" />
-    <Compile Include="CustomRenderer\GridView\GridViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
