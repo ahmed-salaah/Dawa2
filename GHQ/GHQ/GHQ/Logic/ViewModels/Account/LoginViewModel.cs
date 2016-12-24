@@ -98,18 +98,7 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-		private RelayCommand _OnSignUpCommand;
-		public RelayCommand OnSignUpCommand
-		{
-			get
-			{
-				if (_OnSignUpCommand == null)
-				{
-					_OnSignUpCommand = new RelayCommand(OnSignUp);
-				}
-				return _OnSignUpCommand;
-			}
-		}
+
         private async void OnLogin()
         {
             try
@@ -129,6 +118,21 @@ namespace GHQ.Logic.ViewModels.Account
                 IsPageEnabled = true;
             }
         }
+		#endregion
+
+		#region SignUP Command
+		private RelayCommand _OnSignUpCommand;
+		public RelayCommand OnSignUpCommand
+		{
+			get
+			{
+				if (_OnSignUpCommand == null)
+				{
+					_OnSignUpCommand = new RelayCommand(OnSignUp);
+				}
+				return _OnSignUpCommand;
+			}
+		}
 
 		private async void OnSignUp()
 		{
