@@ -385,240 +385,28 @@
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\bin\Debug\ProjectX.Common.dll">
       <PackagePath>ProjectX.Common.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\AccountStep1.png">
-      <PackagePath>AccountStep1.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\AccountStep2.png">
-      <PackagePath>AccountStep2.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\AccountStep3.png">
-      <PackagePath>AccountStep3.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\AccountStep4.png">
-      <PackagePath>AccountStep4.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\add.png">
-      <PackagePath>add.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\address.png">
-      <PackagePath>address.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\arrow.png">
-      <PackagePath>arrow.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\bacground.png">
-      <PackagePath>Assets\bacground.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\background.png">
-      <PackagePath>Assets\background.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\home-icon.png">
-      <PackagePath>Assets\home-icon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\logo.png">
-      <PackagePath>Assets\logo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\Splash\1240_600.png">
-      <PackagePath>Assets\Splash\1240_600.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\Splash\2480_1200.png">
-      <PackagePath>Assets\Splash\2480_1200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\back.png">
-      <PackagePath>back.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\background.png">
-      <PackagePath>background.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\calender.png">
-      <PackagePath>calender.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\ContactUs.png">
-      <PackagePath>ContactUs.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\delete.png">
-      <PackagePath>delete.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\edit.png">
-      <PackagePath>edit.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\education.png">
-      <PackagePath>education.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\email.png">
-      <PackagePath>email.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\f.png">
-      <PackagePath>f.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\forword.png">
-      <PackagePath>forword.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\g.png">
-      <PackagePath>g.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\HomeContactUs.png">
-      <PackagePath>HomeContactUs.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\HomeInfo.png">
-      <PackagePath>HomeInfo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\HomeLawaa.png">
-      <PackagePath>HomeLawaa.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\HomeLogin.png">
-      <PackagePath>HomeLogin.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\HomeMedia.png">
-      <PackagePath>HomeMedia.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\HomeNewUser.png">
-      <PackagePath>HomeNewUser.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\HomeRegister.png">
-      <PackagePath>HomeRegister.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\i.png">
-      <PackagePath>i.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\icon.png">
-      <PackagePath>icon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Image.png">
-      <PackagePath>Image.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\info.png">
-      <PackagePath>info.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Inquiry.png">
-      <PackagePath>Inquiry.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\logout.png">
-      <PackagePath>logout.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuContact.png">
-      <PackagePath>MenuContact.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuHeader.png">
-      <PackagePath>MenuHeader.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuHeaderBG.png">
-      <PackagePath>MenuHeaderBG.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuHome.png">
-      <PackagePath>MenuHome.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuInfo.png">
-      <PackagePath>MenuInfo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuLawaa.png">
-      <PackagePath>MenuLawaa.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuMap.png">
-      <PackagePath>MenuMap.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuMedia.png">
-      <PackagePath>MenuMedia.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuMembers.png">
-      <PackagePath>MenuMembers.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuNewUser.png">
-      <PackagePath>MenuNewUser.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuTasgel.png">
-      <PackagePath>MenuTasgel.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\MenuWeb.png">
-      <PackagePath>MenuWeb.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\mobile.png">
-      <PackagePath>mobile.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\notification.png">
-      <PackagePath>notification.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\pass.png">
-      <PackagePath>pass.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\personal.png">
-      <PackagePath>personal.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\police.png">
-      <PackagePath>police.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\Square44x44Logo.scale-200.png">
-      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\refresh.png">
-      <PackagePath>refresh.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\RegisterationStep1.png">
-      <PackagePath>RegisterationStep1.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\RegisterationStep2.png">
-      <PackagePath>RegisterationStep2.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\RegisterationStep3.png">
-      <PackagePath>RegisterationStep3.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\RegisterationStep4.png">
-      <PackagePath>RegisterationStep4.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\RegisterationStep5.png">
-      <PackagePath>RegisterationStep5.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\RegisterationStep6.png">
-      <PackagePath>RegisterationStep6.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\RegisterationStep7.png">
-      <PackagePath>RegisterationStep7.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\t.png">
-      <PackagePath>t.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\varification.png">
-      <PackagePath>varification.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\work.png">
-      <PackagePath>work.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\zoga.png">
-      <PackagePath>zoga.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\splash.jpg">
-      <PackagePath>splash.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\bin\x86\Debug\GHQ.UWP.xr.xml">
       <PackagePath>GHQ.UWP.xr.xml</PackagePath>
