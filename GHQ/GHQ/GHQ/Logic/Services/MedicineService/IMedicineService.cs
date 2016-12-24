@@ -7,5 +7,7 @@ namespace GHQ.Logic.Service.Lookup
     public interface IMedicineService
     {
         Task<List<Medicine>> GetHistory();
+
+        Task<List<Medicine>> GetSchedule();
     }
 }

@@ -8,9 +8,9 @@ using System.Collections.ObjectModel;
 
 namespace GHQ.Logic.ViewModels.Account
 {
-    public class MedicineHistoryViewModel : BaseViewModel
+    public class MedicineScheduleViewModel : BaseViewModel
     {
-        public MedicineHistoryViewModel(IAccountService _accountService, IMedicineService _medicineService, INavigationService _naviagtionService)
+        public MedicineScheduleViewModel(IAccountService _accountService, IMedicineService _medicineService, INavigationService _naviagtionService)
         {
             accountService = _accountService;
             naviagtionService = _naviagtionService;
@@ -73,7 +73,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                MedicineList = new ObservableCollection<Medicine>(await medicineService.GetHistory());
+                MedicineList = new ObservableCollection<Medicine>(await medicineService.GetSchedule());
             }
             catch (System.Exception ex)
             {

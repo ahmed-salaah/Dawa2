@@ -5,17 +5,17 @@ namespace GHQ.UI.Pages.Medicine
 {
     public partial class MedicineSchedule : BasePage
     {
-        //readonly NewAccountViewModel AccountVM = Locator.Default.NewAccountViewModel;
+        readonly MedicineScheduleViewModel MedicineScheduleViewModel = Locator.Default.MedicineScheduleViewModel;
         public MedicineSchedule()
         {
             InitializeComponent();
-            //BindingContext = AccountVM;
+            BindingContext = MedicineScheduleViewModel;
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            //AccountVM.OnIntializeCommand.Execute(null);
+            MedicineScheduleViewModel.OnIntializeCommand.Execute(null);
         }
     }
 }

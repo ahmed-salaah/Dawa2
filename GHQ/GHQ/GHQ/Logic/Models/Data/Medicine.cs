@@ -127,16 +127,16 @@ namespace Logic.Models.Data
             get
             {
                 var day = NextDate.DayOfWeek;
-                var date= NextDate.ToString("dd MMMMM yyyy", new CultureInfo("ar-AE"));
+                var date = NextDate.ToString("dd MMMMM yyyy", new CultureInfo("ar-AE"));
                 var time = NextDate.TimeOfDay;
                 var period = "عصر ";
-                var formatedDate = string.Format("{0} - {1} - {2} {3}",day,date,time,period);
+                var formatedDate = string.Format("{0} - {1} - {2} {3}", day, date, time, period);
                 return formatedDate;
             }
         }
 
 
-        private string _Image;
+        private string _Image = "https://cdn1.iconfinder.com/data/icons/hawcons/32/698400-icon-136-document-edit-128.png";
         public string Image
         {
             get

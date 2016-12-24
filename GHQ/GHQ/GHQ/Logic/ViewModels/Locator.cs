@@ -49,7 +49,7 @@ namespace GHQ.Logic
             SimpleIoc.Default.Register<NewAccountViewModel>();
             SimpleIoc.Default.Register<ContactUsViewModel>();
             SimpleIoc.Default.Register<MedicineHistoryViewModel>();
-
+            SimpleIoc.Default.Register<MedicineScheduleViewModel>(); 
         }
 
         #endregion
@@ -150,8 +150,15 @@ namespace GHQ.Logic
             }
         }
 
+        public MedicineScheduleViewModel MedicineScheduleViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<MedicineScheduleViewModel>();
+            }
+        }
 
-
+        
         #endregion
 
         #region ContactUs
