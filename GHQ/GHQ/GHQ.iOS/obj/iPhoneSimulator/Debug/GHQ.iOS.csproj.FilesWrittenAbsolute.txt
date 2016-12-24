@@ -155,3 +155,4 @@
 /Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/bin/iPhoneSimulator/Debug/GHQ.dll
 /Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/bin/iPhoneSimulator/Debug/GHQ.dll.mdb
 /Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/bin/iPhoneSimulator/Debug/XLabs.Core.dll
+/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/optimized/splash_bg.png

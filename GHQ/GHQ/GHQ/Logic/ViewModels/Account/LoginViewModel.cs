@@ -2,6 +2,7 @@
 using GHQ.Logic.Models.Data.Account;
 using GHQ.Logic.Service.Account;
 using GHQ.UI.Pages.Account;
+using GHQ.UI.Pages.Home;
 using GHQ.UI.Pages.Master;
 using Models;
 using Service.Localization;
@@ -96,6 +97,19 @@ namespace GHQ.Logic.ViewModels.Account
                 return _OnLoginCommand;
             }
         }
+
+		private RelayCommand _OnSignUpCommand;
+		public RelayCommand OnSignUpCommand
+		{
+			get
+			{
+				if (_OnSignUpCommand == null)
+				{
+					_OnSignUpCommand = new RelayCommand(OnSignUp);
+				}
+				return _OnSignUpCommand;
+			}
+		}
         private async void OnLogin()
         {
             try
@@ -104,7 +118,7 @@ namespace GHQ.Logic.ViewModels.Account
                 IsPageEnabled = false;
                 ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
 
-				navigationService.NavigateToPage(typeof(NewAccountStep1Page));
+				navigationService.NavigateToPage(typeof(HomePage));
             }
             catch (System.Exception ex)
             {
@@ -116,9 +130,29 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
+		private async void OnSignUp()
+		{
+			try
+			{
+				IsLoading = true;
+				IsPageEnabled = false;
+				ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
 
-        #endregion
+				navigationService.NavigateToPage(typeof(NewAccountStep1Page));
+			}
+			catch (System.Exception ex)
+			{
+			}
+			finally
+			{
+				IsLoading = false;
+				IsPageEnabled = true;
+			}
+		}
 
-        #endregion
-    }
+
+		#endregion
+
+		#endregion
+	}
 }

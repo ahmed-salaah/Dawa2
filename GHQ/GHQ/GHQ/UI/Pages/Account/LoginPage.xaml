@@ -39,7 +39,7 @@
 				ValidationMessage="" IsEnabled = "true" Placeholder="{i18n:Translate login_password}" 
 				 />
 
-			<Button Grid.Row="3" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}" Command="{Binding OnLoginCommand}">
+			<Button Grid.Row="3" Margin="10,0,10,0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}" Command="{Binding OnLoginCommand}">
 			</Button>
 			<Label Grid.Row="4" Margin="0,20,0,0" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" >
 				<Label.GestureRecognizers>
@@ -47,7 +47,7 @@
 				</TapGestureRecognizer>
 				</Label.GestureRecognizers>
 				</Label>
-			<Button Grid.Row="5" Margin="0,70,0,0"  Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate login_NewAccountButton}" Command="{Binding OnLoginCommand}">
+			<Button Grid.Row="5" Margin="10,70,10,0"  Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate login_NewAccountButton}" Command="{Binding OnSignUpCommand}">
 			</Button>
 		</Grid>
   </RelativeLayout>
