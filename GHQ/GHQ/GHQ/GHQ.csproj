@@ -40,6 +40,7 @@
     </Compile>
     <Compile Include="Common\DialogService.cs" />
     <Compile Include="Common\TranslateExtension.cs" />
+    <Compile Include="Logic\Models\Data\Medicine.cs" />
     <Compile Include="Logic\Services\LookupService\ILookupService.cs" />
     <Compile Include="Logic\Services\LookupService\LookupService.cs" />
     <Compile Include="Resources\Strings\AppResources.Designer.cs">
@@ -77,6 +78,15 @@
     </Compile>
     <Compile Include="UI\Pages\ContactUS\ContactUSPage.xaml.cs">
       <DependentUpon>ContactUSPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\Medicine\MedicineSchedule.xaml.cs">
+      <DependentUpon>MedicineSchedule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\Medicine\MedicineAddNew.xaml.cs">
+      <DependentUpon>MedicineAddNew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pages\Medicine\MedicineHistory.xaml.cs">
+      <DependentUpon>MedicineHistory.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -179,8 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Logic\Enum\" />
-    <Folder Include="Logic\Models\Data\Account\" />
-    <Folder Include="Logic\Models\Requests\Account\" />
+    <Folder Include="Logic\Models\Requests\" />
     <Folder Include="Logic\Models\Response\" />
     <Folder Include="Logic\Translators\" />
     <Folder Include="Resources\Images\" />
@@ -232,6 +241,24 @@
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>ProjectX.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Pages\Medicine\MedicineHistory.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Pages\Medicine\MedicineAddNew.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Pages\Medicine\MedicineSchedule.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

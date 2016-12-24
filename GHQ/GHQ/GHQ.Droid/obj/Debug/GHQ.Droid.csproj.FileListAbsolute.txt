@@ -369,5 +369,11 @@ C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Toa
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GalaSoft.MvvmLight.dll.mdb
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GalaSoft.MvvmLight.Extras.dll.mdb
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\Microsoft.Practices.ServiceLocation.dll.mdb
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\GalaSoft.MvvmLight.dll.mdb
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\GalaSoft.MvvmLight.Extras.dll.mdb
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\android\assets\Microsoft.Practices.ServiceLocation.dll.mdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\obj\Debug\GHQ.Droid.dll.mdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.Droid\bin\Debug\GHQ.Droid.dll.mdb
