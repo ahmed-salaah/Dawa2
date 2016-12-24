@@ -73,5 +73,3 @@ C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\obj\Debug\GHQ.pdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\obj\Debug\GHQ.UI.Pages.Medicine.MedicineHistory.xaml.g.cs
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\obj\Debug\GHQ.UI.Pages.Medicine.MedicineAddNew.xaml.g.cs
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\obj\Debug\GHQ.UI.Pages.Medicine.MedicineSchedule.xaml.g.cs
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\obj\Debug\GHQ.dll.mdb
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\bin\Debug\GHQ.dll.mdb

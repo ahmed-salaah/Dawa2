@@ -8,7 +8,8 @@ namespace GHQ
         {
             InitializeComponent();
             Logic.Locator locator = new Logic.Locator();
-            MainPage = new NavigationPage(new UI.Pages.Account.LoginPage());
+            // MainPage = new NavigationPage(new UI.Pages.Account.LoginPage());
+            MainPage = new NavigationPage(new UI.Pages.Medicine.MedicineHistory());
         }
 
         protected override void OnStart()

@@ -91,6 +91,7 @@
     <Compile Include="UI\Pages\Medicine\MedicineHistory.xaml.cs">
       <DependentUpon>MedicineHistory.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\TemplateSelectors\HistoryMedicineTemplateSelector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">

@@ -1,5 +1,7 @@
 ﻿using Models;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Logic.Models.Data
 {
@@ -17,6 +19,28 @@ namespace Logic.Models.Data
                 Set(() => Id, ref _Id, value);
             }
         }
+
+        private bool _IsMissed;
+        public bool IsMissed
+        {
+            get
+            {
+                return _IsMissed;
+            }
+            set
+            {
+                Set(() => IsMissed, ref _IsMissed, value);
+            }
+        }
+
+        //public string BackgroundColor
+        //{
+        //    get
+        //    {
+        //        return IsMissed? "#d91f26" : "f#5f7f7";
+        //    }
+        //}
+
 
         private string _Name;
         public string Name
@@ -43,6 +67,74 @@ namespace Logic.Models.Data
                 Set(() => DoctorName, ref _DoctorName, value);
             }
         }
+
+        private string _DiseaseName;
+        public string DiseaseName
+        {
+            get
+            {
+                return _DiseaseName;
+            }
+            set
+            {
+                Set(() => DiseaseName, ref _DiseaseName, value);
+            }
+        }
+
+
+        private DateTime _StartDate;
+        public DateTime StartDate
+        {
+            get
+            {
+                return _StartDate;
+            }
+            set
+            {
+                Set(() => StartDate, ref _StartDate, value);
+            }
+        }
+
+        private DateTime _EndDate;
+        public DateTime EndDate
+        {
+            get
+            {
+                return _EndDate;
+            }
+            set
+            {
+                Set(() => EndDate, ref _EndDate, value);
+            }
+        }
+
+
+        private DateTime _NextDate;
+        public DateTime NextDate
+        {
+            get
+            {
+                return _NextDate;
+            }
+            set
+            {
+                Set(() => NextDate, ref _NextDate, value);
+            }
+        }
+
+        public string NextDateFormated
+        {
+            get
+            {
+                var day = NextDate.DayOfWeek;
+                var date= NextDate.ToString("dd MMMMM yyyy", new CultureInfo("ar-AE"));
+                var time = NextDate.TimeOfDay;
+                var period = "عصر ";
+                var formatedDate = string.Format("{0} - {1} - {2} {3}",day,date,time,period);
+                return formatedDate;
+            }
+        }
+
 
         private string _Image;
         public string Image
@@ -73,7 +165,7 @@ namespace Logic.Models.Data
         public override IEnumerable<ValidatedModel> Validate()
         {
             List<ValidatedModel> errors = new List<ValidatedModel>();
-           
+
             return errors;
         }
     }

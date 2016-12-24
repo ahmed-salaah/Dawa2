@@ -38,6 +38,7 @@ namespace GHQ.Logic
             SimpleIoc.Default.Register<IExceptionService, ExceptionService>();
             SimpleIoc.Default.Register<IInternetService, InternetService>();
             SimpleIoc.Default.Register<ILookupService, LookupService>();
+            SimpleIoc.Default.Register<IMedicineService, MedicineService>();
         }
 
         private void RegisterViewModels()
