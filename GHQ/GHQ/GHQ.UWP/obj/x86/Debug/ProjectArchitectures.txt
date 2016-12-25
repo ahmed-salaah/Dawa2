@@ -1,4 +1,4 @@
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\GHQ.UWP.csproj;x86
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\GHQ.csproj;neutral
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Dawaa.UWP.csproj;x86
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\Dawaa.csproj;neutral
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\ProjectX.Common.csproj;neutral
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\ProjectX.Common.csproj;neutral

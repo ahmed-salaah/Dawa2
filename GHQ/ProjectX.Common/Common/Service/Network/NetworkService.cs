@@ -10,6 +10,9 @@ namespace Service.Network
 {
     public class NetworkService : INetworkService
     {
+        public string AccessToken { get; set; } 
+
+
         HttpClient client;
         public NetworkService()
         {

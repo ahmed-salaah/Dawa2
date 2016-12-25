@@ -45,6 +45,7 @@
     <Compile Include="Logic\Services\MedicineService\MedicineService.cs" />
     <Compile Include="Logic\Services\LookupService\ILookupService.cs" />
     <Compile Include="Logic\Services\LookupService\LookupService.cs" />
+    <Compile Include="Logic\ViewModels\Medicine\MedicineAddNewViewModel.cs" />
     <Compile Include="Logic\ViewModels\Medicine\MedicineScheduleViewModel.cs" />
     <Compile Include="Logic\ViewModels\Medicine\MedicineHistoryViewModel.cs" />
     <Compile Include="Resources\Strings\AppResources.Designer.cs">

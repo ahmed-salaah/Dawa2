@@ -6,6 +6,10 @@ namespace Models
 {
     public class BaseViewModel : GalaSoft.MvvmLight.ViewModelBase
     {
+        public BaseViewModel()
+        {
+
+        }
         private bool _IsPageEnabled;
         public bool IsPageEnabled
         {

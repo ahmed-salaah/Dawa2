@@ -10,7 +10,10 @@ namespace UI.TemplateSelectors
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            return ((Medicine)item).IsMissed ? MissedTemplate : NotMissedTemplate;
+            Medicine medicine = ((Medicine)item);
+            if (medicine == null)
+                return NotMissedTemplate;
+            return medicine.IsMissed ? MissedTemplate : NotMissedTemplate;
         }
     }
 }
