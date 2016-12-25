@@ -92,6 +92,7 @@ namespace Controls
 
             foreach (var item in newValue)
                 picker.Items.Add((item ?? "").ToString());
+
         }
 
         /// <summary>

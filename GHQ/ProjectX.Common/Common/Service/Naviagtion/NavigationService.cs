@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Enums;
+using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -6,6 +7,7 @@ namespace Service.Naviagtion
 {
     public class NavigationService : INavigationService
     {
+        public AppState AppState { get; set; }
         public bool IsExternalAppOpen { get; set; }
         public Page CurrentPage { get; set; }
         public bool SetAppCurrentPage<TPageType>(TPageType pageType) where TPageType : Type

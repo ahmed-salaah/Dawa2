@@ -1,5 +1,6 @@
 ﻿using Models;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace Controls
@@ -91,7 +92,14 @@ namespace Controls
             set
             {
                 SetValue(SelectedLookupValueIndexProperty, value);
-                SelectedLookupValue = LookupValues[value];
+                if (value == -1)
+                {
+                    return;
+                    SelectedLookupValue = LookupValues.FirstOrDefault();
+                }
+
+                else
+                    SelectedLookupValue = LookupValues[value];
             }
         }
 

@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Enums;
+using System;
 using Xamarin.Forms;
 
 namespace Service.Naviagtion
 {
     public interface INavigationService
     {
+        AppState AppState { get; set; }
         bool IsExternalAppOpen { get; set; }
         Page CurrentPage { get; set; }
 

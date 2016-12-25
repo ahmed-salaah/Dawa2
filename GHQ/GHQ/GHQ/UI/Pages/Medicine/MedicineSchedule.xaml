@@ -32,11 +32,11 @@
           <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Column="0" BackgroundColor="#5c5d5d">
+        <Grid Grid.Column="0"  BackgroundColor="{StaticResource LightBlackColor}">
           <Label HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Transparent" LineBreakMode="TailTruncation" Text="جميع الأدوية "/>
         </Grid>
 
-        <Grid Grid.Column="1" BackgroundColor="#27bdb8">
+        <Grid Grid.Column="1" BackgroundColor="{StaticResource BabyBlueColor}">
           <Label HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Transparent" LineBreakMode="TailTruncation" Text="الأدوية الحالية  "/>
         </Grid>
 

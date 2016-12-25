@@ -97,6 +97,9 @@
       <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Colors  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
       <Color x:Key="ListItemBGColor">#f5f7f7</Color>
       <Color x:Key="MissedMedicinColor">#d91f26</Color>
+      <Color x:Key="BabyBlueColor">#27bdb8</Color>
+      <Color x:Key="LightBlackColor">#5c5d5d</Color>
+      
       <Color x:Key="GoldColor">#ae803a</Color>
       <Color x:Key="GoldLightColor">#b9904d</Color>
       <Color x:Key="GreenColor">#347249</Color>
@@ -223,7 +226,7 @@
       </Style>
       <Style x:Key="GridContentStyle" TargetType="Grid">
         <Setter Property="Padding" Value="6,6,6,6" />
-        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="HorizontalOptions" Value="Fill" />
       </Style>
       <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Error  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
       <Style x:Key="ErrorListViewStyle" TargetType="ListView">

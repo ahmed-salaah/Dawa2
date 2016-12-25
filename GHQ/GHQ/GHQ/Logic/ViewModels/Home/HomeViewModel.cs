@@ -93,6 +93,10 @@ namespace GHQ.Logic.ViewModels.Account
                 {
                     naviagtionService.NavigateToPage(typeof(MedicineSchedule));
                 }
+                else if (pageName == "Add")
+                {
+                    naviagtionService.NavigateToPage(typeof(MedicineAddNew));
+                }
             }
             catch (System.Exception ex)
             {
