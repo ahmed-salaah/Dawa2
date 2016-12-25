@@ -99,7 +99,9 @@
       <Color x:Key="MissedMedicinColor">#d91f26</Color>
       <Color x:Key="BabyBlueColor">#27bdb8</Color>
       <Color x:Key="LightBlackColor">#5c5d5d</Color>
-      
+      <Color x:Key="DarkBlueColor">#1B7C79</Color>
+      <Color x:Key="OrangeColor">#FBAA18</Color>
+
       <Color x:Key="GoldColor">#ae803a</Color>
       <Color x:Key="GoldLightColor">#b9904d</Color>
       <Color x:Key="GreenColor">#347249</Color>
@@ -108,9 +110,19 @@
       <Color x:Key="NewsTemplateBGColor">#ecdcc5</Color>
       <Color x:Key="ContactUsBGColor">#fef5ec</Color>
       <Color x:Key="WhiteColor">#ffffff</Color>
-      <Color x:Key="OrangeColor">#FBAA18</Color>
+
       <Color x:Key="DarkGrayColor">#676868</Color>
       <Color x:Key="ButtonGreenColor">#1B7C79</Color>
+
+      <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Border  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+      <Style x:Key="BoxViewStyle" TargetType="BoxView">
+        <Setter Property="HeightRequest" Value="1" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="Margin" Value="15,20,15,20" />
+        <Setter Property="BackgroundColor" Value="Black" />
+      </Style>
+
       <!--////////////////////////////////////////////////////////////////////////////////////////////////////  ActivityIndicator  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
       <Style x:Key="ActivityIndicatorStyle" TargetType="ActivityIndicator">
         <Setter Property="VerticalOptions" Value="Center" />
@@ -127,6 +139,7 @@
         <Setter Property="Margin" Value="0,0,0,10" />
         <Setter Property="TextColor" Value="White" />
       </Style>
+
       <Style x:Key="LabelRquired" TargetType="Label">
         <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="Margin" Value="0,0,5,0" />
@@ -136,11 +149,11 @@
       </Style>
       <Style x:Key="LabelHeaderEntryStyle" TargetType="Label">
         <Setter Property="BackgroundColor" Value="Transparent" />
-        <!--<Setter Property="WidthRequest" Value="350" />-->
+        <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HorizontalTextAlignment" Value="End" />
         <Setter Property="HorizontalOptions" Value="End" />
-        <Setter Property="Margin" Value="0,0,0,10" />
-        <Setter Property="TextColor" Value="White" />
+        <Setter Property="Margin" Value="0,0,10,20" />
+        <Setter Property="TextColor" Value="Black" />
       </Style>
       <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Entry  ////////////////////////////////////////////////////////////////////////////////////////////////////-->
       <Style x:Key="EntryStyle" TargetType="Entry">

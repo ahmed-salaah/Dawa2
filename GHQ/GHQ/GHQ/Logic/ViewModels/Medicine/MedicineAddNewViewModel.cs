@@ -85,6 +85,35 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
+        #region RecordVoiceNote Command
+
+        private RelayCommand _OnRecordVoiceNoteCommand;
+        public RelayCommand OnRecordVoiceNoteCommand
+        {
+            get
+            {
+                if (_OnRecordVoiceNoteCommand == null)
+                {
+                    _OnRecordVoiceNoteCommand = new RelayCommand(RecordVoiceNote);
+                }
+                return _OnRecordVoiceNoteCommand;
+            }
+        }
+        private async void RecordVoiceNote()
+        {
+            try
+            {
+            }
+            catch (System.Exception ex)
+            {
+            }
+            finally
+            {
+            }
+        }
+
+        #endregion
+
         #endregion
     }
 }
