@@ -221,9 +221,9 @@
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>ProjectX.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GHQ\GHQ.csproj">
+    <ProjectReference Include="..\GHQ\Dawaa.csproj">
       <Project>{31614cd2-d16f-4623-abd8-7e5b8f4f031a}</Project>
-      <Name>GHQ</Name>
+      <Name>Dawaa</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
