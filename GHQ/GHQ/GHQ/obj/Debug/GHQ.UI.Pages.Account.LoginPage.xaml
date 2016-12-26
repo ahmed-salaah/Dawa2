@@ -8,35 +8,35 @@
   <RelativeLayout>
     <Image  Aspect="AspectFit" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
       <Image.Source>
-        <OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/background.png" Android="background.png" iOS="background" />
+        <OnPlatform x:TypeArguments="ImageSource" WinPhone="background.png" Android="background.png" iOS="background" />
       </Image.Source>
     </Image>
-    	
-    		<Grid Style="{StaticResource GridContentStyle}">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="250" />
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="Auto" />
-			</Grid.RowDefinitions>
-			<Grid Grid.Row="0" Padding="0,40,0,40">
-				<Image HorizontalOptions="Center" Margin= "0,20,0,0" Aspect = "AspectFit" VerticalOptions="Center" >
-					<Image.Source>
-						<OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/logo.png" Android="login.png" iOS="logo" />
-					</Image.Source>
-				</Image>
-			</Grid>
 
-			<controls:InputField Grid.Row="1" IsRequired="True" ShowHeader = "false" MaxLength="18" AllowSpecialCharchters="False" 
-					ShowValidation="False" 
-				ValidationMessage="" IsEnabled = "true" Placeholder="{i18n:Translate login_userName}" 
+    <Grid Style="{StaticResource GridContentStyle}">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="250" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid Grid.Row="0" Padding="0,40,0,40">
+        <Image HorizontalOptions="Center" Margin= "0,20,0,0" Aspect = "AspectFit" VerticalOptions="Center" >
+          <Image.Source>
+            <OnPlatform x:TypeArguments="ImageSource" WinPhone="logo.png" Android="login.png" iOS="logo" />
+          </Image.Source>
+        </Image>
+      </Grid>
+
+      <controls:InputField Grid.Row="1" IsRequired="True" ShowHeader = "false" MaxLength="18" AllowSpecialCharchters="False"
+					ShowValidation="False"
+				ValidationMessage="" IsEnabled = "true" Placeholder="{i18n:Translate login_userName}"
 				 />
-			
-			<controls:InputField Grid.Row="2" IsRequired = "True" MaxLength="18" ShowHeader= "false" AllowSpecialCharchters="False"
-					ShowValidation="False" 
-				ValidationMessage="" IsEnabled = "true" Placeholder="{i18n:Translate login_password}" 
+
+      <controls:InputField Grid.Row="2" IsRequired = "True" MaxLength="18" ShowHeader= "false" AllowSpecialCharchters="False"
+					ShowValidation="False"
+				ValidationMessage="" IsEnabled = "true" Placeholder="{i18n:Translate login_password}"
 				 />
 
 			<Button Grid.Row="3" Margin="10,0,10,0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}" Command="{Binding OnLoginCommand}">
@@ -50,5 +50,6 @@
 			<Button Grid.Row="5" Margin="10,70,10,0"  Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate login_NewAccountButton}" Command="{Binding OnSignUpCommand}">
 			</Button>
 		</Grid>
+
   </RelativeLayout>
 </Base:BasePage>
