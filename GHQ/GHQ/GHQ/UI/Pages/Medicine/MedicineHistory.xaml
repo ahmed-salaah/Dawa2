@@ -12,7 +12,7 @@
                 RelativeLayout.HeightConstraint=
                   "{ConstraintExpression Type=RelativeToParent, Property=Height}">
       <Image.Source>
-        <OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/background.png" Android="background.png" iOS="background"/>
+        <OnPlatform x:TypeArguments="ImageSource" WinPhone="background.png" Android="background.png" iOS="background"/>
       </Image.Source>
     </Image>
 
