@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
   <MonoDevelop.Ide.ItemProperties.Dawaa.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/App.xaml.cs">
     <Files>
       <File FileName="GHQ/GHQ/UI/Pages/Filter/FilterPage.xaml" Line="60" Column="105" />
-      <File FileName="GHQ/GHQ/App.xaml.cs" Line="15" Column="4" />
+      <File FileName="GHQ/GHQ/App.xaml.cs" Line="18" Column="41" />
       <File FileName="GHQ/GHQ/Resources/Strings/AppResources.resx" Line="1042" Column="32" />
       <File FileName="GHQ/GHQ/UI/Pages/Home/HomePage.xaml" Line="1" Column="1" />
       <File FileName="GHQ/GHQ/App.xaml" Line="1" Column="1" />
       <File FileName="GHQ/GHQ/UI/Pages/Account/LoginPage.xaml" Line="41" Column="6" />
       <File FileName="GHQ/GHQ/UI/Pages/ContactUS/ContactUSPage.xaml" Line="42" Column="11" />
       <File FileName="GHQ/GHQ/UI/Pages/Medicine/MedicineAddNew.xaml" Line="42" Column="2" />
-      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="42" Column="2" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="42" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
@@ -18,5 +18,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.59D55068-91F8-4A46-9200-36D9FDB8C6B8" />
+  <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3965793D-F131-4247-A65F-B917C0D0E409" />
 </Properties>
