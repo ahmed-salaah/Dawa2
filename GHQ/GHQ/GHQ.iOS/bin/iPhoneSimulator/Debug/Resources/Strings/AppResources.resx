@@ -982,4 +982,67 @@
 	<data name="login_NewAccountButton" xml:space="preserve">
     <value>إنشاء حساب جديد لمستخدم جديد</value>
   </data>
+	<data name="signUp_firstName" xml:space="preserve">
+    <value>الإسم الأول</value>
+  </data>
+	<data name="signUp_middleName" xml:space="preserve">
+    <value>الإسم الأوسط</value>
+  </data>
+	<data name="signUp_lastName" xml:space="preserve">
+    <value>الإسم العائلة</value>
+  </data>
+	<data name="signUp_age" xml:space="preserve">
+    <value>السن </value>
+  </data>
+	<data name="signUp_gender" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+	<data name="signUp_uploadPhotos" xml:space="preserve">
+    <value>إرفع صورتك الشخصية لإضافتها لحسابك</value>
+  </data>
+	<data name="signUp_eatingTitle" xml:space="preserve">
+    <value>أنت عاده تأخذ</value>
+  </data>
+	<data name="signUp_eatingTitle" xml:space="preserve">
+    <value>أنت عاده تأخذ</value>
+  </data>
+	<data name="signUp_breakFastTitle" xml:space="preserve">
+    <value>الإفطار في الساعه</value>
+  </data>
+	<data name="signUp_launchTitle" xml:space="preserve">
+    <value>الغداء في الساعه</value>
+  </data>
+	<data name="signUp_dinnerTitle" xml:space="preserve">
+    <value>العشاء في الساعه</value>
+  </data>
+	<data name="signUp_buttonTitle" xml:space="preserve">
+    <value>أنشئ الحساب</value>
+  </data>
+	<data name="Filter_MedicineName" xml:space="preserve">
+    <value>إسم الدواء</value>
+  </data>
+	<data name="Filter_DoctorName" xml:space="preserve">
+    <value>إسم الدكتور</value>
+  </data>
+	<data name="Filter_DeasesName" xml:space="preserve">
+    <value>إسم المرض</value>
+  </data>
+	<data name="Filter_StartDate" xml:space="preserve">
+    <value>تاريخ بدء التنبيه بالدواء</value>
+  </data>
+	<data name="Filter_EndDate" xml:space="preserve">
+    <value>تاريخ إنتهاء التنبيه بالدواء</value>
+  </data>
+	<data name="Filter_Button" xml:space="preserve">
+    <value>فلتر الآن</value>
+  </data>
+		<data name="Home_newAlarmButton" xml:space="preserve">
+    <value>سجل تنبيه لدواء جديد</value>
+  </data>
+		<data name="Home_secondButton" xml:space="preserve">
+    <value>قائمة الأدوية</value>
+  </data> 
+		<data name="Home_thirdButton" xml:space="preserve">
+    <value>أرشيف الأدوية ومواعيدها و جرعاتها</value>
+  </data> 
 </root>

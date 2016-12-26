@@ -43,7 +43,7 @@
 			</Button>
 			<Label Grid.Row="4" Margin="0,20,0,0" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" >
 				<Label.GestureRecognizers>
-      			  <TapGestureRecognizer Command="{Binding OnLoginCommand}" NumberOfTapsRequired="1" >
+      			  <TapGestureRecognizer Command="{Binding OnforgotPasswordCommand}" NumberOfTapsRequired="1" >
 				</TapGestureRecognizer>
 				</Label.GestureRecognizers>
 				</Label>

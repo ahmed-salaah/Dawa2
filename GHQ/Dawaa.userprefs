@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
+  <MonoDevelop.Ide.ItemProperties.Dawaa.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/App.xaml">
+    <Files>
+      <File FileName="GHQ/GHQ/UI/Pages/Filter/FilterPage.xaml" Line="60" Column="105" />
+      <File FileName="GHQ/GHQ/App.xaml.cs" Line="12" Column="51" />
+      <File FileName="GHQ/GHQ/Resources/Strings/AppResources.resx" Line="1042" Column="32" />
+      <File FileName="GHQ/GHQ/UI/Pages/Home/HomePage.xaml" Line="43" Column="160" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="28" Column="116" />
+      <File FileName="GHQ/GHQ/App.xaml" Line="189" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.59D55068-91F8-4A46-9200-36D9FDB8C6B8" />
+</Properties>

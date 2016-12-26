@@ -7,6 +7,7 @@ namespace GHQ.UI.Pages
         public BasePage()
         {
             NavigationPage.SetBackButtonTitle(this, "");
+
         }
     }
 }

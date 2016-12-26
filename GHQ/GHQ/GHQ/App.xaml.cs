@@ -8,8 +8,12 @@ namespace GHQ
         {
             InitializeComponent();
             Logic.Locator locator = new Logic.Locator();
-            //MainPage = new NavigationPage(new UI.Pages.Account.LoginPage());
-            MainPage = new NavigationPage(new UI.Pages.Medicine.MedicineAddNew());
+			MainPage = new NavigationPage(new UI.Pages.Account.LoginPage()){
+				BarBackgroundColor = Color.FromHex("#C7e4e4"),
+				BarTextColor = Color.FromHex("#333333"),
+			};
+			//MainPage = new NavigationPage(new UI.Pages.Medicine.MedicineAddNew());
+			//MainPage = new NavigationPage(new UI.Pages.Filter.FilterPage());
         }
 
         protected override void OnStart()

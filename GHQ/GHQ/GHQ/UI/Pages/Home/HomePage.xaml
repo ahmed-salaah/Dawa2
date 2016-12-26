@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" Title="{i18n:Translate PageHeader_Home}" x:Class="GHQ.UI.Pages.Home.HomePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" 
+		 x:Class="GHQ.UI.Pages.Home.HomePage">
   <RelativeLayout>
     <Image  Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
       <Image.Source>
@@ -17,16 +20,13 @@
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
-          <RowDefinition Height="Auto" />
+       	  <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,80,0,0" VerticalOptions="Center" />
         <Label Grid.Row="1" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" />
         <Label Grid.Row="2" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" />
-        <Label Grid.Row="3" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" />
-        <Label Grid.Row="4" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" />
-        <Label Grid.Row="5" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,40" VerticalOptions="Center" />
+        <Label Grid.Row="3" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,40" VerticalOptions="Center" />
+
       </Grid>
       <Grid Grid.Row="1">
         <Grid.RowDefinitions>
@@ -40,9 +40,9 @@
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  Command="{Binding OnHomeNavigationCommand}" CommandParameter="History"/>
-        <Button Grid.Row="1" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  Command="{Binding OnHomeNavigationCommand}" CommandParameter="Schedule"/>
-        <Button Grid.Row="2" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate login_logInButton}"  Command="{Binding OnHomeNavigationCommand}" CommandParameter="Add"/>
+        <Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate Home_newAlarmButton}"  Command="{Binding OnHomeNavigationCommand}" CommandParameter="History"/>
+        <Button Grid.Row="1" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate Home_secondButton}"  Command="{Binding OnHomeNavigationCommand}"  CommandParameter="Schedule"/>
+        <Button Grid.Row="2" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate Home_thirdButton}"  Command="{Binding OnHomeNavigationCommand}"  CommandParameter="Add"/>
       </Grid>
     </Grid>
   </RelativeLayout>

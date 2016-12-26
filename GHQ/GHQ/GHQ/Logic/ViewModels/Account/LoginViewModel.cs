@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
 using GHQ.UI.Pages.Account;
+using GHQ.UI.Pages.Filter;
 using GHQ.UI.Pages.Home;
 using Models;
 using Service.Localization;
@@ -140,7 +141,42 @@ namespace GHQ.Logic.ViewModels.Account
 
 
         #endregion
+		#region forgotPassword Command
+        private RelayCommand _OnforgotPasswordCommand;
+		public RelayCommand OnforgotPasswordCommand
+		{
+			get
+			{
+				if (_OnforgotPasswordCommand == null)
+				{
+					_OnforgotPasswordCommand = new RelayCommand(OnforgotPassword);
+				}
+				return _OnforgotPasswordCommand;
+			}
+		}
 
-        #endregion
-    }
+		private async void OnforgotPassword()
+		{
+			try
+			{
+				IsLoading = true;
+				IsPageEnabled = false;
+				//ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
+
+				navigationService.NavigateToPage(typeof(FilterPage));
+			}
+			catch (System.Exception ex)
+			{
+			}
+			finally
+			{
+				IsLoading = false;
+				IsPageEnabled = true;
+			}
+		}
+
+
+		#endregion
+		#endregion
+	}
 }

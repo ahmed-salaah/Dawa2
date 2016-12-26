@@ -125,6 +125,20 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\logo.png" />
     <BundleResource Include="Resources\splash_bg.png" />
+    <BundleResource Include="Resources\add_medicine_ico.png" />
+    <BundleResource Include="Resources\camera_ico.png" />
+    <BundleResource Include="Resources\checked_ico.png" />
+    <BundleResource Include="Resources\edit_audio_ico.png" />
+    <BundleResource Include="Resources\edit_audio_message_bg.png" />
+    <BundleResource Include="Resources\edit_green_ico.png" />
+    <BundleResource Include="Resources\edit_start_end_dates_ico.png" />
+    <BundleResource Include="Resources\edit_white_ico.png" />
+    <BundleResource Include="Resources\history_ico.png" />
+    <BundleResource Include="Resources\listen_ico.png" />
+    <BundleResource Include="Resources\medicines_list_ico.png" />
+    <BundleResource Include="Resources\mic_ico.png" />
+    <BundleResource Include="Resources\profile_ico.png" />
+    <BundleResource Include="Resources\profile_photo.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
@@ -227,33 +241,15 @@
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default%402x.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-568h%402x.png">
-      <InProject>false</InProject>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait.png">
       <InProject>false</InProject>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\iphone5.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\iphone4s.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\iphone6.png">
-      <InProject>false</InProject>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\iphone6plus.png">
-      <InProject>false</InProject>
-    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg%403x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

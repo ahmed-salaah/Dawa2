@@ -94,6 +94,9 @@
       <DependentUpon>MedicineHistory.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\TemplateSelectors\HistoryMedicineTemplateSelector.cs" />
+    <Compile Include="UI\Pages\Filter\FilterPage.xaml.cs">
+      <DependentUpon>FilterPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -199,6 +202,7 @@
     <Folder Include="Logic\Models\Response\" />
     <Folder Include="Logic\Translators\" />
     <Folder Include="Resources\Images\" />
+    <Folder Include="UI\Pages\Filter\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Strings\AppResources.resx">
@@ -216,6 +220,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Pages\ContactUS\ContactUSPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pages\Filter\FilterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -6,17 +6,28 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage.png</string>
-			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage@2x.png</string>
-			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-568h@2x.png</string>
 			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-Portrait~ipad.png</string>
 			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-Portrait@2x~ipad.png</string>
 			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-800-Portrait-736h@3x.png</string>
 			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-800-667h@2x.png</string>
-			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-700@2x.png</string>
 			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/bundle/LaunchImage-700-568h@2x.png</string>
 			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
+	<key>com.apple.actool.document.warnings</key>
+	<array>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./LaunchImage.launchimage</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/ahmedsalah/Desktop/Dawa2/GHQ/GHQ/GHQ.iOS/Assets.xcassets</string>
+			<key>message</key>
+			<string>An iPhone Retina (4-inch) launch image for iOS 6.x and prior is required when targeting releases prior to 7.0.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+	</array>
 </dict>
 </plist>

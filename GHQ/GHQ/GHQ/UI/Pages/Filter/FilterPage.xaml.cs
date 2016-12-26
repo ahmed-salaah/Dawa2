@@ -1,12 +1,12 @@
 ﻿using GHQ.Logic;
 using GHQ.Logic.ViewModels.Account;
 
-namespace GHQ.UI.Pages.Account
+namespace GHQ.UI.Pages.Filter
 {
-    public partial class NewAccountStep1Page : BasePage
+    public partial class FilterPage : BasePage
     {
         //readonly NewAccountViewModel AccountVM = Locator.Default.NewAccountViewModel;
-        public NewAccountStep1Page()
+        public FilterPage()
         {
             InitializeComponent();
             //BindingContext = AccountVM;
