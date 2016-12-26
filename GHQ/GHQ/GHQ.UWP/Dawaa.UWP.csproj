@@ -90,6 +90,8 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="Dawaa.UWP.nuget.targets" />
+    <None Include="LaunchScreen.storyboard" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -111,15 +113,31 @@
     <None Include="Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="add_medicine_ico.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-400.png" />
     <Content Include="Assets\Square150x150Logo.scale-100.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="background.png" />
+    <Content Include="camera_ico.png" />
+    <Content Include="checked_ico.png" />
+    <Content Include="edit_audio_ico.png" />
+    <Content Include="edit_audio_message_bg.png" />
+    <Content Include="edit_green_ico.png" />
+    <Content Include="edit_start_end_dates_ico.png" />
+    <Content Include="edit_white_ico.png" />
     <Content Include="f.png" />
     <Content Include="g.png" />
+    <Content Include="history_ico.png" />
+    <Content Include="listen_ico.png" />
     <Content Include="logo.png" />
+    <Content Include="medicines_list_ico.png" />
+    <Content Include="mic_ico.png" />
+    <Content Include="profile_ico.png" />
+    <Content Include="profile_photo.png" />
     <Content Include="Properties\Default.rd.xml" />
+    <Content Include="splash_bg.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

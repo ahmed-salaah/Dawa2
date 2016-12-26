@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-25T20:01:54.796</Modified>
+      <Modified>2016-12-26T07:47:25.171</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\bin\x86\Debug\GHQ.UWP.exe">
       <PackagePath>entrypoint\GHQ.UWP.exe</PackagePath>
-      <Modified>2016-12-25T20:01:54.124</Modified>
+      <Modified>2016-12-26T07:47:22.871</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -510,11 +510,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ\bin\Debug\GHQ.dll">
       <PackagePath>GHQ.dll</PackagePath>
-      <Modified>2016-12-25T20:01:52.873</Modified>
+      <Modified>2016-12-25T20:05:45.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\bin\Debug\ProjectX.Common.dll">
       <PackagePath>ProjectX.Common.dll</PackagePath>
-      <Modified>2016-12-25T20:01:19.704</Modified>
+      <Modified>2016-12-25T20:03:44.923</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\add_medicine_ico.png">
+      <PackagePath>add_medicine_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -541,6 +545,38 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-12-24T12:03:21.008</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\background.png">
+      <PackagePath>background.png</PackagePath>
+      <Modified>2016-12-24T12:03:20.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\camera_ico.png">
+      <PackagePath>camera_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.056</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\checked_ico.png">
+      <PackagePath>checked_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\edit_audio_ico.png">
+      <PackagePath>edit_audio_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.058</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\edit_audio_message_bg.png">
+      <PackagePath>edit_audio_message_bg.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.343</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\edit_green_ico.png">
+      <PackagePath>edit_green_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.345</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\edit_start_end_dates_ico.png">
+      <PackagePath>edit_start_end_dates_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\edit_white_ico.png">
+      <PackagePath>edit_white_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.347</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\f.png">
       <PackagePath>f.png</PackagePath>
       <Modified>2016-12-24T12:02:53.197</Modified>
@@ -549,9 +585,37 @@
       <PackagePath>g.png</PackagePath>
       <Modified>2016-12-24T12:02:53.199</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\history_ico.png">
+      <PackagePath>history_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.348</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\listen_ico.png">
+      <PackagePath>listen_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.349</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\logo.png">
       <PackagePath>logo.png</PackagePath>
       <Modified>2016-12-24T12:03:20.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\medicines_list_ico.png">
+      <PackagePath>medicines_list_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.350</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\mic_ico.png">
+      <PackagePath>mic_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\profile_ico.png">
+      <PackagePath>profile_ico.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\profile_photo.png">
+      <PackagePath>profile_photo.png</PackagePath>
+      <Modified>2016-12-26T07:38:20.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\splash_bg.png">
+      <PackagePath>splash_bg.png</PackagePath>
+      <Modified>2016-12-24T18:46:41.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -576,11 +640,11 @@
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-25T19:57:04.288</Modified>
+      <Modified>2016-12-26T07:47:24.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mosta\Source\Repos\Dawa2\GHQ\GHQ\GHQ.UWP\bin\x86\Debug\Core\GHQ.UWP.exe">
       <PackagePath>GHQ.UWP.exe</PackagePath>
-      <Modified>2016-12-25T20:01:54.796</Modified>
+      <Modified>2016-12-26T07:47:25.168</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
