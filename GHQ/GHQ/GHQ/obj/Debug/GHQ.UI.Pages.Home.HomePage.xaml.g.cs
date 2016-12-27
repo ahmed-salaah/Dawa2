@@ -14,7 +14,7 @@ namespace GHQ.UI.Pages.Home {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class HomePage : global::Xamarin.Forms.ContentPage {
+    public partial class HomePage : global::GHQ.UI.Pages.BasePage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {

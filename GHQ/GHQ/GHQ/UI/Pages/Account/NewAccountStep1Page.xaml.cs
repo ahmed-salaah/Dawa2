@@ -9,6 +9,7 @@ namespace GHQ.UI.Pages.Account
         public NewAccountStep1Page()
         {
             InitializeComponent();
+            ToolbarItems.Clear();
             //BindingContext = AccountVM;
         }
 

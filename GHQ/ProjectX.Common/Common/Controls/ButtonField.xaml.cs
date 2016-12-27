@@ -60,13 +60,13 @@ namespace Controls
 
         #region BGColor p
 
-        public static readonly BindableProperty BGColorProperty = BindableProperty.Create<ButtonField, string>(p => p.BGColor, default(string));
+        public static readonly BindableProperty BGColorProperty = BindableProperty.Create<ButtonField, Xamarin.Forms.Color>(p => p.BGColor, Color.Red);
 
 
 
-        public string BGColor
+        public Xamarin.Forms.Color BGColor
         {
-            get { return (string)GetValue(BGColorProperty); }
+            get { return (Xamarin.Forms.Color)GetValue(BGColorProperty); }
             set { SetValue(BGColorProperty, value); }
         }
 

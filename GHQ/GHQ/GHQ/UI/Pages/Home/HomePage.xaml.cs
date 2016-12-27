@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace GHQ.UI.Pages.Home
 {
-    public partial class HomePage : ContentPage
+    public partial class HomePage : BasePage
     {
 
 

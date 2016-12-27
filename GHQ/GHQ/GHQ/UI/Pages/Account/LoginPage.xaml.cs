@@ -12,6 +12,7 @@ namespace GHQ.UI.Pages.Account
             InitializeComponent();
             BindingContext = LoginViewModel;
             NavigationPage.SetHasNavigationBar(this, false);
+            ToolbarItems.Clear();
         }
 
         protected override void OnAppearing()

@@ -2,7 +2,7 @@
 <Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
                xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
-               Title="{i18n:Translate PageHeader_NewAccount}"
+               Title="{i18n:Translate PageHeader_MedicineSchedule}"
                x:Class="GHQ.UI.Pages.Medicine.MedicineSchedule">
   <RelativeLayout>
     <Image  Opacity="0.3" Aspect="AspectFill"
@@ -32,13 +32,12 @@
           <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Column="0"  BackgroundColor="{StaticResource LightBlackColor}">
-          <Label HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Transparent" LineBreakMode="TailTruncation" Text="جميع الأدوية "/>
-        </Grid>
 
-        <Grid Grid.Column="1" BackgroundColor="{StaticResource BabyBlueColor}">
-          <Label HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Transparent" LineBreakMode="TailTruncation" Text="الأدوية الحالية  "/>
-        </Grid>
+        <controls:ButtonField Grid.Column="0" IsEnabled="True" Title="{i18n:Translate PageHeader_MedicineSchedule_AllMedicine}" TextColor="White" BGColor="{StaticResource LightBlackColor}" ItemHeight="50"
+                               Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="" RightImage=""/>
+
+        <controls:ButtonField Grid.Column="1" IsEnabled="True" Title="{i18n:Translate PageHeader_MedicineSchedule_CurrentMedicine}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="50"
+                               Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="" RightImage=""/>
 
       </Grid>
 
