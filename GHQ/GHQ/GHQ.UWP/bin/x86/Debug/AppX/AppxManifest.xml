@@ -7,10 +7,10 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="1e63d480-ef5d-47f0-9698-aab244b33d0f" Publisher="CN=mosta" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="1e63d480-ef5d-47f0-9698-aab244b33d0g" Publisher="CN=mosta" Version="1.0.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="1e63d480-ef5d-47f0-9698-aab244b33d0f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>GHQ.UWP</DisplayName>
+    <DisplayName>Dawaa</DisplayName>
     <PublisherDisplayName>mosta</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -24,7 +24,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="GHQ.UWP.exe" EntryPoint="GHQ.UWP.App">
-      <uap:VisualElements DisplayName="GHQ" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="GHQ" BackgroundColor="transparent">
+      <uap:VisualElements DisplayName="Dawaa" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Dawaa" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"></uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>

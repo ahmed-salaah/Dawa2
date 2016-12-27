@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ"
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" 
 		 x:Class="GHQ.UI.Pages.Home.HomePage">
@@ -46,4 +46,4 @@
       </Grid>
     </Grid>
   </RelativeLayout>
-</ContentPage>
+</Base:BasePage>

@@ -1018,4 +1018,31 @@
 	<data name="signUp_buttonTitle" xml:space="preserve">
     <value>أنشئ الحساب</value>
   </data>
+	<data name="Filter_MedicineName" xml:space="preserve">
+    <value>إسم الدواء</value>
+  </data>
+	<data name="Filter_DoctorName" xml:space="preserve">
+    <value>إسم الدكتور</value>
+  </data>
+	<data name="Filter_DeasesName" xml:space="preserve">
+    <value>إسم المرض</value>
+  </data>
+	<data name="Filter_StartDate" xml:space="preserve">
+    <value>تاريخ بدء التنبيه بالدواء</value>
+  </data>
+	<data name="Filter_EndDate" xml:space="preserve">
+    <value>تاريخ إنتهاء التنبيه بالدواء</value>
+  </data>
+	<data name="Filter_Button" xml:space="preserve">
+    <value>فلتر الآن</value>
+  </data>
+		<data name="Home_newAlarmButton" xml:space="preserve">
+    <value>سجل تنبيه لدواء جديد</value>
+  </data>
+		<data name="Home_secondButton" xml:space="preserve">
+    <value>قائمة الأدوية</value>
+  </data> 
+		<data name="Home_thirdButton" xml:space="preserve">
+    <value>أرشيف الأدوية ومواعيدها و جرعاتها</value>
+  </data> 
 </root>

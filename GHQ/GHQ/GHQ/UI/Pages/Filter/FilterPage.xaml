@@ -8,7 +8,7 @@
 	<RelativeLayout>
 		<Image Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
 			<Image.Source>
-				<OnPlatform x:TypeArguments="ImageSource" WinPhone="Assets/background.png" Android="background.png" iOS="background" />
+				<OnPlatform x:TypeArguments="ImageSource" WinPhone="background.png" Android="background.png" iOS="background" />
 			</Image.Source>
 		</Image>
 		<Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">

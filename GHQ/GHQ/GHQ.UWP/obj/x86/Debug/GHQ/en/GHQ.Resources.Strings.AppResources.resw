@@ -141,6 +141,9 @@
   <data name="ServiceRegistration_MotherMandatory" xml:space="preserve">
     <value>لم تقم بإضافة أم  </value>
   </data>
+  <data name="Home_thirdButton" xml:space="preserve">
+    <value>أرشيف الأدوية ومواعيدها و جرعاتها</value>
+  </data>
   <data name="News_ViewAll" xml:space="preserve">
     <value>عرض الكل</value>
   </data>
@@ -188,6 +191,9 @@
   </data>
   <data name="NewAccount_Entry_PlaceHolder_FourthName" xml:space="preserve">
     <value>الإسم الرابع</value>
+  </data>
+  <data name="Filter_EndDate" xml:space="preserve">
+    <value>تاريخ إنتهاء التنبيه بالدواء</value>
   </data>
   <data name="Error_Validation_MobileNumberConfirmation_Length" xml:space="preserve">
     <value> رقم التأكد يتكون من  6 أرقام فقط </value>
@@ -304,6 +310,9 @@
   <data name="ServiceRegistration_Header_Passport" xml:space="preserve">
     <value>جواز سفر</value>
   </data>
+  <data name="Filter_DoctorName" xml:space="preserve">
+    <value>إسم الدكتور</value>
+  </data>
   <data name="Error_Validation_Gender_Empty" xml:space="preserve">
     <value>يجب اختيار الجنس  </value>
   </data>
@@ -342,6 +351,9 @@
   </data>
   <data name="NewAccount_Messages_UserNotEligibleToCreateAccount" xml:space="preserve">
     <value>العضو غير مؤهل لإنشاء حساب</value>
+  </data>
+  <data name="Home_newAlarmButton" xml:space="preserve">
+    <value>سجل تنبيه لدواء جديد</value>
   </data>
   <data name="Error_Validation_EmailNumberConfirmation_Length" xml:space="preserve">
     <value> رقم التأكد يتكون من  21 أرقام فقط </value>
@@ -511,11 +523,20 @@
   <data name="ServiceRegistration_Entry_PlaceHolder_FamilybooknumberorNationalitynumber" xml:space="preserve">
     <value>رقم كتاب العائلة أو رقم الجنسية</value>
   </data>
+  <data name="Filter_Button" xml:space="preserve">
+    <value>فلتر الآن</value>
+  </data>
   <data name="ServiceRegistration_Entry_PlaceHolder_Nationality" xml:space="preserve">
     <value>الجنسية</value>
   </data>
   <data name="ServiceRegistration_Entry_PlaceHolder_EthparaNumber" xml:space="preserve">
     <value>رقم الاضبارة</value>
+  </data>
+  <data name="Home_secondButton" xml:space="preserve">
+    <value>قائمة الأدوية</value>
+  </data>
+  <data name="Filter_StartDate" xml:space="preserve">
+    <value>تاريخ بدء التنبيه بالدواء</value>
   </data>
   <data name="Error_Validation_MobileNumber_Empty" xml:space="preserve">
     <value>يجب ادخال رقم الهاتف</value>
@@ -643,6 +664,9 @@
   <data name="ServiceRegistration_Header_Name" xml:space="preserve">
     <value>الاسم</value>
   </data>
+  <data name="Filter_MedicineName" xml:space="preserve">
+    <value>إسم الدواء</value>
+  </data>
   <data name="signUp_firstName" xml:space="preserve">
     <value>الإسم الأول</value>
   </data>
@@ -747,6 +771,9 @@
   </data>
   <data name="NewAccount_Entry_PlaceHolder_Email" xml:space="preserve">
     <value>البريد الأكتروني</value>
+  </data>
+  <data name="Filter_DeasesName" xml:space="preserve">
+    <value>إسم المرض</value>
   </data>
   <data name="ServiceRegistration_DeleteRelativeMessage_Title" xml:space="preserve">
     <value>هل انت متأكد أنك تريد حذف القريب؟</value>

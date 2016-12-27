@@ -1828,5 +1828,59 @@ namespace GHQ.Resources.Strings {
                 return ResourceManager.GetString("signUp_buttonTitle", resourceCulture);
             }
         }
+        
+        internal static string Filter_MedicineName {
+            get {
+                return ResourceManager.GetString("Filter_MedicineName", resourceCulture);
+            }
+        }
+        
+        internal static string Filter_DoctorName {
+            get {
+                return ResourceManager.GetString("Filter_DoctorName", resourceCulture);
+            }
+        }
+        
+        internal static string Filter_DeasesName {
+            get {
+                return ResourceManager.GetString("Filter_DeasesName", resourceCulture);
+            }
+        }
+        
+        internal static string Filter_StartDate {
+            get {
+                return ResourceManager.GetString("Filter_StartDate", resourceCulture);
+            }
+        }
+        
+        internal static string Filter_EndDate {
+            get {
+                return ResourceManager.GetString("Filter_EndDate", resourceCulture);
+            }
+        }
+        
+        internal static string Filter_Button {
+            get {
+                return ResourceManager.GetString("Filter_Button", resourceCulture);
+            }
+        }
+        
+        internal static string Home_newAlarmButton {
+            get {
+                return ResourceManager.GetString("Home_newAlarmButton", resourceCulture);
+            }
+        }
+        
+        internal static string Home_secondButton {
+            get {
+                return ResourceManager.GetString("Home_secondButton", resourceCulture);
+            }
+        }
+        
+        internal static string Home_thirdButton {
+            get {
+                return ResourceManager.GetString("Home_thirdButton", resourceCulture);
+            }
+        }
     }
 }
