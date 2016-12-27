@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ"
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-		xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" 
+		xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
+		xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
 		 x:Class="GHQ.UI.Pages.Home.HomePage">
   <RelativeLayout>
     <Image  Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
@@ -40,10 +41,14 @@
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate Home_newAlarmButton}"  Command="{Binding OnHomeNavigationCommand}" CommandParameter="History"/>
-        <Button Grid.Row="1" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate Home_secondButton}"  Command="{Binding OnHomeNavigationCommand}"  CommandParameter="Schedule"/>
-        <Button Grid.Row="2" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate Home_thirdButton}"  Command="{Binding OnHomeNavigationCommand}"  CommandParameter="Add"/>
-      </Grid>
+		 <controls:ButtonField Grid.Row="0" IsEnabled="True" Title="{i18n:Translate Home_newAlarmButton}" TextColor="White" BGColor="#FBAA18" ItemHeight="50"
+                         Command="{Binding OnHomeNavigationCommand}" RightImage="medicines_list_ico.png" LeftImage =""/>
+		 <controls:ButtonField Grid.Row="1" IsEnabled="True" Title="{i18n:Translate Home_secondButton}"  TextColor="White" BGColor="#FBAA18" ItemHeight="50"
+                         Command="{Binding OnHomeNavigationCommand}"  RightImage="history_ico.png" LeftImage =""/>
+		 <controls:ButtonField Grid.Row="2" IsEnabled="True" Title="{i18n:Translate Home_thirdButton}"  TextColor="White" BGColor="#FBAA18" ItemHeight="50"
+                         Command="{Binding OnHomeNavigationCommand}"  RightImage="add_medicine_ico.png" LeftImage =""/>
+		</Grid>
+
     </Grid>
   </RelativeLayout>
-</ContentPage>
+</Base:BasePage>

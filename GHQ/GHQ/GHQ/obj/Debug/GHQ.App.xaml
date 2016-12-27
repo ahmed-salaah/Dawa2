@@ -65,7 +65,12 @@
                   <ColumnDefinition Width="Auto"></ColumnDefinition>
                   <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Image Grid.Column="0"  Grid.RowSpan="4" Source="{Binding Image}" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFit" MinimumWidthRequest="200" MinimumHeightRequest="100"/>
+
+                <Image Grid.Column="0"  Grid.RowSpan="2" HorizontalOptions="Center" WidthRequest="30" HeightRequest="30" Aspect="AspectFit" Margin = "20,0,0,0" VerticalOptions="Center">
+                  <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource" WinPhone="edit_green_ico.png" Android="edit_green_ico.png" iOS="edit_green_ico" />
+                  </Image.Source>
+                </Image>
                 <Label Grid.Column="1" Grid.Row="0"  HorizontalOptions="End" HorizontalTextAlignment="End" TextColor="Black" BackgroundColor="Transparent" LineBreakMode="TailTruncation" Text="{Binding Name}" FontAttributes ="Bold" Margin="0,10,10,0" />
                 <Label Grid.Column="1" Grid.Row="1"  HorizontalOptions="End" HorizontalTextAlignment="End" TextColor="Gray" BackgroundColor="Transparent" LineBreakMode="TailTruncation" Text="{Binding Note}"  Margin="0,0,10,0"/>
                 <Grid  Grid.Column="1" Grid.Row="2"  Margin="0,0,10,10">
