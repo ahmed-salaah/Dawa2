@@ -12,7 +12,7 @@
       </Image.Source>
     </Image>
 
-    <Grid Style="{StaticResource GridContentStyle}">
+    <Grid Style="{StaticResource MainGridStyle}"  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
       <Grid.RowDefinitions>
         <RowDefinition Height="250" />
         <RowDefinition Height="Auto" />
