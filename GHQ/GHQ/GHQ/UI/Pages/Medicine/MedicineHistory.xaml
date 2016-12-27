@@ -2,7 +2,7 @@
 <Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
                xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
-               Title="{i18n:Translate PageHeader_NewAccount}"
+               Title="{i18n:Translate PageHeader_MedicineHistory}"
                x:Class="GHQ.UI.Pages.Medicine.MedicineHistory">
 
   <RelativeLayout>
@@ -37,5 +37,5 @@
       </Grid>
     </Grid>
   </RelativeLayout>
-  
+
 </Base:BasePage>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,990 +59,233 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="Error" xml:space="preserve">
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Error" xml:space="preserve">
     <value>خطأ</value>
   </data>
-	<data name="Error_ApplicationTitle" xml:space="preserve">
+  <data name="Error_ApplicationTitle" xml:space="preserve">
     <value>خطأ</value>
   </data>
-	<data name="Error_BackendTitle" xml:space="preserve">
+  <data name="Error_BackendTitle" xml:space="preserve">
     <value>خطأ</value>
   </data>
-	<data name="Error_GeneralTitle" xml:space="preserve">
+  <data name="Error_GeneralTitle" xml:space="preserve">
     <value>خطأ</value>
   </data>
-	<data name="Error_NoDataFound" xml:space="preserve">
+  <data name="Error_NoDataFound" xml:space="preserve">
     <value>خطأ 1004: لا توجد بيانات</value>
   </data>
-	<data name="Inquiry_Btn_Send" xml:space="preserve">
-    <value>إرسال</value>
-  </data>
-	<data name="Inquiry_Entry_PlaceHolder_Address" xml:space="preserve">
-    <value>أكتب العنوان</value>
-  </data>
-	<data name="Inquiry_Entry_PlaceHolder_Details" xml:space="preserve">
-    <value>أكتب التفاصيل</value>
-  </data>
-	<data name="Inquiry_Entry_PlaceHolder_Email" xml:space="preserve">
-    <value>البريد الالكتروني</value>
-  </data>
-	<data name="Inquiry_Entry_PlaceHolder_FirstName" xml:space="preserve">
-    <value>إسم الأول</value>
-  </data>
-	<data name="Inquiry_Entry_PlaceHolder_FullName" xml:space="preserve">
-    <value>الإسم بالكامل</value>
-  </data>
-	<data name="Inquiry_Entry_PlaceHolder_MobileNumber" xml:space="preserve">
-    <value>رقم الموبيل</value>
-  </data>
-	<data name="NewAccount_Btn_Finish" xml:space="preserve">
-    <value>تسجيل</value>
-  </data>
-	<data name="NewAccount_Btn_Next" xml:space="preserve">
-    <value>التالي</value>
-  </data>
-	<data name="NewAccount_Btn_Previous" xml:space="preserve">
-    <value>السابق</value>
-  </data>
-	<data name="NewAccount_Btn_SendEmailVerficationCode" xml:space="preserve">
-    <value>إرسال رمز التحقق</value>
-  </data>
-	<data name="NewAccount_LoadingMessage" xml:space="preserve">
-    <value>جاري التحقق من المعلومات. يرجى الإنتظار</value>
-  </data>
-	<data name="NewAccount_Btn_SendSMSVerficationCode" xml:space="preserve">
-    <value>إرسال رمز التحقق</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_Email" xml:space="preserve">
-    <value>البريد الأكتروني</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_EmailConfirmation" xml:space="preserve">
-    <value>رمز التحقق</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_EmiratesID" xml:space="preserve">
-    <value>رقم الهوية</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_FifthName" xml:space="preserve">
-    <value>الإسم العائلة </value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_FirstName" xml:space="preserve">
-    <value>الإسم الأول</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_IdentityNumber" xml:space="preserve">
-    <value>الرقم الموحد</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_MobileNumber" xml:space="preserve">
-    <value>رقم الموبيل</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_MobileNumberConfirmation" xml:space="preserve">
-    <value>رمز التحقق</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_Password" xml:space="preserve">
-    <value>كلمة السر </value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_PasswordConfirmation" xml:space="preserve">
-    <value>تأكيد كلمة السر </value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_SecondName" xml:space="preserve">
-    <value>الإسم الثاني</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_ThirdName" xml:space="preserve">
-    <value>الإسم الثالث</value>
-  </data>
-	<data name="NewAccount_Messages_AccountUpdated_Description" xml:space="preserve">
-    <value>تم إنشاء الحساب. الرجاء الدخول لحسابك لإتمام عملية التسجيل في الخدمة الوطنية</value>
-  </data>
-	<data name="NewAccount_Messages_MaxSendingCode" xml:space="preserve">
-    <value> لم يتم إستلام الرسال النصية
-    وتم الإرسال اكثر من مرة </value>
-  </data>
-	<data name="NewAccount_Messages_AccountUpdated_Title" xml:space="preserve">
-    <value>تم تحديث الحساب</value>
-  </data>
-	<data name="NewAccount_Messages_ConfirmationCodeIsNotValid" xml:space="preserve">
-    <value>رمز التحقق غير صالح</value>
-  </data>
-	<data name="NewAccount_Messages_EmailSent_Description" xml:space="preserve">
-    <value>تم إرسال رمز التحقق إلى بريدك الإلكتروني</value>
-  </data>
-	<data name="NewAccount_Messages_EmailSent_Title" xml:space="preserve">
-    <value>تم إرسال البريد الإلكتروني</value>
-  </data>
-	<data name="NewAccount_Messages_SMSNotSent" xml:space="preserve">
-    <value>لا يتم إرسال الرسائل القصيرة</value>
-  </data>
-	<data name="NewAccount_Messages_SMSSent_Description" xml:space="preserve">
-    <value>تم إرسال رمز التحقق إلى هاتفك</value>
-  </data>
-	<data name="NewAccount_Messages_SMSSent_Title" xml:space="preserve">
-    <value>تم إرسال الرسائل القصيرة</value>
-  </data>
-	<data name="NewAccount_Messages_UpdateFailed" xml:space="preserve">
-    <value>فشل إضافة المستخدم </value>
-  </data>
-	<data name="PageHeader_ForgetPassword" xml:space="preserve">
-    <value>نسيت كلمة المرور</value>
-  </data>
-	<data name="PageHeader_Home" xml:space="preserve">
-    <value>الخدمة الوطنية</value>
-  </data>
-	<data name="PageHeader_Inquiry" xml:space="preserve">
-    <value>الإستعلامات</value>
-  </data>
-	<data name="PageHeader_NewAccount" xml:space="preserve">
-    <value>انشاء حساب جديد</value>
-  </data>
-	<data name="PageHeader_UpdateContact" xml:space="preserve">
-    <value>طلب تعديل بيانات </value>
-  </data>
-	<data name="UpdateContact_Header" xml:space="preserve">
-    <value>طلب تعديل بيانات الخدمة الوطنية </value>
-  </data>
-	<data name="PageHeader_ServiceRegistration" xml:space="preserve">
-    <value>التسجيل في الخدمة الوطنية</value>
-  </data>
-	<data name="PageHeader_WorkSpace" xml:space="preserve">
-    <value>التسجيل في الخدمة العسكرية</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EnglishFirstName" xml:space="preserve">
-    <value>الإسم الأول (إنجليزي)</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_ArabicFirstName" xml:space="preserve">
-    <value>الإسم الأول (عربي )</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EnglishSecondName" xml:space="preserve">
-    <value>الإسم الثاني (إنجليزي)</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_ArabicSecondName" xml:space="preserve">
-    <value>الإسم الثاني (عربي )</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EnglishThirdName" xml:space="preserve">
-    <value>الإسم الثالث (إنجليزي)</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_ArabicThirdName" xml:space="preserve">
-    <value>الإسم الثالث (عربي )</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EnglishFourthName" xml:space="preserve">
-    <value>الإسم الرابع  (إنجليزي)</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_ArabicFourthName" xml:space="preserve">
-    <value>الإسم الرابع  (عربي )</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EnglishFifthName" xml:space="preserve">
-    <value>الإسم العائلة  (إنجليزي)</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_ArabicFifthName" xml:space="preserve">
-    <value>الإسم العائلة  (عربي )</value>
-  </data>
-	<data name="ServiceRegistration_Toogle_RegisterWorks" xml:space="preserve">
-    <value>المتقدم للتجند يعمل</value>
-  </data>
-	<data name="ServiceRegistration_Picker_WorkType" xml:space="preserve">
-    <value>نوع جهة العامل</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_WorkName" xml:space="preserve">
-    <value>إسم جهة العمل</value>
-  </data>
-	<data name="ServiceRegistration_Picker_WorkDestination" xml:space="preserve">
-    <value>مكان جهة العمل</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EmployeePost" xml:space="preserve">
-    <value>المنصب الوظيفي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EmployeeTitle" xml:space="preserve">
-    <value>المسمى الوظيفي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_WorkPhone1" xml:space="preserve">
-    <value>هاتف العمل 1</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_WorkPhone2" xml:space="preserve">
-    <value>هاتف العمل 2</value>
-  </data>
-	<data name="NewAccount_Entry_PlaceHolder_FourthName" xml:space="preserve">
-    <value>الإسم الرابع</value>
-  </data>
-	<data name="NewAccount_Messages_DataIsInvalid" xml:space="preserve">
-    <value>البيانات غير صحيحة</value>
-  </data>
-	<data name="NewAccount_Messages_CodeIsInvalid" xml:space="preserve">
-    <value>رمز التحقق غير صحيح</value>
-  </data>
-	<data name="NewAccount_Messages_UserAlreadyExists" xml:space="preserve">
-    <value>يوجد مستخدم بنفس رقم الهوية و الرقم الموحد مسجل من قبل</value>
-  </data>
-	<data name="NewAccount_Messages_UserNotEligibleToCreateAccount" xml:space="preserve">
-    <value>العضو غير مؤهل لإنشاء حساب</value>
-  </data>
-	<data name="NewAccount_Messages_UserDataIsNotSimilarToHash_MOI_UP" xml:space="preserve">
-    <value>البيانات المدخلة غير مطابقة للبيانات المسجلة بوزارة الداخلية</value>
-  </data>
-	<data name="NewAccount_Step1Header" xml:space="preserve">
-    <value>البيانات الاساسية</value>
-  </data>
-	<data name="NewAccount_Step2Header" xml:space="preserve">
-    <value>اختيار رقم الهاتف الجوال</value>
-  </data>
-	<data name="NewAccount_Step3Header" xml:space="preserve">
-    <value>البريد الالكترونى</value>
-  </data>
-	<data name="NewAccount_Step4Header" xml:space="preserve">
-    <value>البيانات الشخصية</value>
-  </data>
-	<data name="PageHeader_News" xml:space="preserve">
-    <value>أخر الأخبار</value>
-  </data>
-	<data name="Error_NoInternet" xml:space="preserve">
+  <data name="Error_NoInternet" xml:space="preserve">
     <value>لا يوجد اتصال بالانترنت</value>
   </data>
-	<data name="ForgetPassword_Btn_ChangePassword" xml:space="preserve">
-    <value>تغيير كلمة المرور</value>
-  </data>
-	<data name="ForgetPassword_Entry_PlaceHolder_ConfirmationCode" xml:space="preserve">
-    <value>رقم التأكيد</value>
-  </data>
-	<data name="ForgetPassword_Entry_PlaceHolder_ConfirmPassword" xml:space="preserve">
-    <value>تأكيد كلمة المرور</value>
-  </data>
-	<data name="ForgetPassword_Entry_PlaceHolder_Password" xml:space="preserve">
-    <value>كلمة السر الجديدة</value>
-  </data>
-	<data name="ServiceRegistration_Btn_Save" xml:space="preserve">
-    <value>حفظ</value>
-  </data>
-	<data name="ServiceRegistration_Step1Header" xml:space="preserve">
-    <value>البيانات الشخصية</value>
-  </data>
-	<data name="ServiceRegistration_Gender" xml:space="preserve">
-    <value> الجنس</value>
-  </data>
-	<data name="Error_Validation_EmailConfirmation_Empty" xml:space="preserve">
-    <value>يجب ادخال رمز التحقق </value>
-  </data>
-	<data name="Error_Validation_Email_Empty" xml:space="preserve">
-    <value>يجب ادخال البريد الإلكتروني </value>
-  </data>
-	<data name="Error_Validation_EmiratesID_Empty" xml:space="preserve">
-    <value> يجب ادخال  رقم الهوية</value>
-  </data>
-	<data name="Error_Validation_EmiratesID_Invalid" xml:space="preserve">
-    <value>من فضلك أعد إدخال رقم الهوية بشكل صحيح (784-xxxx-xxxxxxx-x)</value>
-  </data>
-	<data name="Error_Validation_FifthName_Empty" xml:space="preserve">
-    <value>يجب ادخال الاسم العائلة  </value>
-  </data>
-	<data name="Error_Validation_Nationality_Empty" xml:space="preserve">
-    <value>يجب اختيار الجنسية  </value>
-  </data>
-	<data name="Error_Validation_Gender_Empty" xml:space="preserve">
-    <value>يجب اختيار الجنس  </value>
-  </data>
-	<data name="Error_Validation_FirstName_Empty" xml:space="preserve">
-    <value>يجب ادخال الاسم الاول </value>
-  </data>
-	<data name="Error_Validation_FourthName_Empty" xml:space="preserve">
-    <value>يجب ادخال الاسم الرابع </value>
-  </data>
-	<data name="Error_Validation_MobileNumberConfirmation_Empty" xml:space="preserve">
-    <value>يجب ادخال رمز التحقق</value>
-  </data>
-	<data name="Error_Validation_MobileNumberConfirmation_Length" xml:space="preserve">
-    <value> رقم التأكد يتكون من  6 أرقام فقط </value>
-  </data>
-	<data name="Error_Validation_EmailNumberConfirmation_Length" xml:space="preserve">
-    <value> رقم التأكد يتكون من  21 أرقام فقط </value>
-  </data>
-	<data name="Error_Validation_MobileNumber_Empty" xml:space="preserve">
-    <value>يجب ادخال رقم الهاتف</value>
-  </data>
-	<data name="Error_Validation_PasswordConfirmation_MisMatch" xml:space="preserve">
-    <value>كلمة السر  غير متطابقة</value>
-  </data>
-	<data name="Error_Validation_Password_Empty" xml:space="preserve">
-    <value>يجب ادخال كلمة السر  </value>
-  </data>
-	<data name="Error_Validation_SecondName_Empty" xml:space="preserve">
-    <value>يجب ادخال الاسم الثاني </value>
-  </data>
-	<data name="Error_Validation_ThirdName_Empty" xml:space="preserve">
-    <value>يجب ادخال الاسم الثالث </value>
-  </data>
-	<data name="Error_Validation_UnifiedNumber_Empty" xml:space="preserve">
-    <value>يجب ادخال الرقم الموحد </value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EmiratedID" xml:space="preserve">
-    <value>رقم الهوية</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Passport" xml:space="preserve">
-    <value>رقم جواز السفر</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_PlaceOfBirth" xml:space="preserve">
-    <value>مكان الولادة</value>
-  </data>
-	<data name="ServiceRegistration_Header_GeneralInfo" xml:space="preserve">
-    <value>معلومات عامة</value>
-  </data>
-	<data name="ServiceRegistration_Header_Identity" xml:space="preserve">
-    <value>بيانات الهوية</value>
-  </data>
-	<data name="ServiceRegistration_Header_NameInArabic" xml:space="preserve">
-    <value>الاسم باللغة العربية</value>
-  </data>
-	<data name="ServiceRegistration_Header_NameInEnglish" xml:space="preserve">
-    <value>الاسم باللغة الانجليزية</value>
-  </data>
-	<data name="ServiceRegistration_Header_Passport" xml:space="preserve">
-    <value>جواز سفر</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_CityNumber" xml:space="preserve">
-    <value>رقم البلدة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EmiratesIDCardNumber" xml:space="preserve">
-    <value>رقم البطاقة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EmiratesIDExpiryDate" xml:space="preserve">
-    <value>تاريخ الانتهاء الهوية</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EthparaNumber" xml:space="preserve">
-    <value>رقم الاضبارة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_FamilybooknumberorNationalitynumber" xml:space="preserve">
-    <value>رقم كتاب العائلة أو رقم الجنسية</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_FamilyNumber" xml:space="preserve">
-    <value>رقم الأسرة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_UniqueNumber" xml:space="preserve">
-    <value>رقم موحد</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EmployeeID" xml:space="preserve">
-    <value>الرقم التعريفي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_MilitaryID" xml:space="preserve">
-    <value>الرقم العسكري</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_WorkFax" xml:space="preserve">
-    <value>فاكس العمل</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_WorkJobName" xml:space="preserve">
-    <value>اسم الوظيفة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_WorkOrganization" xml:space="preserve">
-    <value>منظمة العمل</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_WorkPosition" xml:space="preserve">
-    <value>منصب العمل</value>
-  </data>
-	<data name="ServiceRegistration_Header_AddNewWorkDetails" xml:space="preserve">
-    <value>إضافة بيانات العمل</value>
-  </data>
-	<data name="ServiceRegistration_Step2Header" xml:space="preserve">
-    <value>بيانات العمل الحالي</value>
-  </data>
-	<data name="ServiceRegistration_Step3Header" xml:space="preserve">
-    <value>بيانات محل الاقامة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Age" xml:space="preserve">
-    <value>العمر</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_BirthPlace" xml:space="preserve">
-    <value>مكان الولادة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_BldgNumber" xml:space="preserve">
-    <value> رقم المنزل - البناية</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_CityName" xml:space="preserve">
-    <value>اسم المدينة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Emailcandidate" xml:space="preserve">
-    <value>البريد الإلكتروني</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_FloorNumber" xml:space="preserve">
-    <value>رقم الطابق</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_HomePhone1" xml:space="preserve">
-    <value>هاتف المنزل 1</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_HomePhone2" xml:space="preserve">
-    <value>هاتف المنزل 2</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_IsAlive" xml:space="preserve">
-    <value>على قيد الحياة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_IsBrother" xml:space="preserve">
-    <value>شقيق؟</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_JobName" xml:space="preserve">
-    <value>الوظيفة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Mobile1" xml:space="preserve">
-    <value>رقم الموبايل 1 </value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Mobile2" xml:space="preserve">
-    <value>رقم الموبايل 2</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Nationality" xml:space="preserve">
-    <value>الجنسية</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_POBox" xml:space="preserve">
-    <value>الصندوق البريدي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_RegionName" xml:space="preserve">
-    <value>منطقة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_RegistrationCity" xml:space="preserve">
-    <value>محل الإقامة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_RelativeStatus" xml:space="preserve">
-    <value>حالة القريب</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_RelativeType" xml:space="preserve">
-    <value>صلة القرابة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_StreetName" xml:space="preserve">
-    <value>اسم الشارع</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_TribeName" xml:space="preserve">
-    <value>اسم القبيلة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_WorkPlace" xml:space="preserve">
-    <value>مكان العمل</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_AddressText" xml:space="preserve">
-    <value>العنوان</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_BldgName" xml:space="preserve">
-    <value>إسم البناية</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_GuardianNumber" xml:space="preserve">
-    <value>هاتف الوالد / الوصي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_StreetNumber" xml:space="preserve">
-    <value>رقم الشارع</value>
-  </data>
-	<data name="ContactUS_CallUS" xml:space="preserve">
-    <value>اتصل بنا علي</value>
-  </data>
-	<data name="ContactUS_WebSite" xml:space="preserve">
-    <value>او عن طريق الموقع الخاص بنا</value>
-  </data>
-	<data name="ContactUS_SocialMedia" xml:space="preserve">
-    <value>او عن طريق وسائل التواصل الاجتماعي</value>
-  </data>
-	<data name="AboutUs_Description" xml:space="preserve">
-    <value>أصدر صاحب السمو الشيخ / خليفة بن زايد آل نهيان رئيس الدولة القائد الأعلى للقوات المسلحة (حفظه الله) في الثامن والعشرين من شهر مايو من العام 2014 القانون الإتحادي رقم (6) لسنة 2014 بشأن الخدمة الوطنية والاحتياطية ، والذي يعتبر إنجازاً دستورياً كونه قنن الخدمة الوطنية ونظمها ووضعها موضع التنفيذ ، وقد استند هذا القانون إلى المادة (43) من دستور الدولة والتي تعتبر واحدة من أهم مواده والتي تنص على أن "الدفاع عن الاتحاد فرضٌ مقدس على كل مواطن، وأداء الخدمة العسكرية شرف للمواطنين ينظمه القانون" ، وقد جاء هذا القانون بعد إطلاع واسع على الممارسات العالمية في هذا المجال والتي تم عمل المقارنات المعيارية بينها للخروج بنموذج للخدمة يتلاءم مع احتياجات الدولة ورؤيتها وتطلعاتها المستقبلية والتحديات التي تواجهها ، ومن الدول الرائدة التي تم الإطلاع على تجاربها (كندا ، فنلندا، سنغافورة ، سويسرا ، كوريا الجنوبية ) باعتبارها دول مطبقة للخدمة على اختلاف المسمى والشروط والضوابط والفئات المستهدفة في كل منها ، كما تم الإطلاع على بعض قوانين وتجارب بعض الدول العربية المطبقة للخدمة الوطنية مثل (الأردن، مصر) ، ولتعميق الشعور بالمسئولية الوطنية فقد ارتأت القيادة الرشيدة إعتماد مسمى (الخدمة الوطنية) على هذا الواجب العظيم بدلاً عن (التجنيد الإجباري) بعيداً عن أية ألفاظ قد تدل على الجبر أو الإكراه.
-
-وقد نصت المادة (32) من القانون المشار إليه بأعلاه على أن " تنشأ بالقيادة العامة هيئة تسمى هيئة الخدمة الوطنية والاحتياطية تكون بمثابة الهيئة العليا المشرفة على شؤون الخدمة الوطنية والاحتياطية وفقاً لأحكام هذا القانون".
-
-وقد تم تعيين اللواء الركن طيار الشيخ أحمد بن طحنون آل نهيان رئيساً للهيئة ، وفور صدور القانون باشرت الهيئة مهامها في الإشراف العام على شؤون الخدمة الوطنية والاحتياطية وعقدت العديد من الإجتماعات مع الجهات المعنية بالخدمة الوطنية داخل القوات المسلحة وخارجها لتنسيق وتوحيد الجهود المتعلقة بجمع البيانات والمعلومات الخاصة بالفئات المستهدفة ، وقد صادف الهيئة قبل وبعد صدور القانون العديد من التحديات التي ترجع إلى حداثة التجربة على المجتمع الإماراتي وصعوبة جمع البيانات والتي تم معالجتها والتغلب عليها بفضل الله وبالدعم اللامحدود من القيادة الرشيدة.
-
-وتسعى الهيئة بالتعاون مع شركائها للارتقاء بالخدمة الوطنية وتطويرها بما يحقق الغايات المنشودة منها والتي تعود بالنفع على الأفراد والمجتمع .</value>
-  </data>
-	<data name="PageHeader_AboutUs" xml:space="preserve">
-    <value>معلومات عامة</value>
-  </data>
-	<data name="PageHeader_ContactUs" xml:space="preserve">
-    <value>تواصل معنا</value>
-  </data>
-	<data name="PageHeader_Map" xml:space="preserve">
-    <value>خريطة</value>
-  </data>
-	<data name="PageHeader_Notifications" xml:space="preserve">
-    <value>الإشعارات</value>
-  </data>
-	<data name="ServiceRegistration_Step4Header" xml:space="preserve">
-    <value>بيانات الأقارب</value>
-  </data>
-	<data name="ServiceRegistration_Step5Header" xml:space="preserve">
-    <value>بيانات الزوج /الزوجة</value>
-  </data>
-	<data name="ServiceRegistration_Step6Header" xml:space="preserve">
-    <value>المؤهل العلمي</value>
-  </data>
-	<data name="ServiceRegistration_Step7Header" xml:space="preserve">
-    <value>مرفقات</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_AcademicCountry" xml:space="preserve">
-    <value>بلد الحصول على المؤهل</value>
-  </data>
-	<data name="ServiceRegistration_Picker_AcademicQualification" xml:space="preserve">
-    <value>المؤهل الدراسي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EducationFinished" xml:space="preserve">
-    <value>انهيت الدراسة</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_EducationInstitute" xml:space="preserve">
-    <value>منشأة التعليم</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_GPA" xml:space="preserve">
-    <value>(1-4)المعدل التراكمي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Percentage" xml:space="preserve">
-    <value>النسبة (1 -100)</value>
-  </data>
-	<data name="ServiceRegistration_GPA_Validation" xml:space="preserve">
-    <value>يجب ادخال المعدل التراكمي ما بين 1 و 4</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Grade" xml:space="preserve">
-    <value>درجة / نسبة المؤهل العلمي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_GraduationDate" xml:space="preserve">
-    <value>تاريخ التخرج</value>
-  </data>
-	<data name="ServiceRegistration_Picker_JobLevel" xml:space="preserve">
-    <value>المستوى الوظيفي</value>
-  </data>
-	<data name="ServiceRegistration_Picker_MainSpecialization" xml:space="preserve">
-    <value>التخصص الرئيسي</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Notes" xml:space="preserve">
-    <value>ملاحظات</value>
-  </data>
-	<data name="ServiceRegistration_Picker_SubSpecialization" xml:space="preserve">
-    <value>التخصص الفرعي</value>
-  </data>
-	<data name="ServiceRegistration_Header_AcademicQualification" xml:space="preserve">
-    <value>إضافة مؤهل الدراسي</value>
-  </data>
-	<data name="Home_Navigation_ContactUs" xml:space="preserve">
-    <value>تواصل معنا</value>
-  </data>
-	<data name="Home_Navigation_GeneralDept" xml:space="preserve">
-    <value>قسم الولاء</value>
-  </data>
-	<data name="Home_Navigation_GeneralInfo" xml:space="preserve">
-    <value>معلومات عامة</value>
-  </data>
-	<data name="Home_Navigation_Login" xml:space="preserve">
-    <value>دخول الأعضاء</value>
-  </data>
-	<data name="Home_Navigation_MediaCenter" xml:space="preserve">
-    <value>المركز الإعلامي</value>
-  </data>
-	<data name="Home_Navigation_NewUser" xml:space="preserve">
-    <value>مستخدم جديد</value>
-  </data>
-	<data name="NewAccount_Messages_MobileNotExists" xml:space="preserve">
-    <value>يرجى التفضل بالإتصال بمركز وزراة الداخلية على هاتف رقم 8005000 و طلب تحديث رقم الهاتف </value>
-  </data>
-	<data name="NewAccount_Messages_MobileNotValid" xml:space="preserve">
-    <value>رقم الجوال غير صالح</value>
-  </data>
-	<data name="NewAccount_Messages_NotExistingNumber" xml:space="preserve">
-    <value>‎لا أجد رقم الهاتف الخاص بي</value>
-  </data>
-	<data name="Home_Navigation_ServiceRegistration" xml:space="preserve">
-    <value>التسجيل في الخدمه</value>
-  </data>
-	<data name="News_LatesNews" xml:space="preserve">
-    <value>أخر الأخبار</value>
-  </data>
-	<data name="News_ViewAll" xml:space="preserve">
-    <value>عرض الكل</value>
-  </data>
-	<data name="Home_Navigation_Home" xml:space="preserve">
-    <value>رئيسية</value>
-  </data>
-	<data name="Home_Navigation_Map" xml:space="preserve">
-    <value>خريطة</value>
-  </data>
-	<data name="Home_Navigation_Website" xml:space="preserve">
-    <value>الموقع</value>
-  </data>
-	<data name="ServiceRegistration_RegisterNow" xml:space="preserve">
-    <value>سجل الآن</value>
-  </data>
-	<data name="Notification_LatestNotifications" xml:space="preserve">
-    <value>أحدث الإشعارات</value>
-  </data>
-	<data name="Notification_ViewAll" xml:space="preserve">
-    <value>عرض الكل</value>
-  </data>
-	<data name="ServiceRegistration_DOB" xml:space="preserve">
-    <value>تاريخ الميلاد</value>
-  </data>
-	<data name="ServiceRegistration_Status" xml:space="preserve">
-    <value>الحالة</value>
-  </data>
-	<data name="ServiceRegistration_UpdateInfo" xml:space="preserve">
-    <value>تعديل بيانات</value>
-  </data>
-	<data name="ServiceRegistration_Welcome" xml:space="preserve">
-    <value>مرحبا</value>
-  </data>
-	<data name="ServiceRegistration_Header_FamilyBook" xml:space="preserve">
-    <value>خلاصة القيد</value>
-  </data>
-	<data name="ServiceRegistration_Header_GeneralData" xml:space="preserve">
-    <value>بيانات عامة</value>
-  </data>
-	<data name="ServiceRegistration_Header_Name" xml:space="preserve">
-    <value>الاسم</value>
-  </data>
-	<data name="ServiceRegistration_Header_NationalityData" xml:space="preserve">
-    <value>بيانات الجنسية</value>
-  </data>
-	<data name="ServiceRegistration_Entry_PlaceHolder_Salary" xml:space="preserve">
-    <value>الراتب الحالي</value>
-  </data>
-	<data name="ServiceRegistration_Btn_AddWife" xml:space="preserve">
-    <value>إضافة زوج / زوجة </value>
-  </data>
-	<data name="ServiceRegistration_Btn_AddRelative" xml:space="preserve">
-    <value>إضافة قريب</value>
-  </data>
-	<data name="ServiceRegistration_Btn_EditRelative" xml:space="preserve">
-    <value>تعديل</value>
-  </data>
-	<data name="ServiceRegistration_Btn_DeleteRelative" xml:space="preserve">
-    <value>حذف</value>
-  </data>
-	<data name="Dialog_Confirm" xml:space="preserve">
+  <data name="Dialog_Confirm" xml:space="preserve">
     <value>تأكيد</value>
   </data>
-	<data name="Dialog_Cancel" xml:space="preserve">
-    <value>إلغاء</value>
-  </data>
-	<data name="Error_Validation_Email" xml:space="preserve">
-    <value>بريد إلكتروني خاطئ</value>
-  </data>
-	<data name="NewAccount_Btn_Send" xml:space="preserve">
-    <value>إرسال</value>
-  </data>
-	<data name="NewAccount_Btn_Skip" xml:space="preserve">
-    <value>تخطى</value>
-  </data>
-	<data name="NewAccount_Combo_Placeholder" xml:space="preserve">
-    <value>*** إختر ***</value>
-  </data>
-	<data name="Home_Navigation_ForgetPassword" xml:space="preserve">
-    <value>نسيت كلمة المرور</value>
-  </data>
-	<data name="ServiceRegistration_MotherMandatory" xml:space="preserve">
-    <value>لم تقم بإضافة أم  </value>
-  </data>
-	<data name="ServiceRegistration_FatherMandatory" xml:space="preserve">
-    <value>لم تقم بإضافة أب</value>
-  </data>
-	<data name="ServiceRegistration_OnlySon" xml:space="preserve">
-    <value>هل انت الابن الوحيد؟</value>
-  </data>
-	<data name="ServiceRegistration_DeleteWifeMessage_Title" xml:space="preserve">
-    <value>  هل انت متأكد أنك تريد حذف الزوج / الزوجة؟</value>
-  </data>
-	<data name="ServiceRegistration_DeleteRelativeMessage_Title" xml:space="preserve">
-    <value>هل انت متأكد أنك تريد حذف القريب؟</value>
-  </data>
-	<data name="Yes" xml:space="preserve">
-    <value>نعم </value>
-  </data>
-	<data name="No" xml:space="preserve">
-    <value>لا  </value>
-  </data>
-	<data name="ServiceRegistration_PassportIssuanceGreaterThanExpiry" xml:space="preserve">
-    <value>تاريخ الانتهاء يجب ان يسبق تاريخ الاصدار </value>
-  </data>
-	<data name="Home_Navigation_Inquiry" xml:space="preserve">
-    <value>الإستعلامات</value>
-  </data>
-	<data name="Walaa_Description" xml:space="preserve">
-    <value>اقسم بالله العظيم اقسم بالله العظيم اقسم بالله العظيم ان أكون مخلصا لدوله الامارات العربية المتحدة و لرئيسها مطيعا لجميع الأوامر التى تصدر الى من روؤسائي منفذا لها في البر والبحر والجو داخل البلاد و خارجيها في كل الظروف والأوقات وان أضع نفسي و مواهبي في خدمة البلاد حاميا علمها واستقلالها ما دمت  حيا محافظا على شرفي و سلاحي لا اتركة قط حتى أذوق الموت والله على ما اقول شهيد ....</value>
-  </data>
-	<data name="ServiceRegistration_AccountSaved" xml:space="preserve">
-    <value>تم حفظ البيانات بنجاح</value>
-  </data>
-	<data name="UnAuthoirzed_Message_Description" xml:space="preserve">
-    <value>لا تملك الصلاحية، الرجاء تسجيل الدخول</value>
-  </data>
-	<data name="UnAuthoirzed_Message_Title" xml:space="preserve">
-    <value>غير مصرح</value>
-  </data>
-	<data name="ServiceRegistration_ActionSheet_UploadImage_Cancel" xml:space="preserve">
-    <value>إلغاء</value>
-  </data>
-	<data name="ServiceRegistration_ActionSheet_UploadImage_Delete" xml:space="preserve">
-    <value>حذف</value>
-  </data>
-	<data name="ServiceRegistration_ActionSheet_UploadImage_Title" xml:space="preserve">
-    <value>تحديث / حذف  صورة</value>
-  </data>
-	<data name="ServiceRegistration_ActionSheet_UploadImage_Update" xml:space="preserve">
-    <value>تحديث</value>
-  </data>
-	<data name="ServiceRegistration_Picker_City" xml:space="preserve">
-    <value>المدينة</value>
-  </data>
-	<data name="ServiceRegistration_Picker_Country" xml:space="preserve">
-    <value>البلد</value>
-  </data>
-	<data name="ServiceRegistration_Picker_DOB" xml:space="preserve">
-    <value>تاريخ الولادة</value>
-  </data>
-	<data name="ServiceRegistration_Picker_DoYouWork" xml:space="preserve">
-    <value>هل تعمل؟</value>
-  </data>
-	<data name="ServiceRegistration_Picker_EducationJob" xml:space="preserve">
-    <value>الجهة التعليمية</value>
-  </data>
-	<data name="ServiceRegistration_Picker_EmiratesIDExpiryDate" xml:space="preserve">
-    <value>تاريخ إنتهاء الهوية</value>
-  </data>
-	<data name="ServiceRegistration_Picker_Gender" xml:space="preserve">
-    <value>الجنس</value>
-  </data>
-	<data name="ServiceRegistration_Picker_GraduationDate" xml:space="preserve">
-    <value>سنة التخرج</value>
-  </data>
-	<data name="ServiceRegistration_Picker_LivingPlace" xml:space="preserve">
-    <value>مكان الإقامة</value>
-  </data>
-	<data name="ServiceRegistration_Picker_MaritalStatus" xml:space="preserve">
-    <value>الحالة الإجتماعية</value>
-  </data>
-	<data name="ServiceRegistration_Picker_MilitryJob" xml:space="preserve">
-    <value>الجهة العسكرية</value>
-  </data>
-	<data name="ServiceRegistration_Picker_NationalityCurrent" xml:space="preserve">
-    <value>الجنسية الحالية</value>
-  </data>
-	<data name="ServiceRegistration_Picker_NationalityGain" xml:space="preserve">
-    <value>الجنسية المكتسبه</value>
-  </data>
-	<data name="ServiceRegistration_Picker_NationalityPervious" xml:space="preserve">
-    <value>الجنسية السابقة</value>
-  </data>
-	<data name="ServiceRegistration_Picker_NationlaityDate" xml:space="preserve">
-    <value>تاريخ الجنسية</value>
-  </data>
-	<data name="ServiceRegistration_Picker_OriginalCity" xml:space="preserve">
-    <value>البلدة الأصلية</value>
-  </data>
-	<data name="ServiceRegistration_Picker_PassportExpiryDate" xml:space="preserve">
-    <value>تاريخ الإنتهاء</value>
-  </data>
-	<data name="ServiceRegistration_Picker_PassportIssuanceDate" xml:space="preserve">
-    <value>تاريخ الإصدار</value>
-  </data>
-	<data name="ServiceRegistration_Picker_PassportIssuancePlace" xml:space="preserve">
-    <value>مكان الإصدار</value>
-  </data>
-	<data name="ServiceRegistration_Picker_PassportType" xml:space="preserve">
-    <value>نوع جواز السفر</value>
-  </data>
-	<data name="ServiceRegistration_Picker_Region" xml:space="preserve">
-    <value>المنطقة</value>
-  </data>
-	<data name="ServiceRegistration_Picker_RelativeType" xml:space="preserve">
-    <value>صلة القرابة</value>
-  </data>
-	<data name="ServiceRegistration_Picker_Tribe" xml:space="preserve">
-    <value>قبيلة</value>
-  </data>
-	<data name="ServiceRegistration_Picker_WorkOrganizationCity" xml:space="preserve">
-    <value>مدينة منظمة العمل</value>
-  </data>
-	<data name="ServiceRegistration_Picker_WorkOrganizationType" xml:space="preserve">
-    <value>نوع منظمة العمل</value>
-  </data>
-	<data name="ServiceRegistration_Btn_Submit" xml:space="preserve">
-    <value>تسجيل</value>
-  </data>
-	<data name="ServiceRegistration_ChooseRelatives" xml:space="preserve">
-    <value>اختر قريبك</value>
-  </data>
-	<data name="ServiceRegistration_ChooseWife" xml:space="preserve">
-    <value>اختر  زوجك/زوجتك</value>
-  </data>
-	<data name="ServiceRegistration_NoWife" xml:space="preserve">
-    <value>لا يوجد بيانات زوج / زوجة</value>
-  </data>
-	<data name="ServiceRegistration_NoWork" xml:space="preserve">
-    <value>لا يوجد بيانات عمل</value>
-  </data>
-	<data name="Home_Navigation_Logout" xml:space="preserve">
-    <value>تسجيل خروج</value>
-  </data>
-	<data name="Account_Entry_PlaceHolder_Email" xml:space="preserve">
-    <value>البريد الأكتروني</value>
-  </data>
-	<data name="Account_Entry_PlaceHolder_EmailTemplate" xml:space="preserve">
-    <value>email@email.com</value>
-  </data>
-	<data name="Account_Entry_PlaceHolder_Mobile" xml:space="preserve">
-    <value>رقم الهاتف</value>
-  </data>
-	<data name="Account_Picker_DOB" xml:space="preserve">
-    <value>تاريخ الميلاد</value>
-  </data>
-	<data name="Account_Picker_Gender" xml:space="preserve">
-    <value>الجنس</value>
-  </data>
-	<data name="Account_Picker_Nationality" xml:space="preserve">
-    <value>الجنسية</value>
-  </data>
-	<data name="Confirm" xml:space="preserve">
-    <value>تأكيد </value>
-  </data>
-	<data name="FeildIsManadtory" xml:space="preserve">
-    <value>يجب إدخال</value>
-  </data>
-	<data name="FeildIsInvalid" xml:space="preserve">
-    <value>خاطئ في </value>
-  </data>
-	<data name="NewAccount_Entry_Hint_Password" xml:space="preserve">
-    <value>يجب أن تكون على الاقل  8 أحرف أو أرقام ،يجب أن تحتوي على الأحرف التالية (حرف إنجليزي كبير (A-Z)، حرف إنجليزي صغير (a-z)، رقم (0-9)، رمز مثل (!,$,#,%)</value>
-  </data>
-	<data name="ArabicFeildIsInvalid" xml:space="preserve">
-    <value>رجاء ادخال حروف عربية فقط في {0}</value>
-  </data>
-	<data name="EnglishFeildIsInvalid" xml:space="preserve">
-    <value>رجاء ادخال حروف أنجليزية فقط في {0}</value>
-  </data>
-	<data name="LengthValidation" xml:space="preserve">
-    <value>{0} رقم على حد اقصى</value>
-  </data>
-	<data name="ServiceRegistration_NoAttachment" xml:space="preserve">
-    <value>الرجاء الاضطلاع على الموقع للتعرف على المستندات المطلوبة</value>
-  </data>
-	<data name="ServiceRegistration_HaveOtherSon" xml:space="preserve">
-    <value>من فضلك قم بإضافة إخوتك</value>
-  </data>
-	<data name="Required" xml:space="preserve">
-    <value>*</value>
-  </data>
-	<data name="login_password" xml:space="preserve">
+  <data name="login_password" xml:space="preserve">
     <value>كلمه المرور</value>
   </data>
-	<data name="login_userName" xml:space="preserve">
+  <data name="login_userName" xml:space="preserve">
     <value>اسم المستخدم</value>
   </data>
-	<data name="login_logInButton" xml:space="preserve">
+  <data name="login_logInButton" xml:space="preserve">
     <value>أدخل الآن</value>
   </data>
-	<data name="login_ForgotButton" xml:space="preserve">
+  <data name="login_ForgotButton" xml:space="preserve">
     <value>نسيت كلمه المرور الخاصه بي</value>
   </data>
-	<data name="login_NewAccountButton" xml:space="preserve">
+  <data name="login_NewAccountButton" xml:space="preserve">
     <value>إنشاء حساب جديد لمستخدم جديد</value>
   </data>
-	<data name="signUp_firstName" xml:space="preserve">
+  <data name="signUp_firstName" xml:space="preserve">
     <value>الإسم الأول</value>
   </data>
-	<data name="signUp_middleName" xml:space="preserve">
+  <data name="signUp_middleName" xml:space="preserve">
     <value>الإسم الأوسط</value>
   </data>
-	<data name="signUp_lastName" xml:space="preserve">
+  <data name="signUp_lastName" xml:space="preserve">
     <value>الإسم العائلة</value>
   </data>
-	<data name="signUp_age" xml:space="preserve">
+  <data name="signUp_age" xml:space="preserve">
     <value>السن </value>
   </data>
-	<data name="signUp_gender" xml:space="preserve">
+  <data name="signUp_gender" xml:space="preserve">
     <value>النوع</value>
   </data>
-	<data name="signUp_uploadPhotos" xml:space="preserve">
+  <data name="signUp_uploadPhotos" xml:space="preserve">
     <value>إرفع صورتك الشخصية لإضافتها لحسابك</value>
   </data>
-	<data name="signUp_eatingTitle" xml:space="preserve">
+  <data name="signUp_eatingTitle" xml:space="preserve">
     <value>أنت عاده تأخذ</value>
   </data>
-	<data name="signUp_eatingTitle" xml:space="preserve">
-    <value>أنت عاده تأخذ</value>
-  </data>
-	<data name="signUp_breakFastTitle" xml:space="preserve">
+  <data name="signUp_breakFastTitle" xml:space="preserve">
     <value>الإفطار في الساعه</value>
   </data>
-	<data name="signUp_launchTitle" xml:space="preserve">
+  <data name="signUp_launchTitle" xml:space="preserve">
     <value>الغداء في الساعه</value>
   </data>
-	<data name="signUp_dinnerTitle" xml:space="preserve">
+  <data name="signUp_dinnerTitle" xml:space="preserve">
     <value>العشاء في الساعه</value>
   </data>
-	<data name="signUp_buttonTitle" xml:space="preserve">
+  <data name="signUp_buttonTitle" xml:space="preserve">
     <value>أنشئ الحساب</value>
   </data>
-	<data name="Filter_MedicineName" xml:space="preserve">
+  <data name="Filter_MedicineName" xml:space="preserve">
     <value>إسم الدواء</value>
   </data>
-	<data name="Filter_DoctorName" xml:space="preserve">
+  <data name="Filter_DoctorName" xml:space="preserve">
     <value>إسم الدكتور</value>
   </data>
-	<data name="Filter_DeasesName" xml:space="preserve">
+  <data name="Filter_DeasesName" xml:space="preserve">
     <value>إسم المرض</value>
   </data>
-	<data name="Filter_StartDate" xml:space="preserve">
+  <data name="Filter_StartDate" xml:space="preserve">
     <value>تاريخ بدء التنبيه بالدواء</value>
   </data>
-	<data name="Filter_EndDate" xml:space="preserve">
+  <data name="Filter_EndDate" xml:space="preserve">
     <value>تاريخ إنتهاء التنبيه بالدواء</value>
   </data>
-	<data name="Filter_Button" xml:space="preserve">
+  <data name="Filter_Button" xml:space="preserve">
     <value>فلتر الآن</value>
   </data>
-		<data name="Home_newAlarmButton" xml:space="preserve">
+  <data name="Home_newAlarmButton" xml:space="preserve">
     <value>سجل تنبيه لدواء جديد</value>
   </data>
-		<data name="Home_secondButton" xml:space="preserve">
+  <data name="Home_secondButton" xml:space="preserve">
     <value>قائمة الأدوية</value>
-  </data> 
-		<data name="Home_thirdButton" xml:space="preserve">
+  </data>
+  <data name="Home_thirdButton" xml:space="preserve">
     <value>أرشيف الأدوية ومواعيدها و جرعاتها</value>
-  </data> 
+  </data>
+  <data name="MedicineAddNew_AddVoiceNote" xml:space="preserve">
+    <value>أضغط هنا لتسجيل ملاحظة صوتية</value>
+  </data>
+  <data name="MedicineAddNew_AttachImage" xml:space="preserve">
+    <value>اضغط هنا لإضافة سورة الضوء</value>
+  </data>
+  <data name="MedicineAddNew_DailyReminder" xml:space="preserve">
+    <value>تذكير يومي</value>
+  </data>
+  <data name="MedicineAddNew_EndDate" xml:space="preserve">
+    <value>تاريخ الأنتهاء</value>
+  </data>
+  <data name="MedicineAddNew_Entry_DieseaseName" xml:space="preserve">
+    <value>أسم المرض</value>
+  </data>
+  <data name="MedicineAddNew_Entry_DoctorName" xml:space="preserve">
+    <value>أسم الدكتور</value>
+  </data>
+  <data name="MedicineAddNew_Entry_MedicineName" xml:space="preserve">
+    <value>أسم الدواء</value>
+  </data>
+  <data name="MedicineAddNew_EventReminder" xml:space="preserve">
+    <value>تذكير مربوط بحدث</value>
+  </data>
+  <data name="MedicineAddNew_Header_AddComment" xml:space="preserve">
+    <value>أضفت تعليق أو ملاحظة</value>
+  </data>
+  <data name="MedicineAddNew_Header_ChooseReminderDate" xml:space="preserve">
+    <value>حدد تاريخ بدأ و أنتهاء التنبيه</value>
+  </data>
+  <data name="MedicineAddNew_Header_MedicineInfo" xml:space="preserve">
+    <value>ادخال بيانات الدواء</value>
+  </data>
+  <data name="MedicineAddNew_Header_MedicineReminder" xml:space="preserve">
+    <value>حدد موعد التذكر بالدواء</value>
+  </data>
+  <data name="MedicineAddNew_Header_OtherInfo" xml:space="preserve">
+    <value>بيانات أخرى</value>
+  </data>
+  <data name="MedicineAddNew_MonthlyReminder" xml:space="preserve">
+    <value>تذكير شهري</value>
+  </data>
+  <data name="MedicineAddNew_Picker_ChooseDateTime" xml:space="preserve">
+    <value>أختر اليوم و التوقيت</value>
+  </data>
+  <data name="MedicineAddNew_Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="MedicineAddNew_SaveAndAdd" xml:space="preserve">
+    <value>حفظ و تسجيل دواء جديد</value>
+  </data>
+  <data name="MedicineAddNew_StartDate" xml:space="preserve">
+    <value>تاريخ البدء</value>
+  </data>
+  <data name="MedicineAddNew_WeeklyReminder" xml:space="preserve">
+    <value>تذكير إسبوع</value>
+  </data>
+  <data name="PageHeader_AddNewMedicine" xml:space="preserve">
+    <value>اضافة دواء</value>
+  </data>
+  <data name="PageHeader_MedicineHistory" xml:space="preserve">
+    <value>تاريخ الأدوية</value>
+  </data>
+  <data name="PageHeader_MedicineSchedule" xml:space="preserve">
+    <value>قائمة الأدوية</value>
+  </data>
+  <data name="PageHeader_MedicineSchedule_AllMedicine" xml:space="preserve">
+    <value>جميع الأدوية</value>
+  </data>
+  <data name="PageHeader_MedicineSchedule_CurrentMedicine" xml:space="preserve">
+    <value>الأدوية الحالية</value>
+  </data>
+  <data name="PageHeader_UpdateNewMedicine" xml:space="preserve">
+    <value>تعديل دواء</value>
+  </data>
 </root>

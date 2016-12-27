@@ -127,8 +127,6 @@
     <Content Include="edit_green_ico.png" />
     <Content Include="edit_start_end_dates_ico.png" />
     <Content Include="edit_white_ico.png" />
-    <Content Include="f.png" />
-    <Content Include="g.png" />
     <Content Include="history_ico.png" />
     <Content Include="listen_ico.png" />
     <Content Include="logo.png" />
