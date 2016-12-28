@@ -97,6 +97,8 @@
     <Compile Include="UI\Pages\Filter\FilterPage.xaml.cs">
       <DependentUpon>FilterPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Logic\Models\Data\LoginUser.cs" />
+    <Compile Include="Logic\Models\Data\NewUSer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">

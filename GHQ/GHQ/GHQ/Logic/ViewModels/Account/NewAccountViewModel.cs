@@ -7,6 +7,9 @@ using Service.Dialog;
 using Service.Exception;
 using Service.Naviagtion;
 using GHQ.Logic.Service.Lookup;
+using Xamarin.Forms;
+using Service.Media;
+using GHQLogic.Models.Data;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -31,7 +34,18 @@ namespace GHQ.Logic.ViewModels.Account
         #endregion
 
         #region Properties
-
+		private NewUSer _User;
+		public NewUSer User
+		{
+			get
+			{
+				return _User;
+			}
+			set
+			{
+				Set(() => User, ref _User, value);
+			}
+		}
 
         #endregion
 
@@ -81,7 +95,54 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
+		#region Media Command
 
-        #endregion
-    }
+        private RelayCommand _OnOpenGalleryCommand;
+		public RelayCommand OnOpenGalleryCommand
+		{
+			get
+			{
+				if (_OnOpenGalleryCommand == null)
+				{
+					_OnOpenGalleryCommand = new RelayCommand(openGallery);
+				}
+				return _OnOpenGalleryCommand;
+			}
+		}
+		private async void openGallery()
+		{
+			try
+			{
+				
+				var mediaPicker = DependencyService.Get<IMediaPicker>();
+				navigationService.IsExternalAppOpen = true;
+				var mediaFile = await mediaPicker.SelectPhotoAsync();
+				navigationService.IsExternalAppOpen = false;
+				if (mediaFile != null)
+				{
+					User.Image = mediaFile;
+					IsLoading = true;
+					var imageBytes = mediaFile.data;
+				}
+
+			}
+			catch (InternetException ex)
+			{
+				await dialogService.DisplayAlert(AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
+			}
+			catch (System.Exception ex)
+			{
+				await dialogService.DisplayAlert(AppResources.Error_GeneralTitle, ex.Message);
+			}
+			finally
+			{
+				IsLoading = false;
+			}
+		}
+
+		#endregion
+
+
+		#endregion
+	}
 }

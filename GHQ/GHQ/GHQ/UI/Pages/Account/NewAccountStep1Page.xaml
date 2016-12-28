@@ -16,6 +16,8 @@
 						<RowDefinition Height="Auto" />
 						<RowDefinition Height="Auto" />
 						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
 					<Grid Grid.Row="0">
 						<Grid.ColumnDefinitions>
@@ -34,14 +36,10 @@
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
-							<RowDefinition Height="Auto" />
-							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-						<controls:InputField Grid.Row="0" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_firstName}" />
-						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_middleName}" />
-						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_lastName}" />
-						<controls:InputField Grid.Row="3" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_age}" />
-						<controls:BindablePicker Grid.Row="4" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate signUp_gender}"/>
+						<controls:InputField Grid.Row="0" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate login_userName}" Title = "{Binding User.UserName}"/>
+						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate login_password}" Title = "{Binding User.Password}"/>
+						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate SignUp_ConfirmPassword}" Title = "{Binding User.ConfirmPassword}"/>
 					</Grid>
 					<Grid Grid.Row="2">
 						<Grid.RowDefinitions>
@@ -55,11 +53,13 @@
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-						<Label Grid.Row="0" Margin="0,10,15,10" Text="{i18n:Translate signUp_eatingTitle}" TextColor= "#317C76" HorizontalOptions="End" />
-						<controls:BindablePicker Grid.Row="1" Style="{StaticResource PickerStyle}"  Title = "{i18n:Translate signUp_breakFastTitle}" />
-						<controls:BindablePicker Grid.Row="2" Style="{StaticResource PickerStyle}"  Title = "{i18n:Translate signUp_launchTitle}" />
-						<controls:BindablePicker Grid.Row="3" Style="{StaticResource PickerStyle}"  Title = "{i18n:Translate signUp_dinnerTitle}" />
+						<controls:InputField Grid.Row="0" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_firstName}"	 Title = "{Binding User.FirstName}"/>
+						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_middleName}"  Title = "{Binding User.MiddleName}"/>
+						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_lastName}" 	 Title = "{Binding User.LastName}"/>
+						<controls:InputField Grid.Row="3" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_age}"		 Title = "{Binding User.Age}"/>
+						<controls:BindablePicker Grid.Row="4" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate signUp_gender}"/>
 					</Grid>
 					<Grid Grid.Row="4">
 						<Grid.RowDefinitions>
@@ -68,6 +68,24 @@
 						<BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="15,20,15,0" BackgroundColor="Black" />
 					</Grid>
 					<Grid Grid.Row="5">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+						<Label Grid.Row="0" Margin="0,10,15,10" Text="{i18n:Translate signUp_eatingTitle}" TextColor= "#317C76" HorizontalOptions="End" />
+						<!--<controls:DatePickerField Grid.Row="1" />
+						<controls:DatePickerField Grid.Row="2"  />
+						<controls:DatePickerField Grid.Row="3"   />-->
+					</Grid>
+					<Grid Grid.Row="6">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+						<BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="15,20,15,0" BackgroundColor="Black" />
+					</Grid>
+					<Grid Grid.Row="7">
 						<Grid.RowDefinitions>
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
