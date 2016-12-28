@@ -10,6 +10,7 @@ using GHQ.Logic.Service.Lookup;
 using Xamarin.Forms;
 using Service.Media;
 using GHQLogic.Models.Data;
+using System.Collections.ObjectModel;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -47,6 +48,19 @@ namespace GHQ.Logic.ViewModels.Account
 			}
 		}
 
+		private ObservableCollection<LookupData> _GenderList;
+		public ObservableCollection<LookupData> GenderList
+		{
+			get
+			{
+				return _GenderList;
+			}
+			set
+			{
+				Set(() => GenderList, ref _GenderList, value);
+			}
+		}
+
         #endregion
 
         #region Private Methods
@@ -77,6 +91,7 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 ClearValidationErrors();
 
+				GenderList =new ObservableCollection<LookupData>( await lookupService.GetGenderAsync());
 
             }
             catch (InternetException ex)

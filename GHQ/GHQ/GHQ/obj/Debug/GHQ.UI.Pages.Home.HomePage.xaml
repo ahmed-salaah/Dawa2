@@ -11,7 +11,8 @@
       </Image.Source>
     </Image>
     <Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
-      <Grid.RowDefinitions>
+    <Grid Style = "{StaticResource GridContentStyle}" >
+		<Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
@@ -42,13 +43,13 @@
           <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 		 <controls:ButtonField Grid.Row="0" IsEnabled="True" Title="{i18n:Translate Home_newAlarmButton}" TextColor="White" BGColor="#FBAA18" ItemHeight="50"
-                         Command="{Binding OnHomeNavigationCommand}" RightImage="medicines_list_ico.png" LeftImage =""/>
+                         Command="{Binding OnHomeNavigationCommand}" CommandParamter = "Schedule" RightImage="medicines_list_ico.png" LeftImage =""/>
 		 <controls:ButtonField Grid.Row="1" IsEnabled="True" Title="{i18n:Translate Home_secondButton}"  TextColor="White" BGColor="#FBAA18" ItemHeight="50"
-                         Command="{Binding OnHomeNavigationCommand}"  RightImage="history_ico.png" LeftImage =""/>
+                         Command="{Binding OnHomeNavigationCommand}" CommandParamter = "History" RightImage="history_ico.png" LeftImage =""/>
 		 <controls:ButtonField Grid.Row="2" IsEnabled="True" Title="{i18n:Translate Home_thirdButton}"  TextColor="White" BGColor="#FBAA18" ItemHeight="50"
-                         Command="{Binding OnHomeNavigationCommand}"  RightImage="add_medicine_ico.png" LeftImage =""/>
+                         Command="{Binding OnHomeNavigationCommand}" CommandParamter = "Add" RightImage="add_medicine_ico.png" LeftImage =""/>
 		</Grid>
-
+		</Grid>
     </Grid>
   </RelativeLayout>
 </Base:BasePage>

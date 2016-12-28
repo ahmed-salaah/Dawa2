@@ -26,7 +26,16 @@ namespace GHQ.Logic.Service.Lookup
         {
             try
             {
-                return null;
+				List<LookupData> GenderList = new List<LookupData>();
+				LookupData male = new LookupData();
+				male.ValueEn = "Male";
+				male.ValueAr = "ذكر";
+				GenderList.Add(male);
+				LookupData female = new LookupData();
+				female.ValueEn = "Female";
+				female.ValueAr = "أنثي";
+				GenderList.Add(female);
+				return GenderList;
             }
             catch (InternetException ex)
             {

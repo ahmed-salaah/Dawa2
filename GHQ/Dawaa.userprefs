@@ -1,12 +1,17 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
   <MonoDevelop.Ide.ItemProperties.Dawaa.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProjectX.Common/Common/Controls/DatePickerField.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/Logic/Models/Data/NewUSer.cs">
     <Files>
-      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="78" Column="32" />
-      <File FileName="GHQ/GHQ/Logic/ViewModels/Account/NewAccountViewModel.cs" Line="12" Column="28" />
-      <File FileName="GHQ/GHQ/Logic/Models/Data/NewUSer.cs" Line="114" Column="32" />
-      <File FileName="GHQ/GHQ/App.xaml" Line="191" Column="36" />
-      <File FileName="ProjectX.Common/Common/Controls/DatePickerField.xaml" Line="4" Column="47" />
+      <File FileName="GHQ/GHQ/UI/Pages/Home/HomePage.xaml" Line="46" Column="97" />
+      <File FileName="GHQ/GHQ/App.xaml" Line="245" Column="37" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/LoginPage.xaml" Line="54" Column="11" />
+      <File FileName="GHQ/GHQ/UI/Pages/Home/HomePage.xaml.cs" Line="11" Column="24" />
+      <File FileName="GHQ/GHQ/Logic/ViewModels/Home/HomeViewModel.cs" Line="92" Column="47" />
+      <File FileName="GHQ/GHQ/Logic/Services/LookupService/LookupService.cs" Line="45" Column="14" />
+      <File FileName="GHQ/GHQ/Logic/Services/LookupService/ILookupService.cs" Line="1" Column="1" />
+      <File FileName="GHQ/GHQ/Logic/ViewModels/Account/NewAccountViewModel.cs" Line="38" Column="12" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="62" Column="187" />
+      <File FileName="GHQ/GHQ/Logic/Models/Data/NewUSer.cs" Line="111" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
