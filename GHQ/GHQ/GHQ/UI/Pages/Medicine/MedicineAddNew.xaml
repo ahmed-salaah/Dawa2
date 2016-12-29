@@ -34,7 +34,9 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineInfo} " Style="{StaticResource LabelHeaderEntryStyle}" />
 
-            <controls:InputField IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate MedicineAddNew_Entry_MedicineName}" />
+            <controls:InputField IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False"
+                                 ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate MedicineAddNew_Entry_MedicineName}"
+            Title="{Binding Medicine.Name,Mode=TwoWay}"/>
 
             <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
                                  Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="camera_ico.png"/>
@@ -143,8 +145,8 @@
               <ColumnDefinition Width="2*" />
               <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_SaveAndAdd} " BackgroundColor="{StaticResource DarkBlueColor}"></Button>
-            <Button Grid.Row="0" Grid.Column="1" Text="{i18n:Translate MedicineAddNew_Save}  " BackgroundColor="{StaticResource OrangeColor}"></Button>
+            <Button Grid.Row="0" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_SaveAndAdd} " BackgroundColor="{StaticResource DarkBlueColor}" Command="{Binding OnSaveCommand}"></Button>
+            <Button Grid.Row="0" Grid.Column="1" Text="{i18n:Translate MedicineAddNew_Save}  " BackgroundColor="{StaticResource OrangeColor}"  Command="{Binding OnSaveCommand}"></Button>
           </Grid>
 
         </Grid>

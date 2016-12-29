@@ -156,6 +156,9 @@
   <data name="Home_newAlarmButton" xml:space="preserve">
     <value>سجل تنبيه لدواء جديد</value>
   </data>
+  <data name="SignUp_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمه المرور</value>
+  </data>
   <data name="signUp_middleName" xml:space="preserve">
     <value>الإسم الأوسط</value>
   </data>
