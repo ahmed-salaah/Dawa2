@@ -4,7 +4,7 @@ using GHQ.Logic.Service.Lookup;
 using Logic.Models.Data;
 using Models;
 using Service.Naviagtion;
-using System.Collections.ObjectModel;
+
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -26,23 +26,13 @@ namespace GHQ.Logic.ViewModels.Account
 
         #region Properties
 
-        private ObservableCollection<Medicine> _MedicineList;
-        public ObservableCollection<Medicine> MedicineList
+        private Medicine _Medicine;
+        public Medicine Medicine
         {
-            get { return _MedicineList; }
+            get { return _Medicine; }
             set
             {
-                Set(() => MedicineList, ref _MedicineList, value);
-            }
-        }
-
-        private Medicine _SelectedMedicine;
-        public Medicine SelectedMedicine
-        {
-            get { return _SelectedMedicine; }
-            set
-            {
-                Set(() => SelectedMedicine, ref _SelectedMedicine, value);
+                Set(() => Medicine, ref _Medicine, value);
             }
         }
 
@@ -73,7 +63,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                MedicineList = new ObservableCollection<Medicine>(await medicineService.GetSchedule());
+                Medicine = new Medicine();
             }
             catch (System.Exception ex)
             {
@@ -100,6 +90,37 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
         private async void RecordVoiceNote()
+        {
+            try
+            {
+            }
+            catch (System.Exception ex)
+            {
+            }
+            finally
+            {
+            }
+        }
+
+        #endregion
+
+        #region OnSave Command
+
+        private RelayCommand _OnSaveCommand;
+        public RelayCommand OnSaveCommand
+        {
+            get
+            {
+                if (_OnSaveCommand == null)
+                {
+                    _OnSaveCommand = new RelayCommand(OnSave);
+                }
+                return _OnSaveCommand;
+            }
+        }
+
+
+        private async void OnSave()
         {
             try
             {
