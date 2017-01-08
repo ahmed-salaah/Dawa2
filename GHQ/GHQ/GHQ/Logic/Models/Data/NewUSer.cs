@@ -97,16 +97,17 @@ namespace GHQLogic.Models.Data
 			}
 		}
 
-		private string _Gender;
-		public string Gender
+	
+		private LookupData _SelectedGender;
+		public LookupData SelectedGender
 		{
 			get
 			{
-				return _Gender;
+				return _SelectedGender;
 			}
 			set
 			{
-				Set(() => Gender, ref _Gender, value);
+				Set(() => SelectedGender, ref _SelectedGender, value);
 			}
 		}
 
