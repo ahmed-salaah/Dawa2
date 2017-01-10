@@ -1,14 +1,36 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
   <MonoDevelop.Ide.ItemProperties.Dawaa.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="82" Column="13" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="14" Column="2" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Dawaa" expanded="True">
+            <Node name="Dawaa" expanded="True">
+              <Node name="Common" expanded="True" />
+              <Node name="UI" expanded="True" />
+            </Node>
+            <Node name="Dawaa.Droid" expanded="True">
+              <Node name="CustomRenderer" expanded="True" />
+            </Node>
+            <Node name="Dawaa.iOS" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="CustomRenderer" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="MediaPicker.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.ae135cf0741dcb8854b84d2d8102df2adb2b2ebe" />
+  <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
 </Properties>
