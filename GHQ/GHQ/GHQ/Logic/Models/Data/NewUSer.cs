@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Models;
+using Xamarin.Forms;
 
 namespace GHQLogic.Models.Data
 {
@@ -97,7 +98,19 @@ namespace GHQLogic.Models.Data
 			}
 		}
 
-	
+		private ImageSource _ImageSource = ImageSource.FromResource("profile_photo.png");
+		public ImageSource ImageSource
+		{
+			get
+			{
+				return _ImageSource;
+			}
+			set
+			{
+				Set(() => ImageSource , ref _ImageSource, value);
+			}
+		}
+
 		private LookupData _SelectedGender;
 		public LookupData SelectedGender
 		{

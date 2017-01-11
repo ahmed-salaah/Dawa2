@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace GHQ
 {
@@ -14,8 +15,9 @@ namespace GHQ
 			};
 
         }
+		public static Action<string> PostSuccessFacebookAction { get; set; }
 
-        protected override void OnStart()
+		protected override void OnStart()
         {
             // Handle when your app starts
         }

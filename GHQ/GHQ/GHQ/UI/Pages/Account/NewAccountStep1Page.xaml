@@ -24,11 +24,11 @@
 							<ColumnDefinition Width="*" />
 							<ColumnDefinition Width="*" />
 						</Grid.ColumnDefinitions>
-						<Label Grid.Column="0" Text="{i18n:Translate signUp_uploadPhotos}" HorizontalOptions="Center" Margin = "10,0,0,0" VerticalOptions="Center" TextColor= "#317C76" />
-						<Image Grid.Column="1" HorizontalOptions="Center" Aspect="AspectFit" Margin = "0,0,0,20" VerticalOptions="Center">
-							<Image.Source>
-								<OnPlatform x:TypeArguments="ImageSource" WinPhone="logo.png" Android="login.png" iOS="profile_photo" />
-						</Image.Source>
+						<Label Grid.Column="0" Text="{i18n:Translate signUp_uploadPhotos}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" TextColor="#317C76" />
+						<Image x:Name= "imageView" Grid.Column="1" HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center">
+							<Image.GestureRecognizers>
+								<TapGestureRecognizer Command="{Binding OnOpenGalleryCommand}" />
+							</Image.GestureRecognizers>
 						</Image>
 					</Grid>
 					<Grid Grid.Row="1">
@@ -37,9 +37,9 @@
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-						<controls:InputField Grid.Row="0" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate login_userName}" Title = "{Binding User.UserName}"/>
-						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate login_password}" Title = "{Binding User.Password}"/>
-						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate SignUp_ConfirmPassword}" Title = "{Binding User.ConfirmPassword}"/>
+						<controls:InputField Grid.Row="0" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate login_userName}" Title="{Binding User.UserName}" />
+						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate login_password}" Title="{Binding User.Password}" />
+						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate SignUp_ConfirmPassword}" Title="{Binding User.ConfirmPassword}" />
 					</Grid>
 					<Grid Grid.Row="2">
 						<Grid.RowDefinitions>
@@ -55,11 +55,11 @@
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-						<controls:InputField Grid.Row="0" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_firstName}"	 Title = "{Binding User.FirstName}"/>
-						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_middleName}"  Title = "{Binding User.MiddleName}"/>
-						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_lastName}" 	 Title = "{Binding User.LastName}"/>
-						<controls:InputField Grid.Row="3" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_age}"		 Title = "{Binding User.Age}"/>
-						<controls:BindablePicker Grid.Row="4" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate signUp_gender}" ItemsSource = "{Binding GenderList}" SelectedItem = "{Binding SelectedGender}"/>
+						<controls:InputField Grid.Row="0" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_firstName}" Title="{Binding User.FirstName}" />
+						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_middleName}" Title="{Binding User.MiddleName}" />
+						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_lastName}" Title="{Binding User.LastName}" />
+						<controls:InputField Grid.Row="3" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_age}" Title="{Binding User.Age}" />
+						<controls:BindablePicker Grid.Row="4" Style="{StaticResource PickerStyle}" Title="{i18n:Translate signUp_gender}" ItemsSource="{Binding GenderList}" SelectedItem="{Binding SelectedGender}" />
 					</Grid>
 					<Grid Grid.Row="4">
 						<Grid.RowDefinitions>
@@ -74,11 +74,10 @@
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-						<Label Grid.Row="0" Margin="0,10,15,10" Text="{i18n:Translate signUp_eatingTitle}" TextColor= "#317C76" HorizontalOptions="End" />
-
-					<controls:DatePickerField Grid.Row="1" />
+						<Label Grid.Row="0" Margin="0,10,15,10" Text="{i18n:Translate signUp_eatingTitle}" TextColor="#317C76" HorizontalOptions="End" />
+						<!--<controls:DatePickerField Grid.Row="1" />
 						<controls:DatePickerField Grid.Row="2"  />
-						<controls:DatePickerField Grid.Row="3"   />
+						<controls:DatePickerField Grid.Row="3"   />-->
 					</Grid>
 					<Grid Grid.Row="6">
 						<Grid.RowDefinitions>
