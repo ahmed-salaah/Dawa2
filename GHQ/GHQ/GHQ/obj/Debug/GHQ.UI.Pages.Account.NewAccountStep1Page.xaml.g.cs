@@ -17,8 +17,12 @@ namespace GHQ.UI.Pages.Account {
     public partial class NewAccountStep1Page : global::GHQ.UI.Pages.BasePage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Image imageView;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(NewAccountStep1Page));
+            imageView = this.FindByName <global::Xamarin.Forms.Image>("imageView");
         }
     }
 }

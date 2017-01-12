@@ -11,6 +11,7 @@ using Xamarin.Forms;
 using Service.Media;
 using GHQLogic.Models.Data;
 using System.Collections.ObjectModel;
+using System.IO;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -138,6 +139,8 @@ namespace GHQ.Logic.ViewModels.Account
 					User.Image = mediaFile;
 					IsLoading = true;
 					var imageBytes = mediaFile.data;
+					User.ImageSource  = ImageSource.FromStream(() => new MemoryStream(imageBytes));
+
 				}
 
 			}
@@ -156,8 +159,7 @@ namespace GHQ.Logic.ViewModels.Account
 		}
 
 		#endregion
-
-
+	
 		#endregion
 	}
 }

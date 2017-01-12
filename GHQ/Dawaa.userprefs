@@ -1,36 +1,17 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
   <MonoDevelop.Ide.ItemProperties.Dawaa.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml.cs">
     <Files>
-      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="14" Column="2" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="28" Column="135" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml.cs" Line="15" Column="69" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Dawaa" expanded="True">
-            <Node name="Dawaa" expanded="True">
-              <Node name="Common" expanded="True" />
-              <Node name="UI" expanded="True" />
-            </Node>
-            <Node name="Dawaa.Droid" expanded="True">
-              <Node name="CustomRenderer" expanded="True" />
-            </Node>
-            <Node name="Dawaa.iOS" expanded="True">
-              <Node name="ComponentReferenceFolder" expanded="True" />
-              <Node name="CustomRenderer" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="MediaPicker.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/Logic/Models/Data/NewUSer.cs" line="106" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.45749E81-9722-4EB8-955F-44DA387CF148" />
 </Properties>
