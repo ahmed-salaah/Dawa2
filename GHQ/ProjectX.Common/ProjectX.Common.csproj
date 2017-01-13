@@ -79,6 +79,7 @@
     <Compile Include="Common\Service\Internet\IInternetService.cs" />
     <Compile Include="Common\Service\Internet\InternetService.cs" />
     <Compile Include="Common\Service\Localization\ILocalize.cs" />
+    <Compile Include="Common\Service\Image\IImageService.cs" />
     <Compile Include="Common\Service\Media\IMediaService.cs" />
     <Compile Include="Common\Service\Naviagtion\INavigationService.cs" />
     <Compile Include="Common\Service\Naviagtion\NavigationService.cs" />

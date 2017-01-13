@@ -36,7 +36,6 @@ namespace Service.DatabaseService
             {
                 local = await ApplicationData.Current.LocalFolder.CreateFolderAsync("Database");
                 await seedFile.CopyAsync(local);
-
             }
         }
 

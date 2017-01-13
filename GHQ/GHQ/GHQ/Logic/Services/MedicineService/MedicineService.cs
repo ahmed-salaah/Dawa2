@@ -89,8 +89,31 @@ namespace GHQ.Logic.Service.Lookup
         {
             try
             {
-                SQLiteConnection db = DependencyService.Get<IDatabaseService>().GetInstance();
-                var m = db.Table<Database.Entities.Medicine>().FirstOrDefault();
+                SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+                //var m = database.Table<Database.Entities.Medicine>().FirstOrDefault();
+                Database.Entities.Medicine m = new Database.Entities.Medicine()
+                {
+                    Id = medicine.Id,
+                    DiseaseName = medicine.DiseaseName,
+                    DoctorName = medicine.DoctorName,
+                    EndDate = medicine.EndDate,
+                    ImagePath = medicine.ImagePath,
+                    IsMissed = medicine.IsMissed,
+                    Name = medicine.Name,
+                    NexDate = medicine.NextDate,
+                    Note = medicine.Note,
+                    StartDate = medicine.StartDate,
+                    VoiceNotePath = medicine.VoiceNotePath,
+                };
+
+                if (medicine.Id != 0)
+                {
+                    int rows = database.Update(m);
+                }
+                else
+                {
+                    int rows = database.Insert(m);
+                }
 
                 return medicine;
             }

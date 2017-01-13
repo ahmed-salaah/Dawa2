@@ -214,6 +214,7 @@
     <Compile Include="Services\MediaPicker\MediaPickerActivity.cs" />
     <Compile Include="Services\MediaPicker\MediaStorageOptions.cs" />
     <Compile Include="Services\MediaPicker\TaskUtils.cs" />
+    <Compile Include="Services\ImageService.cs" />
     <Compile Include="Services\Reflection.cs" />
     <Compile Include="Services\Localize.cs" />
     <Compile Include="SplashActivity.cs" />

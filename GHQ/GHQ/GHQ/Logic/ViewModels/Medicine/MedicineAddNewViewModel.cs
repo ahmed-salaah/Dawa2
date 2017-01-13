@@ -10,6 +10,7 @@ using Service.Exception;
 using Service.Media;
 using Service.Naviagtion;
 using Service.Recorder;
+using System;
 using System.IO;
 using Xamarin.Forms;
 
@@ -128,14 +129,14 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 var mediaPicker = DependencyService.Get<IMediaPicker>();
                 navigationService.IsExternalAppOpen = true;
-                var mediaFile = await mediaPicker.SelectPhotoAsync();
+                MediaFile mediaFile = await mediaPicker.SelectPhotoAsync();
                 navigationService.IsExternalAppOpen = false;
                 if (mediaFile != null)
                 {
                     IsLoading = true;
                     var imageBytes = mediaFile.data;
                     Medicine.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-
+                    DependencyService.Get<IImageService>().SavePictureToDisk(Guid.NewGuid().ToString() + Medicine.Name, imageBytes);
                 }
 
             }
