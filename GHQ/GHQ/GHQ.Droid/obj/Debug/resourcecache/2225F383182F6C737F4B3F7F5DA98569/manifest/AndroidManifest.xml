@@ -21,7 +21,7 @@
   <!-- Optional permission for App measurement to run. -->
   <uses-permission android:name="android.permission.WAKE_LOCK" />
   <application>
-    <provider android:authorities="com.LinkDev.GHQ.google_measurement_service" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider" android:exported="false" />
+    <provider android:authorities="com.Shafafeya.Dawaa.google_measurement_service" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider" android:exported="false" />
     <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true">
       <intent-filter>
         <action android:name="com.google.android.gms.measurement.UPLOAD" />
