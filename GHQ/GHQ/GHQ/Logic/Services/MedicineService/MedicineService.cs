@@ -7,6 +7,7 @@ using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace GHQ.Logic.Service.Lookup
 {
@@ -16,14 +17,12 @@ namespace GHQ.Logic.Service.Lookup
 
         INetworkService networkService;
         IInternetService internetService;
-        IDatabaseService dataBaseService;
         #endregion
 
-        public MedicineService(INetworkService _networkService, IInternetService _internetService, IDatabaseService _dataBaseService)
+        public MedicineService(INetworkService _networkService, IInternetService _internetService)
         {
             networkService = _networkService;
             internetService = _internetService;
-            dataBaseService = _dataBaseService;
         }
 
         public async Task<List<Medicine>> GetHistory()
@@ -90,9 +89,10 @@ namespace GHQ.Logic.Service.Lookup
         {
             try
             {
-                SQLiteAsyncConnection db = dataBaseService.GetInstance();
+                SQLiteConnection db = DependencyService.Get<IDatabaseService>().GetInstance();
+                // SQLiteAsyncConnection db = dataBaseService.GetInstance();
                 //db.CreateTableAsync<Database.Entities.Medicine>().Wait();
-                var m = await db.Table<Database.Entities.Medicine>().FirstOrDefaultAsync();
+                var m = db.Table<Database.Entities.Medicine>().FirstOrDefault();
 
                 return medicine;
             }

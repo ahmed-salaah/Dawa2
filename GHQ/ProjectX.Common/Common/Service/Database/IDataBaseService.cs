@@ -5,7 +5,7 @@ namespace Service.Database
 {
     public interface IDatabaseService
     {
-        SQLiteAsyncConnection GetInstance();
+        SQLiteConnection GetInstance();
 
         Task CopyDb();
     }

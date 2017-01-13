@@ -3165,6 +3165,8 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f090040;
         public static final int abc_shareactionprovider_share_with_application=0x7f090041;
         public static final int abc_toolbar_collapse_description=0x7f090042;
+        public static final int app_id=0x7f090049;
+        public static final int app_name=0x7f09004a;
         public static final int appbar_scrolling_view_behavior=0x7f090044;
         /**  Brand name for Facebook [DO NOT TRANSLATE] 
          */

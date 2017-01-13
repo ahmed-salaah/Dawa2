@@ -503,6 +503,15 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to الإفطار في الساعه….
+        /// </summary>
+        internal static string SignUP_BreakFast {
+            get {
+                return ResourceManager.GetString("SignUP_BreakFast", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to الإفطار في الساعه.
         /// </summary>
         internal static string signUp_breakFastTitle {
@@ -526,6 +535,15 @@ namespace GHQ.Resources.Strings {
         internal static string SignUp_ConfirmPassword {
             get {
                 return ResourceManager.GetString("SignUp_ConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to العشاء في الساعه….
+        /// </summary>
+        internal static string SignUP_Dinner {
+            get {
+                return ResourceManager.GetString("SignUP_Dinner", resourceCulture);
             }
         }
         
@@ -571,6 +589,15 @@ namespace GHQ.Resources.Strings {
         internal static string signUp_lastName {
             get {
                 return ResourceManager.GetString("signUp_lastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الغداء في الساعه….
+        /// </summary>
+        internal static string SignUP_launch {
+            get {
+                return ResourceManager.GetString("SignUP_launch", resourceCulture);
             }
         }
         

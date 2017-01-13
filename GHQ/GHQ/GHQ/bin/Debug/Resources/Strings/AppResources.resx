@@ -216,14 +216,11 @@
 	<data name="MedicineAddNew_AddVoiceNote" xml:space="preserve">
     <value>أضغط هنا لتسجيل ملاحظة صوتية</value>
   </data>
-<<<<<<< HEAD
-	<data name="MedicineAddNew_AttachImage" xml:space="preserve">
-=======
+
   <data name="MedicineAddNew_StopAndPlayVoiceNote" xml:space="preserve">
     <value>أضغط هنا لتوقيف و تشغيل </value>
   </data>
   <data name="MedicineAddNew_AttachImage" xml:space="preserve">
->>>>>>> 1412f1df07756fc79384996b64e8dc5eb1b039c3
     <value>اضغط هنا لإضافة سورة الدواء </value>
   </data>
 	<data name="MedicineAddNew_EditAttachImage" xml:space="preserve">
