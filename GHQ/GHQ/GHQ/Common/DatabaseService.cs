@@ -1,42 +1,28 @@
-﻿using System.Threading.Tasks;
-using SQLite.Net;
-using System;
-using Service.Database;
-using Xamarin.Forms;
+﻿using Service.Database;
 using Service.FileHelper;
+using SQLite;
+using System;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
-namespace Service.Dialog
+namespace Service.DatabaseService
 {
-    public class DatabaseService// : IDatabaseService
+    public class DatabaseService : IDatabaseService
     {
-        //static DatabaseService database;
+        public DatabaseService()
+        {
 
-        //public static DatabaseService Database
-        //{
-        //    get
-        //    {
-        //        if (database == null)
-        //        {
-        //            database = new DatabaseService(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
-        //        }
-        //        return database;
-        //    }
-        //}
+        }
+        public Task CopyDb()
+        {
+            throw new NotImplementedException();
+        }
 
-        //public DatabaseService(string dbPath)
-        //{
-        //    database = new SQLiteAsyncConnection(dbPath);
-        //    database.CreateTableAsync<TodoItem>().Wait();
-        //}
-
-        //public Task CopyDb()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public SQLiteConnection GetInstance()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public SQLiteAsyncConnection GetInstance()
+        {
+            var dbPath = DependencyService.Get<IFileHelper>().GetLocalFilePath("Dawayaa.sqlite");
+            var database = new SQLiteAsyncConnection(dbPath);
+            return database;
+        }
     }
 }

@@ -1,7 +1,9 @@
 ﻿using Exceptions;
 using Logic.Models.Data;
+using Service.Database;
 using Service.Internet;
 using Service.Network;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -14,12 +16,14 @@ namespace GHQ.Logic.Service.Lookup
 
         INetworkService networkService;
         IInternetService internetService;
+        IDatabaseService dataBaseService;
         #endregion
 
-        public MedicineService(INetworkService _networkService, IInternetService _internetService)
+        public MedicineService(INetworkService _networkService, IInternetService _internetService, IDatabaseService _dataBaseService)
         {
             networkService = _networkService;
             internetService = _internetService;
+            dataBaseService = _dataBaseService;
         }
 
         public async Task<List<Medicine>> GetHistory()
@@ -80,6 +84,16 @@ namespace GHQ.Logic.Service.Lookup
             {
                 throw new ApplicationError(ex.Message, null, "MedicineService.GetSchedule", ex);
             }
+        }
+
+        public Medicine AddMedicine(Medicine medicine)
+        {
+            SQLiteAsyncConnection db = dataBaseService.GetInstance();
+          
+            var m = db.Table<Database.Entities.Medicine>().FirstOrDefaultAsync();
+
+
+            return medicine;
         }
     }
 }

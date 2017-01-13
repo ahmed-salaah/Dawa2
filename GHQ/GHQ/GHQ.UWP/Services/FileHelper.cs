@@ -1,9 +1,10 @@
-﻿using Service.FileHelper;
+﻿using GHQ.UWP.Services;
+using Service.FileHelper;
 using System.IO;
 using Windows.Storage;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(IFileHelper))]
+[assembly: Dependency(typeof(FileHelper))]
 
 namespace GHQ.UWP.Services
 {

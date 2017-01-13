@@ -193,6 +193,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 var m = Medicine;
+                Medicine=  medicineService.AddMedicine(Medicine);
             }
             catch (System.Exception ex)
             {

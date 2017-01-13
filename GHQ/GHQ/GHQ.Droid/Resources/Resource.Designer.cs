@@ -26,8 +26,6 @@ namespace GHQ.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::GHQ.Droid.Resource.String.ApplicationName;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::GHQ.Droid.Resource.String.Hello;
 			global::Plugin.Toasts.Resource.Animation.abc_fade_in = global::GHQ.Droid.Resource.Animation.abc_fade_in;
 			global::Plugin.Toasts.Resource.Animation.abc_fade_out = global::GHQ.Droid.Resource.Animation.abc_fade_out;
 			global::Plugin.Toasts.Resource.Animation.abc_grow_fade_in_from_bottom = global::GHQ.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
