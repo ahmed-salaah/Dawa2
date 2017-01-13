@@ -9,6 +9,7 @@ using Service.Dialog;
 using Service.Exception;
 using Service.Media;
 using Service.Naviagtion;
+using Service.Recorder;
 using System.IO;
 using Xamarin.Forms;
 
@@ -46,13 +47,24 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-        private bool _AddMode = false;
+        private bool _AddMode;
         public bool AddMode
         {
             get { return _AddMode; }
             set
             {
                 Set(() => AddMode, ref _AddMode, value);
+            }
+        }
+
+
+        private bool _IsRecording;
+        public bool IsRecording
+        {
+            get { return _IsRecording; }
+            set
+            {
+                Set(() => IsRecording, ref _IsRecording, value);
             }
         }
 
@@ -84,7 +96,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 Medicine = new Medicine();
-               // AddMode = false;
+                // AddMode = false;
             }
             catch (System.Exception ex)
             {
@@ -161,6 +173,17 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+                if (!IsRecording)
+                {
+                    DependencyService.Get<IRecorderService>().Record();
+                }
+                else
+                {
+                    DependencyService.Get<IRecorderService>().Stop();
+                    DependencyService.Get<IRecorderService>().Play();
+                }
+
+                IsRecording = !IsRecording;
             }
             catch (System.Exception ex)
             {
@@ -193,6 +216,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 var m = Medicine;
+                Medicine = await medicineService.AddMedicine(Medicine);
             }
             catch (System.Exception ex)
             {

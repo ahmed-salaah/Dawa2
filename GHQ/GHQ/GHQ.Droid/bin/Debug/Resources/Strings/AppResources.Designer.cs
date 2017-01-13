@@ -260,7 +260,7 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to اضغط هنا لإضافة سورة الضوء.
+        ///   Looks up a localized string similar to اضغط هنا لإضافة سورة الدواء .
         /// </summary>
         internal static string MedicineAddNew_AttachImage {
             get {
@@ -274,6 +274,15 @@ namespace GHQ.Resources.Strings {
         internal static string MedicineAddNew_DailyReminder {
             get {
                 return ResourceManager.GetString("MedicineAddNew_DailyReminder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضغط هنا لتغير الصورة .
+        /// </summary>
+        internal static string MedicineAddNew_EditAttachImage {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_EditAttachImage", resourceCulture);
             }
         }
         
@@ -413,6 +422,15 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to أضغط هنا لتوقيف و تشغيل .
+        /// </summary>
+        internal static string MedicineAddNew_StopAndPlayVoiceNote {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_StopAndPlayVoiceNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تذكير إسبوع.
         /// </summary>
         internal static string MedicineAddNew_WeeklyReminder {
@@ -499,6 +517,15 @@ namespace GHQ.Resources.Strings {
         internal static string signUp_buttonTitle {
             get {
                 return ResourceManager.GetString("signUp_buttonTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تأكيد كلمه المرور.
+        /// </summary>
+        internal static string SignUp_ConfirmPassword {
+            get {
+                return ResourceManager.GetString("SignUp_ConfirmPassword", resourceCulture);
             }
         }
         

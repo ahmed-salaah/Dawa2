@@ -5,6 +5,8 @@ using GHQ.Logic.ViewModels.Account;
 using GHQ.Logic.ViewModels.ContactUs;
 using GHQ.Resources.Strings;
 using Microsoft.Practices.ServiceLocation;
+using Service.Database;
+using Service.DatabaseService;
 using Service.Dialog;
 using Service.Exception;
 using Service.Internet;
@@ -37,6 +39,7 @@ namespace GHQ.Logic
             SimpleIoc.Default.Register<IDialogService, DialogService>();
             SimpleIoc.Default.Register<IExceptionService, ExceptionService>();
             SimpleIoc.Default.Register<IInternetService, InternetService>();
+            SimpleIoc.Default.Register<IDatabaseService, DatabaseService>();
             SimpleIoc.Default.Register<ILookupService, LookupService>();
             SimpleIoc.Default.Register<IMedicineService, MedicineService>();
         }

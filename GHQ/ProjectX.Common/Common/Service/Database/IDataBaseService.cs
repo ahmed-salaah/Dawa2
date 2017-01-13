@@ -1,11 +1,11 @@
-﻿using SQLite.Net;
+﻿using SQLite;
 using System.Threading.Tasks;
 
-namespace ProjectX.Common.Common.Service.Database
+namespace Service.Database
 {
     public interface IDatabaseService
     {
-        SQLiteConnection GetInstance();
+        SQLiteAsyncConnection GetInstance();
 
         Task CopyDb();
     }

@@ -145,8 +145,11 @@
 
             <controls:TextEditorField  Title="{Binding Medicine.Note,Mode=TwoWay}" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true"/>
 
-            <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+            <controls:ButtonField IsVisible="{Binding IsRecording,Converter={StaticResource BooleanNegateConverter}}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
                                   Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="mic_ico.png"/>
+
+            <controls:ButtonField IsVisible="{Binding IsRecording}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_StopAndPlayVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+                               Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="mic_ico.png"/>
 
           </StackLayout>
 

@@ -80,9 +80,9 @@
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
 						<Label Grid.Row="0" Margin="0,10,15,10" Text="{i18n:Translate signUp_eatingTitle}" TextColor= "#317C76" HorizontalOptions="End" />
-						<controls:TimePickerButtonField Grid.Row = "1" Title = "{i18n:Translate SignUP_BreakFast}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true"/>
-						<controls:TimePickerButtonField Grid.Row = "2" Title = "{i18n:Translate SignUP_launch}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true"/>
-						<controls:TimePickerButtonField Grid.Row = "3" Title = "{i18n:Translate SignUP_Dinner}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true"/>
+						<controls:TimePickerButtonField Grid.Row = "1" Title = "{i18n:Translate SignUP_BreakFast}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding BreakFastTime}"/>
+						<controls:TimePickerButtonField Grid.Row = "2" Title = "{i18n:Translate SignUP_launch}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding LaunchTime}"/>
+						<controls:TimePickerButtonField Grid.Row = "3" Title = "{i18n:Translate SignUP_Dinner}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding DinnerTime}"/>
 
 					</Grid>
 					<Grid Grid.Row="6">
