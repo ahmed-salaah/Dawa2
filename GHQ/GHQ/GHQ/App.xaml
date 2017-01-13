@@ -191,7 +191,14 @@
       <Style x:Key="DatePickerStyle" TargetType="DatePicker">
         <Setter Property="BackgroundColor" Value="White" />
         <Setter Property="TextColor" Value="{StaticResource GreenColor}" />
-        <Setter Property="Margin" Value="0,0,0,20" />
+        <Setter Property="Margin" Value="15,0,15,0" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+      </Style>
+
+	 <Style x:Key="TimePickerStyle" TargetType="TimePicker">
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="{StaticResource GreenColor}" />
+        <Setter Property="Margin" Value="15,0,15,0" />
         <Setter Property="VerticalOptions" Value="CenterAndExpand" />
       </Style>
       <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Button  ////////////////////////////////////////////////////////////////////////////////////////////////////-->

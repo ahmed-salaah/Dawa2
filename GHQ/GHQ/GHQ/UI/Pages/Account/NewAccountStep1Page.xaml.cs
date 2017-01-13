@@ -12,7 +12,6 @@ namespace GHQ.UI.Pages.Account
             InitializeComponent();
             ToolbarItems.Clear();
             BindingContext = AccountVM;
-			imageView.Source = ImageSource.FromResource("profile_photo.png");
         }
 
         protected override void OnAppearing()

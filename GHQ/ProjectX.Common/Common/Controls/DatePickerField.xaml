@@ -20,7 +20,6 @@
 
     </StackLayout>
 
-
     <DatePicker IsEnabled ="{Binding IsEnabled,Source={x:Reference ParentView}}"
                 Date="{Binding Date,Source={x:Reference ParentView}}"
                 Style="{StaticResource DatePickerStyle}"/>

@@ -3,6 +3,7 @@ using UIKit;
 using Xamarin.Forms;
 using Plugin.Toasts;
 using UserNotifications;
+using MonoTouch.FacebookConnect;
 
 namespace GHQ.iOS
 {
@@ -19,16 +20,21 @@ namespace GHQ.iOS
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
+		private const string FacebookAppId = "653625414809303";
+		private const string FacebookAppName = "Dawaya";
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
             global::Xamarin.FormsMaps.Init();
-
-            DependencyService.Register<ToastNotification>();
+		   
+		
+          
+			DependencyService.Register<ToastNotification>();
             ToastNotification.Init();
             LoadApplication(new App());
 
-
+			FBSettings.DefaultAppID = FacebookAppId;
+			FBSettings.DefaultDisplayName = FacebookAppName;
             if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             {
                 // Request Permissions

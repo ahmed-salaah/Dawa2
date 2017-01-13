@@ -1,6 +1,6 @@
-# Version: 10.3.1.7 (cycle8-xi: 8b53676)
-# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.7/lib/mtouch/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.7/lib/mtouch/mtouch.exe \
+# Version: 10.3.1.8 (cycle8-xi: 7beaef4)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/lib/mtouch/mtouch.exe \
 	--cache \
 	/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ.iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -371,6 +371,8 @@
 	/Users/ahmedsalah/Dawa2/GHQ/ProjectX.Common/bin/Debug/ProjectX.Common.dll \
 	-r \
 	/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/bin/Debug/GHQ.dll \
+	-r \
+	/Users/ahmedsalah/Dawa2/GHQ/ProjectX.Common/bin/Debug/SQLite.Net.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ.iOS/bin/iPhoneSimulator/Debug//GHQ.iOS.exe \
