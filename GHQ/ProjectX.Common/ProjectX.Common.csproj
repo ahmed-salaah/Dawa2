@@ -69,6 +69,7 @@
     <Compile Include="Common\Models\MediaFile.cs" />
     <Compile Include="Common\Models\SideMenuItem.cs" />
     <Compile Include="Common\Models\ValidatedModel.cs" />
+    <Compile Include="Common\Service\FileHelper\IFileHelper.cs" />
     <Compile Include="Common\Service\Database\IDatabaseService.cs" />
     <Compile Include="Common\Service\Dialog\DialogService.cs" />
     <Compile Include="Common\Service\Dialog\IDialogService.cs" />

@@ -1,6 +1,4 @@
-﻿
-
-using SQLite.Net.Attributes;
+﻿using SQLite.Net.Attributes;
 using System;
 
 namespace GHQ.Logic.Database.Entities
