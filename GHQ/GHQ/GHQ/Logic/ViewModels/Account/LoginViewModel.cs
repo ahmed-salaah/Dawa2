@@ -3,7 +3,7 @@ using GHQ.Logic.Service.Account;
 using GHQ.UI.Pages.Account;
 using GHQ.UI.Pages.Filter;
 using GHQ.UI.Pages.Home;
-using GHQLogic.Models.Data;
+using GHQ.Logic.Models.Data;
 using Models;
 using Service.Localization;
 using Service.Naviagtion;

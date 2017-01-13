@@ -34,15 +34,6 @@ namespace Logic.Models.Data
             }
         }
 
-        //public string BackgroundColor
-        //{
-        //    get
-        //    {
-        //        return IsMissed? "#d91f26" : "f#5f7f7";
-        //    }
-        //}
-
-
         private string _Name;
         public string Name
         {
