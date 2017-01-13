@@ -422,6 +422,15 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to أضغط هنا لتوقيف و تشغيل .
+        /// </summary>
+        internal static string MedicineAddNew_StopAndPlayVoiceNote {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_StopAndPlayVoiceNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تذكير إسبوع.
         /// </summary>
         internal static string MedicineAddNew_WeeklyReminder {

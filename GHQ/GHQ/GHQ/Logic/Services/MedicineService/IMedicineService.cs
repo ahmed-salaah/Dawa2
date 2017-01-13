@@ -10,6 +10,6 @@ namespace GHQ.Logic.Service.Lookup
 
         Task<List<Medicine>> GetSchedule();
 
-        Medicine AddMedicine(Medicine medicine);
+        Task<Medicine> AddMedicine(Medicine medicine);
     }
 }

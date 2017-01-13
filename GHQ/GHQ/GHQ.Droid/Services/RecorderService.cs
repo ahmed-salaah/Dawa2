@@ -12,7 +12,16 @@ namespace GHQ.Droid.Services
         MediaRecorder _recorder;
         MediaPlayer _player;
 
+        public RecorderService()
+        {
+            _recorder = new MediaRecorder();
+            _player = new MediaPlayer();
 
+            _player.Completion += (sender, e) =>
+            {
+                _player.Reset();
+            };
+        }
         public void Record()
         {
             _recorder.SetAudioSource(AudioSource.Mic);

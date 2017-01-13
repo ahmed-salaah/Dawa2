@@ -171,6 +171,9 @@
   <data name="signUp_uploadPhotos" xml:space="preserve">
     <value>إرفع صورتك الشخصية لإضافتها لحسابك</value>
   </data>
+  <data name="MedicineAddNew_StopAndPlayVoiceNote" xml:space="preserve">
+    <value>أضغط هنا لتوقيف و تشغيل </value>
+  </data>
   <data name="Error_ApplicationTitle" xml:space="preserve">
     <value>خطأ</value>
   </data>

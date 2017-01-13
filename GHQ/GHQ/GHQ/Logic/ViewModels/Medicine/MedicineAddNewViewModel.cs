@@ -47,13 +47,24 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-        private bool _AddMode = false;
+        private bool _AddMode;
         public bool AddMode
         {
             get { return _AddMode; }
             set
             {
                 Set(() => AddMode, ref _AddMode, value);
+            }
+        }
+
+
+        private bool _IsRecording;
+        public bool IsRecording
+        {
+            get { return _IsRecording; }
+            set
+            {
+                Set(() => IsRecording, ref _IsRecording, value);
             }
         }
 
@@ -85,7 +96,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 Medicine = new Medicine();
-               // AddMode = false;
+                // AddMode = false;
             }
             catch (System.Exception ex)
             {
@@ -162,7 +173,17 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                DependencyService.Get<IRecorderService>().Record();
+                if (!IsRecording)
+                {
+                    DependencyService.Get<IRecorderService>().Record();
+                }
+                else
+                {
+                    DependencyService.Get<IRecorderService>().Stop();
+                    DependencyService.Get<IRecorderService>().Play();
+                }
+
+                IsRecording = !IsRecording;
             }
             catch (System.Exception ex)
             {
@@ -195,7 +216,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 var m = Medicine;
-                Medicine=  medicineService.AddMedicine(Medicine);
+                Medicine = await medicineService.AddMedicine(Medicine);
             }
             catch (System.Exception ex)
             {
