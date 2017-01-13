@@ -88,12 +88,19 @@ namespace GHQ.Logic.Service.Lookup
 
         public async Task<Medicine> AddMedicine(Medicine medicine)
         {
-            SQLiteAsyncConnection db = dataBaseService.GetInstance();
-          
-            var m =await db.Table<Database.Entities.Medicine>().FirstOrDefaultAsync();
+            try
+            {
+                SQLiteAsyncConnection db = dataBaseService.GetInstance();
+                //db.CreateTableAsync<Database.Entities.Medicine>().Wait();
+                var m = await db.Table<Database.Entities.Medicine>().FirstOrDefaultAsync();
 
+                return medicine;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
 
-            return medicine;
         }
     }
 }
