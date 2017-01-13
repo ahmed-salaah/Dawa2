@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using Xamarin.Forms;
 
 namespace Logic.Models.Data
 {
@@ -135,17 +136,16 @@ namespace Logic.Models.Data
             }
         }
 
-
-        private string _Image = "https://cdn1.iconfinder.com/data/icons/hawcons/32/698400-icon-136-document-edit-128.png";
-        public string Image
+        private ImageSource _ImageSource = ImageSource.FromResource("profile_photo.png");
+        public ImageSource ImageSource
         {
             get
             {
-                return _Image;
+                return _ImageSource;
             }
             set
             {
-                Set(() => Image, ref _Image, value);
+                Set(() => ImageSource, ref _ImageSource, value);
             }
         }
 

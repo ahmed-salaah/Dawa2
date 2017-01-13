@@ -1,27 +1,37 @@
-﻿using GalaSoft.MvvmLight.Command;
+﻿using Exceptions;
+using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
 using GHQ.Logic.Service.Lookup;
+using GHQ.Resources.Strings;
 using Logic.Models.Data;
 using Models;
+using Service.Dialog;
+using Service.Exception;
+using Service.Media;
 using Service.Naviagtion;
-
+using System.IO;
+using Xamarin.Forms;
 
 namespace GHQ.Logic.ViewModels.Account
 {
     public class MedicineAddNewViewModel : BaseViewModel
     {
-        public MedicineAddNewViewModel(IAccountService _accountService, IMedicineService _medicineService, INavigationService _naviagtionService)
+        public MedicineAddNewViewModel(IAccountService _accountService, IMedicineService _medicineService, INavigationService _naviagtionService, IDialogService _dialogService, IExceptionService _exceptionService)
         {
             accountService = _accountService;
-            naviagtionService = _naviagtionService;
+            navigationService = _naviagtionService;
             medicineService = _medicineService;
+            exceptionService = _exceptionService;
+            dialogService = _dialogService;
         }
 
         #region Private Members
 
         IAccountService accountService;
-        INavigationService naviagtionService;
+        INavigationService navigationService;
         IMedicineService medicineService;
+        IExceptionService exceptionService;
+        IDialogService dialogService;
         #endregion
 
         #region Properties
@@ -70,6 +80,54 @@ namespace GHQ.Logic.ViewModels.Account
             }
             finally
             {
+            }
+        }
+
+        #endregion
+
+        #region OnOpenGalleryCommand Command
+
+        private RelayCommand _OnOpenGalleryCommand;
+        public RelayCommand OnOpenGalleryCommand
+        {
+            get
+            {
+                if (_OnOpenGalleryCommand == null)
+                {
+                    _OnOpenGalleryCommand = new RelayCommand(OpenGallery);
+                }
+                return _OnOpenGalleryCommand;
+            }
+        }
+        private async void OpenGallery()
+        {
+            try
+            {
+
+                var mediaPicker = DependencyService.Get<IMediaPicker>();
+                navigationService.IsExternalAppOpen = true;
+                var mediaFile = await mediaPicker.SelectPhotoAsync();
+                navigationService.IsExternalAppOpen = false;
+                if (mediaFile != null)
+                {
+                    IsLoading = true;
+                    var imageBytes = mediaFile.data;
+                    Medicine.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
+
+                }
+
+            }
+            catch (InternetException ex)
+            {
+                await exceptionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
+            }
+            catch (System.Exception ex)
+            {
+                await exceptionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, ex.Message);
+            }
+            finally
+            {
+                IsLoading = false;
             }
         }
 
