@@ -36,31 +36,31 @@ namespace GHQ.Logic.ViewModels.Account
         #endregion
 
         #region Properties
-		private NewUSer _User;
-		public NewUSer User
-		{
-			get
-			{
-				return _User;
-			}
-			set
-			{
-				Set(() => User, ref _User, value);
-			}
-		}
+        private NewUSer _User;
+        public NewUSer User
+        {
+            get
+            {
+                return _User;
+            }
+            set
+            {
+                Set(() => User, ref _User, value);
+            }
+        }
 
-		private ObservableCollection<LookupData> _GenderList;
-		public ObservableCollection<LookupData> GenderList
-		{
-			get
-			{
-				return _GenderList;
-			}
-			set
-			{
-				Set(() => GenderList, ref _GenderList, value);
-			}
-		}
+        private ObservableCollection<LookupData> _GenderList;
+        public ObservableCollection<LookupData> GenderList
+        {
+            get
+            {
+                return _GenderList;
+            }
+            set
+            {
+                Set(() => GenderList, ref _GenderList, value);
+            }
+        }
 
         #endregion
 
@@ -92,16 +92,16 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 ClearValidationErrors();
 
-				GenderList =new ObservableCollection<LookupData>( await lookupService.GetGenderAsync());
+                GenderList = new ObservableCollection<LookupData>(await lookupService.GetGenderAsync());
 
             }
             catch (InternetException ex)
             {
-                await dialogService.DisplayAlert(AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
+                await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
             }
             catch (System.Exception ex)
             {
-                await dialogService.DisplayAlert(AppResources.Error_GeneralTitle, ex.Message);
+                await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, ex.Message);
             }
             finally
             {
@@ -111,55 +111,55 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
-		#region Media Command
+        #region OnOpenGalleryCommand Command
 
         private RelayCommand _OnOpenGalleryCommand;
-		public RelayCommand OnOpenGalleryCommand
-		{
-			get
-			{
-				if (_OnOpenGalleryCommand == null)
-				{
-					_OnOpenGalleryCommand = new RelayCommand(openGallery);
-				}
-				return _OnOpenGalleryCommand;
-			}
-		}
-		private async void openGallery()
-		{
-			try
-			{
-				
-				var mediaPicker = DependencyService.Get<IMediaPicker>();
-				navigationService.IsExternalAppOpen = true;
-				var mediaFile = await mediaPicker.SelectPhotoAsync();
-				navigationService.IsExternalAppOpen = false;
-				if (mediaFile != null)
-				{
-					User.Image = mediaFile;
-					IsLoading = true;
-					var imageBytes = mediaFile.data;
-					User.ImageSource  = ImageSource.FromStream(() => new MemoryStream(imageBytes));
+        public RelayCommand OnOpenGalleryCommand
+        {
+            get
+            {
+                if (_OnOpenGalleryCommand == null)
+                {
+                    _OnOpenGalleryCommand = new RelayCommand(OpenGallery);
+                }
+                return _OnOpenGalleryCommand;
+            }
+        }
+        private async void OpenGallery()
+        {
+            try
+            {
 
-				}
+                var mediaPicker = DependencyService.Get<IMediaPicker>();
+                navigationService.IsExternalAppOpen = true;
+                var mediaFile = await mediaPicker.SelectPhotoAsync();
+                navigationService.IsExternalAppOpen = false;
+                if (mediaFile != null)
+                {
+                    User.Image = mediaFile;
+                    IsLoading = true;
+                    var imageBytes = mediaFile.data;
+                    User.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
 
-			}
-			catch (InternetException ex)
-			{
-				await dialogService.DisplayAlert(AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
-			}
-			catch (System.Exception ex)
-			{
-				await dialogService.DisplayAlert(AppResources.Error_GeneralTitle, ex.Message);
-			}
-			finally
-			{
-				IsLoading = false;
-			}
-		}
+                }
 
-		#endregion
-	
-		#endregion
-	}
+            }
+            catch (InternetException ex)
+            {
+                await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
+            }
+            catch (System.Exception ex)
+            {
+                await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, ex.Message);
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+        }
+
+        #endregion
+
+        #endregion
+    }
 }

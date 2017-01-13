@@ -27,11 +27,11 @@ namespace GHQ.Logic.Service.Lookup
             try
             {
                 List<Medicine> medicineList = new List<Medicine>();
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "جلوكوفيج إكس ر", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "أورغامتريل", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "بانادول كولد اند فلو اقراص بيضوية", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "زيرتك", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "لورادي اقراص", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "جلوكوفيج إكس ر", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "أورغامتريل", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "بانادول كولد اند فلو اقراص بيضوية", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "زيرتك", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "لورادي اقراص", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
                 return medicineList;
             }
             catch (InternetException ex)
@@ -57,11 +57,11 @@ namespace GHQ.Logic.Service.Lookup
             try
             {
                 List<Medicine> medicineList = new List<Medicine>();
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "جلوكوفيج إكس ر", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "أورغامتريل", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "بانادول كولد اند فلو اقراص بيضوية", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "زيرتك", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Image = "", Name = "لورادي اقراص", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "جلوكوفيج إكس ر", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "أورغامتريل", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "بانادول كولد اند فلو اقراص بيضوية", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "زيرتك", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
+                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "لورادي اقراص", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
                 return medicineList;
             }
             catch (InternetException ex)

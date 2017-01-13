@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Models;
 
-namespace GHQLogic.Models.Data
+namespace GHQ.Logic.Models.Data
 {
 	public class LoginUser: BaseModel
 	{

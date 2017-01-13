@@ -13,7 +13,7 @@ namespace Controls
         #region Placeholder p
 
 
-        public static readonly BindableProperty PlaceholderProperty = BindableProperty.Create<InputField, string>(p => p.Placeholder, default(string));
+        public static readonly BindableProperty PlaceholderProperty = BindableProperty.Create<DatePickerField, string>(p => p.Placeholder, default(string));
         public string Placeholder
         {
             get { return (string)GetValue(PlaceholderProperty); }
@@ -24,7 +24,7 @@ namespace Controls
 
         #region ShowValidation p
 
-        public static readonly BindableProperty ShowValidationProperty = BindableProperty.Create<InputField, bool>(p => p.ShowValidation, default(bool));
+        public static readonly BindableProperty ShowValidationProperty = BindableProperty.Create<DatePickerField, bool>(p => p.ShowValidation, default(bool));
         public bool ShowValidation
         {
             get { return (bool)GetValue(ShowValidationProperty); }
@@ -35,7 +35,7 @@ namespace Controls
 
         #region ValidationMessage p
 
-        public static readonly BindableProperty ValidationMessageProperty = BindableProperty.Create<InputField, string>(p => p.ValidationMessage, default(string));
+        public static readonly BindableProperty ValidationMessageProperty = BindableProperty.Create<DatePickerField, string>(p => p.ValidationMessage, default(string));
         public string ValidationMessage
         {
             get { return (string)GetValue(ValidationMessageProperty); }
@@ -47,7 +47,7 @@ namespace Controls
         #region IsRequired p
 
 
-        public static readonly BindableProperty IsRequiredProperty = BindableProperty.Create<InputField, bool>(p => p.IsRequired, default(bool));
+        public static readonly BindableProperty IsRequiredProperty = BindableProperty.Create<DatePickerField, bool>(p => p.IsRequired, default(bool));
         public bool IsRequired
         {
             get { return (bool)GetValue(IsRequiredProperty); }
@@ -70,7 +70,7 @@ namespace Controls
         #region IsEnabled p
 
 
-        public static readonly BindableProperty IsEnabledProperty = BindableProperty.Create<InputField, bool>(p => p.IsEnabled, true);
+        public static readonly BindableProperty IsEnabledProperty = BindableProperty.Create<DatePickerField, bool>(p => p.IsEnabled, true);
         public bool IsEnabled
         {
             get { return (bool)GetValue(IsEnabledProperty); }

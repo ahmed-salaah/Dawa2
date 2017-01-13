@@ -139,7 +139,7 @@
     <value>خطأ 1004: لا توجد بيانات</value>
   </data>
   <data name="MedicineAddNew_AttachImage" xml:space="preserve">
-    <value>اضغط هنا لإضافة سورة الضوء</value>
+    <value>اضغط هنا لإضافة سورة الدواء </value>
   </data>
   <data name="Filter_DoctorName" xml:space="preserve">
     <value>إسم الدكتور</value>
@@ -155,6 +155,9 @@
   </data>
   <data name="Home_newAlarmButton" xml:space="preserve">
     <value>سجل تنبيه لدواء جديد</value>
+  </data>
+  <data name="MedicineAddNew_EditAttachImage" xml:space="preserve">
+    <value>إضغط هنا لتغير الصورة </value>
   </data>
   <data name="SignUp_ConfirmPassword" xml:space="preserve">
     <value>تأكيد كلمه المرور</value>
