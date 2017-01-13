@@ -26,7 +26,7 @@ namespace Service.DatabaseService
             StorageFolder local = null;
             try
             {
-                local = ApplicationData.Current.LocalFolder;
+                local = await ApplicationData.Current.LocalFolder.GetFolderAsync("Database");
             }
             catch
             {
@@ -34,16 +34,16 @@ namespace Service.DatabaseService
 
             if (local == null)
             {
-                local = ApplicationData.Current.LocalFolder;
+                local = await ApplicationData.Current.LocalFolder.CreateFolderAsync("Database");
                 await seedFile.CopyAsync(local);
 
             }
         }
 
-        public  SQLiteConnection GetInstance()
+        public SQLiteConnection GetInstance()
         {
             CopyDb();
-            var sqliteFilename = "Dawayaa.sqlite";
+            var sqliteFilename = @"Database\Dawayaa.sqlite";
             string path = Path.Combine(ApplicationData.Current.LocalFolder.Path, sqliteFilename);
             return new SQLiteConnection(path);
         }

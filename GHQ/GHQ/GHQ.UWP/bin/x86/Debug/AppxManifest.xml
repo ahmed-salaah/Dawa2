@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="1e63d480-ef5d-47f0-9698-aab244b33d0g" Publisher="CN=mosta" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="Dawaya" Publisher="CN=mosta" Version="1.0.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="1e63d480-ef5d-47f0-9698-aab244b33d0f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Dawaa</DisplayName>

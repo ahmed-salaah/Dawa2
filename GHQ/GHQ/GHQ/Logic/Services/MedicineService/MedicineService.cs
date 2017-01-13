@@ -90,8 +90,6 @@ namespace GHQ.Logic.Service.Lookup
             try
             {
                 SQLiteConnection db = DependencyService.Get<IDatabaseService>().GetInstance();
-                // SQLiteAsyncConnection db = dataBaseService.GetInstance();
-                //db.CreateTableAsync<Database.Entities.Medicine>().Wait();
                 var m = db.Table<Database.Entities.Medicine>().FirstOrDefault();
 
                 return medicine;
