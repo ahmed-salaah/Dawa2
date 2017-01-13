@@ -46,6 +46,16 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
+        private bool _AddMode = false;
+        public bool AddMode
+        {
+            get { return _AddMode; }
+            set
+            {
+                Set(() => AddMode, ref _AddMode, value);
+            }
+        }
+
 
         #endregion
 
@@ -74,6 +84,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 Medicine = new Medicine();
+               // AddMode = false;
             }
             catch (System.Exception ex)
             {
@@ -103,7 +114,6 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-
                 var mediaPicker = DependencyService.Get<IMediaPicker>();
                 navigationService.IsExternalAppOpen = true;
                 var mediaFile = await mediaPicker.SelectPhotoAsync();

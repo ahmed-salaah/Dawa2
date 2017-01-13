@@ -17,8 +17,12 @@ namespace GHQ.UI.Pages.Medicine {
     public partial class MedicineAddNew : global::GHQ.UI.Pages.BasePage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Image imageView;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MedicineAddNew));
+            imageView = this.FindByName<global::Xamarin.Forms.Image>("imageView");
         }
     }
 }
