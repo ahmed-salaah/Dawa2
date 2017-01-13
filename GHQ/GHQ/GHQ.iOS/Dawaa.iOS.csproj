@@ -109,6 +109,7 @@
     <Compile Include="CustomRenderer\ExtendedEntryRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Services\RecorderService.cs" />
     <Compile Include="Services\FileHelper.cs" />
     <Compile Include="Services\MediaPicker.cs" />
     <Compile Include="Services\Localize.cs" />

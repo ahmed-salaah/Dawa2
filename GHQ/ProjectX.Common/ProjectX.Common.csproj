@@ -87,6 +87,7 @@
     <Compile Include="Common\Service\Network\INetworkService.cs" />
     <Compile Include="Common\Service\Network\NetworkService.cs" />
     <Compile Include="Common\Service\PushToken.cs" />
+    <Compile Include="Common\Service\Recorder\IRecorderService.cs" />
     <Compile Include="Common\Service\Reflection\IReflection.cs" />
     <Compile Include="Common\Service\SideMenu\ISideMenuService.cs" />
     <Compile Include="Common\Service\SideMenu\SideMenuService.cs" />

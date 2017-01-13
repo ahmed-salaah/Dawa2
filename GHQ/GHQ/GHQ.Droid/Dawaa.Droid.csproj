@@ -203,6 +203,7 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AndroidMethods.cs" />
+    <Compile Include="Services\RecorderService.cs" />
     <Compile Include="Services\FileHelper.cs" />
     <Compile Include="Services\MediaPicker.cs" />
     <Compile Include="Services\MediaPicker\MediaExtensions.cs" />

@@ -217,7 +217,10 @@
     <value>أضغط هنا لتسجيل ملاحظة صوتية</value>
   </data>
   <data name="MedicineAddNew_AttachImage" xml:space="preserve">
-    <value>اضغط هنا لإضافة سورة الضوء</value>
+    <value>اضغط هنا لإضافة سورة الدواء </value>
+  </data>
+  <data name="MedicineAddNew_EditAttachImage" xml:space="preserve">
+    <value>إضغط هنا لتغير الصورة </value>
   </data>
   <data name="MedicineAddNew_DailyReminder" xml:space="preserve">
     <value>تذكير يومي</value>
@@ -287,5 +290,8 @@
   </data>
   <data name="PageHeader_UpdateNewMedicine" xml:space="preserve">
     <value>تعديل دواء</value>
+  </data>
+	<data name="SignUp_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمه المرور</value>
   </data>
 </root>

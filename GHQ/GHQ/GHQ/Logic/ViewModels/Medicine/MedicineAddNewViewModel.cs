@@ -9,6 +9,7 @@ using Service.Dialog;
 using Service.Exception;
 using Service.Media;
 using Service.Naviagtion;
+using Service.Recorder;
 using System.IO;
 using Xamarin.Forms;
 
@@ -161,6 +162,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+                DependencyService.Get<IRecorderService>().Record();
             }
             catch (System.Exception ex)
             {

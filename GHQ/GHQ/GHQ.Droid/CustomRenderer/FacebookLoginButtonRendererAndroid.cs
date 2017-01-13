@@ -35,8 +35,8 @@ namespace XamarinNativeFacebook.Droid
 
             public void OnClick(View v)
             {
-                var myIntent = new Intent(_activity, typeof(FacebookActivity));
-                _activity.StartActivityForResult(myIntent, 0);
+                //var myIntent = new Intent(_activity, typeof(FacebookActivity));
+                //_activity.StartActivityForResult(myIntent, 0);
             }
         }
     }
