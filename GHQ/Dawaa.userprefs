@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
   <MonoDevelop.Ide.ItemProperties.Dawaa.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml">
     <Files>
-      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="28" Column="135" />
-      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml.cs" Line="15" Column="69" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="54" Column="11" />
+      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml.cs" Line="15" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
