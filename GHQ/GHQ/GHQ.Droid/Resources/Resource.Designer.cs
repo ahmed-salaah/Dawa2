@@ -4957,7 +4957,10 @@ namespace GHQ.Droid
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int gtm_analytics = 2131099648;
+			public const int Dawayaa = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int gtm_analytics = 2131099649;
 			
 			static Raw()
 			{

@@ -3,8 +3,12 @@ using System;
 
 namespace GHQ.Logic.Database.Entities
 {
-    class Medicine
+    public class Medicine
     {
+        public Medicine()
+        {
+
+        }
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 

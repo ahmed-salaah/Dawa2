@@ -218,6 +218,9 @@
     <Compile Include="SplashActivity.cs" />
     <Compile Include="CustomRenderer\FacebookLoginButtonRendererAndroid.cs" />
     <Compile Include="FacebookActivity.cs" />
+    <Compile Include="Services\LocalNotifications.cs" />
+    <Compile Include="SecondActivity.cs" />
+    <Compile Include="FileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -226,6 +229,8 @@
     </None>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\raw\Dawayaa.sqlite" />
+    <AndroidResource Include="Resources\layout\Second.axml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

@@ -27,15 +27,16 @@ namespace GHQ.iOS
             global::Xamarin.Forms.Forms.Init();
             global::Xamarin.FormsMaps.Init();
 		   
-		
-          
+	
+			        
 			DependencyService.Register<ToastNotification>();
             ToastNotification.Init();
             LoadApplication(new App());
 
 			FBSettings.DefaultAppID = FacebookAppId;
 			FBSettings.DefaultDisplayName = FacebookAppName;
-            if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
+		
+			if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             {
                 // Request Permissions
                 UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound, (granted, error) =>
@@ -51,9 +52,37 @@ namespace GHQ.iOS
 
                 app.RegisterUserNotificationSettings(notificationSettings);
             }
+			if (options != null)
+			{
+				// check for a local notification
+				if (options.ContainsKey(UIApplication.LaunchOptionsLocalNotificationKey))
+				{
+					var localNotification = options[UIApplication.LaunchOptionsLocalNotificationKey] as UILocalNotification;
+					if (localNotification != null)
+					{
+						UIAlertController okayAlertController = UIAlertController.Create(localNotification.AlertAction, localNotification.AlertBody, UIAlertControllerStyle.Alert);
+						okayAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 
+						Window.RootViewController.PresentViewController(okayAlertController, true, null);
+
+						// reset our badge
+						UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
+					}
+				}
+			}
             return base.FinishedLaunching(app, options);
         }
+		public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
+		{
+			// show an alert
+			UIAlertController okayAlertController = UIAlertController.Create(notification.AlertAction, notification.AlertBody, UIAlertControllerStyle.Alert);
+			okayAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 
-    }
+			Window.RootViewController.PresentViewController(okayAlertController, true, null);
+
+			// reset our badge
+			UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
+		}
+
+	}
 }

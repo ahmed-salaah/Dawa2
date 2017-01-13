@@ -245,6 +245,12 @@ namespace GHQ.Resources.Strings {
             }
         }
         
+        internal static string MedicineAddNew_StopAndPlayVoiceNote {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_StopAndPlayVoiceNote", resourceCulture);
+            }
+        }
+        
         internal static string MedicineAddNew_AttachImage {
             get {
                 return ResourceManager.GetString("MedicineAddNew_AttachImage", resourceCulture);
@@ -353,15 +359,6 @@ namespace GHQ.Resources.Strings {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized string similar to أضغط هنا لتوقيف و تشغيل .
-        /// </summary>
-        internal static string MedicineAddNew_StopAndPlayVoiceNote {
-            get {
-                return ResourceManager.GetString("MedicineAddNew_StopAndPlayVoiceNote", resourceCulture);
-            }
-        }
-
         internal static string MedicineAddNew_WeeklyReminder {
             get {
                 return ResourceManager.GetString("MedicineAddNew_WeeklyReminder", resourceCulture);

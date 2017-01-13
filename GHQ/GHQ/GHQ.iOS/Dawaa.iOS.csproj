@@ -124,6 +124,8 @@
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
     <Compile Include="CustomRenderer\FacebookLoginButtonRendererIos.cs" />
+    <BundleResource Include="Resources\Dawayaa.sqlite" />
+    <Compile Include="Services\LocalNotifications.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
