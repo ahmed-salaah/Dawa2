@@ -35,8 +35,7 @@
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineInfo} " Style="{StaticResource LabelHeaderEntryStyle}" />
 
             <controls:InputField IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False"
-                                 ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate MedicineAddNew_Entry_MedicineName}"
-            Title="{Binding Medicine.Name,Mode=TwoWay}"/>
+                                 ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate MedicineAddNew_Entry_MedicineName}" Title="{Binding Medicine.Name,Mode=TwoWay}"/>
 
             <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
                                  Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="camera_ico.png"/>
@@ -92,8 +91,11 @@
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
               </Grid.RowDefinitions>
-              <Button Grid.Row="0" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_StartDate} " BackgroundColor="{StaticResource BabyBlueColor}"></Button>
-              <Button Grid.Row="0" Grid.Column="1" Text="{i18n:Translate MedicineAddNew_EndDate}  " BackgroundColor="{StaticResource BabyBlueColor}"></Button>
+
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0" Title="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
+
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1" Title="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
+
             </Grid>
 
           </StackLayout>
@@ -109,9 +111,9 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_OtherInfo}" Style="{StaticResource LabelHeaderEntryStyle}" />
 
-            <controls:InputField IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate MedicineAddNew_Entry_DieseaseName}" />
+            <controls:InputField Title="{Binding Medicine.DiseaseName,Mode=TwoWay}" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate MedicineAddNew_Entry_DieseaseName}" />
 
-            <controls:InputField IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate MedicineAddNew_Entry_DoctorName}" />
+            <controls:InputField Title="{Binding Medicine.DoctorName,Mode=TwoWay}" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate MedicineAddNew_Entry_DoctorName}" />
 
           </StackLayout>
 
@@ -126,7 +128,7 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_AddComment}  " Style="{StaticResource LabelHeaderEntryStyle}" />
 
-            <controls:TextEditorField IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true"/>
+            <controls:TextEditorField  Title="{Binding Medicine.Note,Mode=TwoWay}" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true"/>
 
             <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
                                   Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="mic_ico.png"/>

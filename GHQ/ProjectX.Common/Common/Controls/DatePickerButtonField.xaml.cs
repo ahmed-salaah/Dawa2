@@ -60,10 +60,10 @@ namespace Controls
 
         #region TextColor p
 
-        public static readonly BindableProperty TextColorProperty = BindableProperty.Create<DatePickerButtonField, string>(p => p.TextColor, default(string));
-        public string TextColor
+        public static readonly BindableProperty TextColorProperty = BindableProperty.Create<DatePickerButtonField, Xamarin.Forms.Color>(p => p.TextColor, Color.White);
+        public Xamarin.Forms.Color TextColor
         {
-            get { return (string)GetValue(TextColorProperty); }
+            get { return (Xamarin.Forms.Color)GetValue(TextColorProperty); }
             set { SetValue(TextColorProperty, value); }
         }
 
@@ -71,7 +71,7 @@ namespace Controls
 
         #region BGColor p
 
-        public static readonly BindableProperty BGColorProperty = BindableProperty.Create<DatePickerButtonField, Xamarin.Forms.Color>(p => p.BGColor, Color.Red);
+        public static readonly BindableProperty BGColorProperty = BindableProperty.Create<DatePickerButtonField, Xamarin.Forms.Color>(p => p.BGColor, Color.Blue);
 
         public Xamarin.Forms.Color BGColor
         {

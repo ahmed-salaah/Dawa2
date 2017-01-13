@@ -124,6 +124,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+                var m = Medicine;
             }
             catch (System.Exception ex)
             {
