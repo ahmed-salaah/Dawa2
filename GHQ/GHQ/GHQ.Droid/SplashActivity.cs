@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace GHQ.Droid
 {
-    [Activity(Label = "Dawaa", Icon = "@drawable/icon", Theme = "@style/Theme.Splash", NoHistory = true, MainLauncher = true)]
+    [Activity(Label = "Dawaya", Icon = "@drawable/icon", Theme = "@style/Theme.Splash", NoHistory = true, MainLauncher = true)]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

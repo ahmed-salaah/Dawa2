@@ -42,10 +42,10 @@
 
 
               <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
-                                 Command="{Binding OnOpenGalleryCommand}"  LeftImage="checked_ico.png" RightImage="camera_ico.png"/>
+                                 Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
 
-             <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
-            
+              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
+
             </StackLayout>
 
             <StackLayout IsVisible="{Binding AddMode,Converter={StaticResource BooleanNegateConverter}}">
@@ -53,7 +53,7 @@
               <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}"/>
 
               <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
-                                   Command="{Binding OnOpenGalleryCommand}"  LeftImage="checked_ico.png" RightImage="camera_ico.png"/>
+                                   Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
 
             </StackLayout>
 
@@ -147,11 +147,19 @@
 
             <controls:TextEditorField  Title="{Binding Medicine.Note,Mode=TwoWay}" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true"/>
 
-            <controls:ButtonField IsVisible="{Binding IsRecording,Converter={StaticResource BooleanNegateConverter}}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
-                                  Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="mic_ico.png"/>
+            <StackLayout IsVisible="{Binding HasRecording,Converter={StaticResource BooleanNegateConverter}}">
+              <controls:ButtonField IsVisible="{Binding IsRecording,Converter={StaticResource BooleanNegateConverter}}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+                                    Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="plus_ico.png" RightImage="mic_ico.png"/>
 
-            <controls:ButtonField IsVisible="{Binding IsRecording}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_StopAndPlayVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
-                               Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="mic_ico.png"/>
+              <controls:ButtonField IsVisible="{Binding IsRecording}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_StopAndPlayVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+                                 Command="{Binding OnRecordVoiceNoteCommand}" />
+            </StackLayout>
+
+            <StackLayout IsVisible="{Binding HasRecording}">
+
+              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddAnotherVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+                                    Command="{Binding OnPlayVoiceNoteCommand}"  LeftImage="edit_audio_message_bg.png" RightImage="listen_ico.png"/>
+            </StackLayout>
 
           </StackLayout>
 
