@@ -9,6 +9,8 @@ namespace Controls
         public ToogleButtonField()
         {
             InitializeComponent();
+            leftImage.IsVisible = false;
+            rightImage.IsVisible = false;
         }
 
         #region Height p
@@ -159,6 +161,7 @@ namespace Controls
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
+            IsToogled = !IsToogled;
             if (IsToogled)
             {
                 mainGrid.BackgroundColor = ToogledBGColor;
@@ -177,7 +180,7 @@ namespace Controls
                 }
                 mainGrid.BackgroundColor = BGColor;
             }
-            IsToogled = !IsToogled;
+    
             if (Command != null)
             {
                 if (Command.CanExecute(CommandParamter))

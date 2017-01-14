@@ -177,6 +177,10 @@
   <data name="MedicineAddNew_StopAndPlayVoiceNote" xml:space="preserve">
     <value>أضغط هنا لتوقيف و تشغيل </value>
   </data>
+  <data name="Home_NextReminderDate" xml:space="preserve">
+    <value> باقي {0} ساعة و {1} دقيقة على موعد جرعة الدواء التالية
+</value>
+  </data>
   <data name="Error_ApplicationTitle" xml:space="preserve">
     <value>خطأ</value>
   </data>

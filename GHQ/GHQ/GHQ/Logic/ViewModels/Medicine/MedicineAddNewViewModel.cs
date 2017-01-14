@@ -99,7 +99,7 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-        private bool _Reminder_Event;
+        private bool _Reminder_Event = true;
         public bool Reminder_Event
         {
             get { return _Reminder_Event; }
@@ -277,6 +277,66 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
+        #region OnReminderChanged Command
+
+        private RelayCommand<string> _OnReminderChangedCommand;
+        public RelayCommand<string> OnReminderChangedCommand
+        {
+            get
+            {
+                if (_OnReminderChangedCommand == null)
+                {
+                    _OnReminderChangedCommand = new RelayCommand<string>(OnReminderChanged);
+                }
+                return _OnReminderChangedCommand;
+            }
+        }
+        private async void OnReminderChanged(string type)
+        {
+            try
+            {
+                switch (type)
+                {
+                    case "1":
+                        Reminder_Daily = true;
+                        Reminder_Weekly = false;
+                        Reminder_Monthly = false;
+                        Reminder_Event = false;
+                        break;
+
+                    case "2":
+                        Reminder_Daily = false;
+                        Reminder_Weekly = true;
+                        Reminder_Monthly = false;
+                        Reminder_Event = false;
+                        break;
+
+                    case "3":
+                        Reminder_Daily = false;
+                        Reminder_Weekly = false;
+                        Reminder_Monthly = true;
+                        Reminder_Event = false;
+                        break;
+
+                    case "4":
+                        Reminder_Daily = false;
+                        Reminder_Weekly = false;
+                        Reminder_Monthly = false;
+                        Reminder_Event = false;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            catch (System.Exception ex)
+            {
+            }
+            finally
+            {
+            }
+        }
+
+        #endregion
 
         #region OnSave Command
 
@@ -312,7 +372,6 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
-
         #region OnSaveAndAdd Command
 
         private RelayCommand _OnSaveAndAddCommand;
@@ -346,7 +405,6 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
-
 
 
         #endregion

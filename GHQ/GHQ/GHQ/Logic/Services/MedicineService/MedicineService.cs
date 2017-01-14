@@ -87,5 +87,14 @@ namespace GHQ.Logic.Service.Lookup
             return translatedMedicine;
 
         }
+
+        public async Task<Medicine> GetNextMedicine()
+        {
+            SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+            var medicine = database.Table<Database.Entities.Medicine>().OrderByDescending(m => m.NextDate).FirstOrDefault();
+            var translatedMedicine = MedicineTranslator.EntityToModel(medicine);
+            return translatedMedicine;
+
+        }
     }
 }

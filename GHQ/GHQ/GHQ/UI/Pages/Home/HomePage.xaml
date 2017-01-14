@@ -24,10 +24,10 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
           </Grid.RowDefinitions>
-          <Label Grid.Row="0" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,80,0,0" VerticalOptions="Center" />
-          <Label Grid.Row="1" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" />
-          <Label Grid.Row="2" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" />
-          <Label Grid.Row="3" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" Margin="10,0,0,40" VerticalOptions="Center" />
+          <Label Grid.Row="0" Text="{Binding NextReminder}" HorizontalOptions="Center" Margin="10,80,0,0" VerticalOptions="Center" />
+          <Label Grid.Row="1" Text="{Binding Medicine.Name}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" />
+          <Label Grid.Row="2" Text="{Binding Medicine.Note}" HorizontalOptions="Center" Margin="10,0,0,0" VerticalOptions="Center" />
+          <Label Grid.Row="3" Text="{Binding Medicine.DoctorName}" HorizontalOptions="Center" Margin="10,0,0,40" VerticalOptions="Center" />
 
         </Grid>
         <Grid Grid.Row="1">

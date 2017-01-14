@@ -13,5 +13,6 @@ namespace GHQ.Logic.Service.Lookup
         Task<List<Medicine>> GetCurrentMedicine();
         Task<List<Medicine>> GetAllMedicine();
         Task<Medicine> MissedMedicine(int medicineId);
+        Task<Medicine> GetNextMedicine();
     }
 }
