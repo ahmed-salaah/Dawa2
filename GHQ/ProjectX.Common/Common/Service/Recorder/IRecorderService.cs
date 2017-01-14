@@ -1,9 +1,11 @@
-﻿namespace Service.Recorder
+﻿using System.Threading.Tasks;
+
+namespace Service.Recorder
 {
     public interface IRecorderService
     {
         void Record();
         void Play();
-        void Stop();
+        Task<byte[]> Stop();
     }
 }

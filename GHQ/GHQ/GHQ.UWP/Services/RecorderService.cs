@@ -1,6 +1,7 @@
 ﻿using GHQ.UWP.Services;
 using Service.Recorder;
 using System;
+using System.IO;
 using System.Threading.Tasks;
 using Windows.Media.Capture;
 using Windows.Media.MediaProperties;
@@ -20,6 +21,7 @@ namespace GHQ.UWP.Services
         InMemoryRandomAccessStream buffer;
         bool record;
         string filename;
+        StorageFile storageFile;
         string audioFile = ".MP3";
         private async Task<bool> RecordProcess()
         {
@@ -98,7 +100,8 @@ namespace GHQ.UWP.Services
 
             Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, async () =>
              {
-                 StorageFile storageFile = await storageFolder.CreateFileAsync(audioFile, CreationCollisionOption.GenerateUniqueName);
+                 storageFile = await storageFolder.CreateFileAsync(audioFile, CreationCollisionOption.GenerateUniqueName);
+
                  filename = storageFile.Name;
                  using (IRandomAccessStream fileStream = await storageFile.OpenAsync(FileAccessMode.ReadWrite))
                  {
@@ -112,10 +115,23 @@ namespace GHQ.UWP.Services
              });
         }
 
-        public async void Stop()
+        public async Task<byte[]> Stop()
         {
             await capture.StopRecordAsync();
             record = false;
+
+
+            byte[] result;
+            using (Stream stream = await storageFile.OpenStreamForReadAsync())
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+
+                    stream.CopyTo(memoryStream);
+                    result = memoryStream.ToArray();
+                    return result;
+                }
+            }
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using Android.Media;
 using GHQ.Droid.Services;
 using Service.Recorder;
+using System.IO;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 [assembly: Dependency(typeof(RecorderService))]
 
@@ -40,10 +42,21 @@ namespace GHQ.Droid.Services
             _player.Start();
         }
 
-        public void Stop()
+        public async Task<byte[]> Stop()
         {
             _recorder.Stop();
             _recorder.Reset();
+
+            using (var streamReader = new StreamReader(path))
+            {
+                var bytes = default(byte[]);
+                using (var memstream = new MemoryStream())
+                {
+                    streamReader.BaseStream.CopyTo(memstream);
+                    bytes = memstream.ToArray();
+                    return bytes;
+                }
+            }
         }
     }
 }

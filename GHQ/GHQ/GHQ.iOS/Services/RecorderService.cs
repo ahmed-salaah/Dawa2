@@ -5,6 +5,7 @@ using System.IO;
 using Service.Recorder;
 using AVFoundation;
 using Foundation;
+using System.Threading.Tasks;
 
 [assembly: Dependency(typeof(FileHelper))]
 
@@ -16,7 +17,7 @@ namespace GHQ.iOS.Services
         NSError error;
         NSUrl url;
         NSDictionary settings;
-
+        string path;
         public void Record()
         {
             var audioSession = AVAudioSession.SharedInstance();
@@ -35,11 +36,11 @@ namespace GHQ.iOS.Services
 
             //Declare string for application temp path and tack on the file extension
             string fileName = string.Format("Myfile{0}.wav", DateTime.Now.ToString("yyyyMMddHHmmss"));
-            string audioFilePath = Path.Combine(Path.GetTempPath(), fileName);
+            path = Path.Combine(Path.GetTempPath(), fileName);
 
-            Console.WriteLine("Audio File Path: " + audioFilePath);
+            Console.WriteLine("Audio File Path: " + path);
 
-            url = NSUrl.FromFilename(audioFilePath);
+            url = NSUrl.FromFilename(path);
             //set up the NSObject Array of values that will be combined with the keys to make the NSDictionary
             NSObject[] values = new NSObject[]
             {
@@ -85,9 +86,19 @@ namespace GHQ.iOS.Services
 
 
 
-        public void Stop()
+        public async Task<byte[]> Stop()
         {
             recorder.Stop();
+            using (var streamReader = new StreamReader(path))
+            {
+                var bytes = default(byte[]);
+                using (var memstream = new MemoryStream())
+                {
+                    streamReader.BaseStream.CopyTo(memstream);
+                    bytes = memstream.ToArray();
+                    return bytes;
+                }
+            }
         }
     }
 }

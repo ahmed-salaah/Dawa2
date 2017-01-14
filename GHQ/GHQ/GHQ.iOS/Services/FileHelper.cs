@@ -3,6 +3,9 @@ using GHQ.iOS.Services;
 using System;
 using Service.FileHelper;
 using System.IO;
+using System.Threading.Tasks;
+using UIKit;
+using Foundation;
 
 [assembly: Dependency(typeof(FileHelper))]
 
@@ -21,6 +24,17 @@ namespace GHQ.iOS.Services
             }
 
             return Path.Combine(libFolder, filename);
+        }
+
+
+        public async Task<string> SaveByteArrayToDisk(string filename, byte[] imageData, string folderName = "")
+        {
+            var chartImage = new UIImage(NSData.FromArray(imageData));
+            chartImage.SaveToPhotosAlbum((image, error) =>
+            {
+
+            });
+            return filename;
         }
     }
 }

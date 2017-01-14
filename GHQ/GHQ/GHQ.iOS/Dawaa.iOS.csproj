@@ -110,7 +110,6 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Services\DatabaseService.cs" />
-    <Compile Include="Services\ImageService.cs" />
     <Compile Include="Services\RecorderService.cs" />
     <Compile Include="Services\FileHelper.cs" />
     <Compile Include="Services\MediaPicker.cs" />

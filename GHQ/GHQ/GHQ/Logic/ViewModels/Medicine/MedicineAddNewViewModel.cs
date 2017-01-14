@@ -7,6 +7,7 @@ using Logic.Models.Data;
 using Models;
 using Service.Dialog;
 using Service.Exception;
+using Service.FileHelper;
 using Service.Media;
 using Service.Naviagtion;
 using Service.Recorder;
@@ -136,7 +137,7 @@ namespace GHQ.Logic.ViewModels.Account
                     IsLoading = true;
                     var imageBytes = mediaFile.data;
                     Medicine.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-                    DependencyService.Get<IImageService>().SavePictureToDisk(Guid.NewGuid().ToString() + Medicine.Name, imageBytes);
+                    Medicine.ImagePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name, imageBytes, "Medicine");
                 }
 
             }
@@ -180,7 +181,8 @@ namespace GHQ.Logic.ViewModels.Account
                 }
                 else
                 {
-                    DependencyService.Get<IRecorderService>().Stop();
+                    byte[] file = await DependencyService.Get<IRecorderService>().Stop();
+                    Medicine.VoiceNotePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name, file, "VoiceNotes");
                     DependencyService.Get<IRecorderService>().Play();
                 }
 
