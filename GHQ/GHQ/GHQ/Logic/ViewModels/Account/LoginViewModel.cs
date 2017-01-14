@@ -105,7 +105,7 @@ namespace GHQ.Logic.ViewModels.Account
                 IsLoading = true;
                 IsPageEnabled = false;
 				//ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
-				DependencyService.Get<ILocalNotifications>().showNotification("a", "aaaa", DateTime.Now, "");
+				//DependencyService.Get<ILocalNotifications>().showNotification("a", "aaaa", DateTime.Now, "");
                 navigationService.NavigateToPage(typeof(HomePage));
             }
             catch (System.Exception ex)
