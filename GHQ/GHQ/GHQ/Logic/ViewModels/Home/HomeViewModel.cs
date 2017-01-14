@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
+using GHQ.Logic.Service.Lookup;
 using GHQ.UI.Pages.Medicine;
 using Models;
 using Service.Localization;
@@ -11,17 +12,18 @@ namespace GHQ.Logic.ViewModels.Account
 {
     public class HomeViewModel : BaseViewModel
     {
-        public HomeViewModel(IAccountService _accountService, INavigationService _naviagtionService)
+        public HomeViewModel(IAccountService _accountService, INavigationService _naviagtionService, IMedicineService _medicineService)
         {
             accountService = _accountService;
             naviagtionService = _naviagtionService;
+            medicineService = _medicineService;
         }
 
         #region Private Members
 
         IAccountService accountService;
         INavigationService naviagtionService;
-
+        IMedicineService medicineService;
         #endregion
 
         #region Properties
@@ -66,7 +68,6 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
-
         #region OnHomeNavigation Command
 
         private RelayCommand<string> _OnHomeNavigationCommand;
@@ -95,6 +96,7 @@ namespace GHQ.Logic.ViewModels.Account
                 }
                 else if (pageName == "Add")
                 {
+                    medicineService.SelectedMedicine = null;
                     naviagtionService.NavigateToPage(typeof(MedicineAddNew));
                 }
             }

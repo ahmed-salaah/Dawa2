@@ -97,8 +97,17 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                Medicine = new Medicine();
-                // AddMode = false;
+                if (medicineService.SelectedMedicine == null)
+                {
+                    Medicine = new Medicine();
+                    AddMode = true;
+                }
+                else
+                {
+                    Medicine = medicineService.SelectedMedicine;
+                    AddMode = false;
+                }
+
             }
             catch (System.Exception ex)
             {
@@ -219,7 +228,8 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 var m = Medicine;
-                Medicine = await medicineService.AddMedicine(Medicine);
+                Medicine = await medicineService.AddEditMedicine(Medicine);
+                navigationService.GoBack();
             }
             catch (System.Exception ex)
             {
@@ -230,6 +240,43 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
+
+
+        #region OnSaveAndAdd Command
+
+        private RelayCommand _OnSaveAndAddCommand;
+        public RelayCommand OnSaveAndAddCommand
+        {
+            get
+            {
+                if (_OnSaveAndAddCommand == null)
+                {
+                    _OnSaveAndAddCommand = new RelayCommand(OnSaveAndAdd);
+                }
+                return _OnSaveAndAddCommand;
+            }
+        }
+
+
+        private async void OnSaveAndAdd()
+        {
+            try
+            {
+                var m = Medicine;
+                await medicineService.AddEditMedicine(Medicine);
+                Medicine = new Medicine();
+            }
+            catch (System.Exception ex)
+            {
+            }
+            finally
+            {
+            }
+        }
+
+        #endregion
+
+
 
         #endregion
     }

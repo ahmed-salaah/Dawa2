@@ -1,13 +1,10 @@
 ﻿using GHQ.Logic;
 using GHQ.Logic.ViewModels.Account;
-using Xamarin.Forms;
 
 namespace GHQ.UI.Pages.Home
 {
     public partial class HomePage : BasePage
     {
-
-
         readonly HomeViewModel HomeViewModel = Locator.Default.HomeViewModel;
         public HomePage()
         {

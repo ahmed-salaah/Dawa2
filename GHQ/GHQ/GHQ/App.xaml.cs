@@ -14,16 +14,16 @@ namespace GHQ
             //	BarTextColor = Color.FromHex("#333333"),
             //};
 
-            MainPage = new NavigationPage(new UI.Pages.Medicine.MedicineAddNew())
+            MainPage = new NavigationPage(new UI.Pages.Home.HomePage())
             {
                 BarBackgroundColor = Color.FromHex("#C7e4e4"),
                 BarTextColor = Color.FromHex("#333333"),
             };
 
         }
-		public static Action<string> PostSuccessFacebookAction { get; set; }
+        public static Action<string> PostSuccessFacebookAction { get; set; }
 
-		protected override void OnStart()
+        protected override void OnStart()
         {
             // Handle when your app starts
         }

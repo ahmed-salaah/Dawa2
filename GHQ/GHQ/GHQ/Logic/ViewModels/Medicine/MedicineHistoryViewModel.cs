@@ -73,7 +73,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                MedicineList = new ObservableCollection<Medicine>(await medicineService.GetHistory());
+                MedicineList = new ObservableCollection<Medicine>(await medicineService.GetAllMedicine());
             }
             catch (System.Exception ex)
             {

@@ -165,7 +165,7 @@
               <ColumnDefinition Width="2*" />
               <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_SaveAndAdd} " BackgroundColor="{StaticResource DarkBlueColor}" Command="{Binding OnSaveCommand}"></Button>
+            <Button Grid.Row="0" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_SaveAndAdd} " BackgroundColor="{StaticResource DarkBlueColor}" Command="{Binding OnSaveAndAddCommand}"></Button>
             <Button Grid.Row="0" Grid.Column="1" Text="{i18n:Translate MedicineAddNew_Save}  " BackgroundColor="{StaticResource OrangeColor}"  Command="{Binding OnSaveCommand}"></Button>
           </Grid>
 

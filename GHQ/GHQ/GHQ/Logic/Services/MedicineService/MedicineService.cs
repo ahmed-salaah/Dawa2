@@ -1,4 +1,4 @@
-﻿using Exceptions;
+﻿using GHQ.Logic.Translators;
 using Logic.Models.Data;
 using Service.Database;
 using Service.Internet;
@@ -6,6 +6,7 @@ using Service.Network;
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -25,86 +26,14 @@ namespace GHQ.Logic.Service.Lookup
             internetService = _internetService;
         }
 
-        public async Task<List<Medicine>> GetHistory()
-        {
-            try
-            {
-                List<Medicine> medicineList = new List<Medicine>();
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "جلوكوفيج إكس ر", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "أورغامتريل", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "بانادول كولد اند فلو اقراص بيضوية", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "زيرتك", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "لورادي اقراص", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
-                return medicineList;
-            }
-            catch (InternetException ex)
-            {
-                throw ex;
-            }
-            catch (BackendException ex)
-            {
-                throw ex;
-            }
-            catch (ParsingException ex)
-            {
-                throw new ApplicationError(ex.Message, null, "MedicineService.GetHistory", ex);
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationError(ex.Message, null, "MedicineService.GetHistory", ex);
-            }
-        }
+        public Medicine SelectedMedicine { get; set; }
 
-        public async Task<List<Medicine>> GetSchedule()
-        {
-            try
-            {
-                List<Medicine> medicineList = new List<Medicine>();
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "جلوكوفيج إكس ر", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "أورغامتريل", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "بانادول كولد اند فلو اقراص بيضوية", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "زيرتك", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = false });
-                medicineList.Add(new Medicine() { Id = 1, DiseaseName = "Aids", DoctorName = "Sean Conary", NextDate = DateTime.Now, EndDate = DateTime.Now, Name = "لورادي اقراص", Note = "واحد قرص يوميا بعد العشاء", StartDate = DateTime.Now, IsMissed = true });
-                return medicineList;
-            }
-            catch (InternetException ex)
-            {
-                throw ex;
-            }
-            catch (BackendException ex)
-            {
-                throw ex;
-            }
-            catch (ParsingException ex)
-            {
-                throw new ApplicationError(ex.Message, null, "MedicineService.GetSchedule", ex);
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationError(ex.Message, null, "MedicineService.GetSchedule", ex);
-            }
-        }
-
-        public async Task<Medicine> AddMedicine(Medicine medicine)
+        public async Task<Medicine> AddEditMedicine(Medicine medicine)
         {
             try
             {
                 SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
-                //var m = database.Table<Database.Entities.Medicine>().FirstOrDefault();
-                Database.Entities.Medicine m = new Database.Entities.Medicine()
-                {
-                    Id = medicine.Id,
-                    DiseaseName = medicine.DiseaseName,
-                    DoctorName = medicine.DoctorName,
-                    EndDate = medicine.EndDate,
-                    ImagePath = medicine.ImagePath,
-                    IsMissed = medicine.IsMissed,
-                    Name = medicine.Name,
-                    NexDate = medicine.NextDate,
-                    Note = medicine.Note,
-                    StartDate = medicine.StartDate,
-                    VoiceNotePath = medicine.VoiceNotePath,
-                };
+                Database.Entities.Medicine m = MedicineTranslator.ModelToEntity(medicine);
 
                 if (medicine.Id != 0)
                 {
@@ -121,6 +50,41 @@ namespace GHQ.Logic.Service.Lookup
             {
                 return null;
             }
+
+        }
+
+        public async Task<List<Medicine>> GetMedicine(string medicineName, string doctorName, string diesesName, DateTime StartDate, DateTime EndDate)
+        {
+            SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.Name == medicineName || m.DoctorName == doctorName || m.DiseaseName == diesesName || m.StartDate.Date == StartDate.Date || m.EndDate == EndDate);
+            var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
+            return translatedMedicineList;
+        }
+
+        public async Task<List<Medicine>> GetCurrentMedicine()
+        {
+            SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.StartDate.Date <= DateTime.Now || m.EndDate >= DateTime.Now);
+            var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
+            return translatedMedicineList;
+        }
+
+        public async Task<List<Medicine>> GetAllMedicine()
+        {
+            SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+            var medicineList = database.Table<Database.Entities.Medicine>().OrderByDescending(m => m.StartDate);
+            var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
+            return translatedMedicineList;
+        }
+
+        public async Task<Medicine> MissedMedicine(int medicineId)
+        {
+            SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+            var medicine = database.Table<Database.Entities.Medicine>().FirstOrDefault(m => m.Id == medicineId);
+            medicine.IsMissed = false;
+            int rows = database.Update(medicine);
+            var translatedMedicine = MedicineTranslator.EntityToModel(medicine);
+            return translatedMedicine;
 
         }
     }

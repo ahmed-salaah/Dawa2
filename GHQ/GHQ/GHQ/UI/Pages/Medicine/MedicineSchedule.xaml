@@ -34,10 +34,10 @@
 
 
         <controls:ButtonField Grid.Column="0" IsEnabled="True" Title="{i18n:Translate PageHeader_MedicineSchedule_AllMedicine}" TextColor="White" BGColor="{StaticResource LightBlackColor}" ItemHeight="50"
-                               Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="" RightImage=""/>
+                               Command="{Binding OnAllMedicineCommand}"  LeftImage="" RightImage=""/>
 
         <controls:ButtonField Grid.Column="1" IsEnabled="True" Title="{i18n:Translate PageHeader_MedicineSchedule_CurrentMedicine}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="50"
-                               Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="" RightImage=""/>
+                               Command="{Binding OnIntializeCommand}"  LeftImage="" RightImage=""/>
 
       </Grid>
 
