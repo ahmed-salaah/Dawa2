@@ -1,11 +1,13 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
 using GHQ.Logic.Service.Lookup;
+using GHQ.Resources.Strings;
 using GHQ.UI.Pages.Medicine;
+using Logic.Models.Data;
 using Models;
 using Service.Localization;
 using Service.Naviagtion;
-
+using System;
 using Xamarin.Forms;
 
 namespace GHQ.Logic.ViewModels.Account
@@ -28,6 +30,26 @@ namespace GHQ.Logic.ViewModels.Account
 
         #region Properties
 
+
+        private Medicine _Medicine;
+        public Medicine Medicine
+        {
+            get { return _Medicine; }
+            set
+            {
+                Set(() => Medicine, ref _Medicine, value);
+            }
+        }
+
+        private string _NextReminder;
+        public string NextReminder
+        {
+            get { return _NextReminder; }
+            set
+            {
+                Set(() => NextReminder, ref _NextReminder, value);
+            }
+        }
 
 
         #endregion
@@ -57,6 +79,10 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
+                Medicine = await medicineService.GetNextMedicine();
+                var diffHour = DateTime.Now.Hour - Medicine.NextDate.Hour;
+                var diffMin = DateTime.Now.Minute - Medicine.NextDate.Minute;
+                NextReminder = string.Format(AppResources.Home_NextReminderDate, diffHour, diffMin);
             }
             catch (System.Exception ex)
             {

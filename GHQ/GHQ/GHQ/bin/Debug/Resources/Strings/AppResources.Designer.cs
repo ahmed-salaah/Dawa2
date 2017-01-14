@@ -188,6 +188,16 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to  باقي {0} ساعة و {1} دقيقة على موعد جرعة الدواء التالية
+        ///.
+        /// </summary>
+        internal static string Home_NextReminderDate {
+            get {
+                return ResourceManager.GetString("Home_NextReminderDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to قائمة الأدوية.
         /// </summary>
         internal static string Home_secondButton {
