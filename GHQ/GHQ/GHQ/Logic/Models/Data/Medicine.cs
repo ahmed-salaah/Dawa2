@@ -193,6 +193,7 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => VoiceNotePath, ref _VoiceNotePath, value);
+                RaisePropertyChanged("HasRecording");
             }
         }
 

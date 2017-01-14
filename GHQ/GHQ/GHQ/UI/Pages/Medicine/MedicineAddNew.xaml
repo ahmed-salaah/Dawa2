@@ -28,6 +28,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
           </Grid.RowDefinitions>
 
           <StackLayout Grid.Row="0" Margin="0,20,0,0">
@@ -41,7 +42,7 @@
             <StackLayout IsVisible="{Binding AddMode}">
 
 
-              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
+              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="80"
                                  Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
 
               <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
@@ -52,7 +53,7 @@
 
               <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}"/>
 
-              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
+              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="80"
                                    Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
 
             </StackLayout>
@@ -79,10 +80,23 @@
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
               </Grid.RowDefinitions>
-              <Button Grid.Row="0" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_WeeklyReminder}" BackgroundColor="{StaticResource BabyBlueColor}"></Button>
-              <Button Grid.Row="0" Grid.Column="1" Text="{i18n:Translate MedicineAddNew_MonthlyReminder} " BackgroundColor="{StaticResource LightBlackColor}"></Button>
-              <Button Grid.Row="1" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_EventReminder} " BackgroundColor="{StaticResource LightBlackColor}"></Button>
-              <Button Grid.Row="1" Grid.Column="1" Text="{i18n:Translate MedicineAddNew_DailyReminder} " BackgroundColor="{StaticResource LightBlackColor}"></Button>
+
+              <controls:ToogleButtonField  Grid.Row="0" Grid.Column="0"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_WeeklyReminder}"
+                                     TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="True" ItemHeight="50" RightImage="checked_ico"
+                                 Command="{Binding OnRecordVoiceNoteCommand}" ShowImageOnToogleOnly="true"/>
+
+              <controls:ToogleButtonField  Grid.Row="0" Grid.Column="1"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_WeeklyReminder}"
+                                   TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="False" ItemHeight="50" RightImage="checked_ico"
+                               Command="{Binding OnRecordVoiceNoteCommand}" ShowImageOnToogleOnly="true" />
+
+              <controls:ToogleButtonField  Grid.Row="1" Grid.Column="0"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_EventReminder}"
+                                    TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="False" ItemHeight="50" RightImage="checked_ico"
+                                Command="{Binding OnRecordVoiceNoteCommand}" ShowImageOnToogleOnly="true" />
+
+              <controls:ToogleButtonField  Grid.Row="1" Grid.Column="1"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_DailyReminder}"
+                                    TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="False" ItemHeight="50" RightImage="checked_ico"
+                                Command="{Binding OnRecordVoiceNoteCommand}" ShowImageOnToogleOnly="true" />
+
             </Grid>
 
             <controls:BindablePicker />
@@ -151,17 +165,17 @@
 
             <controls:TextEditorField  Title="{Binding Medicine.Note,Mode=TwoWay}" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true"/>
 
-            <StackLayout IsVisible="{Binding HasRecording,Converter={StaticResource BooleanNegateConverter}}">
-              <controls:ButtonField IsVisible="{Binding IsRecording,Converter={StaticResource BooleanNegateConverter}}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+            <StackLayout IsVisible="{Binding Medicine.HasRecording,Converter={StaticResource BooleanNegateConverter}}">
+              <controls:ButtonField IsVisible="{Binding IsRecording,Converter={StaticResource BooleanNegateConverter}}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="50"
                                     Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="plus_ico.png" RightImage="mic_ico.png"/>
 
-              <controls:ButtonField IsVisible="{Binding IsRecording}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_StopAndPlayVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+              <controls:ButtonField IsVisible="{Binding IsRecording}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_StopAndPlayVoiceNote}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="50"
                                  Command="{Binding OnRecordVoiceNoteCommand}" />
             </StackLayout>
 
-            <StackLayout IsVisible="{Binding HasRecording}">
+            <StackLayout IsVisible="{Binding Medicine.HasRecording}">
 
-              <Grid  BackgroundColor="#27bdb8" HeightRequest="70">
+              <Grid  BackgroundColor="{StaticResource BabyBlueColor}" HeightRequest="70">
 
 
                 <Grid.ColumnDefinitions>
@@ -196,6 +210,7 @@
           </Grid>
 
           <Grid Grid.Row="10"  HeightRequest="50" Margin="0,0,0,20">
+         
             <Grid.ColumnDefinitions>
               <ColumnDefinition Width="2*" />
               <ColumnDefinition Width="*" />

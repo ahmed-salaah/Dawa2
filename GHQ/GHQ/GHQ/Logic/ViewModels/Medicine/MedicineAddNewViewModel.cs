@@ -99,6 +99,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+                IsRecording = false;
                 if (navigationService.IsExternalAppOpen)
                     return;
                 if (medicineService.SelectedMedicine == null)
@@ -110,9 +111,10 @@ namespace GHQ.Logic.ViewModels.Account
                 {
                     Medicine = medicineService.SelectedMedicine;
                     AddMode = false;
-
                 }
 
+                //Workaround to Update has Recording
+                //Medicine.VoiceNotePath = Medicine.VoiceNotePath;
             }
             catch (System.Exception ex)
             {
