@@ -59,9 +59,6 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-
-
-
         private bool _IsRecording;
         public bool IsRecording
         {
@@ -72,6 +69,45 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
+        private bool _Reminder_Daily;
+        public bool Reminder_Daily
+        {
+            get { return _Reminder_Daily; }
+            set
+            {
+                Set(() => Reminder_Daily, ref _Reminder_Daily, value);
+            }
+        }
+
+        private bool _Reminder_Weekly;
+        public bool Reminder_Weekly
+        {
+            get { return _Reminder_Weekly; }
+            set
+            {
+                Set(() => Reminder_Weekly, ref _Reminder_Weekly, value);
+            }
+        }
+
+        private bool _Reminder_Monthly;
+        public bool Reminder_Monthly
+        {
+            get { return _Reminder_Monthly; }
+            set
+            {
+                Set(() => Reminder_Monthly, ref _Reminder_Monthly, value);
+            }
+        }
+
+        private bool _Reminder_Event;
+        public bool Reminder_Event
+        {
+            get { return _Reminder_Event; }
+            set
+            {
+                Set(() => Reminder_Event, ref _Reminder_Event, value);
+            }
+        }
 
         #endregion
 
@@ -112,9 +148,6 @@ namespace GHQ.Logic.ViewModels.Account
                     Medicine = medicineService.SelectedMedicine;
                     AddMode = false;
                 }
-
-                //Workaround to Update has Recording
-                //Medicine.VoiceNotePath = Medicine.VoiceNotePath;
             }
             catch (System.Exception ex)
             {
