@@ -15,7 +15,7 @@ namespace GHQ.UI.Pages
                 Locator.Default.NavigationService.NavigateToPage(typeof(HomePage));
             };
 
-            ToolbarItems.Add( new ToolbarItem("", "profile_ico.png", action, ToolbarItemOrder.Primary));
+            //ToolbarItems.Add( new ToolbarItem("", "profile_ico.png", action, ToolbarItemOrder.Primary));
 
         }
     }

@@ -13,7 +13,8 @@
     </Image>
 
     <Grid Style="{StaticResource MainGridStyle}"  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
-    <Grid Style = "{StaticResource GridContentStyle}" >
+    <ScrollView>
+	<Grid Style = "{StaticResource GridContentStyle}" >
 		<Grid.RowDefinitions>
         <RowDefinition Height="250" />
         <RowDefinition Height="Auto" />
@@ -51,6 +52,7 @@
 			<Button Grid.Row="5" Margin="10,70,10,0"  Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate login_NewAccountButton}" Command="{Binding OnSignUpCommand}">
 			</Button>
 		</Grid>
+				</ScrollView>
 			</Grid>
   </RelativeLayout>
 </Base:BasePage>
