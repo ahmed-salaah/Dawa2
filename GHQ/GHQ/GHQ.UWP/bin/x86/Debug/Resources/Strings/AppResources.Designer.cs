@@ -251,6 +251,15 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to سجل رسالة صوتية أخرى .
+        /// </summary>
+        internal static string MedicineAddNew_AddAnotherVoiceNote {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_AddAnotherVoiceNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to أضغط هنا لتسجيل ملاحظة صوتية.
         /// </summary>
         internal static string MedicineAddNew_AddVoiceNote {

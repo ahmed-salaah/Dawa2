@@ -157,8 +157,29 @@
 
             <StackLayout IsVisible="{Binding HasRecording}">
 
-              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddAnotherVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
-                                    Command="{Binding OnPlayVoiceNoteCommand}"  LeftImage="edit_audio_message_bg.png" RightImage="listen_ico.png"/>
+              <Grid  BackgroundColor="#27bdb8" HeightRequest="70">
+
+
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0"  Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="edit_audio_message_bg.png"/>
+                <Label Grid.Column="1" Text="{i18n:Translate MedicineAddNew_AddAnotherVoiceNote}" HorizontalOptions="Center" Margin = "10,0,0,0" VerticalOptions="Center" TextColor= "White" />
+                <Image Grid.Column="2" Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="listen_ico.png">
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OnPlayVoiceNoteCommand}"/>
+                  </Image.GestureRecognizers>
+                </Image>
+                <Image Grid.Column="3" Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="edit_audio_ico.png">
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OnRecordVoiceNoteCommand}"/>
+                  </Image.GestureRecognizers>
+                </Image>
+              </Grid>
+
             </StackLayout>
 
           </StackLayout>
