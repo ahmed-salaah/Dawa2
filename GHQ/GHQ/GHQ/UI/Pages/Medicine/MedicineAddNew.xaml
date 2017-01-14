@@ -196,8 +196,13 @@
               <ColumnDefinition Width="2*" />
               <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_SaveAndAdd} " BackgroundColor="{StaticResource DarkBlueColor}" Command="{Binding OnSaveAndAddCommand}"></Button>
-            <Button Grid.Row="0" Grid.Column="1" Text="{i18n:Translate MedicineAddNew_Save}  " BackgroundColor="{StaticResource OrangeColor}"  Command="{Binding OnSaveCommand}"></Button>
+
+            <controls:ButtonField Grid.Row="0" Grid.Column="0" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_SaveAndAdd}" TextColor="White" BGColor="{StaticResource DarkBlueColor}" ItemHeight="50"
+                               Command="{Binding OnSaveAndAddCommand}" />
+
+            <controls:ButtonField Grid.Row="0" Grid.Column="1" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_Save}" TextColor="White" BGColor="{StaticResource OrangeColor}" ItemHeight="50"
+                              Command="{Binding OnSaveCommand}" />
+
           </Grid>
 
         </Grid>
