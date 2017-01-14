@@ -32,6 +32,8 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string></string>
 	<key>CFBundleName</key>
 	<string>Dawaya</string>
 	<key>XSLaunchImageAssets</key>

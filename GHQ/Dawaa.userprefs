@@ -1,7 +1,11 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/Logic/ViewModels/Medicine/FilterMedicineViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ.iOS/Services/FileHelper.cs">
     <Files>
-      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/FilterMedicineViewModel.cs" Line="1" Column="1" />
+      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/FilterMedicineViewModel.cs" Line="24" Column="44" />
+      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" Line="192" Column="1" />
+      <File FileName="GHQ/GHQ.iOS/Services/RecorderService.cs" Line="87" Column="5" />
+      <File FileName="GHQ/GHQ/Logic/Models/Data/Medicine.cs" Line="187" Column="23" />
+      <File FileName="GHQ/GHQ.iOS/Services/FileHelper.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
@@ -9,6 +13,8 @@
     <BreakpointStore>
       <Breakpoint file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/Logic/Models/Data/NewUSer.cs" line="106" column="1" />
       <Breakpoint file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ.iOS/AppDelegate.cs" line="63" column="1" />
+      <Breakpoint file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" line="200" column="1" />
+      <Breakpoint file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ.iOS/Services/FileHelper.cs" line="32" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
