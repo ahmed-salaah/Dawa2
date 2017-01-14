@@ -3,7 +3,8 @@
                xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
                xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
                Title="{i18n:Translate PageHeader_AddNewMedicine}"
-               x:Class="GHQ.UI.Pages.Medicine.MedicineAddNew">
+               x:Class="GHQ.UI.Pages.Medicine.MedicineAddNew"
+				BackgroundColor = "#DDDED9">
 
   <RelativeLayout>
 

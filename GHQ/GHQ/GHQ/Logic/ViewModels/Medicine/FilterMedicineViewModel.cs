@@ -12,6 +12,7 @@ using Service.Media;
 using GHQLogic.Models.Data;
 using System.Collections.ObjectModel;
 using System.IO;
+using GHQ.Logic.Database.Entities;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -36,45 +37,30 @@ namespace GHQ.Logic.ViewModels.Account
         #endregion
 
         #region Properties
-        private NewUSer _User;
-        public NewUSer User
-        {
-            get
-            {
-                return _User;
-            }
-            set
-            {
-                Set(() => User, ref _User, value);
-            }
-        }
+       	private Medicine _Medicine;
+		public Medicine Medicine
+		{
+			get { return _Medicine; }
+			set
+			{
+				Set(() => Medicine, ref _Medicine, value);
+			}
+		}
 
-        private ObservableCollection<LookupData> _GenderList;
-        public ObservableCollection<LookupData> GenderList
-        {
-            get
-            {
-                return _GenderList;
-            }
-            set
-            {
-                Set(() => GenderList, ref _GenderList, value);
-            }
-        }
 
-        #endregion
+		#endregion
 
-        #region Private Methods
+		#region Private Methods
 
 
 
-        #endregion
+		#endregion
 
-        #region Commands
+		#region Commands
 
-        #region Intialize Command
+		#region Intialize Command
 
-        private RelayCommand _OnIntializeCommand;
+		private RelayCommand _OnIntializeCommand;
         public RelayCommand OnIntializeCommand
         {
             get
@@ -92,7 +78,7 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 ClearValidationErrors();
 
-                GenderList = new ObservableCollection<LookupData>(await lookupService.GetGenderAsync());
+                
 
             }
             catch (InternetException ex)
@@ -111,54 +97,7 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
-        #region OnOpenGalleryCommand Command
-
-        private RelayCommand _OnOpenGalleryCommand;
-        public RelayCommand OnOpenGalleryCommand
-        {
-            get
-            {
-                if (_OnOpenGalleryCommand == null)
-                {
-                    _OnOpenGalleryCommand = new RelayCommand(OpenGallery);
-                }
-                return _OnOpenGalleryCommand;
-            }
-        }
-        private async void OpenGallery()
-        {
-            try
-            {
-
-                var mediaPicker = DependencyService.Get<IMediaPicker>();
-                navigationService.IsExternalAppOpen = true;
-                var mediaFile = await mediaPicker.SelectPhotoAsync();
-                navigationService.IsExternalAppOpen = false;
-                if (mediaFile != null)
-                {
-                    User.Image = mediaFile;
-                    IsLoading = true;
-                    var imageBytes = mediaFile.data;
-                    User.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-
-                }
-
-            }
-            catch (InternetException ex)
-            {
-                await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
-            }
-            catch (System.Exception ex)
-            {
-                await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, ex.Message);
-            }
-            finally
-            {
-                IsLoading = false;
-            }
-        }
-
-        #endregion
+      
 
         #endregion
     }
