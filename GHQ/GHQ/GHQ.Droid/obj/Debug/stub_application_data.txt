@@ -1,2 +1,2 @@
 android.app.Application
-com.Shafafeya.Dawaa
+com.Shafafeya.Dawaya

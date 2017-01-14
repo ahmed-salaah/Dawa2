@@ -2781,104 +2781,105 @@ containing a value of this type.
         public static final int edit_start_end_dates_ico=0x7f02007e;
         public static final int edit_white_ico=0x7f02007f;
         public static final int history_ico=0x7f020080;
-        public static final int ic_audiotrack=0x7f020081;
-        public static final int ic_audiotrack_light=0x7f020082;
-        public static final int ic_bluetooth_grey=0x7f020083;
-        public static final int ic_bluetooth_white=0x7f020084;
-        public static final int ic_cast_dark=0x7f020085;
-        public static final int ic_cast_disabled_light=0x7f020086;
-        public static final int ic_cast_grey=0x7f020087;
-        public static final int ic_cast_light=0x7f020088;
-        public static final int ic_cast_off_light=0x7f020089;
-        public static final int ic_cast_on_0_light=0x7f02008a;
-        public static final int ic_cast_on_1_light=0x7f02008b;
-        public static final int ic_cast_on_2_light=0x7f02008c;
-        public static final int ic_cast_on_light=0x7f02008d;
-        public static final int ic_cast_white=0x7f02008e;
-        public static final int ic_close_dark=0x7f02008f;
-        public static final int ic_close_light=0x7f020090;
-        public static final int ic_collapse=0x7f020091;
-        public static final int ic_collapse_00000=0x7f020092;
-        public static final int ic_collapse_00001=0x7f020093;
-        public static final int ic_collapse_00002=0x7f020094;
-        public static final int ic_collapse_00003=0x7f020095;
-        public static final int ic_collapse_00004=0x7f020096;
-        public static final int ic_collapse_00005=0x7f020097;
-        public static final int ic_collapse_00006=0x7f020098;
-        public static final int ic_collapse_00007=0x7f020099;
-        public static final int ic_collapse_00008=0x7f02009a;
-        public static final int ic_collapse_00009=0x7f02009b;
-        public static final int ic_collapse_00010=0x7f02009c;
-        public static final int ic_collapse_00011=0x7f02009d;
-        public static final int ic_collapse_00012=0x7f02009e;
-        public static final int ic_collapse_00013=0x7f02009f;
-        public static final int ic_collapse_00014=0x7f0200a0;
-        public static final int ic_collapse_00015=0x7f0200a1;
-        public static final int ic_expand=0x7f0200a2;
-        public static final int ic_expand_00000=0x7f0200a3;
-        public static final int ic_expand_00001=0x7f0200a4;
-        public static final int ic_expand_00002=0x7f0200a5;
-        public static final int ic_expand_00003=0x7f0200a6;
-        public static final int ic_expand_00004=0x7f0200a7;
-        public static final int ic_expand_00005=0x7f0200a8;
-        public static final int ic_expand_00006=0x7f0200a9;
-        public static final int ic_expand_00007=0x7f0200aa;
-        public static final int ic_expand_00008=0x7f0200ab;
-        public static final int ic_expand_00009=0x7f0200ac;
-        public static final int ic_expand_00010=0x7f0200ad;
-        public static final int ic_expand_00011=0x7f0200ae;
-        public static final int ic_expand_00012=0x7f0200af;
-        public static final int ic_expand_00013=0x7f0200b0;
-        public static final int ic_expand_00014=0x7f0200b1;
-        public static final int ic_expand_00015=0x7f0200b2;
-        public static final int ic_media_pause=0x7f0200b3;
-        public static final int ic_media_play=0x7f0200b4;
-        public static final int ic_media_route_disabled_mono_dark=0x7f0200b5;
-        public static final int ic_media_route_off_mono_dark=0x7f0200b6;
-        public static final int ic_media_route_on_0_mono_dark=0x7f0200b7;
-        public static final int ic_media_route_on_1_mono_dark=0x7f0200b8;
-        public static final int ic_media_route_on_2_mono_dark=0x7f0200b9;
-        public static final int ic_media_route_on_mono_dark=0x7f0200ba;
-        public static final int ic_os_notification_fallback_white_24dp=0x7f0200bb;
-        public static final int ic_pause_dark=0x7f0200bc;
-        public static final int ic_pause_light=0x7f0200bd;
-        public static final int ic_play_dark=0x7f0200be;
-        public static final int ic_play_light=0x7f0200bf;
-        public static final int ic_speaker_dark=0x7f0200c0;
-        public static final int ic_speaker_group_dark=0x7f0200c1;
-        public static final int ic_speaker_group_light=0x7f0200c2;
-        public static final int ic_speaker_light=0x7f0200c3;
-        public static final int ic_tv_dark=0x7f0200c4;
-        public static final int ic_tv_light=0x7f0200c5;
-        public static final int icon=0x7f0200c6;
-        public static final int listen_ico=0x7f0200c7;
-        public static final int logo=0x7f0200c8;
-        public static final int medicines_list_ico=0x7f0200c9;
-        public static final int mic_ico=0x7f0200ca;
-        public static final int mr_dialog_material_background_dark=0x7f0200cb;
-        public static final int mr_dialog_material_background_light=0x7f0200cc;
-        public static final int mr_ic_audiotrack_light=0x7f0200cd;
-        public static final int mr_ic_cast_dark=0x7f0200ce;
-        public static final int mr_ic_cast_light=0x7f0200cf;
-        public static final int mr_ic_close_dark=0x7f0200d0;
-        public static final int mr_ic_close_light=0x7f0200d1;
-        public static final int mr_ic_media_route_connecting_mono_dark=0x7f0200d2;
-        public static final int mr_ic_media_route_connecting_mono_light=0x7f0200d3;
-        public static final int mr_ic_media_route_mono_dark=0x7f0200d4;
-        public static final int mr_ic_media_route_mono_light=0x7f0200d5;
-        public static final int mr_ic_pause_dark=0x7f0200d6;
-        public static final int mr_ic_pause_light=0x7f0200d7;
-        public static final int mr_ic_play_dark=0x7f0200d8;
-        public static final int mr_ic_play_light=0x7f0200d9;
-        public static final int notification_template_icon_bg=0x7f0200e2;
-        public static final int places_ic_clear=0x7f0200da;
-        public static final int places_ic_search=0x7f0200db;
-        public static final int powered_by_google_dark=0x7f0200dc;
-        public static final int powered_by_google_light=0x7f0200dd;
-        public static final int profile_ico=0x7f0200de;
-        public static final int profile_photo=0x7f0200df;
-        public static final int splash=0x7f0200e0;
-        public static final int splash_bg=0x7f0200e1;
+        public static final int homescreen_bg=0x7f020081;
+        public static final int ic_audiotrack=0x7f020082;
+        public static final int ic_audiotrack_light=0x7f020083;
+        public static final int ic_bluetooth_grey=0x7f020084;
+        public static final int ic_bluetooth_white=0x7f020085;
+        public static final int ic_cast_dark=0x7f020086;
+        public static final int ic_cast_disabled_light=0x7f020087;
+        public static final int ic_cast_grey=0x7f020088;
+        public static final int ic_cast_light=0x7f020089;
+        public static final int ic_cast_off_light=0x7f02008a;
+        public static final int ic_cast_on_0_light=0x7f02008b;
+        public static final int ic_cast_on_1_light=0x7f02008c;
+        public static final int ic_cast_on_2_light=0x7f02008d;
+        public static final int ic_cast_on_light=0x7f02008e;
+        public static final int ic_cast_white=0x7f02008f;
+        public static final int ic_close_dark=0x7f020090;
+        public static final int ic_close_light=0x7f020091;
+        public static final int ic_collapse=0x7f020092;
+        public static final int ic_collapse_00000=0x7f020093;
+        public static final int ic_collapse_00001=0x7f020094;
+        public static final int ic_collapse_00002=0x7f020095;
+        public static final int ic_collapse_00003=0x7f020096;
+        public static final int ic_collapse_00004=0x7f020097;
+        public static final int ic_collapse_00005=0x7f020098;
+        public static final int ic_collapse_00006=0x7f020099;
+        public static final int ic_collapse_00007=0x7f02009a;
+        public static final int ic_collapse_00008=0x7f02009b;
+        public static final int ic_collapse_00009=0x7f02009c;
+        public static final int ic_collapse_00010=0x7f02009d;
+        public static final int ic_collapse_00011=0x7f02009e;
+        public static final int ic_collapse_00012=0x7f02009f;
+        public static final int ic_collapse_00013=0x7f0200a0;
+        public static final int ic_collapse_00014=0x7f0200a1;
+        public static final int ic_collapse_00015=0x7f0200a2;
+        public static final int ic_expand=0x7f0200a3;
+        public static final int ic_expand_00000=0x7f0200a4;
+        public static final int ic_expand_00001=0x7f0200a5;
+        public static final int ic_expand_00002=0x7f0200a6;
+        public static final int ic_expand_00003=0x7f0200a7;
+        public static final int ic_expand_00004=0x7f0200a8;
+        public static final int ic_expand_00005=0x7f0200a9;
+        public static final int ic_expand_00006=0x7f0200aa;
+        public static final int ic_expand_00007=0x7f0200ab;
+        public static final int ic_expand_00008=0x7f0200ac;
+        public static final int ic_expand_00009=0x7f0200ad;
+        public static final int ic_expand_00010=0x7f0200ae;
+        public static final int ic_expand_00011=0x7f0200af;
+        public static final int ic_expand_00012=0x7f0200b0;
+        public static final int ic_expand_00013=0x7f0200b1;
+        public static final int ic_expand_00014=0x7f0200b2;
+        public static final int ic_expand_00015=0x7f0200b3;
+        public static final int ic_media_pause=0x7f0200b4;
+        public static final int ic_media_play=0x7f0200b5;
+        public static final int ic_media_route_disabled_mono_dark=0x7f0200b6;
+        public static final int ic_media_route_off_mono_dark=0x7f0200b7;
+        public static final int ic_media_route_on_0_mono_dark=0x7f0200b8;
+        public static final int ic_media_route_on_1_mono_dark=0x7f0200b9;
+        public static final int ic_media_route_on_2_mono_dark=0x7f0200ba;
+        public static final int ic_media_route_on_mono_dark=0x7f0200bb;
+        public static final int ic_os_notification_fallback_white_24dp=0x7f0200bc;
+        public static final int ic_pause_dark=0x7f0200bd;
+        public static final int ic_pause_light=0x7f0200be;
+        public static final int ic_play_dark=0x7f0200bf;
+        public static final int ic_play_light=0x7f0200c0;
+        public static final int ic_speaker_dark=0x7f0200c1;
+        public static final int ic_speaker_group_dark=0x7f0200c2;
+        public static final int ic_speaker_group_light=0x7f0200c3;
+        public static final int ic_speaker_light=0x7f0200c4;
+        public static final int ic_tv_dark=0x7f0200c5;
+        public static final int ic_tv_light=0x7f0200c6;
+        public static final int icon=0x7f0200c7;
+        public static final int listen_ico=0x7f0200c8;
+        public static final int logo=0x7f0200c9;
+        public static final int medicines_list_ico=0x7f0200ca;
+        public static final int mic_ico=0x7f0200cb;
+        public static final int mr_dialog_material_background_dark=0x7f0200cc;
+        public static final int mr_dialog_material_background_light=0x7f0200cd;
+        public static final int mr_ic_audiotrack_light=0x7f0200ce;
+        public static final int mr_ic_cast_dark=0x7f0200cf;
+        public static final int mr_ic_cast_light=0x7f0200d0;
+        public static final int mr_ic_close_dark=0x7f0200d1;
+        public static final int mr_ic_close_light=0x7f0200d2;
+        public static final int mr_ic_media_route_connecting_mono_dark=0x7f0200d3;
+        public static final int mr_ic_media_route_connecting_mono_light=0x7f0200d4;
+        public static final int mr_ic_media_route_mono_dark=0x7f0200d5;
+        public static final int mr_ic_media_route_mono_light=0x7f0200d6;
+        public static final int mr_ic_pause_dark=0x7f0200d7;
+        public static final int mr_ic_pause_light=0x7f0200d8;
+        public static final int mr_ic_play_dark=0x7f0200d9;
+        public static final int mr_ic_play_light=0x7f0200da;
+        public static final int notification_template_icon_bg=0x7f0200e3;
+        public static final int places_ic_clear=0x7f0200db;
+        public static final int places_ic_search=0x7f0200dc;
+        public static final int plus_ico=0x7f0200dd;
+        public static final int powered_by_google_dark=0x7f0200de;
+        public static final int powered_by_google_light=0x7f0200df;
+        public static final int profile_ico=0x7f0200e0;
+        public static final int profile_photo=0x7f0200e1;
+        public static final int splash=0x7f0200e2;
     }
     public static final class id {
         public static final int action0=0x7f0b0096;
@@ -3684,33 +3685,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.Shafafeya.Dawaa:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.Shafafeya.Dawaa:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.Shafafeya.Dawaa:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.Shafafeya.Dawaa:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.Shafafeya.Dawaa:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.Shafafeya.Dawaa:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.Shafafeya.Dawaa:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.Shafafeya.Dawaa:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.Shafafeya.Dawaa:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.Shafafeya.Dawaa:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.Shafafeya.Dawaa:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.Shafafeya.Dawaa:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.Shafafeya.Dawaa:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.Shafafeya.Dawaa:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.Shafafeya.Dawaa:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.Shafafeya.Dawaa:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.Shafafeya.Dawaa:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.Shafafeya.Dawaa:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.Shafafeya.Dawaa:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.Shafafeya.Dawaa:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.Shafafeya.Dawaa:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.Shafafeya.Dawaa:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.Shafafeya.Dawaa:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.Shafafeya.Dawaa:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.Shafafeya.Dawaa:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.Shafafeya.Dawaa:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.Shafafeya.Dawaa:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.Shafafeya.Dawaya:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.Shafafeya.Dawaya:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.Shafafeya.Dawaya:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.Shafafeya.Dawaya:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.Shafafeya.Dawaya:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.Shafafeya.Dawaya:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.Shafafeya.Dawaya:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.Shafafeya.Dawaya:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.Shafafeya.Dawaya:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.Shafafeya.Dawaya:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.Shafafeya.Dawaya:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.Shafafeya.Dawaya:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.Shafafeya.Dawaya:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.Shafafeya.Dawaya:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.Shafafeya.Dawaya:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.Shafafeya.Dawaya:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.Shafafeya.Dawaya:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.Shafafeya.Dawaya:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.Shafafeya.Dawaya:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.Shafafeya.Dawaya:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.Shafafeya.Dawaya:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.Shafafeya.Dawaya:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.Shafafeya.Dawaya:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.Shafafeya.Dawaya:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.Shafafeya.Dawaya:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.Shafafeya.Dawaya:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.Shafafeya.Dawaya:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3750,17 +3751,17 @@ containing a value of this type.
             0x7f010057, 0x7f010058, 0x7f010091
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#background}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:background
+          @attr name com.Shafafeya.Dawaya:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3768,11 +3769,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.Shafafeya.Dawaa:backgroundSplit
+          @attr name com.Shafafeya.Dawaya:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3780,11 +3781,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.Shafafeya.Dawaa:backgroundStacked
+          @attr name com.Shafafeya.Dawaya:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3796,11 +3797,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentInsetEnd
+          @attr name com.Shafafeya.Dawaya:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3812,11 +3813,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentInsetLeft
+          @attr name com.Shafafeya.Dawaya:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3828,11 +3829,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentInsetRight
+          @attr name com.Shafafeya.Dawaya:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3844,21 +3845,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentInsetStart
+          @attr name com.Shafafeya.Dawaya:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:customNavigationLayout
+          @attr name com.Shafafeya.Dawaya:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3876,21 +3877,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:displayOptions
+          @attr name com.Shafafeya.Dawaya:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:divider
+          @attr name com.Shafafeya.Dawaya:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3902,11 +3903,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:elevation
+          @attr name com.Shafafeya.Dawaya:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#height}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3918,11 +3919,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:height
+          @attr name com.Shafafeya.Dawaya:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3932,51 +3933,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:hideOnContentScroll
+          @attr name com.Shafafeya.Dawaya:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:homeAsUpIndicator
+          @attr name com.Shafafeya.Dawaya:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:homeLayout
+          @attr name com.Shafafeya.Dawaya:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:icon
+          @attr name com.Shafafeya.Dawaya:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:indeterminateProgressStyle
+          @attr name com.Shafafeya.Dawaya:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3988,21 +3989,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:itemPadding
+          @attr name com.Shafafeya.Dawaya:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:logo
+          @attr name com.Shafafeya.Dawaya:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4016,21 +4017,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:navigationMode
+          @attr name com.Shafafeya.Dawaya:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:popupTheme
+          @attr name com.Shafafeya.Dawaya:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4042,21 +4043,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:progressBarPadding
+          @attr name com.Shafafeya.Dawaya:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:progressBarStyle
+          @attr name com.Shafafeya.Dawaya:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4066,21 +4067,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:subtitle
+          @attr name com.Shafafeya.Dawaya:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:subtitleTextStyle
+          @attr name com.Shafafeya.Dawaya:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#title}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4090,17 +4091,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:title
+          @attr name com.Shafafeya.Dawaya:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:titleTextStyle
+          @attr name com.Shafafeya.Dawaya:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -4152,12 +4153,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.Shafafeya.Dawaa:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.Shafafeya.Dawaa:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.Shafafeya.Dawaa:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.Shafafeya.Dawaa:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.Shafafeya.Dawaa:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.Shafafeya.Dawaa:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.Shafafeya.Dawaya:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.Shafafeya.Dawaya:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.Shafafeya.Dawaya:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.Shafafeya.Dawaya:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.Shafafeya.Dawaya:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.Shafafeya.Dawaya:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -4171,17 +4172,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01004b, 0x7f010059
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#background}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:background
+          @attr name com.Shafafeya.Dawaya:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4189,21 +4190,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.Shafafeya.Dawaa:backgroundSplit
+          @attr name com.Shafafeya.Dawaya:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:closeItemLayout
+          @attr name com.Shafafeya.Dawaya:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#height}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4215,27 +4216,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:height
+          @attr name com.Shafafeya.Dawaya:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:subtitleTextStyle
+          @attr name com.Shafafeya.Dawaya:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:titleTextStyle
+          @attr name com.Shafafeya.Dawaya:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -4244,8 +4245,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.Shafafeya.Dawaa:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.Shafafeya.Dawaa:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.Shafafeya.Dawaya:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.Shafafeya.Dawaya:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -4254,17 +4255,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01005a, 0x7f01005b
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:expandActivityOverflowButtonDrawable
+          @attr name com.Shafafeya.Dawaya:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -4274,7 +4275,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:initialActivityCount
+          @attr name com.Shafafeya.Dawaya:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -4284,11 +4285,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.Shafafeya.Dawaa:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout com.Shafafeya.Dawaa:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout com.Shafafeya.Dawaa:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.Shafafeya.Dawaa:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.Shafafeya.Dawaa:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.Shafafeya.Dawaya:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.Shafafeya.Dawaya:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.Shafafeya.Dawaya:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.Shafafeya.Dawaya:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.Shafafeya.Dawaya:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -4308,53 +4309,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:buttonPanelSideLayout
+          @attr name com.Shafafeya.Dawaya:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:listItemLayout
+          @attr name com.Shafafeya.Dawaya:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:listLayout
+          @attr name com.Shafafeya.Dawaya:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:multiChoiceItemLayout
+          @attr name com.Shafafeya.Dawaya:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:singleChoiceItemLayout
+          @attr name com.Shafafeya.Dawaya:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -4364,8 +4365,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation com.Shafafeya.Dawaa:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded com.Shafafeya.Dawaa:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation com.Shafafeya.Dawaya:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded com.Shafafeya.Dawaya:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -4381,7 +4382,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4393,11 +4394,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:elevation
+          @attr name com.Shafafeya.Dawaya:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expanded}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4407,7 +4408,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:expanded
+          @attr name com.Shafafeya.Dawaya:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayout_LayoutParams.
@@ -4416,8 +4417,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.Shafafeya.Dawaa:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.Shafafeya.Dawaa:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.Shafafeya.Dawaya:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.Shafafeya.Dawaya:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_LayoutParams_layout_scrollFlags
            @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
@@ -4426,7 +4427,7 @@ containing a value of this type.
             0x7f01010f, 0x7f010110
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -4442,17 +4443,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:layout_scrollFlags
+          @attr name com.Shafafeya.Dawaya:layout_scrollFlags
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:layout_scrollInterpolator
+          @attr name com.Shafafeya.Dawaya:layout_scrollInterpolator
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -4462,7 +4463,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat com.Shafafeya.Dawaa:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat com.Shafafeya.Dawaya:srcCompat}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -4477,13 +4478,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:srcCompat
+          @attr name com.Shafafeya.Dawaya:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /** Attributes that can be used with a AppCompatTextView.
@@ -4493,7 +4494,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.Shafafeya.Dawaa:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.Shafafeya.Dawaya:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -4508,14 +4509,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.Shafafeya.Dawaa:textAllCaps
+          @attr name com.Shafafeya.Dawaya:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -4524,118 +4525,118 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.Shafafeya.Dawaa:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.Shafafeya.Dawaa:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.Shafafeya.Dawaa:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize com.Shafafeya.Dawaa:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.Shafafeya.Dawaa:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.Shafafeya.Dawaa:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.Shafafeya.Dawaa:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.Shafafeya.Dawaa:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.Shafafeya.Dawaa:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.Shafafeya.Dawaa:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.Shafafeya.Dawaa:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.Shafafeya.Dawaa:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.Shafafeya.Dawaa:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.Shafafeya.Dawaa:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.Shafafeya.Dawaa:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.Shafafeya.Dawaa:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.Shafafeya.Dawaa:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.Shafafeya.Dawaa:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.Shafafeya.Dawaa:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.Shafafeya.Dawaa:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.Shafafeya.Dawaa:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.Shafafeya.Dawaa:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.Shafafeya.Dawaa:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.Shafafeya.Dawaa:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.Shafafeya.Dawaa:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.Shafafeya.Dawaa:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.Shafafeya.Dawaa:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.Shafafeya.Dawaa:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.Shafafeya.Dawaa:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.Shafafeya.Dawaa:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.Shafafeya.Dawaa:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.Shafafeya.Dawaa:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.Shafafeya.Dawaa:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.Shafafeya.Dawaa:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.Shafafeya.Dawaa:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.Shafafeya.Dawaya:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.Shafafeya.Dawaya:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.Shafafeya.Dawaya:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize com.Shafafeya.Dawaya:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.Shafafeya.Dawaya:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.Shafafeya.Dawaya:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.Shafafeya.Dawaya:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.Shafafeya.Dawaya:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.Shafafeya.Dawaya:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.Shafafeya.Dawaya:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.Shafafeya.Dawaya:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.Shafafeya.Dawaya:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.Shafafeya.Dawaya:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.Shafafeya.Dawaya:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.Shafafeya.Dawaya:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.Shafafeya.Dawaya:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.Shafafeya.Dawaya:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.Shafafeya.Dawaya:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.Shafafeya.Dawaya:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.Shafafeya.Dawaya:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.Shafafeya.Dawaya:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.Shafafeya.Dawaya:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.Shafafeya.Dawaya:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.Shafafeya.Dawaya:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.Shafafeya.Dawaya:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.Shafafeya.Dawaya:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.Shafafeya.Dawaya:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.Shafafeya.Dawaya:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.Shafafeya.Dawaya:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.Shafafeya.Dawaya:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.Shafafeya.Dawaya:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.Shafafeya.Dawaya:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.Shafafeya.Dawaya:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.Shafafeya.Dawaya:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.Shafafeya.Dawaya:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.Shafafeya.Dawaa:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.Shafafeya.Dawaa:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.Shafafeya.Dawaa:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.Shafafeya.Dawaa:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.Shafafeya.Dawaa:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.Shafafeya.Dawaa:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.Shafafeya.Dawaa:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle com.Shafafeya.Dawaa:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.Shafafeya.Dawaa:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.Shafafeya.Dawaa:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.Shafafeya.Dawaa:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent com.Shafafeya.Dawaa:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.Shafafeya.Dawaa:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.Shafafeya.Dawaa:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.Shafafeya.Dawaa:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.Shafafeya.Dawaa:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary com.Shafafeya.Dawaa:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.Shafafeya.Dawaa:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.Shafafeya.Dawaa:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground com.Shafafeya.Dawaa:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.Shafafeya.Dawaa:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme com.Shafafeya.Dawaa:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.Shafafeya.Dawaa:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical com.Shafafeya.Dawaa:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.Shafafeya.Dawaa:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.Shafafeya.Dawaa:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground com.Shafafeya.Dawaa:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor com.Shafafeya.Dawaa:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle com.Shafafeya.Dawaa:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.Shafafeya.Dawaa:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.Shafafeya.Dawaa:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.Shafafeya.Dawaa:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.Shafafeya.Dawaa:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.Shafafeya.Dawaa:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.Shafafeya.Dawaa:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.Shafafeya.Dawaa:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.Shafafeya.Dawaa:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.Shafafeya.Dawaa:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.Shafafeya.Dawaa:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground com.Shafafeya.Dawaa:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.Shafafeya.Dawaa:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.Shafafeya.Dawaa:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.Shafafeya.Dawaa:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.Shafafeya.Dawaa:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.Shafafeya.Dawaa:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.Shafafeya.Dawaa:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.Shafafeya.Dawaa:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.Shafafeya.Dawaa:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.Shafafeya.Dawaa:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.Shafafeya.Dawaa:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.Shafafeya.Dawaa:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.Shafafeya.Dawaa:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.Shafafeya.Dawaa:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.Shafafeya.Dawaa:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle com.Shafafeya.Dawaa:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.Shafafeya.Dawaa:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.Shafafeya.Dawaa:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.Shafafeya.Dawaa:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.Shafafeya.Dawaa:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.Shafafeya.Dawaa:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.Shafafeya.Dawaa:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.Shafafeya.Dawaa:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.Shafafeya.Dawaa:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.Shafafeya.Dawaa:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.Shafafeya.Dawaa:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar com.Shafafeya.Dawaa:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.Shafafeya.Dawaa:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.Shafafeya.Dawaa:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.Shafafeya.Dawaa:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.Shafafeya.Dawaa:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.Shafafeya.Dawaa:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.Shafafeya.Dawaa:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.Shafafeya.Dawaa:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.Shafafeya.Dawaa:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.Shafafeya.Dawaa:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.Shafafeya.Dawaya:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.Shafafeya.Dawaya:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.Shafafeya.Dawaya:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.Shafafeya.Dawaya:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.Shafafeya.Dawaya:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.Shafafeya.Dawaya:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.Shafafeya.Dawaya:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle com.Shafafeya.Dawaya:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.Shafafeya.Dawaya:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.Shafafeya.Dawaya:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.Shafafeya.Dawaya:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent com.Shafafeya.Dawaya:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.Shafafeya.Dawaya:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.Shafafeya.Dawaya:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.Shafafeya.Dawaya:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.Shafafeya.Dawaya:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary com.Shafafeya.Dawaya:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.Shafafeya.Dawaya:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.Shafafeya.Dawaya:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground com.Shafafeya.Dawaya:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.Shafafeya.Dawaya:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme com.Shafafeya.Dawaya:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.Shafafeya.Dawaya:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical com.Shafafeya.Dawaya:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.Shafafeya.Dawaya:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.Shafafeya.Dawaya:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground com.Shafafeya.Dawaya:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor com.Shafafeya.Dawaya:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle com.Shafafeya.Dawaya:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.Shafafeya.Dawaya:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.Shafafeya.Dawaya:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.Shafafeya.Dawaya:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.Shafafeya.Dawaya:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.Shafafeya.Dawaya:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.Shafafeya.Dawaya:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.Shafafeya.Dawaya:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.Shafafeya.Dawaya:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.Shafafeya.Dawaya:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.Shafafeya.Dawaya:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground com.Shafafeya.Dawaya:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.Shafafeya.Dawaya:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.Shafafeya.Dawaya:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.Shafafeya.Dawaya:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.Shafafeya.Dawaya:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.Shafafeya.Dawaya:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.Shafafeya.Dawaya:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.Shafafeya.Dawaya:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.Shafafeya.Dawaya:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.Shafafeya.Dawaya:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.Shafafeya.Dawaya:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.Shafafeya.Dawaya:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.Shafafeya.Dawaya:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.Shafafeya.Dawaya:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.Shafafeya.Dawaya:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle com.Shafafeya.Dawaya:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.Shafafeya.Dawaya:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.Shafafeya.Dawaya:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.Shafafeya.Dawaya:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.Shafafeya.Dawaya:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.Shafafeya.Dawaya:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.Shafafeya.Dawaya:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.Shafafeya.Dawaya:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.Shafafeya.Dawaya:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.Shafafeya.Dawaya:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.Shafafeya.Dawaya:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar com.Shafafeya.Dawaya:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.Shafafeya.Dawaya:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.Shafafeya.Dawaya:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.Shafafeya.Dawaya:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.Shafafeya.Dawaya:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.Shafafeya.Dawaya:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.Shafafeya.Dawaya:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.Shafafeya.Dawaya:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.Shafafeya.Dawaya:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.Shafafeya.Dawaya:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -4781,37 +4782,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100cd, 0x7f0100ce, 0x7f0100cf, 0x7f0100d0
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarDivider
+          @attr name com.Shafafeya.Dawaya:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarItemBackground
+          @attr name com.Shafafeya.Dawaya:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarPopupTheme
+          @attr name com.Shafafeya.Dawaya:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4831,111 +4832,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:actionBarSize
+          @attr name com.Shafafeya.Dawaya:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarSplitStyle
+          @attr name com.Shafafeya.Dawaya:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarStyle
+          @attr name com.Shafafeya.Dawaya:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarTabBarStyle
+          @attr name com.Shafafeya.Dawaya:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarTabStyle
+          @attr name com.Shafafeya.Dawaya:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarTabTextStyle
+          @attr name com.Shafafeya.Dawaya:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarTheme
+          @attr name com.Shafafeya.Dawaya:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionBarWidgetTheme
+          @attr name com.Shafafeya.Dawaya:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionButtonStyle
+          @attr name com.Shafafeya.Dawaya:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionDropDownStyle
+          @attr name com.Shafafeya.Dawaya:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionMenuTextAppearance
+          @attr name com.Shafafeya.Dawaya:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4943,181 +4944,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionMenuTextColor
+          @attr name com.Shafafeya.Dawaya:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeBackground
+          @attr name com.Shafafeya.Dawaya:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeCloseButtonStyle
+          @attr name com.Shafafeya.Dawaya:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeCloseDrawable
+          @attr name com.Shafafeya.Dawaya:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeCopyDrawable
+          @attr name com.Shafafeya.Dawaya:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeCutDrawable
+          @attr name com.Shafafeya.Dawaya:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeFindDrawable
+          @attr name com.Shafafeya.Dawaya:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModePasteDrawable
+          @attr name com.Shafafeya.Dawaya:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModePopupWindowStyle
+          @attr name com.Shafafeya.Dawaya:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeSelectAllDrawable
+          @attr name com.Shafafeya.Dawaya:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeShareDrawable
+          @attr name com.Shafafeya.Dawaya:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeSplitBackground
+          @attr name com.Shafafeya.Dawaya:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeStyle
+          @attr name com.Shafafeya.Dawaya:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionModeWebSearchDrawable
+          @attr name com.Shafafeya.Dawaya:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionOverflowButtonStyle
+          @attr name com.Shafafeya.Dawaya:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionOverflowMenuStyle
+          @attr name com.Shafafeya.Dawaya:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:activityChooserViewStyle
+          @attr name com.Shafafeya.Dawaya:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:alertDialogButtonGroupStyle
+          @attr name com.Shafafeya.Dawaya:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 92;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5127,27 +5128,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:alertDialogCenterButtons
+          @attr name com.Shafafeya.Dawaya:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 93;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:alertDialogStyle
+          @attr name com.Shafafeya.Dawaya:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:alertDialogTheme
+          @attr name com.Shafafeya.Dawaya:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 94;
         /**
@@ -5163,117 +5164,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:autoCompleteTextViewStyle
+          @attr name com.Shafafeya.Dawaya:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:borderlessButtonStyle
+          @attr name com.Shafafeya.Dawaya:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:buttonBarButtonStyle
+          @attr name com.Shafafeya.Dawaya:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:buttonBarNegativeButtonStyle
+          @attr name com.Shafafeya.Dawaya:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:buttonBarNeutralButtonStyle
+          @attr name com.Shafafeya.Dawaya:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:buttonBarPositiveButtonStyle
+          @attr name com.Shafafeya.Dawaya:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:buttonBarStyle
+          @attr name com.Shafafeya.Dawaya:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:buttonStyle
+          @attr name com.Shafafeya.Dawaya:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:buttonStyleSmall
+          @attr name com.Shafafeya.Dawaya:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 101;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:checkboxStyle
+          @attr name com.Shafafeya.Dawaya:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:checkedTextViewStyle
+          @attr name com.Shafafeya.Dawaya:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5284,11 +5285,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:colorAccent
+          @attr name com.Shafafeya.Dawaya:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 84;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5299,11 +5300,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:colorButtonNormal
+          @attr name com.Shafafeya.Dawaya:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5314,11 +5315,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:colorControlActivated
+          @attr name com.Shafafeya.Dawaya:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 86;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5329,11 +5330,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:colorControlHighlight
+          @attr name com.Shafafeya.Dawaya:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 87;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5344,11 +5345,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:colorControlNormal
+          @attr name com.Shafafeya.Dawaya:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 85;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5359,11 +5360,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:colorPrimary
+          @attr name com.Shafafeya.Dawaya:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 82;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5374,11 +5375,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:colorPrimaryDark
+          @attr name com.Shafafeya.Dawaya:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 83;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5389,21 +5390,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:colorSwitchThumbNormal
+          @attr name com.Shafafeya.Dawaya:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:controlBackground
+          @attr name com.Shafafeya.Dawaya:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 90;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5415,51 +5416,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:dialogPreferredPadding
+          @attr name com.Shafafeya.Dawaya:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:dialogTheme
+          @attr name com.Shafafeya.Dawaya:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:dividerHorizontal
+          @attr name com.Shafafeya.Dawaya:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:dividerVertical
+          @attr name com.Shafafeya.Dawaya:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:dropDownListViewStyle
+          @attr name com.Shafafeya.Dawaya:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5471,21 +5472,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:dropdownListPreferredItemHeight
+          @attr name com.Shafafeya.Dawaya:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:editTextBackground
+          @attr name com.Shafafeya.Dawaya:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5493,71 +5494,71 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.Shafafeya.Dawaa:editTextColor
+          @attr name com.Shafafeya.Dawaya:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:editTextStyle
+          @attr name com.Shafafeya.Dawaya:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:homeAsUpIndicator
+          @attr name com.Shafafeya.Dawaya:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:imageButtonStyle
+          @attr name com.Shafafeya.Dawaya:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:listChoiceBackgroundIndicator
+          @attr name com.Shafafeya.Dawaya:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 81;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:listDividerAlertDialog
+          @attr name com.Shafafeya.Dawaya:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:listPopupWindowStyle
+          @attr name com.Shafafeya.Dawaya:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5569,11 +5570,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:listPreferredItemHeight
+          @attr name com.Shafafeya.Dawaya:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 69;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5585,11 +5586,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:listPreferredItemHeightLarge
+          @attr name com.Shafafeya.Dawaya:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 71;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5601,11 +5602,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:listPreferredItemHeightSmall
+          @attr name com.Shafafeya.Dawaya:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5617,11 +5618,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:listPreferredItemPaddingLeft
+          @attr name com.Shafafeya.Dawaya:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 72;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5633,31 +5634,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:listPreferredItemPaddingRight
+          @attr name com.Shafafeya.Dawaya:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 73;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:panelBackground
+          @attr name com.Shafafeya.Dawaya:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 78;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:panelMenuListTheme
+          @attr name com.Shafafeya.Dawaya:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 80;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5669,201 +5670,201 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:panelMenuListWidth
+          @attr name com.Shafafeya.Dawaya:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 79;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:popupMenuStyle
+          @attr name com.Shafafeya.Dawaya:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:popupWindowStyle
+          @attr name com.Shafafeya.Dawaya:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:radioButtonStyle
+          @attr name com.Shafafeya.Dawaya:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:ratingBarStyle
+          @attr name com.Shafafeya.Dawaya:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:ratingBarStyleIndicator
+          @attr name com.Shafafeya.Dawaya:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 107;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:ratingBarStyleSmall
+          @attr name com.Shafafeya.Dawaya:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 108;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:searchViewStyle
+          @attr name com.Shafafeya.Dawaya:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:seekBarStyle
+          @attr name com.Shafafeya.Dawaya:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:selectableItemBackground
+          @attr name com.Shafafeya.Dawaya:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:selectableItemBackgroundBorderless
+          @attr name com.Shafafeya.Dawaya:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:spinnerDropDownItemStyle
+          @attr name com.Shafafeya.Dawaya:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:spinnerStyle
+          @attr name com.Shafafeya.Dawaya:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 110;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:switchStyle
+          @attr name com.Shafafeya.Dawaya:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 111;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:textAppearanceLargePopupMenu
+          @attr name com.Shafafeya.Dawaya:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:textAppearanceListItem
+          @attr name com.Shafafeya.Dawaya:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 76;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:textAppearanceListItemSmall
+          @attr name com.Shafafeya.Dawaya:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 77;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:textAppearanceSearchResultSubtitle
+          @attr name com.Shafafeya.Dawaya:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 66;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:textAppearanceSearchResultTitle
+          @attr name com.Shafafeya.Dawaya:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:textAppearanceSmallPopupMenu
+          @attr name com.Shafafeya.Dawaya:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5871,11 +5872,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.Shafafeya.Dawaa:textColorAlertDialogListItem
+          @attr name com.Shafafeya.Dawaya:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 95;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5883,31 +5884,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.Shafafeya.Dawaa:textColorSearchUrl
+          @attr name com.Shafafeya.Dawaya:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 67;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:toolbarNavigationButtonStyle
+          @attr name com.Shafafeya.Dawaya:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:toolbarStyle
+          @attr name com.Shafafeya.Dawaya:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5917,11 +5918,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowActionBar
+          @attr name com.Shafafeya.Dawaya:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5931,11 +5932,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowActionBarOverlay
+          @attr name com.Shafafeya.Dawaya:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5945,11 +5946,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowActionModeOverlay
+          @attr name com.Shafafeya.Dawaya:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5964,11 +5965,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowFixedHeightMajor
+          @attr name com.Shafafeya.Dawaya:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5983,11 +5984,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowFixedHeightMinor
+          @attr name com.Shafafeya.Dawaya:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6002,11 +6003,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowFixedWidthMajor
+          @attr name com.Shafafeya.Dawaya:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6021,11 +6022,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowFixedWidthMinor
+          @attr name com.Shafafeya.Dawaya:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6040,11 +6041,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowMinWidthMajor
+          @attr name com.Shafafeya.Dawaya:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6059,11 +6060,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowMinWidthMinor
+          @attr name com.Shafafeya.Dawaya:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6073,7 +6074,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:windowNoTitle
+          @attr name com.Shafafeya.Dawaya:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomSheetBehavior_Params.
@@ -6082,8 +6083,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable com.Shafafeya.Dawaa:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight com.Shafafeya.Dawaa:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable com.Shafafeya.Dawaya:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight com.Shafafeya.Dawaya:behavior_peekHeight}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Params_behavior_hideable
            @see #BottomSheetBehavior_Params_behavior_peekHeight
@@ -6092,7 +6093,7 @@ containing a value of this type.
             0x7f010111, 0x7f010112
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -6102,11 +6103,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:behavior_hideable
+          @attr name com.Shafafeya.Dawaya:behavior_hideable
         */
         public static final int BottomSheetBehavior_Params_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -6118,7 +6119,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:behavior_peekHeight
+          @attr name com.Shafafeya.Dawaya:behavior_peekHeight
         */
         public static final int BottomSheetBehavior_Params_behavior_peekHeight = 0;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -6127,7 +6128,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.Shafafeya.Dawaa:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.Shafafeya.Dawaya:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -6135,7 +6136,7 @@ containing a value of this type.
             0x7f0100d1
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -6145,7 +6146,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:allowStacking
+          @attr name com.Shafafeya.Dawaya:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -6156,17 +6157,17 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor com.Shafafeya.Dawaa:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius com.Shafafeya.Dawaa:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation com.Shafafeya.Dawaa:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation com.Shafafeya.Dawaa:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.Shafafeya.Dawaa:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding com.Shafafeya.Dawaa:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding com.Shafafeya.Dawaa:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom com.Shafafeya.Dawaa:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft com.Shafafeya.Dawaa:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight com.Shafafeya.Dawaa:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop com.Shafafeya.Dawaa:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor com.Shafafeya.Dawaya:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius com.Shafafeya.Dawaya:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation com.Shafafeya.Dawaya:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation com.Shafafeya.Dawaya:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.Shafafeya.Dawaya:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding com.Shafafeya.Dawaya:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding com.Shafafeya.Dawaya:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom com.Shafafeya.Dawaya:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft com.Shafafeya.Dawaya:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight com.Shafafeya.Dawaya:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop com.Shafafeya.Dawaya:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_android_minHeight
            @see #CardView_android_minWidth
@@ -6201,7 +6202,7 @@ containing a value of this type.
         */
         public static final int CardView_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6212,11 +6213,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cardBackgroundColor
+          @attr name com.Shafafeya.Dawaya:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6228,11 +6229,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cardCornerRadius
+          @attr name com.Shafafeya.Dawaya:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6244,11 +6245,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cardElevation
+          @attr name com.Shafafeya.Dawaya:cardElevation
         */
         public static final int CardView_cardElevation = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6260,11 +6261,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cardMaxElevation
+          @attr name com.Shafafeya.Dawaya:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6274,11 +6275,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cardPreventCornerOverlap
+          @attr name com.Shafafeya.Dawaya:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6288,11 +6289,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cardUseCompatPadding
+          @attr name com.Shafafeya.Dawaya:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6304,11 +6305,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentPadding
+          @attr name com.Shafafeya.Dawaya:contentPadding
         */
         public static final int CardView_contentPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6320,11 +6321,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentPaddingBottom
+          @attr name com.Shafafeya.Dawaya:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 12;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6336,11 +6337,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentPaddingLeft
+          @attr name com.Shafafeya.Dawaya:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6352,11 +6353,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentPaddingRight
+          @attr name com.Shafafeya.Dawaya:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 10;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6368,7 +6369,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentPaddingTop
+          @attr name com.Shafafeya.Dawaya:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 11;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
@@ -6377,8 +6378,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.Shafafeya.Dawaa:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.Shafafeya.Dawaa:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.Shafafeya.Dawaya:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.Shafafeya.Dawaya:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
@@ -6387,7 +6388,7 @@ containing a value of this type.
             0x7f010113, 0x7f010114
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6401,11 +6402,11 @@ containing a value of this type.
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:layout_collapseMode
+          @attr name com.Shafafeya.Dawaya:layout_collapseMode
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6415,7 +6416,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:layout_collapseParallaxMultiplier
+          @attr name com.Shafafeya.Dawaya:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6424,20 +6425,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.Shafafeya.Dawaa:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.Shafafeya.Dawaa:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.Shafafeya.Dawaa:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.Shafafeya.Dawaa:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.Shafafeya.Dawaa:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.Shafafeya.Dawaa:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.Shafafeya.Dawaa:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.Shafafeya.Dawaa:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.Shafafeya.Dawaa:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.Shafafeya.Dawaa:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.Shafafeya.Dawaa:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title com.Shafafeya.Dawaa:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.Shafafeya.Dawaa:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.Shafafeya.Dawaa:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.Shafafeya.Dawaya:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.Shafafeya.Dawaya:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.Shafafeya.Dawaya:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.Shafafeya.Dawaya:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.Shafafeya.Dawaya:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.Shafafeya.Dawaya:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.Shafafeya.Dawaya:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.Shafafeya.Dawaya:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.Shafafeya.Dawaya:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.Shafafeya.Dawaya:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.Shafafeya.Dawaya:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title com.Shafafeya.Dawaya:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.Shafafeya.Dawaya:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.Shafafeya.Dawaya:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6461,7 +6462,7 @@ containing a value of this type.
             0x7f010120, 0x7f010121
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6482,21 +6483,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:collapsedTitleGravity
+          @attr name com.Shafafeya.Dawaya:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:collapsedTitleTextAppearance
+          @attr name com.Shafafeya.Dawaya:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6507,11 +6508,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentScrim
+          @attr name com.Shafafeya.Dawaya:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6532,11 +6533,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:expandedTitleGravity
+          @attr name com.Shafafeya.Dawaya:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6548,11 +6549,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:expandedTitleMargin
+          @attr name com.Shafafeya.Dawaya:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6564,11 +6565,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:expandedTitleMarginBottom
+          @attr name com.Shafafeya.Dawaya:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6580,11 +6581,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:expandedTitleMarginEnd
+          @attr name com.Shafafeya.Dawaya:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6596,11 +6597,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:expandedTitleMarginStart
+          @attr name com.Shafafeya.Dawaya:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6612,21 +6613,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:expandedTitleMarginTop
+          @attr name com.Shafafeya.Dawaya:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:expandedTitleTextAppearance
+          @attr name com.Shafafeya.Dawaya:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6637,11 +6638,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:statusBarScrim
+          @attr name com.Shafafeya.Dawaya:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#title}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6651,11 +6652,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:title
+          @attr name com.Shafafeya.Dawaya:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6665,17 +6666,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:titleEnabled
+          @attr name com.Shafafeya.Dawaya:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:toolbarId
+          @attr name com.Shafafeya.Dawaya:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
@@ -6685,8 +6686,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint com.Shafafeya.Dawaa:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode com.Shafafeya.Dawaa:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint com.Shafafeya.Dawaya:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode com.Shafafeya.Dawaya:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -6702,7 +6703,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6713,11 +6714,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:buttonTint
+          @attr name com.Shafafeya.Dawaya:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6733,7 +6734,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:buttonTintMode
+          @attr name com.Shafafeya.Dawaya:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -6742,8 +6743,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines com.Shafafeya.Dawaa:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.Shafafeya.Dawaa:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines com.Shafafeya.Dawaya:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.Shafafeya.Dawaya:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -6752,23 +6753,23 @@ containing a value of this type.
             0x7f010122, 0x7f010123
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#keylines}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:keylines
+          @attr name com.Shafafeya.Dawaya:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:statusBarBackground
+          @attr name com.Shafafeya.Dawaya:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
@@ -6778,10 +6779,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.Shafafeya.Dawaa:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.Shafafeya.Dawaa:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.Shafafeya.Dawaa:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.Shafafeya.Dawaa:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.Shafafeya.Dawaya:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.Shafafeya.Dawaya:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.Shafafeya.Dawaya:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.Shafafeya.Dawaya:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_LayoutParams_android_layout_gravity
            @see #CoordinatorLayout_LayoutParams_layout_anchor
@@ -6800,17 +6801,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:layout_anchor
+          @attr name com.Shafafeya.Dawaya:layout_anchor
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6835,11 +6836,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:layout_anchorGravity
+          @attr name com.Shafafeya.Dawaya:layout_anchorGravity
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6849,11 +6850,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:layout_behavior
+          @attr name com.Shafafeya.Dawaya:layout_behavior
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6863,7 +6864,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:layout_keyline
+          @attr name com.Shafafeya.Dawaya:layout_keyline
         */
         public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -6872,9 +6873,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.Shafafeya.Dawaa:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.Shafafeya.Dawaa:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError com.Shafafeya.Dawaa:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.Shafafeya.Dawaya:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.Shafafeya.Dawaya:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError com.Shafafeya.Dawaya:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -6884,27 +6885,27 @@ containing a value of this type.
             0x7f010128, 0x7f010129, 0x7f01012a
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:bottomSheetDialogTheme
+          @attr name com.Shafafeya.Dawaya:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:bottomSheetStyle
+          @attr name com.Shafafeya.Dawaya:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -6915,7 +6916,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:textColorError
+          @attr name com.Shafafeya.Dawaya:textColorError
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -6924,14 +6925,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.Shafafeya.Dawaa:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.Shafafeya.Dawaa:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength com.Shafafeya.Dawaa:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.Shafafeya.Dawaa:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.Shafafeya.Dawaa:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.Shafafeya.Dawaa:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.Shafafeya.Dawaa:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.Shafafeya.Dawaa:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.Shafafeya.Dawaya:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.Shafafeya.Dawaya:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength com.Shafafeya.Dawaya:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.Shafafeya.Dawaya:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.Shafafeya.Dawaya:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.Shafafeya.Dawaya:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.Shafafeya.Dawaya:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.Shafafeya.Dawaya:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -6947,7 +6948,7 @@ containing a value of this type.
             0x7f0100d8, 0x7f0100d9, 0x7f0100da, 0x7f0100db
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6959,11 +6960,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:arrowHeadLength
+          @attr name com.Shafafeya.Dawaya:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6975,11 +6976,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:arrowShaftLength
+          @attr name com.Shafafeya.Dawaya:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6991,11 +6992,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:barLength
+          @attr name com.Shafafeya.Dawaya:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#color}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7006,11 +7007,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:color
+          @attr name com.Shafafeya.Dawaya:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7022,11 +7023,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:drawableSize
+          @attr name com.Shafafeya.Dawaya:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7038,11 +7039,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:gapBetweenBars
+          @attr name com.Shafafeya.Dawaya:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7052,11 +7053,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:spinBars
+          @attr name com.Shafafeya.Dawaya:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7068,7 +7069,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:thickness
+          @attr name com.Shafafeya.Dawaya:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -7077,14 +7078,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.Shafafeya.Dawaa:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.Shafafeya.Dawaa:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth com.Shafafeya.Dawaa:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation com.Shafafeya.Dawaa:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize com.Shafafeya.Dawaa:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.Shafafeya.Dawaa:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor com.Shafafeya.Dawaa:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.Shafafeya.Dawaa:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.Shafafeya.Dawaya:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.Shafafeya.Dawaya:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth com.Shafafeya.Dawaya:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation com.Shafafeya.Dawaya:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize com.Shafafeya.Dawaya:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.Shafafeya.Dawaya:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor com.Shafafeya.Dawaya:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.Shafafeya.Dawaya:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -7100,7 +7101,7 @@ containing a value of this type.
             0x7f01012c, 0x7f01012d, 0x7f01012e, 0x7f01012f
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7111,11 +7112,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:backgroundTint
+          @attr name com.Shafafeya.Dawaya:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7131,11 +7132,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:backgroundTintMode
+          @attr name com.Shafafeya.Dawaya:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7147,11 +7148,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:borderWidth
+          @attr name com.Shafafeya.Dawaya:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7163,11 +7164,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:elevation
+          @attr name com.Shafafeya.Dawaya:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7180,11 +7181,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:fabSize
+          @attr name com.Shafafeya.Dawaya:fabSize
         */
         public static final int FloatingActionButton_fabSize = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7196,11 +7197,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:pressedTranslationZ
+          @attr name com.Shafafeya.Dawaya:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7211,11 +7212,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:rippleColor
+          @attr name com.Shafafeya.Dawaya:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7225,7 +7226,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:useCompatPadding
+          @attr name com.Shafafeya.Dawaya:useCompatPadding
         */
         public static final int FloatingActionButton_useCompatPadding = 7;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -7236,7 +7237,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.Shafafeya.Dawaa:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.Shafafeya.Dawaya:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -7258,7 +7259,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -7268,7 +7269,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:foregroundInsidePadding
+          @attr name com.Shafafeya.Dawaya:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -7282,10 +7283,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.Shafafeya.Dawaa:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.Shafafeya.Dawaa:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.Shafafeya.Dawaa:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.Shafafeya.Dawaa:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.Shafafeya.Dawaya:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.Shafafeya.Dawaya:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.Shafafeya.Dawaya:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.Shafafeya.Dawaya:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -7333,17 +7334,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:divider
+          @attr name com.Shafafeya.Dawaya:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7355,11 +7356,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:dividerPadding
+          @attr name com.Shafafeya.Dawaya:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7369,11 +7370,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:measureWithLargestChild
+          @attr name com.Shafafeya.Dawaya:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7388,7 +7389,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:showDividers
+          @attr name com.Shafafeya.Dawaya:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -7467,12 +7468,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop com.Shafafeya.Dawaa:circleCrop}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.Shafafeya.Dawaya:circleCrop}</code></td><td>
         Whether or not this view should have a circular clip applied
         </td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.Shafafeya.Dawaa:imageAspectRatio}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.Shafafeya.Dawaya:imageAspectRatio}</code></td><td>
         The fixed aspect ratio to use in aspect ratio adjustments.</td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.Shafafeya.Dawaa:imageAspectRatioAdjust}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.Shafafeya.Dawaya:imageAspectRatioAdjust}</code></td><td>
         What kind of aspect ratio adjustment to do.</td></tr>
            </table>
            @see #LoadingImageView_circleCrop
@@ -7497,7 +7498,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.Shafafeya.Dawaa:circleCrop
+          @attr name com.Shafafeya.Dawaya:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
@@ -7515,7 +7516,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.Shafafeya.Dawaa:imageAspectRatio
+          @attr name com.Shafafeya.Dawaya:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
@@ -7538,7 +7539,7 @@ containing a value of this type.
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.Shafafeya.Dawaa:imageAspectRatioAdjust
+          @attr name com.Shafafeya.Dawaya:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MapAttrs.
@@ -7547,23 +7548,23 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_ambientEnabled com.Shafafeya.Dawaa:ambientEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing com.Shafafeya.Dawaa:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.Shafafeya.Dawaa:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.Shafafeya.Dawaa:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt com.Shafafeya.Dawaa:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom com.Shafafeya.Dawaa:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_liteMode com.Shafafeya.Dawaa:liteMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType com.Shafafeya.Dawaa:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass com.Shafafeya.Dawaa:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.Shafafeya.Dawaa:uiMapToolbar}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.Shafafeya.Dawaa:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.Shafafeya.Dawaa:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.Shafafeya.Dawaa:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls com.Shafafeya.Dawaa:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.Shafafeya.Dawaa:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.Shafafeya.Dawaa:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.Shafafeya.Dawaa:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_ambientEnabled com.Shafafeya.Dawaya:ambientEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.Shafafeya.Dawaya:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.Shafafeya.Dawaya:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.Shafafeya.Dawaya:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.Shafafeya.Dawaya:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.Shafafeya.Dawaya:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode com.Shafafeya.Dawaya:liteMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.Shafafeya.Dawaya:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.Shafafeya.Dawaya:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.Shafafeya.Dawaya:uiMapToolbar}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.Shafafeya.Dawaya:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.Shafafeya.Dawaya:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.Shafafeya.Dawaya:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.Shafafeya.Dawaya:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.Shafafeya.Dawaya:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.Shafafeya.Dawaya:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.Shafafeya.Dawaya:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_ambientEnabled
            @see #MapAttrs_cameraBearing
@@ -7591,7 +7592,7 @@ containing a value of this type.
             0x7f010010
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#ambientEnabled}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#ambientEnabled}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7601,11 +7602,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:ambientEnabled
+          @attr name com.Shafafeya.Dawaya:ambientEnabled
         */
         public static final int MapAttrs_ambientEnabled = 16;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7615,11 +7616,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cameraBearing
+          @attr name com.Shafafeya.Dawaya:cameraBearing
         */
         public static final int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7629,11 +7630,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cameraTargetLat
+          @attr name com.Shafafeya.Dawaya:cameraTargetLat
         */
         public static final int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7643,11 +7644,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cameraTargetLng
+          @attr name com.Shafafeya.Dawaya:cameraTargetLng
         */
         public static final int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7657,11 +7658,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cameraTilt
+          @attr name com.Shafafeya.Dawaya:cameraTilt
         */
         public static final int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7671,11 +7672,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:cameraZoom
+          @attr name com.Shafafeya.Dawaya:cameraZoom
         */
         public static final int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#liteMode}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#liteMode}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7685,11 +7686,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:liteMode
+          @attr name com.Shafafeya.Dawaya:liteMode
         */
         public static final int MapAttrs_liteMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#mapType}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7705,11 +7706,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:mapType
+          @attr name com.Shafafeya.Dawaya:mapType
         */
         public static final int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7719,11 +7720,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:uiCompass
+          @attr name com.Shafafeya.Dawaya:uiCompass
         */
         public static final int MapAttrs_uiCompass = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#uiMapToolbar}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#uiMapToolbar}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7733,11 +7734,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:uiMapToolbar
+          @attr name com.Shafafeya.Dawaya:uiMapToolbar
         */
         public static final int MapAttrs_uiMapToolbar = 15;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7747,11 +7748,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:uiRotateGestures
+          @attr name com.Shafafeya.Dawaya:uiRotateGestures
         */
         public static final int MapAttrs_uiRotateGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7761,11 +7762,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:uiScrollGestures
+          @attr name com.Shafafeya.Dawaya:uiScrollGestures
         */
         public static final int MapAttrs_uiScrollGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7775,11 +7776,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:uiTiltGestures
+          @attr name com.Shafafeya.Dawaya:uiTiltGestures
         */
         public static final int MapAttrs_uiTiltGestures = 10;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7789,11 +7790,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:uiZoomControls
+          @attr name com.Shafafeya.Dawaya:uiZoomControls
         */
         public static final int MapAttrs_uiZoomControls = 11;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7803,11 +7804,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:uiZoomGestures
+          @attr name com.Shafafeya.Dawaya:uiZoomGestures
         */
         public static final int MapAttrs_uiZoomGestures = 12;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7817,11 +7818,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:useViewLifecycle
+          @attr name com.Shafafeya.Dawaya:useViewLifecycle
         */
         public static final int MapAttrs_useViewLifecycle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -7831,7 +7832,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:zOrderOnTop
+          @attr name com.Shafafeya.Dawaya:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 14;
         /** Attributes that can be used with a MediaRouteButton.
@@ -7842,7 +7843,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #MediaRouteButton_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #MediaRouteButton_android_minWidth android:minWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #MediaRouteButton_externalRouteEnabledDrawable com.Shafafeya.Dawaa:externalRouteEnabledDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #MediaRouteButton_externalRouteEnabledDrawable com.Shafafeya.Dawaya:externalRouteEnabledDrawable}</code></td><td></td></tr>
            </table>
            @see #MediaRouteButton_android_minHeight
            @see #MediaRouteButton_android_minWidth
@@ -7864,13 +7865,13 @@ containing a value of this type.
         */
         public static final int MediaRouteButton_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#externalRouteEnabledDrawable}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#externalRouteEnabledDrawable}
           attribute's value can be found in the {@link #MediaRouteButton} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:externalRouteEnabledDrawable
+          @attr name com.Shafafeya.Dawaya:externalRouteEnabledDrawable
         */
         public static final int MediaRouteButton_externalRouteEnabledDrawable = 2;
         /** Attributes that can be used with a MenuGroup.
@@ -7939,9 +7940,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.Shafafeya.Dawaa:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.Shafafeya.Dawaa:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.Shafafeya.Dawaa:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.Shafafeya.Dawaya:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.Shafafeya.Dawaya:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.Shafafeya.Dawaya:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -7955,7 +7956,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.Shafafeya.Dawaa:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.Shafafeya.Dawaya:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -7983,17 +7984,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100e2
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:actionLayout
+          @attr name com.Shafafeya.Dawaya:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8003,11 +8004,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:actionProviderClass
+          @attr name com.Shafafeya.Dawaya:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8017,7 +8018,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:actionViewClass
+          @attr name com.Shafafeya.Dawaya:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -8099,7 +8100,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8115,7 +8116,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:showAsAction
+          @attr name com.Shafafeya.Dawaya:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -8131,7 +8132,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.Shafafeya.Dawaa:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.Shafafeya.Dawaya:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -8189,7 +8190,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -8199,7 +8200,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:preserveIconSpacing
+          @attr name com.Shafafeya.Dawaya:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a NavigationView.
@@ -8211,13 +8212,13 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation com.Shafafeya.Dawaa:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout com.Shafafeya.Dawaa:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground com.Shafafeya.Dawaa:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint com.Shafafeya.Dawaa:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance com.Shafafeya.Dawaa:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor com.Shafafeya.Dawaa:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu com.Shafafeya.Dawaa:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation com.Shafafeya.Dawaya:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout com.Shafafeya.Dawaya:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground com.Shafafeya.Dawaya:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint com.Shafafeya.Dawaya:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance com.Shafafeya.Dawaya:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor com.Shafafeya.Dawaya:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu com.Shafafeya.Dawaya:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -8254,7 +8255,7 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8266,31 +8267,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:elevation
+          @attr name com.Shafafeya.Dawaya:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:headerLayout
+          @attr name com.Shafafeya.Dawaya:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:itemBackground
+          @attr name com.Shafafeya.Dawaya:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8301,21 +8302,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:itemIconTint
+          @attr name com.Shafafeya.Dawaya:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:itemTextAppearance
+          @attr name com.Shafafeya.Dawaya:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8326,17 +8327,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:itemTextColor
+          @attr name com.Shafafeya.Dawaya:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#menu}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:menu
+          @attr name com.Shafafeya.Dawaya:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -8346,7 +8347,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.Shafafeya.Dawaa:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.Shafafeya.Dawaya:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -8361,7 +8362,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -8371,7 +8372,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:overlapAnchor
+          @attr name com.Shafafeya.Dawaya:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -8380,7 +8381,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.Shafafeya.Dawaa:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.Shafafeya.Dawaya:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -8388,7 +8389,7 @@ containing a value of this type.
             0x7f0100e5
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -8398,7 +8399,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:state_above_anchor
+          @attr name com.Shafafeya.Dawaya:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -8408,10 +8409,10 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager com.Shafafeya.Dawaa:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout com.Shafafeya.Dawaa:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount com.Shafafeya.Dawaa:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd com.Shafafeya.Dawaa:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager com.Shafafeya.Dawaya:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout com.Shafafeya.Dawaya:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount com.Shafafeya.Dawaya:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd com.Shafafeya.Dawaya:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -8430,7 +8431,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8440,11 +8441,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:layoutManager
+          @attr name com.Shafafeya.Dawaya:layoutManager
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8454,11 +8455,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:reverseLayout
+          @attr name com.Shafafeya.Dawaya:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8468,11 +8469,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:spanCount
+          @attr name com.Shafafeya.Dawaya:spanCount
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8482,7 +8483,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:stackFromEnd
+          @attr name com.Shafafeya.Dawaya:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -8491,7 +8492,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.Shafafeya.Dawaa:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.Shafafeya.Dawaya:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -8499,7 +8500,7 @@ containing a value of this type.
             0x7f010137
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -8507,7 +8508,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.Shafafeya.Dawaa:insetForeground
+          @attr name com.Shafafeya.Dawaya:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Params.
@@ -8516,7 +8517,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.Shafafeya.Dawaa:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.Shafafeya.Dawaya:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Params_behavior_overlapTop
          */
@@ -8524,7 +8525,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010138
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -8536,7 +8537,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:behavior_overlapTop
+          @attr name com.Shafafeya.Dawaya:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -8549,19 +8550,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.Shafafeya.Dawaa:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.Shafafeya.Dawaa:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint com.Shafafeya.Dawaa:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.Shafafeya.Dawaa:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.Shafafeya.Dawaa:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.Shafafeya.Dawaa:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.Shafafeya.Dawaa:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.Shafafeya.Dawaa:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon com.Shafafeya.Dawaa:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.Shafafeya.Dawaa:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.Shafafeya.Dawaa:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.Shafafeya.Dawaa:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.Shafafeya.Dawaa:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.Shafafeya.Dawaya:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.Shafafeya.Dawaya:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.Shafafeya.Dawaya:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.Shafafeya.Dawaya:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.Shafafeya.Dawaya:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.Shafafeya.Dawaya:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.Shafafeya.Dawaya:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.Shafafeya.Dawaya:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.Shafafeya.Dawaya:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.Shafafeya.Dawaya:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.Shafafeya.Dawaya:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.Shafafeya.Dawaya:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.Shafafeya.Dawaya:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -8613,27 +8614,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:closeIcon
+          @attr name com.Shafafeya.Dawaya:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:commitIcon
+          @attr name com.Shafafeya.Dawaya:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8643,21 +8644,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:defaultQueryHint
+          @attr name com.Shafafeya.Dawaya:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:goIcon
+          @attr name com.Shafafeya.Dawaya:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8667,31 +8668,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:iconifiedByDefault
+          @attr name com.Shafafeya.Dawaya:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:layout
+          @attr name com.Shafafeya.Dawaya:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:queryBackground
+          @attr name com.Shafafeya.Dawaya:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8701,57 +8702,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:queryHint
+          @attr name com.Shafafeya.Dawaya:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:searchHintIcon
+          @attr name com.Shafafeya.Dawaya:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:searchIcon
+          @attr name com.Shafafeya.Dawaya:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:submitBackground
+          @attr name com.Shafafeya.Dawaya:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:suggestionRowLayout
+          @attr name com.Shafafeya.Dawaya:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:voiceIcon
+          @attr name com.Shafafeya.Dawaya:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /**  Attributes for SignInButton
@@ -8764,9 +8765,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SignInButton_buttonSize com.Shafafeya.Dawaa:buttonSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_colorScheme com.Shafafeya.Dawaa:colorScheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_scopeUris com.Shafafeya.Dawaa:scopeUris}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_buttonSize com.Shafafeya.Dawaya:buttonSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_colorScheme com.Shafafeya.Dawaya:colorScheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_scopeUris com.Shafafeya.Dawaya:scopeUris}</code></td><td></td></tr>
            </table>
            @see #SignInButton_buttonSize
            @see #SignInButton_colorScheme
@@ -8776,7 +8777,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010014, 0x7f010015, 0x7f010016
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#buttonSize}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#buttonSize}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -8792,11 +8793,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>wide</code></td><td>1</td><td></td></tr>
 <tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:buttonSize
+          @attr name com.Shafafeya.Dawaya:buttonSize
         */
         public static final int SignInButton_buttonSize = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#colorScheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#colorScheme}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -8812,18 +8813,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>light</code></td><td>1</td><td></td></tr>
 <tr><td><code>auto</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:colorScheme
+          @attr name com.Shafafeya.Dawaya:colorScheme
         */
         public static final int SignInButton_colorScheme = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#scopeUris}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#scopeUris}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-          @attr name com.Shafafeya.Dawaa:scopeUris
+          @attr name com.Shafafeya.Dawaya:scopeUris
         */
         public static final int SignInButton_scopeUris = 2;
         /** Attributes that can be used with a SnackbarLayout.
@@ -8833,8 +8834,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation com.Shafafeya.Dawaa:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.Shafafeya.Dawaa:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation com.Shafafeya.Dawaya:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.Shafafeya.Dawaya:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -8850,7 +8851,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8862,11 +8863,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:elevation
+          @attr name com.Shafafeya.Dawaya:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8878,7 +8879,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:maxActionInlineWidth
+          @attr name com.Shafafeya.Dawaya:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -8891,7 +8892,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme com.Shafafeya.Dawaa:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme com.Shafafeya.Dawaya:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -8928,13 +8929,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:popupTheme
+          @attr name com.Shafafeya.Dawaya:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -8946,13 +8947,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.Shafafeya.Dawaa:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.Shafafeya.Dawaa:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.Shafafeya.Dawaa:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.Shafafeya.Dawaa:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.Shafafeya.Dawaa:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.Shafafeya.Dawaa:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.Shafafeya.Dawaa:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.Shafafeya.Dawaya:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.Shafafeya.Dawaya:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.Shafafeya.Dawaya:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.Shafafeya.Dawaya:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.Shafafeya.Dawaya:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.Shafafeya.Dawaya:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.Shafafeya.Dawaya:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -8989,7 +8990,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8999,11 +9000,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:showText
+          @attr name com.Shafafeya.Dawaya:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9013,11 +9014,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:splitTrack
+          @attr name com.Shafafeya.Dawaya:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9029,11 +9030,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:switchMinWidth
+          @attr name com.Shafafeya.Dawaya:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9045,21 +9046,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:switchPadding
+          @attr name com.Shafafeya.Dawaya:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:switchTextAppearance
+          @attr name com.Shafafeya.Dawaya:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9071,17 +9072,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:thumbTextPadding
+          @attr name com.Shafafeya.Dawaya:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#track}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:track
+          @attr name com.Shafafeya.Dawaya:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TabItem.
@@ -9125,22 +9126,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground com.Shafafeya.Dawaa:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart com.Shafafeya.Dawaa:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity com.Shafafeya.Dawaa:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.Shafafeya.Dawaa:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.Shafafeya.Dawaa:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth com.Shafafeya.Dawaa:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth com.Shafafeya.Dawaa:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode com.Shafafeya.Dawaa:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding com.Shafafeya.Dawaa:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.Shafafeya.Dawaa:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.Shafafeya.Dawaa:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart com.Shafafeya.Dawaa:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop com.Shafafeya.Dawaa:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.Shafafeya.Dawaa:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance com.Shafafeya.Dawaa:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor com.Shafafeya.Dawaa:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground com.Shafafeya.Dawaya:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart com.Shafafeya.Dawaya:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity com.Shafafeya.Dawaya:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.Shafafeya.Dawaya:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.Shafafeya.Dawaya:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth com.Shafafeya.Dawaya:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth com.Shafafeya.Dawaya:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode com.Shafafeya.Dawaya:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding com.Shafafeya.Dawaya:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.Shafafeya.Dawaya:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.Shafafeya.Dawaya:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart com.Shafafeya.Dawaya:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop com.Shafafeya.Dawaya:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.Shafafeya.Dawaya:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance com.Shafafeya.Dawaya:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor com.Shafafeya.Dawaya:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -9166,17 +9167,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010146, 0x7f010147, 0x7f010148, 0x7f010149
         };
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:tabBackground
+          @attr name com.Shafafeya.Dawaya:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9188,11 +9189,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabContentStart
+          @attr name com.Shafafeya.Dawaya:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9205,11 +9206,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:tabGravity
+          @attr name com.Shafafeya.Dawaya:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9220,11 +9221,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabIndicatorColor
+          @attr name com.Shafafeya.Dawaya:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9236,11 +9237,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabIndicatorHeight
+          @attr name com.Shafafeya.Dawaya:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9252,11 +9253,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabMaxWidth
+          @attr name com.Shafafeya.Dawaya:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9268,11 +9269,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabMinWidth
+          @attr name com.Shafafeya.Dawaya:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9285,11 +9286,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:tabMode
+          @attr name com.Shafafeya.Dawaya:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9301,11 +9302,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabPadding
+          @attr name com.Shafafeya.Dawaya:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9317,11 +9318,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabPaddingBottom
+          @attr name com.Shafafeya.Dawaya:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9333,11 +9334,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabPaddingEnd
+          @attr name com.Shafafeya.Dawaya:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9349,11 +9350,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabPaddingStart
+          @attr name com.Shafafeya.Dawaya:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9365,11 +9366,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabPaddingTop
+          @attr name com.Shafafeya.Dawaya:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9380,21 +9381,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabSelectedTextColor
+          @attr name com.Shafafeya.Dawaya:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:tabTextAppearance
+          @attr name com.Shafafeya.Dawaya:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9405,7 +9406,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:tabTextColor
+          @attr name com.Shafafeya.Dawaya:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -9422,7 +9423,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps com.Shafafeya.Dawaa:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.Shafafeya.Dawaya:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -9488,14 +9489,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.Shafafeya.Dawaa:textAllCaps
+          @attr name com.Shafafeya.Dawaya:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -9506,15 +9507,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled com.Shafafeya.Dawaa:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.Shafafeya.Dawaa:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.Shafafeya.Dawaa:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.Shafafeya.Dawaa:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled com.Shafafeya.Dawaa:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.Shafafeya.Dawaa:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.Shafafeya.Dawaa:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled com.Shafafeya.Dawaa:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.Shafafeya.Dawaa:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled com.Shafafeya.Dawaya:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.Shafafeya.Dawaya:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.Shafafeya.Dawaya:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.Shafafeya.Dawaya:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled com.Shafafeya.Dawaya:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.Shafafeya.Dawaya:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.Shafafeya.Dawaya:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled com.Shafafeya.Dawaya:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.Shafafeya.Dawaya:hintTextAppearance}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -9546,7 +9547,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9556,11 +9557,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:counterEnabled
+          @attr name com.Shafafeya.Dawaya:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9570,31 +9571,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:counterMaxLength
+          @attr name com.Shafafeya.Dawaya:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:counterOverflowTextAppearance
+          @attr name com.Shafafeya.Dawaya:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:counterTextAppearance
+          @attr name com.Shafafeya.Dawaya:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9604,21 +9605,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:errorEnabled
+          @attr name com.Shafafeya.Dawaya:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:errorTextAppearance
+          @attr name com.Shafafeya.Dawaya:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9628,11 +9629,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:hintAnimationEnabled
+          @attr name com.Shafafeya.Dawaya:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9642,17 +9643,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:hintEnabled
+          @attr name com.Shafafeya.Dawaya:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:hintTextAppearance
+          @attr name com.Shafafeya.Dawaya:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Toolbar.
@@ -9663,29 +9664,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.Shafafeya.Dawaa:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.Shafafeya.Dawaa:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.Shafafeya.Dawaa:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.Shafafeya.Dawaa:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.Shafafeya.Dawaa:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.Shafafeya.Dawaa:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo com.Shafafeya.Dawaa:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription com.Shafafeya.Dawaa:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.Shafafeya.Dawaa:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.Shafafeya.Dawaa:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.Shafafeya.Dawaa:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.Shafafeya.Dawaa:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.Shafafeya.Dawaa:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.Shafafeya.Dawaa:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor com.Shafafeya.Dawaa:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.Shafafeya.Dawaa:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.Shafafeya.Dawaa:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.Shafafeya.Dawaa:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.Shafafeya.Dawaa:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.Shafafeya.Dawaa:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.Shafafeya.Dawaa:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.Shafafeya.Dawaa:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor com.Shafafeya.Dawaa:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.Shafafeya.Dawaya:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.Shafafeya.Dawaya:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.Shafafeya.Dawaya:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.Shafafeya.Dawaya:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.Shafafeya.Dawaya:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.Shafafeya.Dawaya:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.Shafafeya.Dawaya:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription com.Shafafeya.Dawaya:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.Shafafeya.Dawaya:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.Shafafeya.Dawaya:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.Shafafeya.Dawaya:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.Shafafeya.Dawaya:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.Shafafeya.Dawaya:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.Shafafeya.Dawaya:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor com.Shafafeya.Dawaya:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.Shafafeya.Dawaya:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.Shafafeya.Dawaya:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.Shafafeya.Dawaya:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.Shafafeya.Dawaya:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.Shafafeya.Dawaya:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.Shafafeya.Dawaya:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.Shafafeya.Dawaya:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor com.Shafafeya.Dawaya:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -9735,7 +9736,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9745,21 +9746,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:collapseContentDescription
+          @attr name com.Shafafeya.Dawaya:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:collapseIcon
+          @attr name com.Shafafeya.Dawaya:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9771,11 +9772,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentInsetEnd
+          @attr name com.Shafafeya.Dawaya:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9787,11 +9788,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentInsetLeft
+          @attr name com.Shafafeya.Dawaya:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9803,11 +9804,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentInsetRight
+          @attr name com.Shafafeya.Dawaya:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9819,21 +9820,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:contentInsetStart
+          @attr name com.Shafafeya.Dawaya:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:logo
+          @attr name com.Shafafeya.Dawaya:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9843,11 +9844,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:logoDescription
+          @attr name com.Shafafeya.Dawaya:logoDescription
         */
         public static final int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9859,11 +9860,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:maxButtonHeight
+          @attr name com.Shafafeya.Dawaya:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9873,31 +9874,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:navigationContentDescription
+          @attr name com.Shafafeya.Dawaya:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:navigationIcon
+          @attr name com.Shafafeya.Dawaya:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:popupTheme
+          @attr name com.Shafafeya.Dawaya:popupTheme
         */
         public static final int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9907,21 +9908,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:subtitle
+          @attr name com.Shafafeya.Dawaya:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:subtitleTextAppearance
+          @attr name com.Shafafeya.Dawaya:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9932,11 +9933,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:subtitleTextColor
+          @attr name com.Shafafeya.Dawaya:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#title}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9946,11 +9947,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:title
+          @attr name com.Shafafeya.Dawaya:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9962,11 +9963,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:titleMarginBottom
+          @attr name com.Shafafeya.Dawaya:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9978,11 +9979,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:titleMarginEnd
+          @attr name com.Shafafeya.Dawaya:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9994,11 +9995,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:titleMarginStart
+          @attr name com.Shafafeya.Dawaya:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10010,11 +10011,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:titleMarginTop
+          @attr name com.Shafafeya.Dawaya:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10026,21 +10027,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:titleMargins
+          @attr name com.Shafafeya.Dawaya:titleMargins
         */
         public static final int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:titleTextAppearance
+          @attr name com.Shafafeya.Dawaya:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10051,7 +10052,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:titleTextColor
+          @attr name com.Shafafeya.Dawaya:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -10062,9 +10063,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.Shafafeya.Dawaa:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.Shafafeya.Dawaa:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme com.Shafafeya.Dawaa:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.Shafafeya.Dawaya:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.Shafafeya.Dawaya:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.Shafafeya.Dawaya:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -10089,7 +10090,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -10101,11 +10102,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:paddingEnd
+          @attr name com.Shafafeya.Dawaya:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -10117,17 +10118,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:paddingStart
+          @attr name com.Shafafeya.Dawaya:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.Shafafeya.Dawaa:theme
+          @attr name com.Shafafeya.Dawaya:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -10137,8 +10138,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.Shafafeya.Dawaa:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.Shafafeya.Dawaa:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.Shafafeya.Dawaya:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.Shafafeya.Dawaya:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -10154,7 +10155,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -10165,11 +10166,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.Shafafeya.Dawaa:backgroundTint
+          @attr name com.Shafafeya.Dawaya:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaa.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.Shafafeya.Dawaya.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -10185,7 +10186,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.Shafafeya.Dawaa:backgroundTintMode
+          @attr name com.Shafafeya.Dawaya:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

@@ -132,13 +132,17 @@
     <Content Include="edit_start_end_dates_ico.png" />
     <Content Include="edit_white_ico.png" />
     <Content Include="history_ico.png" />
+    <Content Include="HomeScreen_bg.jpg" />
+    <Content Include="icon.png" />
     <Content Include="listen_ico.png" />
     <Content Include="logo.png" />
     <Content Include="medicines_list_ico.png" />
     <Content Include="mic_ico.png" />
+    <Content Include="plus_ico.png" />
     <Content Include="profile_ico.png" />
     <Content Include="profile_photo.png" />
     <Content Include="Properties\Default.rd.xml" />
+    <Content Include="splash.jpg" />
     <Content Include="splash_bg.png" />
   </ItemGroup>
   <ItemGroup>
