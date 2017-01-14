@@ -75,12 +75,10 @@ namespace GHQ.iOS
 		public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
 		{
 			// show an alert
-			UIAlertController okayAlertController = UIAlertController.Create(notification.AlertAction, notification.AlertBody, UIAlertControllerStyle.Alert);
-			okayAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-
-			Window.RootViewController.PresentViewController(okayAlertController, true, null);
-
-			// reset our badge
+			UIAlertView alert = new UIAlertView() { Title = notification.AlertAction, Message = notification.AlertBody };
+			alert.AddButton("OK");
+			alert.Show();
+			// CLEAR BADGES
 			UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
 		}
 

@@ -20,7 +20,7 @@ namespace GHQ.Droid.Services
 		{
 			get { return Xamarin.Forms.Forms.Context ?? Android.App.Application.Context; }
 		}
-  private static readonly int ButtonClickNotificationId = 1000;
+ 	    private static readonly int ButtonClickNotificationId = 1000;
 		public void showNotification(string title, string body, DateTime date, string sound)
 		{
 			// Pass the current button press count value to the next activity:
@@ -28,7 +28,7 @@ namespace GHQ.Droid.Services
 			valuesForActivity.PutInt("count", 1);
 
 			// When the user clicks the notification, SecondActivity will start up.
-			Intent resultIntent = new Intent(this, typeof(SecondActivity));
+			Intent resultIntent = new Intent(Context, typeof(SecondActivity));
 
 			// Pass some values to SecondActivity:
 			resultIntent.PutExtras(valuesForActivity);
@@ -51,9 +51,9 @@ namespace GHQ.Droid.Services
 				.SetContentText(body); // The message to display.
 
 			// Finally, publish the notification:
-			NotificationManager notificationManager =
-				(NotificationManager)GetSystemService(Context.NotificationService);
-			notificationManager.Notify(ButtonClickNotificationId, builder.Build());
+			//NotificationManager notificationManager =
+			//	(NotificationManager)GetSystemService(Context.NotificationService);
+			//notificationManager.Notify(ButtonClickNotificationId, builder.Build());
 
 			// Increment the button press count:
 

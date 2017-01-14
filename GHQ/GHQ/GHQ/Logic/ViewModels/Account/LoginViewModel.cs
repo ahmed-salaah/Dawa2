@@ -8,6 +8,8 @@ using Models;
 using Service.Localization;
 using Service.Naviagtion;
 using Xamarin.Forms;
+using Service.ILocalNotifications;
+using System;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -102,8 +104,8 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 IsLoading = true;
                 IsPageEnabled = false;
-                //ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
-
+				//ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
+				DependencyService.Get<ILocalNotifications>().showNotification("a", "aaaa", DateTime.Now, "");
                 navigationService.NavigateToPage(typeof(HomePage));
             }
             catch (System.Exception ex)

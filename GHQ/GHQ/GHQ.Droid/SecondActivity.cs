@@ -26,8 +26,8 @@ namespace GHQ.Droid
 				return;
 
 			// Display the count sent from the first activity:
-			SetContentView(Resource.Layout.Second);
-			TextView textView = FindViewById<TextView>(Resource.Id.textView);
+			//SetContentView(Resource.Layout.Second);
+			//TextView textView = FindViewById<TextView>(Resource.Id.textView);
 			textView.Text = String.Format(
 				"You clicked the button {0} times in the previous activity.", count);
 		}
