@@ -186,7 +186,7 @@ namespace GHQ.Logic.ViewModels.Account
                     IsLoading = true;
                     var imageBytes = mediaFile.data;
                     Medicine.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-                    Medicine.ImagePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".jpg", imageBytes, "Medicine");
+                    Medicine.ImagePath = await DependencyService.Get<IFileHelper>().SaveImageToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".jpg", imageBytes, "Medicine");
                 }
 
             }

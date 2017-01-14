@@ -51,6 +51,16 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
 
+        private bool _IsShowAllMedicineCurrentMode;
+        public bool IsShowAllMedicineCurrentMode
+        {
+            get { return _IsShowAllMedicineCurrentMode; }
+            set
+            {
+                Set(() => IsShowAllMedicineCurrentMode, ref _IsShowAllMedicineCurrentMode, value);
+            }
+        }
+
         #endregion
 
         #region Private Methods
@@ -79,6 +89,7 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 IsLoading = true;
                 SelectedMedicine = null;
+                IsShowAllMedicineCurrentMode = true;
                 MedicineList = new ObservableCollection<Medicine>(await medicineService.GetCurrentMedicine());
             }
             catch (System.Exception ex)

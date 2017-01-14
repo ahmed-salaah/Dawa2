@@ -37,6 +37,11 @@ namespace GHQ.UWP.Services
             await FileIO.WriteBytesAsync(storageFile, imageData);
             return storageFile.Path;
         }
+
+        public Task<string> SaveImageToDisk(string filename, byte[] imageData, string folderName = "")
+        {
+            return SaveByteArrayToDisk(filename, imageData, folderName);
+        }
     }
 }
 

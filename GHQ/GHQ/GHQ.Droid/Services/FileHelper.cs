@@ -38,5 +38,10 @@ namespace GHQ.Droid.Services
                 return "";
             }
         }
+
+        public Task<string> SaveImageToDisk(string filename, byte[] imageData, string folderName = "")
+        {
+            return SaveByteArrayToDisk(filename, imageData, folderName);
+        }
     }
 }

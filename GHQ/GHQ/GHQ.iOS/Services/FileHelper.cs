@@ -29,6 +29,14 @@ namespace GHQ.iOS.Services
 
         public async Task<string> SaveByteArrayToDisk(string filename, byte[] imageData, string folderName = "")
         {
+            var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            var filePath = Path.Combine(documents, filename);
+            File.WriteAllBytes(filePath, imageData);
+            return filePath;
+        }
+
+        public async Task<string> SaveImageToDisk(string filename, byte[] imageData, string folderName = "")
+        {
             var chartImage = new UIImage(NSData.FromArray(imageData));
             chartImage.SaveToPhotosAlbum((image, error) =>
             {
