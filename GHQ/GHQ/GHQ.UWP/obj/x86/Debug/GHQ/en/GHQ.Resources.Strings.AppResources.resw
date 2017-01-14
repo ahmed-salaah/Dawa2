@@ -132,6 +132,9 @@
   <data name="MedicineAddNew_Entry_MedicineName" xml:space="preserve">
     <value>أسم الدواء</value>
   </data>
+  <data name="SignUP_BreakFast" xml:space="preserve">
+    <value>الإفطار في الساعه…</value>
+  </data>
   <data name="MedicineAddNew_Entry_DoctorName" xml:space="preserve">
     <value>أسم الدكتور</value>
   </data>
@@ -237,6 +240,9 @@
   <data name="Dialog_Confirm" xml:space="preserve">
     <value>تأكيد</value>
   </data>
+  <data name="SignUP_launch" xml:space="preserve">
+    <value>الغداء في الساعه…</value>
+  </data>
   <data name="PageHeader_AddNewMedicine" xml:space="preserve">
     <value>اضافة دواء</value>
   </data>
@@ -290,6 +296,9 @@
   </data>
   <data name="login_userName" xml:space="preserve">
     <value>اسم المستخدم</value>
+  </data>
+  <data name="SignUP_Dinner" xml:space="preserve">
+    <value>العشاء في الساعه…</value>
   </data>
   <data name="signUp_lastName" xml:space="preserve">
     <value>الإسم العائلة</value>

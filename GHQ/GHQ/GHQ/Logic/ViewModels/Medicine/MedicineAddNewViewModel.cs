@@ -7,9 +7,11 @@ using Logic.Models.Data;
 using Models;
 using Service.Dialog;
 using Service.Exception;
+using Service.FileHelper;
 using Service.Media;
 using Service.Naviagtion;
 using Service.Recorder;
+using System;
 using System.IO;
 using Xamarin.Forms;
 
@@ -128,14 +130,14 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 var mediaPicker = DependencyService.Get<IMediaPicker>();
                 navigationService.IsExternalAppOpen = true;
-                var mediaFile = await mediaPicker.SelectPhotoAsync();
+                MediaFile mediaFile = await mediaPicker.SelectPhotoAsync();
                 navigationService.IsExternalAppOpen = false;
                 if (mediaFile != null)
                 {
                     IsLoading = true;
                     var imageBytes = mediaFile.data;
                     Medicine.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-
+                    Medicine.ImagePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".jpg", imageBytes, "Medicine");
                 }
 
             }
@@ -179,7 +181,8 @@ namespace GHQ.Logic.ViewModels.Account
                 }
                 else
                 {
-                    DependencyService.Get<IRecorderService>().Stop();
+                    byte[] file = await DependencyService.Get<IRecorderService>().Stop();
+                    Medicine.VoiceNotePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".wav", file, "VoiceNotes");
                     DependencyService.Get<IRecorderService>().Play();
                 }
 

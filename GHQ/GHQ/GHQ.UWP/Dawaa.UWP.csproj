@@ -91,6 +91,7 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="Dawaa.UWP.nuget.targets" />
+    <None Include="Dawayaa.sqlite" />
     <None Include="LaunchScreen.storyboard" />
     <None Include="project.json" />
   </ItemGroup>
@@ -102,6 +103,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DatabaseService.cs" />
     <Compile Include="Services\RecorderService.cs" />
     <Compile Include="Services\FileHelper.cs" />
     <Compile Include="Services\Localize.cs" />

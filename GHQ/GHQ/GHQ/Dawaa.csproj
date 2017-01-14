@@ -216,7 +216,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="GettingStarted.Xamarin" />
-    <None Include="Logic\Database\Dawayaa.sqlite" />
+    <Content Include="Logic\Database\Dawayaa.sqlite" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

@@ -140,6 +140,32 @@ namespace Logic.Models.Data
             }
         }
 
+        private string _ImagePath;
+        public string ImagePath
+        {
+            get
+            {
+                return _ImagePath;
+            }
+            set
+            {
+                Set(() => ImagePath, ref _ImagePath, value);
+            }
+        }
+
+        private string _VoiceNotePath;
+        public string VoiceNotePath
+        {
+            get
+            {
+                return _VoiceNotePath;
+            }
+            set
+            {
+                Set(() => VoiceNotePath, ref _VoiceNotePath, value);
+            }
+        }
+
         private string _Note;
         public string Note
         {

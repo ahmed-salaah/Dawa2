@@ -7,6 +7,7 @@ using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace GHQ.Logic.Service.Lookup
 {
@@ -16,14 +17,12 @@ namespace GHQ.Logic.Service.Lookup
 
         INetworkService networkService;
         IInternetService internetService;
-        IDatabaseService dataBaseService;
         #endregion
 
-        public MedicineService(INetworkService _networkService, IInternetService _internetService, IDatabaseService _dataBaseService)
+        public MedicineService(INetworkService _networkService, IInternetService _internetService)
         {
             networkService = _networkService;
             internetService = _internetService;
-            dataBaseService = _dataBaseService;
         }
 
         public async Task<List<Medicine>> GetHistory()
@@ -90,9 +89,31 @@ namespace GHQ.Logic.Service.Lookup
         {
             try
             {
-                SQLiteAsyncConnection db = dataBaseService.GetInstance();
-                //db.CreateTableAsync<Database.Entities.Medicine>().Wait();
-                var m = await db.Table<Database.Entities.Medicine>().FirstOrDefaultAsync();
+                SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+                //var m = database.Table<Database.Entities.Medicine>().FirstOrDefault();
+                Database.Entities.Medicine m = new Database.Entities.Medicine()
+                {
+                    Id = medicine.Id,
+                    DiseaseName = medicine.DiseaseName,
+                    DoctorName = medicine.DoctorName,
+                    EndDate = medicine.EndDate,
+                    ImagePath = medicine.ImagePath,
+                    IsMissed = medicine.IsMissed,
+                    Name = medicine.Name,
+                    NexDate = medicine.NextDate,
+                    Note = medicine.Note,
+                    StartDate = medicine.StartDate,
+                    VoiceNotePath = medicine.VoiceNotePath,
+                };
+
+                if (medicine.Id != 0)
+                {
+                    int rows = database.Update(m);
+                }
+                else
+                {
+                    int rows = database.Insert(m);
+                }
 
                 return medicine;
             }
