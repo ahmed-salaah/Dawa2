@@ -5,7 +5,7 @@ namespace GHQ.UI.Pages.Filter
 {
     public partial class FilterPage : BasePage
     {
-        //readonly NewAccountViewModel AccountVM = Locator.Default.NewAccountViewModel;
+        readonly NewAccountViewModel AccountVM = Locator.Default.NewAccountViewModel;
         public FilterPage()
         {
             InitializeComponent();

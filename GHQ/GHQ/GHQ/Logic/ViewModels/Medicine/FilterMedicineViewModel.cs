@@ -15,9 +15,9 @@ using System.IO;
 
 namespace GHQ.Logic.ViewModels.Account
 {
-    public class NewAccountViewModel : BaseViewModel
+    public class FilterMedicineViewModel : BaseViewModel
     {
-        public NewAccountViewModel(INavigationService _navigationService, IAccountService _accountService, ILookupService _lookupService, IDialogService _dialogService, IExceptionService _excpetionService)
+        public FilterMedicineViewModel(INavigationService _navigationService, IAccountService _accountService, ILookupService _lookupService, IDialogService _dialogService, IExceptionService _excpetionService)
         {
             accountService = _accountService;
             navigationService = _navigationService;

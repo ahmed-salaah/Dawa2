@@ -28,9 +28,9 @@
 							<RowDefinition Height="Auto" />
 
 						</Grid.RowDefinitions>
-						<controls:BindablePicker Grid.Row="0" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate Filter_MedicineName}"/>
-						<controls:BindablePicker Grid.Row="1" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate Filter_DoctorName}"/>
-						<controls:BindablePicker Grid.Row="2" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate Filter_DeasesName}"/>
+						<controls:InputField Grid.Row="0" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_MedicineName}" Title = "{Binding User.UserName}"/>
+						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_DoctorName}" Title = "{Binding User.Password}"/>
+						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_DeasesName}" Title = "{Binding User.ConfirmPassword}"/>
 
 					</Grid>
 					<Grid Grid.Row="1">
