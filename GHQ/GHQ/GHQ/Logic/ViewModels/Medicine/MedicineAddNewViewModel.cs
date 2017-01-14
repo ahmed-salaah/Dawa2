@@ -97,6 +97,8 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+                if (navigationService.IsExternalAppOpen)
+                    return;
                 if (medicineService.SelectedMedicine == null)
                 {
                     Medicine = new Medicine();

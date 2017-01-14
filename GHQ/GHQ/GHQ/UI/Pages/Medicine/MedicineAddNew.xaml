@@ -44,11 +44,13 @@
               <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
                                  Command="{Binding OnOpenGalleryCommand}"  LeftImage="checked_ico.png" RightImage="camera_ico.png"/>
 
+             <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
+            
             </StackLayout>
 
             <StackLayout IsVisible="{Binding AddMode,Converter={StaticResource BooleanNegateConverter}}">
 
-              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" HeightRequest="100"/>
+              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}"/>
 
               <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
                                    Command="{Binding OnOpenGalleryCommand}"  LeftImage="checked_ico.png" RightImage="camera_ico.png"/>
