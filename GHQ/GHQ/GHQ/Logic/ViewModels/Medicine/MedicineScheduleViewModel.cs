@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
 using GHQ.Logic.Service.Lookup;
+using GHQ.UI.Pages.Medicine;
 using Logic.Models.Data;
 using Models;
 using Service.Naviagtion;
@@ -43,6 +44,9 @@ namespace GHQ.Logic.ViewModels.Account
             set
             {
                 Set(() => SelectedMedicine, ref _SelectedMedicine, value);
+                medicineService.SelectedMedicine = value;
+                if (value != null)
+                    naviagtionService.NavigateToPage(typeof(MedicineAddNew));
             }
         }
 
@@ -73,13 +77,48 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                MedicineList = new ObservableCollection<Medicine>(await medicineService.GetSchedule());
+                IsLoading = true;
+                SelectedMedicine = null;
+                MedicineList = new ObservableCollection<Medicine>(await medicineService.GetCurrentMedicine());
             }
             catch (System.Exception ex)
             {
             }
             finally
             {
+                IsLoading = false;
+            }
+        }
+
+        #endregion
+
+        #region AllMedicine Command
+
+        private RelayCommand _OnAllMedicineCommand;
+        public RelayCommand OnAllMedicineCommand
+        {
+            get
+            {
+                if (_OnAllMedicineCommand == null)
+                {
+                    _OnAllMedicineCommand = new RelayCommand(AllMedicine);
+                }
+                return _OnAllMedicineCommand;
+            }
+        }
+        private async void AllMedicine()
+        {
+            try
+            {
+                IsLoading = true;
+                MedicineList = new ObservableCollection<Medicine>(await medicineService.GetAllMedicine());
+            }
+            catch (System.Exception ex)
+            {
+            }
+            finally
+            {
+                IsLoading = false;
             }
         }
 

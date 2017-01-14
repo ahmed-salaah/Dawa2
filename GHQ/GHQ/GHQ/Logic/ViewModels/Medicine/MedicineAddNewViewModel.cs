@@ -60,6 +60,8 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
 
+
+
         private bool _IsRecording;
         public bool IsRecording
         {
@@ -97,8 +99,20 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                Medicine = new Medicine();
-                // AddMode = false;
+                if (navigationService.IsExternalAppOpen)
+                    return;
+                if (medicineService.SelectedMedicine == null)
+                {
+                    Medicine = new Medicine();
+                    AddMode = true;
+                }
+                else
+                {
+                    Medicine = medicineService.SelectedMedicine;
+                    AddMode = false;
+
+                }
+
             }
             catch (System.Exception ex)
             {
@@ -177,13 +191,13 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 if (!IsRecording)
                 {
+                    Medicine.VoiceNotePath = "";
                     DependencyService.Get<IRecorderService>().Record();
                 }
                 else
                 {
                     byte[] file = await DependencyService.Get<IRecorderService>().Stop();
                     Medicine.VoiceNotePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".wav", file, "VoiceNotes");
-                    DependencyService.Get<IRecorderService>().Play();
                 }
 
                 IsRecording = !IsRecording;
@@ -197,6 +211,37 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
+
+        #region PlayVoiceNote Command
+
+        private RelayCommand _OnPlayVoiceNoteCommand;
+        public RelayCommand OnPlayVoiceNoteCommand
+        {
+            get
+            {
+                if (_OnPlayVoiceNoteCommand == null)
+                {
+                    _OnPlayVoiceNoteCommand = new RelayCommand(PlayVoiceNote);
+                }
+                return _OnPlayVoiceNoteCommand;
+            }
+        }
+        private async void PlayVoiceNote()
+        {
+            try
+            {
+                DependencyService.Get<IRecorderService>().Play();
+            }
+            catch (System.Exception ex)
+            {
+            }
+            finally
+            {
+            }
+        }
+
+        #endregion
+
 
         #region OnSave Command
 
@@ -219,7 +264,8 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 var m = Medicine;
-                Medicine = await medicineService.AddMedicine(Medicine);
+                Medicine = await medicineService.AddEditMedicine(Medicine);
+                navigationService.GoBack();
             }
             catch (System.Exception ex)
             {
@@ -230,6 +276,43 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
+
+
+        #region OnSaveAndAdd Command
+
+        private RelayCommand _OnSaveAndAddCommand;
+        public RelayCommand OnSaveAndAddCommand
+        {
+            get
+            {
+                if (_OnSaveAndAddCommand == null)
+                {
+                    _OnSaveAndAddCommand = new RelayCommand(OnSaveAndAdd);
+                }
+                return _OnSaveAndAddCommand;
+            }
+        }
+
+
+        private async void OnSaveAndAdd()
+        {
+            try
+            {
+                var m = Medicine;
+                await medicineService.AddEditMedicine(Medicine);
+                Medicine = new Medicine();
+            }
+            catch (System.Exception ex)
+            {
+            }
+            finally
+            {
+            }
+        }
+
+        #endregion
+
+
 
         #endregion
     }

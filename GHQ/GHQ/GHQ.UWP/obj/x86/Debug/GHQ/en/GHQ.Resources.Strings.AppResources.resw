@@ -270,6 +270,9 @@
   <data name="PageHeader_MedicineSchedule_CurrentMedicine" xml:space="preserve">
     <value>الأدوية الحالية</value>
   </data>
+  <data name="MedicineAddNew_AddAnotherVoiceNote" xml:space="preserve">
+    <value>سجل رسالة صوتية أخرى </value>
+  </data>
   <data name="signUp_dinnerTitle" xml:space="preserve">
     <value>العشاء في الساعه</value>
   </data>

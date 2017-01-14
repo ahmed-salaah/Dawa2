@@ -216,6 +216,12 @@
 	<data name="MedicineAddNew_AddVoiceNote" xml:space="preserve">
     <value>أضغط هنا لتسجيل ملاحظة صوتية</value>
   </data>
+<<<<<<< HEAD
+=======
+  <data name="MedicineAddNew_AddAnotherVoiceNote" xml:space="preserve">
+    <value>سجل رسالة صوتية أخرى </value>
+  </data>
+>>>>>>> 5e7e315b1cba61f34dd18c65be7f514ad4dc28bb
   <data name="MedicineAddNew_StopAndPlayVoiceNote" xml:space="preserve">
     <value>أضغط هنا لتوقيف و تشغيل </value>
   </data>

@@ -24,7 +24,7 @@ namespace GHQ.Logic.Database.Entities
 
         public DateTime EndDate { get; set; }
 
-        public DateTime NexDate { get; set; }
+        public DateTime NextDate { get; set; }
 
         public string ImagePath { get; set; }
 

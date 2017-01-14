@@ -38,7 +38,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Common\DatabaseService.cs" />
     <Compile Include="Common\DialogService.cs" />
     <Compile Include="Common\TranslateExtension.cs" />
     <Compile Include="Logic\Database\Entities\Medicine.cs" />
@@ -47,6 +46,7 @@
     <Compile Include="Logic\Services\MedicineService\MedicineService.cs" />
     <Compile Include="Logic\Services\LookupService\ILookupService.cs" />
     <Compile Include="Logic\Services\LookupService\LookupService.cs" />
+    <Compile Include="Logic\Translators\MedicineTranslator.cs" />
     <Compile Include="Logic\ViewModels\Medicine\MedicineAddNewViewModel.cs" />
     <Compile Include="Logic\ViewModels\Medicine\MedicineScheduleViewModel.cs" />
     <Compile Include="Logic\ViewModels\Medicine\MedicineHistoryViewModel.cs" />
@@ -224,7 +224,6 @@
     <Folder Include="Logic\Enum\" />
     <Folder Include="Logic\Models\Requests\" />
     <Folder Include="Logic\Models\Response\" />
-    <Folder Include="Logic\Translators\" />
     <Folder Include="Resources\Images\" />
   </ItemGroup>
   <ItemGroup>

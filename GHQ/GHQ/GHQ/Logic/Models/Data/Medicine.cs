@@ -84,6 +84,22 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => StartDate, ref _StartDate, value);
+                RaisePropertyChanged("HasStartDate");
+            }
+        }
+
+        public bool HasStartDate
+        {
+            get
+            {
+                if (StartDate == null || StartDate == DateTime.MinValue)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
         }
 
@@ -97,9 +113,23 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => EndDate, ref _EndDate, value);
+                RaisePropertyChanged("HasEndDate");
             }
         }
-
+        public bool HasEndDate
+        {
+            get
+            {
+                if (EndDate == null || EndDate == DateTime.MinValue)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
 
         private DateTime _NextDate;
         public DateTime NextDate
@@ -163,6 +193,21 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => VoiceNotePath, ref _VoiceNotePath, value);
+            }
+        }
+
+        public bool HasRecording
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(VoiceNotePath))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
         }
 

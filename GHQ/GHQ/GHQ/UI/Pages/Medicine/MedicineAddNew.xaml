@@ -42,16 +42,18 @@
 
 
               <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
-                                 Command="{Binding OnOpenGalleryCommand}"  LeftImage="checked_ico.png" RightImage="camera_ico.png"/>
+                                 Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
+
+              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
 
             </StackLayout>
 
             <StackLayout IsVisible="{Binding AddMode,Converter={StaticResource BooleanNegateConverter}}">
 
-              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" HeightRequest="100"/>
+              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}"/>
 
               <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="#27bdb8" ItemHeight="80"
-                                   Command="{Binding OnOpenGalleryCommand}"  LeftImage="checked_ico.png" RightImage="camera_ico.png"/>
+                                   Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
 
             </StackLayout>
 
@@ -107,9 +109,13 @@
                 <RowDefinition Height="50" />
               </Grid.RowDefinitions>
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0" Title="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0" IsVisible="{Binding Medicine.HasStartDate,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1" Title="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0" IsVisible="{Binding Medicine.HasStartDate}" Title="{Binding Medicine.StartDate,Mode=TwoWay}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="edit_start_end_dates_ico.png" />
+
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1" IsVisible="{Binding Medicine.HasEndDate,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
+
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  IsVisible="{Binding Medicine.HasEndDate}" Title="{Binding Medicine.EndDate,Mode=TwoWay}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="edit_start_end_dates_ico.png" />
 
             </Grid>
 
@@ -145,11 +151,40 @@
 
             <controls:TextEditorField  Title="{Binding Medicine.Note,Mode=TwoWay}" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true"/>
 
-            <controls:ButtonField IsVisible="{Binding IsRecording,Converter={StaticResource BooleanNegateConverter}}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
-                                  Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="mic_ico.png"/>
+            <StackLayout IsVisible="{Binding HasRecording,Converter={StaticResource BooleanNegateConverter}}">
+              <controls:ButtonField IsVisible="{Binding IsRecording,Converter={StaticResource BooleanNegateConverter}}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AddVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+                                    Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="plus_ico.png" RightImage="mic_ico.png"/>
 
-            <controls:ButtonField IsVisible="{Binding IsRecording}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_StopAndPlayVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
-                               Command="{Binding OnRecordVoiceNoteCommand}"  LeftImage="checked_ico.png" RightImage="mic_ico.png"/>
+              <controls:ButtonField IsVisible="{Binding IsRecording}" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_StopAndPlayVoiceNote}" TextColor="White" BGColor="#27bdb8" ItemHeight="50"
+                                 Command="{Binding OnRecordVoiceNoteCommand}" />
+            </StackLayout>
+
+            <StackLayout IsVisible="{Binding HasRecording}">
+
+              <Grid  BackgroundColor="#27bdb8" HeightRequest="70">
+
+
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0"  Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="edit_audio_message_bg.png"/>
+                <Label Grid.Column="1" Text="{i18n:Translate MedicineAddNew_AddAnotherVoiceNote}" HorizontalOptions="Center" Margin = "10,0,0,0" VerticalOptions="Center" TextColor= "White" />
+                <Image Grid.Column="2" Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="listen_ico.png">
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OnPlayVoiceNoteCommand}"/>
+                  </Image.GestureRecognizers>
+                </Image>
+                <Image Grid.Column="3" Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="edit_audio_ico.png">
+                  <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OnRecordVoiceNoteCommand}"/>
+                  </Image.GestureRecognizers>
+                </Image>
+              </Grid>
+
+            </StackLayout>
 
           </StackLayout>
 
@@ -165,8 +200,13 @@
               <ColumnDefinition Width="2*" />
               <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Text="{i18n:Translate MedicineAddNew_SaveAndAdd} " BackgroundColor="{StaticResource DarkBlueColor}" Command="{Binding OnSaveCommand}"></Button>
-            <Button Grid.Row="0" Grid.Column="1" Text="{i18n:Translate MedicineAddNew_Save}  " BackgroundColor="{StaticResource OrangeColor}"  Command="{Binding OnSaveCommand}"></Button>
+
+            <controls:ButtonField Grid.Row="0" Grid.Column="0" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_SaveAndAdd}" TextColor="White" BGColor="{StaticResource DarkBlueColor}" ItemHeight="50"
+                               Command="{Binding OnSaveAndAddCommand}" />
+
+            <controls:ButtonField Grid.Row="0" Grid.Column="1" IsEnabled="True" Title="{i18n:Translate MedicineAddNew_Save}" TextColor="White" BGColor="{StaticResource OrangeColor}" ItemHeight="50"
+                              Command="{Binding OnSaveCommand}" />
+
           </Grid>
 
         </Grid>

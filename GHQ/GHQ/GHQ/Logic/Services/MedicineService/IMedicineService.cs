@@ -1,4 +1,5 @@
 ﻿using Logic.Models.Data;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -6,10 +7,11 @@ namespace GHQ.Logic.Service.Lookup
 {
     public interface IMedicineService
     {
-        Task<List<Medicine>> GetHistory();
-
-        Task<List<Medicine>> GetSchedule();
-
-        Task<Medicine> AddMedicine(Medicine medicine);
+        Medicine SelectedMedicine { get; set; }
+        Task<Medicine> AddEditMedicine(Medicine medicine);
+        Task<List<Medicine>> GetMedicine(string medicineName, string doctorName, string diesesName, DateTime StartDate, DateTime EndDate);
+        Task<List<Medicine>> GetCurrentMedicine();
+        Task<List<Medicine>> GetAllMedicine();
+        Task<Medicine> MissedMedicine(int medicineId);
     }
 }
