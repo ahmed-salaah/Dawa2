@@ -60,15 +60,7 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
 
-        private bool _HasRecording;
-        public bool HasRecording
-        {
-            get { return _HasRecording; }
-            set
-            {
-                Set(() => HasRecording, ref _HasRecording, value);
-            }
-        }
+
 
         private bool _IsRecording;
         public bool IsRecording
@@ -118,14 +110,7 @@ namespace GHQ.Logic.ViewModels.Account
                 {
                     Medicine = medicineService.SelectedMedicine;
                     AddMode = false;
-                    if (string.IsNullOrEmpty(Medicine.VoiceNotePath))
-                    {
-                        HasRecording = false;
-                    }
-                    else
-                    {
-                        HasRecording = true;
-                    }
+
                 }
 
             }
@@ -206,15 +191,13 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 if (!IsRecording)
                 {
-                    HasRecording = false;
+                    Medicine.VoiceNotePath = "";
                     DependencyService.Get<IRecorderService>().Record();
                 }
                 else
                 {
                     byte[] file = await DependencyService.Get<IRecorderService>().Stop();
                     Medicine.VoiceNotePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".wav", file, "VoiceNotes");
-                    //DependencyService.Get<IRecorderService>().Play();
-                    HasRecording = true;
                 }
 
                 IsRecording = !IsRecording;
