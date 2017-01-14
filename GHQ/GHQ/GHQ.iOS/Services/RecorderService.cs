@@ -7,7 +7,7 @@ using AVFoundation;
 using Foundation;
 using System.Threading.Tasks;
 
-[assembly: Dependency(typeof(FileHelper))]
+[assembly: Dependency(typeof(RecorderService))]
 
 namespace GHQ.iOS.Services
 {
@@ -72,8 +72,6 @@ namespace GHQ.iOS.Services
             //Set Recorder to Prepare To Record
             recorder.PrepareToRecord();
 
-            //Set Recorder to Prepare To Record
-            recorder.PrepareToRecord();
 
             recorder.Record();
 
