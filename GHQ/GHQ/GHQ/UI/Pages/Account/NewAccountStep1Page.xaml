@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common" Title="{i18n:Translate PageHeader_NewAccount}" x:Class="GHQ.UI.Pages.Account.NewAccountStep1Page">
+<Base:BasePage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:Base="clr-namespace:GHQ.UI.Pages;assembly=GHQ"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" 
+		xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common" 
+		Title="{i18n:Translate PageHeader_NewAccount}"
+		x:Class="GHQ.UI.Pages.Account.NewAccountStep1Page" BackgroundColor ="#E2E3DE">
 	<RelativeLayout>
-		<Image Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
-			<Image.Source>
-				<OnPlatform x:TypeArguments="ImageSource" WinPhone="background.png" Android="background.png" iOS="background" />
-			</Image.Source>
-		</Image>
+
 		<Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
 			<ScrollView>
 				<Grid>
@@ -25,7 +27,7 @@
 							<ColumnDefinition Width="*" />
 						</Grid.ColumnDefinitions>
 						<Label Grid.Column="0" Text="{i18n:Translate signUp_uploadPhotos}" HorizontalOptions="Center" Margin = "10,0,0,0" VerticalOptions="Center" TextColor= "#317C76" />
-						<Image Grid.Column="1" HorizontalOptions="Center" Aspect="AspectFit" Margin = "0,0,0,20" VerticalOptions="Center" Source = "{Binding User.Image}">
+						<Image Grid.Column="1" HorizontalOptions="Center" Aspect="AspectFit" Margin = "0,20,0,20" VerticalOptions="Center" Source = "{Binding User.Image}">
 							<Image.Source>
 								<OnPlatform x:TypeArguments="ImageSource" WinPhone="logo.png" Android="login.png" iOS="profile_photo" />
 						</Image.Source>
@@ -64,7 +66,7 @@
 						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_middleName}"  Title = "{Binding User.MiddleName}"/>
 						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_lastName}" 	 Title = "{Binding User.LastName}"/>
 						<controls:InputField Grid.Row="3" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_age}"		 Title = "{Binding User.Age}"/>
-						<controls:BindablePicker Grid.Row="4" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate signUp_gender}" ItemsSource = "{Binding GenderList}" SelectedItem = "{Binding SelectedGender}"/>
+						<controls:PickerField Grid.Row="4" Margin="15,0,15,10"  Placeholder = "{i18n:Translate signUp_gender}" LookupValues = "{Binding GenderList}" SelectedLookupValue = "{Binding SelectedGender}"/>
 					</Grid>
 					<Grid Grid.Row="4">
 						<Grid.RowDefinitions>
@@ -79,7 +81,7 @@
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-						<Label Grid.Row="0" Margin="0,10,15,10" Text="{i18n:Translate signUp_eatingTitle}" TextColor= "#317C76" HorizontalOptions="End" />
+						<Label Grid.Row="0" Margin="0,10,15,10" Text="{i18n:Translate signUp_eatingTitle}" TextColor= "Black" HorizontalOptions="End" />
 						<controls:TimePickerButtonField Grid.Row = "1" Title = "{i18n:Translate SignUP_BreakFast}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding BreakFastTime}"/>
 						<controls:TimePickerButtonField Grid.Row = "2" Title = "{i18n:Translate SignUP_launch}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding LaunchTime}"/>
 						<controls:TimePickerButtonField Grid.Row = "3" Title = "{i18n:Translate SignUP_Dinner}"  Margin = "15,0,15,0" BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding DinnerTime}"/>

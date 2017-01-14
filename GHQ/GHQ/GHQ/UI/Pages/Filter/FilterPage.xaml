@@ -4,13 +4,9 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 		xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" 
 		xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common" 
-		Title="{i18n:Translate PageHeader_NewAccount}" x:Class="GHQ.UI.Pages.Filter.FilterPage">
+		Title="{i18n:Translate PageHeader_NewAccount}" x:Class="GHQ.UI.Pages.Filter.FilterPage" BackgroundColor ="#E2E3DE">
 	<RelativeLayout>
-		<Image Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
-			<Image.Source>
-				<OnPlatform x:TypeArguments="ImageSource" WinPhone="background.png" Android="background.png" iOS="background" />
-			</Image.Source>
-		</Image>
+
 		<Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
 			<ScrollView>
 				<Grid>
@@ -28,9 +24,9 @@
 							<RowDefinition Height="Auto" />
 
 						</Grid.RowDefinitions>
-						<controls:BindablePicker Grid.Row="0" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate Filter_MedicineName}"/>
-						<controls:BindablePicker Grid.Row="1" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate Filter_DoctorName}"/>
-						<controls:BindablePicker Grid.Row="2" Style="{StaticResource PickerStyle}" Title = "{i18n:Translate Filter_DeasesName}"/>
+						<controls:InputField Grid.Row="0" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_MedicineName}" />
+						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_DoctorName}" />
+						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_DeasesName}" />
 
 					</Grid>
 					<Grid Grid.Row="1">
