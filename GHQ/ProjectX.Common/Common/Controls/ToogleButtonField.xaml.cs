@@ -44,7 +44,28 @@ namespace Controls
         public bool IsToogled
         {
             get { return (bool)GetValue(IsToogledProperty); }
-            set { SetValue(IsToogledProperty, value); }
+            set
+            {
+                SetValue(IsToogledProperty, value);
+                //if (!IsToogled)
+                //{
+                //    mainGrid.BackgroundColor = ToogledBGColor;
+                //    if (ShowImageOnToogleOnly)
+                //    {
+                //        leftImage.IsVisible = true;
+                //        rightImage.IsVisible = true;
+                //    }
+                //}
+                //else
+                //{
+                //    if (ShowImageOnToogleOnly)
+                //    {
+                //        leftImage.IsVisible = false;
+                //        rightImage.IsVisible = false;
+                //    }
+                //    mainGrid.BackgroundColor = BGColor;
+                //}
+            }
         }
 
         #endregion

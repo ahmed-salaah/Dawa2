@@ -34,10 +34,10 @@
 
 
         <controls:ToogleButtonField Grid.Column="0" IsEnabled="True" Title="{i18n:Translate PageHeader_MedicineSchedule_AllMedicine}" TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}"
-                                    IsToogled="{Binding IsShowAllMedicineCurrentMode,Converter={StaticResource BooleanNegateConverter}}" ItemHeight="50" Command="{Binding OnAllMedicineCommand}"  LeftImage="" RightImage=""/>
+                                    IsToogled="{Binding IsAllModeSelected,Mode=TwoWay}" ItemHeight="50" Command="{Binding OnAllMedicineCommand}"  LeftImage="" RightImage=""/>
 
         <controls:ToogleButtonField Grid.Column="1" IsEnabled="True" Title="{i18n:Translate PageHeader_MedicineSchedule_CurrentMedicine}" TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}"
-                                    IsToogled="{Binding IsShowAllMedicineCurrentMode}" ItemHeight="50"  Command="{Binding OnIntializeCommand}"  LeftImage="" RightImage=""/>
+                                    IsToogled="{Binding IsCurrentModeSelected,Mode=TwoWay}" ItemHeight="50"  Command="{Binding OnIntializeCommand}"  LeftImage="" RightImage=""/>
 
       </Grid>
 

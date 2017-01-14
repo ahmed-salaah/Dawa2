@@ -51,13 +51,24 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
 
-        private bool _IsShowAllMedicineCurrentMode;
-        public bool IsShowAllMedicineCurrentMode
+        private bool _IsCurrentModeSelected;
+        public bool IsCurrentModeSelected
         {
-            get { return _IsShowAllMedicineCurrentMode; }
+            get { return _IsCurrentModeSelected; }
             set
             {
-                Set(() => IsShowAllMedicineCurrentMode, ref _IsShowAllMedicineCurrentMode, value);
+                Set(() => IsCurrentModeSelected, ref _IsCurrentModeSelected, value);
+
+            }
+        }
+
+        private bool _IsAllModeSelected;
+        public bool IsAllModeSelected
+        {
+            get { return _IsAllModeSelected; }
+            set
+            {
+                Set(() => IsAllModeSelected, ref _IsAllModeSelected, value);
             }
         }
 
@@ -89,7 +100,8 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 IsLoading = true;
                 SelectedMedicine = null;
-                IsShowAllMedicineCurrentMode = true;
+                IsCurrentModeSelected = true;
+                IsAllModeSelected = false;
                 MedicineList = new ObservableCollection<Medicine>(await medicineService.GetCurrentMedicine());
             }
             catch (System.Exception ex)
@@ -123,6 +135,8 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 IsLoading = true;
                 MedicineList = new ObservableCollection<Medicine>(await medicineService.GetAllMedicine());
+                IsAllModeSelected = true;
+                IsCurrentModeSelected = false;
             }
             catch (System.Exception ex)
             {

@@ -286,9 +286,15 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg3.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg3.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash_bg1.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="facebookios">
