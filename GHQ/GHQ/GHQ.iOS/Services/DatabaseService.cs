@@ -42,6 +42,6 @@ namespace GHQ.ios.Services
         }
 
 
-      
+
     }
 }

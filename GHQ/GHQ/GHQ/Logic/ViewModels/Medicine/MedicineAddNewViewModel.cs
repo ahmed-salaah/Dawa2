@@ -137,7 +137,7 @@ namespace GHQ.Logic.ViewModels.Account
                     IsLoading = true;
                     var imageBytes = mediaFile.data;
                     Medicine.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-                    Medicine.ImagePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name, imageBytes, "Medicine");
+                    Medicine.ImagePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".jpg", imageBytes, "Medicine");
                 }
 
             }
@@ -182,7 +182,7 @@ namespace GHQ.Logic.ViewModels.Account
                 else
                 {
                     byte[] file = await DependencyService.Get<IRecorderService>().Stop();
-                    Medicine.VoiceNotePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name, file, "VoiceNotes");
+                    Medicine.VoiceNotePath = await DependencyService.Get<IFileHelper>().SaveByteArrayToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".wav", file, "VoiceNotes");
                     DependencyService.Get<IRecorderService>().Play();
                 }
 
