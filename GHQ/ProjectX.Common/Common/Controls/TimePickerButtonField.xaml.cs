@@ -14,7 +14,7 @@ namespace Controls
         #region ItemHeight p
 
 
-        public static readonly BindableProperty ItemHeightProperty = BindableProperty.Create<DatePickerButtonField, int>(p => p.ItemHeight, 50);
+        public static readonly BindableProperty ItemHeightProperty = BindableProperty.Create<TimePickerButtonField, int>(p => p.ItemHeight, 50);
         public int ItemHeight
         {
             get { return (int)GetValue(ItemHeightProperty); }
@@ -26,7 +26,7 @@ namespace Controls
         #region IsEnabled p
 
 
-        public static readonly BindableProperty EnabledProperty = BindableProperty.Create<DatePickerButtonField, bool>(p => p.IsEnabled, true);
+        public static readonly BindableProperty EnabledProperty = BindableProperty.Create<TimePickerButtonField, bool>(p => p.IsEnabled, true);
         public bool IsEnabled
         {
             get { return (bool)GetValue(EnabledProperty); }
@@ -38,7 +38,7 @@ namespace Controls
         #region Title p
 
 
-        public static readonly BindableProperty TitleProperty = BindableProperty.Create<DatePickerButtonField, string>(p => p.Title, default(string));
+        public static readonly BindableProperty TitleProperty = BindableProperty.Create<TimePickerButtonField, string>(p => p.Title, default(string));
         public string Title
         {
             get { return (string)GetValue(TitleProperty); }
@@ -49,18 +49,18 @@ namespace Controls
 
         #region Date p
 
-        public static readonly BindableProperty DateProperty = BindableProperty.Create<DatePickerButtonField, DateTime>(p => p.Date, default(DateTime));
-        public DateTime Date
+        public static readonly BindableProperty TimeProperty = BindableProperty.Create<TimePickerButtonField, TimeSpan>(p => p.Time, default(TimeSpan));
+        public TimeSpan Time
         {
-            get { return (DateTime)GetValue(DateProperty); }
-            set { SetValue(DateProperty, value); }
+            get { return (TimeSpan)GetValue(TimeProperty); }
+            set { SetValue(TimeProperty, value); }
         }
 
         #endregion
 
         #region TextColor p
 
-        public static readonly BindableProperty TextColorProperty = BindableProperty.Create<DatePickerButtonField, Xamarin.Forms.Color>(p => p.TextColor, Color.White);
+        public static readonly BindableProperty TextColorProperty = BindableProperty.Create<TimePickerButtonField, Xamarin.Forms.Color>(p => p.TextColor, Color.White);
         public Xamarin.Forms.Color TextColor
         {
             get { return (Xamarin.Forms.Color)GetValue(TextColorProperty); }
@@ -71,7 +71,7 @@ namespace Controls
 
         #region BGColor p
 
-        public static readonly BindableProperty BGColorProperty = BindableProperty.Create<DatePickerButtonField, Xamarin.Forms.Color>(p => p.BGColor, Color.Blue);
+        public static readonly BindableProperty BGColorProperty = BindableProperty.Create<TimePickerButtonField, Xamarin.Forms.Color>(p => p.BGColor, Color.Blue);
 
         public Xamarin.Forms.Color BGColor
         {
@@ -84,7 +84,7 @@ namespace Controls
         #region RightImage p
 
 
-        public static readonly BindableProperty RightImageProperty = BindableProperty.Create<DatePickerButtonField, ImageSource>(p => p.RightImage, null);
+        public static readonly BindableProperty RightImageProperty = BindableProperty.Create<TimePickerButtonField, ImageSource>(p => p.RightImage, null);
         public ImageSource RightImage
         {
             get { return (ImageSource)GetValue(RightImageProperty); }
@@ -96,7 +96,7 @@ namespace Controls
         #region LeftImage p
 
 
-        public static readonly BindableProperty LeftImageProperty = BindableProperty.Create<DatePickerButtonField, ImageSource>(p => p.LeftImage, null);
+        public static readonly BindableProperty LeftImageProperty = BindableProperty.Create<TimePickerButtonField, ImageSource>(p => p.LeftImage, null);
 
         public ImageSource LeftImage
         {
@@ -104,13 +104,11 @@ namespace Controls
             set { SetValue(LeftImageProperty, value); }
         }
 
-
-        //void SetLeftImage
         #endregion
 
         #region Command
 
-        public static readonly BindableProperty CommandProperty = BindableProperty.Create<DatePickerButtonField, ICommand>(p => p.Command, default(ICommand));
+        public static readonly BindableProperty CommandProperty = BindableProperty.Create<TimePickerButtonField, ICommand>(p => p.Command, default(ICommand));
 
         public ICommand Command
         {
@@ -122,7 +120,7 @@ namespace Controls
 
         #region Command Parameter
 
-        public static readonly BindableProperty CommandParamterProperty = BindableProperty.Create<DatePickerButtonField, object>(p => p.CommandParamter, default(object));
+        public static readonly BindableProperty CommandParamterProperty = BindableProperty.Create<TimePickerButtonField, object>(p => p.CommandParamter, default(object));
 
         public object CommandParamter
         {
