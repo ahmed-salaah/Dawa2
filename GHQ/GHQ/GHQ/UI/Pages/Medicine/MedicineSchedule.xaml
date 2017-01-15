@@ -3,18 +3,9 @@
                xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
                xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
                Title="{i18n:Translate PageHeader_MedicineSchedule}"
-               x:Class="GHQ.UI.Pages.Medicine.MedicineSchedule">
-  <RelativeLayout>
-    <Image  Opacity="0.3" Aspect="AspectFill"
-                RelativeLayout.WidthConstraint=
-                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                RelativeLayout.HeightConstraint=
-                  "{ConstraintExpression Type=RelativeToParent, Property=Height}">
-      <Image.Source>
-        <OnPlatform x:TypeArguments="ImageSource" WinPhone="background.png" Android="background.png" iOS="background"/>
-      </Image.Source>
-    </Image>
+               x:Class="GHQ.UI.Pages.Medicine.MedicineSchedule" BackgroundColor ="{StaticResource DefaultBackgroundColor}">
 
+  <RelativeLayout>
     <Grid  Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint=
               "{ConstraintExpression Type=RelativeToParent, Property=Width}"
             RelativeLayout.HeightConstraint=
@@ -36,7 +27,7 @@
 
         <ActivityIndicator Grid.Row="0" IsRunning="{Binding IsLoading}" Style="{StaticResource ActivityIndicatorStyle}"/>
 
-        <ListView Grid.Row="1" ItemsSource="{Binding MedicineList}" ItemTemplate="{StaticResource MedicinScheduleTemplate}"   SelectedItem = "{Binding SelectedMedicine}" RowHeight="160"   BackgroundColor="White">
+        <ListView Grid.Row="1" ItemsSource="{Binding MedicineList}" ItemTemplate="{StaticResource MedicinScheduleTemplate}"   SelectedItem = "{Binding SelectedMedicine}" RowHeight="160"   BackgroundColor="{StaticResource DefaultBackgroundColor}">
 
         </ListView>
 

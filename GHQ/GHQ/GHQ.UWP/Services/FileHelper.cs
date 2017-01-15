@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Windows.Storage;
 using Xamarin.Forms;
 using System;
+using Windows.Storage.Streams;
 
 [assembly: Dependency(typeof(FileHelper))]
 
@@ -12,6 +13,28 @@ namespace GHQ.UWP.Services
 {
     public class FileHelper : IFileHelper
     {
+        public static async Task<byte[]> GetBytesAsync(StorageFile file)
+        {
+            byte[] fileBytes = null;
+            if (file == null) return null;
+            using (var stream = await file.OpenReadAsync())
+            {
+                fileBytes = new byte[stream.Size];
+                using (var reader = new DataReader(stream))
+                {
+                    await reader.LoadAsync((uint)stream.Size);
+                    reader.ReadBytes(fileBytes);
+                }
+            }
+            return fileBytes;
+        }
+
+        public async Task<byte[]> GetByteArray(string filePath)
+        {
+            var file = await StorageFile.GetFileFromPathAsync(filePath);
+            return await GetBytesAsync(file);
+        }
+
         public string GetLocalFilePath(string filename)
         {
             return Path.Combine(ApplicationData.Current.LocalFolder.Path, filename);

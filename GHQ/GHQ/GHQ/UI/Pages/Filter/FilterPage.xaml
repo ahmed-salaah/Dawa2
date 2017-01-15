@@ -4,7 +4,7 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 		xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" 
 		xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common" 
-		Title="{i18n:Translate PageHeader_NewAccount}" x:Class="GHQ.UI.Pages.Filter.FilterPage" BackgroundColor ="#E2E3DE">
+		Title="{i18n:Translate PageHeader_NewAccount}" x:Class="GHQ.UI.Pages.Filter.FilterPage" BackgroundColor ="{StaticResource DefaultBackgroundColor}">
 	<RelativeLayout>
 
 		<Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">

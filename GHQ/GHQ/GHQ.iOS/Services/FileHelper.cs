@@ -13,6 +13,11 @@ namespace GHQ.iOS.Services
 {
     public class FileHelper : IFileHelper
     {
+        public Task<byte[]> GetByteArray(string filePath)
+        {
+            throw new NotImplementedException();
+        }
+
         public string GetLocalFilePath(string filename)
         {
             string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);

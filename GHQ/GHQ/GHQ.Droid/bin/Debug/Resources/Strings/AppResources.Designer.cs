@@ -288,6 +288,24 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إختر اليوم.
+        /// </summary>
+        internal static string MedicineAddNew_ChooseDate {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_ChooseDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إختر التوقيت.
+        /// </summary>
+        internal static string MedicineAddNew_ChooseTime {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_ChooseTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تذكير يومي.
         /// </summary>
         internal static string MedicineAddNew_DailyReminder {

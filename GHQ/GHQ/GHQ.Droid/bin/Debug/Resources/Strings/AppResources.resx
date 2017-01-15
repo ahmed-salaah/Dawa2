@@ -263,6 +263,14 @@
   <data name="MedicineAddNew_Header_MedicineReminder" xml:space="preserve">
     <value>حدد موعد التذكر بالدواء</value>
   </data>
+  <data name="MedicineAddNew_ChooseDate" xml:space="preserve">
+    <value>إختر اليوم</value>
+  </data>
+
+  <data name="MedicineAddNew_ChooseTime" xml:space="preserve">
+   <value>إختر التوقيت</value>
+  </data>
+
   <data name="MedicineAddNew_Header_OtherInfo" xml:space="preserve">
     <value>بيانات أخرى</value>
   </data>

@@ -12,6 +12,11 @@ namespace GHQ.Droid.Services
 {
     public class FileHelper : IFileHelper
     {
+        public async Task<byte[]> GetByteArray(string filePath)
+        {
+            return System.IO.File.ReadAllBytes(filePath);
+        }
+
         public string GetLocalFilePath(string filename)
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
