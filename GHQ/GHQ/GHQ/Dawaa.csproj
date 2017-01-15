@@ -102,6 +102,7 @@
     <Compile Include="Logic\Models\Data\LoginUser.cs" />
     <Compile Include="Logic\Models\Data\NewUSer.cs" />
     <Compile Include="Common\FacebookLoginButton.cs" />
+    <Compile Include="Logic\ViewModels\Medicine\FilterMedicineViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
