@@ -71,35 +71,10 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineReminder} " Style="{StaticResource LabelHeaderEntryStyle}"/>
 
-            <Grid   >
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-              </Grid.ColumnDefinitions>
-              <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-              </Grid.RowDefinitions> 
+            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White"
+                                        BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
 
-              <controls:ToogleButtonField  Grid.Row="0" Grid.Column="0"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_WeeklyReminder}"
-                                     TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="{Binding Reminder_Weekly,Mode=TwoWay}" ItemHeight="50" RightImage="checked_ico"
-                                 Command="{Binding OnReminderChangedCommand}" CommandParamter="2" ShowImageOnToogleOnly="true"/>
-
-              <controls:ToogleButtonField  Grid.Row="0" Grid.Column="1"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_MonthlyReminder}"
-                                   TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="{Binding Reminder_Monthly,Mode=TwoWay}" ItemHeight="50" RightImage="checked_ico"
-                                Command="{Binding OnReminderChangedCommand}" CommandParamter="3"  ShowImageOnToogleOnly="true" />
-
-              <controls:ToogleButtonField  Grid.Row="1" Grid.Column="0"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_EventReminder}"
-                                    TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="{Binding Reminder_Event,Mode=TwoWay}" ItemHeight="50" RightImage="checked_ico"
-                                 Command="{Binding OnReminderChangedCommand}" CommandParamter="4"  ShowImageOnToogleOnly="true" />
-
-              <controls:ToogleButtonField  Grid.Row="1" Grid.Column="1"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_DailyReminder}"
-                                    TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="{Binding Reminder_Daily,Mode=TwoWay}" ItemHeight="50" RightImage="checked_ico"
-                                 Command="{Binding OnReminderChangedCommand}" CommandParamter="1"  ShowImageOnToogleOnly="true" />
-
-            </Grid>
-
-            <controls:BindablePicker />
+            <!--<controls:BindablePicker />-->
 
           </StackLayout>
 
@@ -210,7 +185,7 @@
           </Grid>
 
           <Grid Grid.Row="10"  HeightRequest="50" Margin="0,0,0,20">
-         
+
             <Grid.ColumnDefinitions>
               <ColumnDefinition Width="2*" />
               <ColumnDefinition Width="*" />

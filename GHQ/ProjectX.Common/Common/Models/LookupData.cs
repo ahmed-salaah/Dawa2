@@ -1,5 +1,4 @@
-﻿using Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Models
 {
@@ -56,7 +55,7 @@ namespace Models
                 Set(() => LookupValueParentID, ref _LookupValueParentID, value);
             }
         }
-        
+
 
         public override string ToString()
         {

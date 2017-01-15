@@ -52,7 +52,4 @@ C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\obj\Debug\ProjectX.Common.
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\obj\Debug\ProjectX.Common.dll
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\obj\Debug\ProjectX.Common.pdb
 C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\obj\Debug\ProjectX.Common.csprojResolveAssemblyReference.cache
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\obj\Debug\ProjectX.Common.dll.mdb
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\bin\Debug\ProjectX.Common.dll.mdb
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\obj\Debug\ProjectX.Common.dll.mdb
-C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\bin\Debug\ProjectX.Common.dll.mdb
+C:\Users\mosta\Source\Repos\Dawa2\GHQ\ProjectX.Common\obj\Debug\ProjectX.Common.Common.Controls.RadioButtonGroup.xaml.g.cs
