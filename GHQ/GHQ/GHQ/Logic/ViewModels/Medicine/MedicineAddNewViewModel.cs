@@ -98,7 +98,7 @@ namespace GHQ.Logic.ViewModels.Account
         void LoadReminderOptions()
         {
             ReminderOptions = new ObservableCollection<RadioButtonGroupItem>();
-            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 1, Value = AppResources.MedicineAddNew_DailyReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 1, Value = AppResources.MedicineAddNew_DailyReminder, IsSelected = true });
             ReminderOptions.Add(new RadioButtonGroupItem() { Id = 2, Value = AppResources.MedicineAddNew_WeeklyReminder });
             ReminderOptions.Add(new RadioButtonGroupItem() { Id = 3, Value = AppResources.MedicineAddNew_MonthlyReminder });
             ReminderOptions.Add(new RadioButtonGroupItem() { Id = 4, Value = AppResources.MedicineAddNew_EventReminder });

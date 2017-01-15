@@ -27,6 +27,7 @@ namespace Controls
         void DrawItems()
         {
             mainGrid.Children.Clear();
+            mainGrid.ColumnSpacing = ColumnSpacing;
             for (int i = 0; i < Items.Count; i++)
             {
                 var column = i % 2;
@@ -44,7 +45,8 @@ namespace Controls
                 t.Command = OnItemClickedCommand;
                 t.CommandParamter = i;
                 t.ShowImageOnToogleOnly = true;
-                mainGrid.Children.Add(t, row, column);
+                if (!string.IsNullOrEmpty(t.Title))
+                    mainGrid.Children.Add(t, row, column);
             }
         }
 
@@ -60,7 +62,7 @@ namespace Controls
 
         #endregion
 
-        #region Items p
+        #region SelectedItem p
 
 
         public static readonly BindableProperty SelectedItemProperty = BindableProperty.Create<RadioButtonGroup, RadioButtonGroupItem>(p => p.SelectedItem, null);
@@ -75,11 +77,23 @@ namespace Controls
         #region Height p
 
 
-        public static readonly BindableProperty ItemHeightProperty = BindableProperty.Create<ToogleButtonField, int>(p => p.ItemHeight, 50);
+        public static readonly BindableProperty ItemHeightProperty = BindableProperty.Create<RadioButtonGroup, int>(p => p.ItemHeight, 50);
         public int ItemHeight
         {
             get { return (int)GetValue(ItemHeightProperty); }
             set { SetValue(ItemHeightProperty, value); }
+        }
+
+        #endregion
+
+        #region ColumnSpacing p
+
+
+        public static readonly BindableProperty ColumnSpacingProperty = BindableProperty.Create<RadioButtonGroup, int>(p => p.ColumnSpacing, 0);
+        public int ColumnSpacing
+        {
+            get { return (int)GetValue(ColumnSpacingProperty); }
+            set { SetValue(ColumnSpacingProperty, value); }
         }
 
         #endregion
@@ -146,7 +160,7 @@ namespace Controls
         #region RightImage p
 
 
-        public static readonly BindableProperty RightImageProperty = BindableProperty.Create<ToogleButtonField, ImageSource>(p => p.RightImage, null);
+        public static readonly BindableProperty RightImageProperty = BindableProperty.Create<RadioButtonGroup, ImageSource>(p => p.RightImage, null);
         public ImageSource RightImage
         {
             get { return (ImageSource)GetValue(RightImageProperty); }
@@ -158,7 +172,7 @@ namespace Controls
         #region LeftImage p
 
 
-        public static readonly BindableProperty LeftImageProperty = BindableProperty.Create<ToogleButtonField, ImageSource>(p => p.LeftImage, null);
+        public static readonly BindableProperty LeftImageProperty = BindableProperty.Create<RadioButtonGroup, ImageSource>(p => p.LeftImage, null);
 
         public ImageSource LeftImage
         {

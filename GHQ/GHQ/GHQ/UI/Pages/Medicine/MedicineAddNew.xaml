@@ -71,7 +71,7 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineReminder} " Style="{StaticResource LabelHeaderEntryStyle}"/>
 
-            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White"
+            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White" ColumnSpacing="5"
                                         BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
 
             <!--<controls:BindablePicker />-->

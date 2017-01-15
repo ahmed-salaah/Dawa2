@@ -21,26 +21,12 @@
               "{ConstraintExpression Type=RelativeToParent, Property=Height}">
 
       <Grid.RowDefinitions>
-        <RowDefinition Height="50" />
+        <RowDefinition Height="Auto" />
         <RowDefinition Height="*" />
       </Grid.RowDefinitions>
 
-      <Grid ColumnSpacing="0">
-
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*"></ColumnDefinition>
-          <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-
-        <controls:ToogleButtonField Grid.Column="0" IsEnabled="True" Title="{i18n:Translate PageHeader_MedicineSchedule_AllMedicine}" TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}"
-                                    IsToogled="{Binding IsAllModeSelected,Mode=TwoWay}" ItemHeight="50" Command="{Binding OnAllMedicineCommand}"  LeftImage="" RightImage=""/>
-
-        <controls:ToogleButtonField Grid.Column="1" IsEnabled="True" Title="{i18n:Translate PageHeader_MedicineSchedule_CurrentMedicine}" TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}"
-                                    IsToogled="{Binding IsCurrentModeSelected,Mode=TwoWay}" ItemHeight="50"  Command="{Binding OnIntializeCommand}"  LeftImage="" RightImage=""/>
-
-      </Grid>
-
+      <controls:RadioButtonGroup  Items="{Binding ModeOptions}" SelectedItem="{Binding SelectedModeOption,Mode=TwoWay}"  ItemHeight="50" TextColor="White" ColumnSpacing="0"
+                                    BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
       <Grid  Grid.Row="1" Style="{StaticResource GridContentStyle}">
 
         <Grid.RowDefinitions>

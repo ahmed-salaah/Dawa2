@@ -6,6 +6,9 @@
              x:Name="ParentView">
 
   <Grid x:Name="mainGrid">
- 
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"></ColumnDefinition>
+      <ColumnDefinition Width="*"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
   </Grid>
 </ContentView>

@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
 using GHQ.Logic.Service.Lookup;
+using GHQ.Resources.Strings;
 using GHQ.UI.Pages.Medicine;
 using Logic.Models.Data;
 using Models;
@@ -51,30 +52,67 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
 
-        private bool _IsCurrentModeSelected;
-        public bool IsCurrentModeSelected
+        //private bool _IsCurrentModeSelected;
+        //public bool IsCurrentModeSelected
+        //{
+        //    get { return _IsCurrentModeSelected; }
+        //    set
+        //    {
+        //        Set(() => IsCurrentModeSelected, ref _IsCurrentModeSelected, value);
+
+        //    }
+        //}
+
+        //private bool _IsAllModeSelected;
+        //public bool IsAllModeSelected
+        //{
+        //    get { return _IsAllModeSelected; }
+        //    set
+        //    {
+        //        Set(() => IsAllModeSelected, ref _IsAllModeSelected, value);
+        //    }
+        //}
+
+        private ObservableCollection<RadioButtonGroupItem> _ModeOptions;
+        public ObservableCollection<RadioButtonGroupItem> ModeOptions
         {
-            get { return _IsCurrentModeSelected; }
+            get { return _ModeOptions; }
             set
             {
-                Set(() => IsCurrentModeSelected, ref _IsCurrentModeSelected, value);
-
+                Set(() => ModeOptions, ref _ModeOptions, value);
             }
         }
 
-        private bool _IsAllModeSelected;
-        public bool IsAllModeSelected
+        private RadioButtonGroupItem _SelectedModeOption;
+        public RadioButtonGroupItem SelectedModeOption
         {
-            get { return _IsAllModeSelected; }
+            get { return _SelectedModeOption; }
             set
             {
-                Set(() => IsAllModeSelected, ref _IsAllModeSelected, value);
+                Set(() => SelectedModeOption, ref _SelectedModeOption, value);
+                if (value != null && value.Id == 2)
+                {
+                    Intialize();
+                }
+                else
+                {
+                    AllMedicine();
+                }
             }
         }
 
         #endregion
 
         #region Private Methods
+
+        void LoadModeOptions()
+        {
+            ModeOptions = new ObservableCollection<RadioButtonGroupItem>();
+            ModeOptions.Add(new RadioButtonGroupItem() { Id = 1, Value = AppResources.PageHeader_MedicineSchedule_AllMedicine });
+            ModeOptions.Add(new RadioButtonGroupItem() { Id = 0, Value = "" });
+            ModeOptions.Add(new RadioButtonGroupItem() { Id = 2, Value = AppResources.PageHeader_MedicineSchedule_CurrentMedicine, IsSelected = true });
+
+        }
 
         #endregion
 
@@ -100,8 +138,7 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 IsLoading = true;
                 SelectedMedicine = null;
-                IsCurrentModeSelected = true;
-                IsAllModeSelected = false;
+                LoadModeOptions();
                 MedicineList = new ObservableCollection<Medicine>(await medicineService.GetCurrentMedicine());
             }
             catch (System.Exception ex)
@@ -135,8 +172,6 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 IsLoading = true;
                 MedicineList = new ObservableCollection<Medicine>(await medicineService.GetAllMedicine());
-                IsAllModeSelected = true;
-                IsCurrentModeSelected = false;
             }
             catch (System.Exception ex)
             {
