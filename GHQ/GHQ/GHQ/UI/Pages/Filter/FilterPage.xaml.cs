@@ -5,17 +5,17 @@ namespace GHQ.UI.Pages.Filter
 {
     public partial class FilterPage : BasePage
     {
-        //readonly NewAccountViewModel AccountVM = Locator.Default.NewAccountViewModel;
+		readonly FilterMedicineViewModel FilterVM = Locator.Default.FilterMedicineViewModel;
         public FilterPage()
         {
             InitializeComponent();
-            //BindingContext = AccountVM;
+            BindingContext = FilterVM;
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            //AccountVM.OnIntializeCommand.Execute(null);
+			FilterVM.OnIntializeCommand.Execute(null);
         }
     }
 }

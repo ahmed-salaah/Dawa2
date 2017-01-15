@@ -54,7 +54,7 @@ namespace GHQ.Logic
             SimpleIoc.Default.Register<MedicineHistoryViewModel>();
             SimpleIoc.Default.Register<MedicineScheduleViewModel>();
             SimpleIoc.Default.Register<MedicineAddNewViewModel>();
-
+			SimpleIoc.Default.Register<FilterMedicineViewModel>();
 
         }
 
@@ -173,13 +173,19 @@ namespace GHQ.Logic
             }
         }
 
+		public FilterMedicineViewModel FilterMedicineViewModel
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<FilterMedicineViewModel>();
+			}
 
+		}
+		#endregion
 
-        #endregion
+			#region ContactUs
 
-        #region ContactUs
-
-        public ContactUsViewModel ContactUsViewModel
+		public ContactUsViewModel ContactUsViewModel
         {
             get
             {
