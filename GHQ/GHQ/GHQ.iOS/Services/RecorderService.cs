@@ -84,37 +84,26 @@ namespace GHQ.iOS.Services
 
         public void Play()
         {
+			if (!EffectsOn) return;
 
-            PlaySound(fileName);
-        }
+			// Any existing sound effect?
+			if (soundEffect != null)
+			{
+				//Stop and dispose of any sound effect
+				soundEffect.Stop();
+				soundEffect.Dispose();
+			}
 
-        public void PlaySound(string filename)
-        {
-            NSUrl songURL;
-
-            // Music enabled?
-            if (!EffectsOn) return;
-
-            // Any existing sound effect?
-            if (soundEffect != null)
-            {
-                //Stop and dispose of any sound effect
-                soundEffect.Stop();
-                soundEffect.Dispose();
-            }
-
-            // Initialize background music
-            songURL = new NSUrl("Sounds/" + filename);
-            NSError err;
-            soundEffect = new AVAudioPlayer(songURL, "wav", out err);
-            soundEffect.Volume = EffectsVolume;
-            soundEffect.FinishedPlaying += delegate
-            {
-                soundEffect = null;
-            };
-            soundEffect.NumberOfLoops = 0;
-            soundEffect.Play();
-
+			NSError err;
+			soundEffect = new AVAudioPlayer(url, "wav", out err);
+			soundEffect.Volume = EffectsVolume;
+			soundEffect.FinishedPlaying += delegate
+			{
+				soundEffect = null;
+			};
+			soundEffect.NumberOfLoops = 0;
+			soundEffect.Play();
+            
         }
 
 

@@ -109,8 +109,8 @@ namespace GHQ.iOS.Services
             imagePicker.MediaTypes = UIImagePickerController.AvailableMediaTypes(UIImagePickerControllerSourceType.PhotoLibrary);
             imagePicker.FinishedPickingMedia += Handle_FinishedPickingMedia;
             imagePicker.Canceled += Handle_Canceled;
-            imagePicker.NavigationBar.TintColor = UIColor.White;
-            imagePicker.NavigationBar.TitleTextAttributes = new UIStringAttributes { ForegroundColor = UIColor.White };
+            //imagePicker.NavigationBar.TintColor = UIColor.White;
+            //imagePicker.NavigationBar.TitleTextAttributes = new UIStringAttributes { ForegroundColor = UIColor.White };
             viewController.PresentViewController(imagePicker, true, () => { Console.WriteLine("Complete"); });
             var ntcs = new TaskCompletionSource<MediaFile>();
             if (Interlocked.CompareExchange(ref _completionSource, ntcs, null) != null)
