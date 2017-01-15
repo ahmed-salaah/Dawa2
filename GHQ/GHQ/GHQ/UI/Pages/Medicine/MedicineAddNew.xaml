@@ -3,16 +3,9 @@
                xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ"
                xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
                Title="{i18n:Translate PageHeader_AddNewMedicine}"
-               x:Class="GHQ.UI.Pages.Medicine.MedicineAddNew">
+               x:Class="GHQ.UI.Pages.Medicine.MedicineAddNew" BackgroundColor ="{StaticResource DefaultBackgroundColor}">
 
   <RelativeLayout>
-
-    <Image Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
-      <Image.Source>
-        <OnPlatform x:TypeArguments="ImageSource" WinPhone="background.png" Android="background.png" iOS="background" />
-      </Image.Source>
-    </Image>
-
     <Grid Style="{StaticResource MainGridStyle}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
       <ScrollView>
         <Grid Style="{StaticResource GridContentStyle}">
@@ -71,35 +64,25 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineReminder} " Style="{StaticResource LabelHeaderEntryStyle}"/>
 
-            <Grid   >
+            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding Medicine.SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White" ColumnSpacing="5"
+                                        BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
+
+
+
+            <Grid>
               <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
-              <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-              </Grid.RowDefinitions> 
+              <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
-              <controls:ToogleButtonField  Grid.Row="0" Grid.Column="0"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_WeeklyReminder}"
-                                     TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="{Binding Reminder_Weekly,Mode=TwoWay}" ItemHeight="50" RightImage="checked_ico"
-                                 Command="{Binding OnReminderChangedCommand}" CommandParamter="2" ShowImageOnToogleOnly="true"/>
+              <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay}" Title = "{Binding Medicine.Reminder.Time}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
-              <controls:ToogleButtonField  Grid.Row="0" Grid.Column="1"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_MonthlyReminder}"
-                                   TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="{Binding Reminder_Monthly,Mode=TwoWay}" ItemHeight="50" RightImage="checked_ico"
-                                Command="{Binding OnReminderChangedCommand}" CommandParamter="3"  ShowImageOnToogleOnly="true" />
+              <controls:DatePickerButtonField Grid.Column="1" IsVisible="{Binding Medicine.Reminder.HastDate,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
 
-              <controls:ToogleButtonField  Grid.Row="1" Grid.Column="0"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_EventReminder}"
-                                    TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="{Binding Reminder_Event,Mode=TwoWay}" ItemHeight="50" RightImage="checked_ico"
-                                 Command="{Binding OnReminderChangedCommand}" CommandParamter="4"  ShowImageOnToogleOnly="true" />
-
-              <controls:ToogleButtonField  Grid.Row="1" Grid.Column="1"  IsEnabled="True" Title="{i18n:Translate MedicineAddNew_DailyReminder}"
-                                    TextColor="White" BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" IsToogled="{Binding Reminder_Daily,Mode=TwoWay}" ItemHeight="50" RightImage="checked_ico"
-                                 Command="{Binding OnReminderChangedCommand}" CommandParamter="1"  ShowImageOnToogleOnly="true" />
+              <controls:DatePickerButtonField Grid.Column="1" IsVisible="{Binding Medicine.Reminder.HastDate}" Title = "{Binding Medicine.Reminder.Date}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
 
             </Grid>
-
-            <controls:BindablePicker />
 
           </StackLayout>
 
@@ -114,7 +97,7 @@
 
             <Label Text=" {i18n:Translate MedicineAddNew_Header_ChooseReminderDate} " Style="{StaticResource LabelHeaderEntryStyle}"/>
 
-            <Grid   >
+            <Grid>
               <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
@@ -210,7 +193,7 @@
           </Grid>
 
           <Grid Grid.Row="10"  HeightRequest="50" Margin="0,0,0,20">
-         
+
             <Grid.ColumnDefinitions>
               <ColumnDefinition Width="2*" />
               <ColumnDefinition Width="*" />

@@ -57,24 +57,46 @@ namespace GHQ.Logic.Service.Lookup
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
             var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.Name == medicineName || m.DoctorName == doctorName || m.DiseaseName == diesesName || m.StartDate.Date == StartDate.Date || m.EndDate == EndDate);
-            var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
-            return translatedMedicineList;
+            if (medicineList != null && medicineList.Count() > 0)
+            {
+                var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
+                return translatedMedicineList;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public async Task<List<Medicine>> GetCurrentMedicine()
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
             var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.StartDate.Date <= DateTime.Now || m.EndDate >= DateTime.Now);
-            var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
-            return translatedMedicineList;
+            if (medicineList != null && medicineList.Count() > 0)
+            {
+                var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
+                return translatedMedicineList;
+            }
+            else
+            {
+                return null;
+            }
+
         }
 
         public async Task<List<Medicine>> GetAllMedicine()
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
             var medicineList = database.Table<Database.Entities.Medicine>().OrderByDescending(m => m.StartDate);
-            var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
-            return translatedMedicineList;
+            if (medicineList != null && medicineList.Count() > 0)
+            {
+                var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
+                return translatedMedicineList;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public async Task<Medicine> MissedMedicine(int medicineId)

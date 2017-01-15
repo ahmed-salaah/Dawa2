@@ -8,6 +8,10 @@ namespace Logic.Models.Data
 {
     public class Medicine : BaseModel
     {
+        public Medicine()
+        {
+            Reminder = new Reminder();
+        }
         private int _Id;
         public int Id
         {
@@ -222,6 +226,99 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => Note, ref _Note, value);
+            }
+        }
+
+        private Reminder _Reminder;
+        public Reminder Reminder
+        {
+            get
+            {
+                return _Reminder;
+            }
+            set
+            {
+                Set(() => Reminder, ref _Reminder, value);
+            }
+        }
+
+
+        public override IEnumerable<ValidatedModel> Validate()
+        {
+            List<ValidatedModel> errors = new List<ValidatedModel>();
+
+            return errors;
+        }
+    }
+
+    public class Reminder : BaseModel
+    {
+        private RadioButtonGroupItem _SelectedReminderOption;
+        public RadioButtonGroupItem SelectedReminderOption
+        {
+            get { return _SelectedReminderOption; }
+            set
+            {
+                Set(() => SelectedReminderOption, ref _SelectedReminderOption, value);
+            }
+        }
+
+
+        private DateTime _Date;
+        public DateTime Date
+        {
+            get
+            {
+                return _Date;
+            }
+            set
+            {
+                Set(() => Date, ref _Date, value);
+                RaisePropertyChanged("HastDate");
+            }
+        }
+
+        public bool HastDate
+        {
+            get
+            {
+                if (Date == null || Date == default(DateTime))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
+
+        private DateTime _Time;
+        public DateTime Time
+        {
+            get
+            {
+                return _Time;
+            }
+            set
+            {
+                Set(() => Time, ref _Time, value);
+                RaisePropertyChanged("HasTime");
+            }
+        }
+
+        public bool HasTime
+        {
+            get
+            {
+                if (Time == null || Time == default(DateTime))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
         }
 

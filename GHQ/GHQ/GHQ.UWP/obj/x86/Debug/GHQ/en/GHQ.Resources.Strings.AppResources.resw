@@ -120,6 +120,12 @@
   <data name="PageHeader_MedicineHistory" xml:space="preserve">
     <value>تاريخ الأدوية</value>
   </data>
+  <data name="MedicineAddNew_ChooseTime" xml:space="preserve">
+    <value>إختر التوقيت</value>
+  </data>
+  <data name="MedicineAddNew_ChooseDate" xml:space="preserve">
+    <value>إختر اليوم</value>
+  </data>
   <data name="Home_thirdButton" xml:space="preserve">
     <value>أرشيف الأدوية ومواعيدها و جرعاتها</value>
   </data>

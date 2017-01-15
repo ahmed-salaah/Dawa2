@@ -12,6 +12,7 @@ using Service.Media;
 using Service.Naviagtion;
 using Service.Recorder;
 using System;
+using System.Collections.ObjectModel;
 using System.IO;
 using Xamarin.Forms;
 
@@ -69,43 +70,14 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-        private bool _Reminder_Daily;
-        public bool Reminder_Daily
-        {
-            get { return _Reminder_Daily; }
-            set
-            {
-                Set(() => Reminder_Daily, ref _Reminder_Daily, value);
-            }
-        }
 
-        private bool _Reminder_Weekly;
-        public bool Reminder_Weekly
+        private ObservableCollection<RadioButtonGroupItem> _ReminderOptions;
+        public ObservableCollection<RadioButtonGroupItem> ReminderOptions
         {
-            get { return _Reminder_Weekly; }
+            get { return _ReminderOptions; }
             set
             {
-                Set(() => Reminder_Weekly, ref _Reminder_Weekly, value);
-            }
-        }
-
-        private bool _Reminder_Monthly;
-        public bool Reminder_Monthly
-        {
-            get { return _Reminder_Monthly; }
-            set
-            {
-                Set(() => Reminder_Monthly, ref _Reminder_Monthly, value);
-            }
-        }
-
-        private bool _Reminder_Event = true;
-        public bool Reminder_Event
-        {
-            get { return _Reminder_Event; }
-            set
-            {
-                Set(() => Reminder_Event, ref _Reminder_Event, value);
+                Set(() => ReminderOptions, ref _ReminderOptions, value);
             }
         }
 
@@ -113,6 +85,14 @@ namespace GHQ.Logic.ViewModels.Account
 
         #region Private Methods
 
+        void LoadReminderOptions()
+        {
+            ReminderOptions = new ObservableCollection<RadioButtonGroupItem>();
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 1, Value = AppResources.MedicineAddNew_DailyReminder, IsSelected = true });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 2, Value = AppResources.MedicineAddNew_WeeklyReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 3, Value = AppResources.MedicineAddNew_MonthlyReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 4, Value = AppResources.MedicineAddNew_EventReminder });
+        }
         #endregion
 
         #region Commands
@@ -136,6 +116,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 IsRecording = false;
+                LoadReminderOptions();
                 if (navigationService.IsExternalAppOpen)
                     return;
                 if (medicineService.SelectedMedicine == null)
@@ -187,6 +168,7 @@ namespace GHQ.Logic.ViewModels.Account
                     var imageBytes = mediaFile.data;
                     Medicine.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
                     Medicine.ImagePath = await DependencyService.Get<IFileHelper>().SaveImageToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".jpg", imageBytes, "Medicine");
+                    var byteArray = await DependencyService.Get<IFileHelper>().GetByteArray(Medicine.ImagePath);
                 }
 
             }
@@ -266,67 +248,6 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 DependencyService.Get<IRecorderService>().Play();
-            }
-            catch (System.Exception ex)
-            {
-            }
-            finally
-            {
-            }
-        }
-
-        #endregion
-
-        #region OnReminderChanged Command
-
-        private RelayCommand<string> _OnReminderChangedCommand;
-        public RelayCommand<string> OnReminderChangedCommand
-        {
-            get
-            {
-                if (_OnReminderChangedCommand == null)
-                {
-                    _OnReminderChangedCommand = new RelayCommand<string>(OnReminderChanged);
-                }
-                return _OnReminderChangedCommand;
-            }
-        }
-        private async void OnReminderChanged(string type)
-        {
-            try
-            {
-                switch (type)
-                {
-                    case "1":
-                        Reminder_Daily = true;
-                        Reminder_Weekly = false;
-                        Reminder_Monthly = false;
-                        Reminder_Event = false;
-                        break;
-
-                    case "2":
-                        Reminder_Daily = false;
-                        Reminder_Weekly = true;
-                        Reminder_Monthly = false;
-                        Reminder_Event = false;
-                        break;
-
-                    case "3":
-                        Reminder_Daily = false;
-                        Reminder_Weekly = false;
-                        Reminder_Monthly = true;
-                        Reminder_Event = false;
-                        break;
-
-                    case "4":
-                        Reminder_Daily = false;
-                        Reminder_Weekly = false;
-                        Reminder_Monthly = false;
-                        Reminder_Event = false;
-                        break;
-                    default:
-                        break;
-                }
             }
             catch (System.Exception ex)
             {

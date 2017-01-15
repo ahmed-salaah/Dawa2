@@ -1,1 +1,12 @@
-﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default" />
+﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ.iOS/Services/RecorderService.cs">
+    <Files>
+      <File FileName="GHQ/GHQ.iOS/Services/RecorderService.cs" Line="93" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

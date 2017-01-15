@@ -36,6 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Common\Controls\BindablePicker.cs" />
+    <Compile Include="Common\Controls\RadioButtonGroup.xaml.cs">
+      <DependentUpon>RadioButtonGroup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Common\Controls\ToogleButtonField.xaml.cs">
       <DependentUpon>ToogleButtonField.xaml</DependentUpon>
     </Compile>
@@ -68,6 +71,7 @@
     <Compile Include="Common\Exceptions\UnAuthorizedException.cs" />
     <Compile Include="Common\Models\BaseModel.cs" />
     <Compile Include="Common\Models\BaseViewModel.cs" />
+    <Compile Include="Common\Models\RadioButtonGroupItem.cs" />
     <Compile Include="Common\Models\LookupData.cs" />
     <Compile Include="Common\Models\MediaFile.cs" />
     <Compile Include="Common\Models\SideMenuItem.cs" />
@@ -222,6 +226,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Common\Controls\ToogleButtonField.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Controls\RadioButtonGroup.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -18,6 +18,11 @@ namespace GHQ.iOS.Services
         NSUrl url;
         NSDictionary settings;
         string path;
+        string fileName;
+        public bool EffectsOn { get; set; } = true;
+        public float EffectsVolume { get; set; } = 1.0f;
+        private AVAudioPlayer soundEffect;
+
         public void Record()
         {
             var audioSession = AVAudioSession.SharedInstance();
@@ -35,7 +40,7 @@ namespace GHQ.iOS.Services
             }
 
             //Declare string for application temp path and tack on the file extension
-            string fileName = string.Format("Myfile{0}.wav", DateTime.Now.ToString("yyyyMMddHHmmss"));
+            fileName = string.Format("Myfile{0}.wav", DateTime.Now.ToString("yyyyMMddHHmmss"));
             path = Path.Combine(Path.GetTempPath(), fileName);
 
             Console.WriteLine("Audio File Path: " + path);
@@ -79,10 +84,38 @@ namespace GHQ.iOS.Services
 
         public void Play()
         {
-			
-            //recorder.p();
+
+            PlaySound(fileName);
         }
 
+        public void PlaySound(string filename)
+        {
+            NSUrl songURL;
+
+            // Music enabled?
+            if (!EffectsOn) return;
+
+            // Any existing sound effect?
+            if (soundEffect != null)
+            {
+                //Stop and dispose of any sound effect
+                soundEffect.Stop();
+                soundEffect.Dispose();
+            }
+
+            // Initialize background music
+            songURL = new NSUrl("Sounds/" + filename);
+            NSError err;
+            soundEffect = new AVAudioPlayer(songURL, "wav", out err);
+            soundEffect.Volume = EffectsVolume;
+            soundEffect.FinishedPlaying += delegate
+            {
+                soundEffect = null;
+            };
+            soundEffect.NumberOfLoops = 0;
+            soundEffect.Play();
+
+        }
 
 
         public async Task<byte[]> Stop()
