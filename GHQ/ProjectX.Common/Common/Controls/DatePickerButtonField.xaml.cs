@@ -69,6 +69,18 @@ namespace Controls
 
         #endregion
 
+        #region TextAlignment p
+
+        public static readonly BindableProperty HorizontalTextAlignmentProperty = BindableProperty.Create<TimePickerButtonField, TextAlignment>(p => p.HorizontalTextAlignment, TextAlignment.Center);
+
+        public TextAlignment HorizontalTextAlignment
+        {
+            get { return (TextAlignment)GetValue(HorizontalTextAlignmentProperty); }
+            set { SetValue(HorizontalTextAlignmentProperty, value); }
+        }
+
+        #endregion
+
         #region BGColor p
 
         public static readonly BindableProperty BGColorProperty = BindableProperty.Create<DatePickerButtonField, Xamarin.Forms.Color>(p => p.BGColor, Color.Blue);

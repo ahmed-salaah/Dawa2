@@ -64,7 +64,7 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineReminder} " Style="{StaticResource LabelHeaderEntryStyle}"/>
 
-            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding Medicine.SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White" ColumnSpacing="5"
+            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding Medicine.Reminder.SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White" ColumnSpacing="5"
                                         BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
 
 
@@ -74,7 +74,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
-              
+
               <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
               <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay}" Title = "{Binding Medicine.Reminder.FormatedTime}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time = "{Binding Medicine.Reminder.FormatedTime,Mode=TwoWay}"/>
@@ -101,11 +101,8 @@
             <Grid>
               <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
-              <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-              </Grid.RowDefinitions>
 
               <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0" IsVisible="{Binding Medicine.HasStartDate,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
 

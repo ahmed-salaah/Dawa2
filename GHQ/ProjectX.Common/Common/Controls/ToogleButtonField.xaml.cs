@@ -96,10 +96,10 @@ namespace Controls
 
         #region TextColor p
 
-        public static readonly BindableProperty TextColorProperty = BindableProperty.Create<ToogleButtonField, string>(p => p.TextColor, default(string));
-        public string TextColor
+        public static readonly BindableProperty TextColorProperty = BindableProperty.Create<ToogleButtonField, Xamarin.Forms.Color>(p => p.TextColor, Color.White);
+        public Xamarin.Forms.Color TextColor
         {
-            get { return (string)GetValue(TextColorProperty); }
+            get { return (Xamarin.Forms.Color)GetValue(TextColorProperty); }
             set { SetValue(TextColorProperty, value); }
         }
 
