@@ -1,12 +1,19 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ.iOS/Services/RecorderService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ.iOS/Services/MediaPicker.cs">
     <Files>
-      <File FileName="GHQ/GHQ.iOS/Services/RecorderService.cs" Line="93" Column="10" />
+      <File FileName="GHQ/GHQ.iOS/Services/RecorderService.cs" Line="122" Column="14" />
+      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" Line="118" Column="1" />
+      <File FileName="GHQ/GHQ.iOS/Services/FileHelper.cs" Line="16" Column="41" />
+      <File FileName="ProjectX.Common/Common/Controls/ButtonField.xaml.cs" Line="133" Column="1" />
+      <File FileName="GHQ/GHQ.iOS/Services/MediaPicker.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" line="118" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.ae135cf0741dcb8854b84d2d8102df2adb2b2ebe" />
 </Properties>

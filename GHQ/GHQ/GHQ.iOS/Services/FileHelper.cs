@@ -13,9 +13,18 @@ namespace GHQ.iOS.Services
 {
     public class FileHelper : IFileHelper
     {
-        public Task<byte[]> GetByteArray(string filePath)
+		public async Task<byte[]> GetByteArray(string filePath)
         {
-            throw new NotImplementedException();
+			using (var streamReader = new StreamReader(filePath))
+			{
+				var bytes = default(byte[]);
+				using (var memstream = new MemoryStream())
+				{
+					streamReader.BaseStream.CopyTo(memstream);
+					bytes = memstream.ToArray();
+					return bytes;
+				}
+			}
         }
 
         public string GetLocalFilePath(string filename)
@@ -42,12 +51,8 @@ namespace GHQ.iOS.Services
 
         public async Task<string> SaveImageToDisk(string filename, byte[] imageData, string folderName = "")
         {
-            var chartImage = new UIImage(NSData.FromArray(imageData));
-            chartImage.SaveToPhotosAlbum((image, error) =>
-            {
-
-            });
-            return filename;
+           
+			return await SaveByteArrayToDisk(filename, imageData, folderName);
         }
     }
 }
