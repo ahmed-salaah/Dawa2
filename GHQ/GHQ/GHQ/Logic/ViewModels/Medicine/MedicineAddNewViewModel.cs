@@ -128,6 +128,12 @@ namespace GHQ.Logic.ViewModels.Account
                 {
                     Medicine = medicineService.SelectedMedicine;
                     AddMode = false;
+                    if (!string.IsNullOrEmpty(Medicine.ImagePath))
+                    {
+                        var byteArray = await DependencyService.Get<IFileHelper>().GetByteArray(Medicine.ImagePath);
+                        Stream stream = new MemoryStream(byteArray);
+                        Medicine.ImageSource = ImageSource.FromStream(() => { return stream; });
+                    }
                 }
             }
             catch (System.Exception ex)
@@ -168,7 +174,6 @@ namespace GHQ.Logic.ViewModels.Account
                     var imageBytes = mediaFile.data;
                     Medicine.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
                     Medicine.ImagePath = await DependencyService.Get<IFileHelper>().SaveImageToDisk(Guid.NewGuid().ToString() + Medicine.Name + ".jpg", imageBytes, "Medicine");
-                    var byteArray = await DependencyService.Get<IFileHelper>().GetByteArray(Medicine.ImagePath);
                 }
 
             }

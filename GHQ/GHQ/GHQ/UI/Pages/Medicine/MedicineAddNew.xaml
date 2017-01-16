@@ -74,9 +74,10 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
-              <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
+              
+              <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
-              <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay}" Title = "{Binding Medicine.Reminder.Time}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
+              <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay}" Title = "{Binding Medicine.Reminder.FormatedTime}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time = "{Binding Medicine.Reminder.FormatedTime,Mode=TwoWay}"/>
 
               <controls:DatePickerButtonField Grid.Column="1" IsVisible="{Binding Medicine.Reminder.HastDate,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
 

@@ -74,7 +74,7 @@ namespace GHQ.Logic.Service.Lookup
         public async Task<List<Medicine>> GetCurrentMedicine()
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
-            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.StartDate.Date <= DateTime.Now || m.EndDate >= DateTime.Now);
+            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.StartDate <= DateTime.Now || m.EndDate >= DateTime.Now);
             if (medicineList != null && medicineList.Count() > 0)
             {
                 var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());

@@ -143,7 +143,6 @@
     <Content Include="profile_photo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="splash.jpg" />
-    <Content Include="splash_bg.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

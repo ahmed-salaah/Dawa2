@@ -152,8 +152,6 @@ namespace Controls
             set { SetValue(LeftImageProperty, value); }
         }
 
-
-        //void SetLeftImage
         #endregion
 
         #region Command

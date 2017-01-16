@@ -31,5 +31,9 @@ namespace GHQ.Logic.Database.Entities
         public string VoiceNotePath { get; set; }
 
         public string Note { get; set; }
+        public int ReminderOption_Id { get; set; }
+        public DateTime ReminderDate { get; set; }
+
+        public TimeSpan ReminderTime { get; set; }
     }
 }

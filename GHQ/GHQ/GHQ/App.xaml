@@ -196,7 +196,7 @@
         <Setter Property="VerticalOptions" Value="CenterAndExpand" />
       </Style>
 
-	 <Style x:Key="TimePickerStyle" TargetType="TimePicker">
+      <Style x:Key="TimePickerStyle" TargetType="TimePicker">
         <Setter Property="BackgroundColor" Value="White" />
         <Setter Property="TextColor" Value="{StaticResource GreenColor}" />
         <Setter Property="Margin" Value="15,0,15,0" />
@@ -251,7 +251,7 @@
         <Setter Property="VerticalOptions" Value="Fill" />
       </Style>
       <Style x:Key="GridContentStyle" TargetType="Grid">
-        <Setter Property="Padding" Value="6,6,6,6" />
+        <Setter Property="Padding" Value="12,6,12,6" />
         <Setter Property="HorizontalOptions" Value="Fill" />
       </Style>
       <!--////////////////////////////////////////////////////////////////////////////////////////////////////  Error  ////////////////////////////////////////////////////////////////////////////////////////////////////-->

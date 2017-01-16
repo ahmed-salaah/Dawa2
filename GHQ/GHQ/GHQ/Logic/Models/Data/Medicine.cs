@@ -293,8 +293,8 @@ namespace Logic.Models.Data
             }
         }
 
-        private DateTime _Time;
-        public DateTime Time
+        private TimeSpan _Time;
+        public TimeSpan Time
         {
             get
             {
@@ -304,14 +304,21 @@ namespace Logic.Models.Data
             {
                 Set(() => Time, ref _Time, value);
                 RaisePropertyChanged("HasTime");
+                RaisePropertyChanged("FormatedTime");
             }
         }
-
+        public string FormatedTime
+        {
+            get
+            {
+                return Time.ToString(@"hh\:mm");
+            }
+        }
         public bool HasTime
         {
             get
             {
-                if (Time == null || Time == default(DateTime))
+                if (Time == null || Time == default(TimeSpan))
                 {
                     return false;
                 }

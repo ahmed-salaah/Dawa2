@@ -105,7 +105,6 @@ namespace Controls
         }
 
 
-        //void SetLeftImage
         #endregion
 
         #region Command
