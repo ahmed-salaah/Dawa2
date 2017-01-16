@@ -9,6 +9,7 @@ using Service.Localization;
 using Service.Naviagtion;
 using System;
 using Xamarin.Forms;
+using GHQ.UI.Pages.Filter;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -114,7 +115,7 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 if (pageName == "History")
                 {
-                    naviagtionService.NavigateToPage(typeof(MedicineHistory));
+                    naviagtionService.NavigateToPage(typeof(FilterPage));
                 }
                 else if (pageName == "Schedule")
                 {
