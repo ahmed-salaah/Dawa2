@@ -51,6 +51,9 @@ namespace GHQ.Logic.Translators
                 Note = entity.Note,
                 StartDate = entity.StartDate,
                 VoiceNotePath = entity.VoiceNotePath,
+                ReminderOption_Id = entity.Reminder.SelectedReminderOption.Id,
+                ReminderDate = entity.Reminder.Date,
+                ReminderTime = entity.Reminder.Time,
             };
 
             return m;
