@@ -1,5 +1,6 @@
 ﻿using GHQ.Logic;
 using GHQ.Logic.ViewModels.Account;
+using Xamarin.Forms;
 
 namespace GHQ.UI.Pages.Home
 {
@@ -10,6 +11,8 @@ namespace GHQ.UI.Pages.Home
         {
             InitializeComponent();
             BindingContext = HomeViewModel;
+			NavigationPage.SetHasNavigationBar(this, false);
+
         }
 
         protected override void OnAppearing()

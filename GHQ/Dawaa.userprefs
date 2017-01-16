@@ -1,12 +1,20 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ.iOS/Services/FileHelper.cs">
     <Files>
-      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" Line="151" Column="46" />
+      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" Line="227" Column="100" />
+      <File FileName="GHQ/GHQ.iOS/Services/RecorderService.cs" Line="98" Column="50" />
+      <File FileName="GHQ/GHQ.iOS/Services/FileHelper.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" line="138" column="1" />
+      <Breakpoint enabled="false" file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" line="327" column="1" />
+      <Breakpoint enabled="false" file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/Logic/Services/MedicineService/MedicineService.cs" line="92" column="1" />
+      <Breakpoint enabled="false" file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" line="260" column="1" />
+      <Breakpoint enabled="false" file="/Users/ahmedsalah/Dawa2/GHQ/GHQ/GHQ.iOS/Services/RecorderService.cs" line="90" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Dawaa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.ae135cf0741dcb8854b84d2d8102df2adb2b2ebe" />

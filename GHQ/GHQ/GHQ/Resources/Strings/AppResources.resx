@@ -322,4 +322,10 @@
   <data name="SignUP_Dinner" xml:space="preserve">
 		   <value>العشاء في الساعه…</value>
   </data>
+	<data name="PageHeader_NewAccount" xml:space="preserve">
+		   <value>إنشاء حساب جديد</value>
+  </data>
+		<data name="PageHeader_Filter" xml:space="preserve">
+		   <value>فلتر التاريخ</value>
+  </data>
 </root>

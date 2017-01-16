@@ -113,12 +113,17 @@ namespace GHQ.Logic.ViewModels.Account
         }
         private async void Intialize()
         {
-            try
-            {
-                IsRecording = false;
-                LoadReminderOptions();
-                if (navigationService.IsExternalAppOpen)
-                    return;
+			try
+			{
+				IsRecording = false;
+				LoadReminderOptions();
+				if (navigationService.IsExternalAppOpen)
+				{
+					navigationService.IsExternalAppOpen = false;
+
+					return;
+
+				}
                 if (medicineService.SelectedMedicine == null)
                 {
                     Medicine = new Medicine();
@@ -165,9 +170,9 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 var mediaPicker = DependencyService.Get<IMediaPicker>();
-                navigationService.IsExternalAppOpen = true;
+				navigationService.IsExternalAppOpen = true;
                 MediaFile mediaFile = await mediaPicker.SelectPhotoAsync();
-                navigationService.IsExternalAppOpen = false;
+
                 if (mediaFile != null)
                 {
                     IsLoading = true;
@@ -252,7 +257,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                DependencyService.Get<IRecorderService>().Play();
+				DependencyService.Get<IRecorderService>().Play(Medicine.VoiceNotePath);
             }
             catch (System.Exception ex)
             {
