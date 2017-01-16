@@ -1,12 +1,7 @@
 ﻿<Properties StartupConfiguration="{84EE952E-5772-45DE-A3D7-541B4995223D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs">
     <Files>
-      <File FileName="GHQ/GHQ/UI/Pages/Filter/FilterPage.xaml.cs" Line="8" Column="20" />
-      <File FileName="GHQ/GHQ/UI/Pages/Filter/FilterPage.xaml" Line="44" Column="164" />
-      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/MedicineHistoryViewModel.cs" Line="82" Column="307" />
-      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/FilterMedicineViewModel.cs" Line="38" Column="21" />
-      <File FileName="GHQ/GHQ/App.xaml" Line="218" Column="50" />
-      <File FileName="GHQ/GHQ/UI/Pages/Account/NewAccountStep1Page.xaml" Line="1" Column="1" />
+      <File FileName="GHQ/GHQ/Logic/ViewModels/Medicine/MedicineAddNewViewModel.cs" Line="151" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />

@@ -40,10 +40,9 @@
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-						<controls:TimePickerButtonField Grid.Row = "1" Title = "{i18n:Translate Filter_StartDate}"  Margin = "15,20,15,0" BGColor = "{StaticResource ButtonGreenColor}" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time = "{Binding Medicine.StartDate}"/>
-						<controls:TimePickerButtonField Grid.Row = "2" Title = "{i18n:Translate Filter_EndDate}"  Margin = "15,0,15,20" BGColor = "{StaticResource ButtonGreenColor}" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time = "{Binding Medicine.EndDate}"/>
-					    <!-- <Button Grid.Row="0" Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate Filter_StartDate}"  Command="{Binding OnHomeNavigationCommand}" Margin="15,20,15,0" CommandParameter="History"/>
-       					 <Button Grid.Row="1" Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate Filter_EndDate}"  Command="{Binding OnHomeNavigationCommand}" Margin="15,0,15,20" CommandParameter="Schedule"/>-->
+						<controls:TimePickerButtonField Grid.Row = "1" Title = "{i18n:Translate Filter_StartDate}"  Margin = "15,20,15,0" BGColor = "{StaticResource ButtonGreenColor}" TextColor = "White" IsEnabled = "true" Time = "{Binding Medicine.StartDate}"/>
+						<controls:TimePickerButtonField Grid.Row = "2" Title = "{i18n:Translate Filter_EndDate}"  Margin = "15,0,15,20" BGColor = "{StaticResource ButtonGreenColor}" TextColor = "White" IsEnabled = "true" Time = "{Binding Medicine.EndDate}"/>
+					    
 					</Grid>
 					<Grid Grid.Row="3">
 						<Grid.RowDefinitions>
@@ -55,7 +54,7 @@
 						<Grid.RowDefinitions>
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-						<Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate Filter_Button}" Margin="15,20,15,20">
+						<Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate Filter_Button}" Margin="15,20,15,20" Command = "{Binding OnFilterCommand}">
 						</Button>
 					</Grid>
 				</Grid>
