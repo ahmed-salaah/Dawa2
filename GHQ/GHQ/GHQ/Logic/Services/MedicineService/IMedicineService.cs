@@ -8,6 +8,8 @@ namespace GHQ.Logic.Service.Lookup
     public interface IMedicineService
     {
         Medicine SelectedMedicine { get; set; }
+		Medicine FilteredMedicine { get; set; }
+
         Task<Medicine> AddEditMedicine(Medicine medicine);
         Task<List<Medicine>> GetMedicine(string medicineName, string doctorName, string diesesName, DateTime StartDate, DateTime EndDate);
         Task<List<Medicine>> GetCurrentMedicine();

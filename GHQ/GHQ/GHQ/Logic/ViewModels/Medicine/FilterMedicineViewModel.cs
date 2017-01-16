@@ -69,7 +69,7 @@ namespace GHQ.Logic.ViewModels.Account
                 return _OnIntializeCommand;
             }
         }
-        private async void Intialize()
+        private  void Intialize()
         {
             try
             {
@@ -117,6 +117,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+				medicineService.FilteredMedicine = Medicine;
             }
             catch (System.Exception ex)
             {

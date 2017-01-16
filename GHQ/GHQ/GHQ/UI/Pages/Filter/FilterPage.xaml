@@ -24,9 +24,9 @@
 							<RowDefinition Height="Auto" />
 
 						</Grid.RowDefinitions>
-						<controls:InputField Grid.Row="0" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_MedicineName}" />
-						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_DoctorName}" />
-						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_DeasesName}" />
+						<controls:InputField Grid.Row="0" IsRequired="True" ShowHeader="false" MaxLength="18" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_MedicineName}" Title = "{Binding Medicine.Name}" />
+						<controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_DoctorName}" Title = "{Binding Medicine.DoctorName}"/>
+						<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate Filter_DeasesName}" Title = "{Binding Medicine.DiseaseName}"/>
 
 					</Grid>
 					<Grid Grid.Row="1">
@@ -40,8 +40,10 @@
 							<RowDefinition Height="Auto" />
 							<RowDefinition Height="Auto" />
 						</Grid.RowDefinitions>
-					     <Button Grid.Row="0" Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate Filter_StartDate}"  Command="{Binding OnHomeNavigationCommand}" Margin="15,20,15,0" CommandParameter="History"/>
-       					 <Button Grid.Row="1" Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate Filter_EndDate}"  Command="{Binding OnHomeNavigationCommand}" Margin="15,0,15,20" CommandParameter="Schedule"/>
+						<controls:TimePickerButtonField Grid.Row = "1" Title = "{i18n:Translate Filter_StartDate}"  Margin = "15,20,15,0" BGColor = "{StaticResource ButtonGreenColor}" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time = "{Binding Medicine.StartDate}"/>
+						<controls:TimePickerButtonField Grid.Row = "2" Title = "{i18n:Translate Filter_EndDate}"  Margin = "15,0,15,20" BGColor = "{StaticResource ButtonGreenColor}" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time = "{Binding Medicine.EndDate}"/>
+					    <!-- <Button Grid.Row="0" Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate Filter_StartDate}"  Command="{Binding OnHomeNavigationCommand}" Margin="15,20,15,0" CommandParameter="History"/>
+       					 <Button Grid.Row="1" Style="{StaticResource ButtonSolidStyleGreen}" Text="{i18n:Translate Filter_EndDate}"  Command="{Binding OnHomeNavigationCommand}" Margin="15,0,15,20" CommandParameter="Schedule"/>-->
 					</Grid>
 					<Grid Grid.Row="3">
 						<Grid.RowDefinitions>

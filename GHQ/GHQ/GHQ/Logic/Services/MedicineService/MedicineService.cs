@@ -28,7 +28,10 @@ namespace GHQ.Logic.Service.Lookup
 
         public Medicine SelectedMedicine { get; set; }
 
-        public async Task<Medicine> AddEditMedicine(Medicine medicine)
+		public Medicine FilteredMedicine { get; set; }
+
+
+		public async Task<Medicine> AddEditMedicine(Medicine medicine)
         {
             try
             {
