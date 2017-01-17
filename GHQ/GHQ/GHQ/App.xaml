@@ -173,7 +173,7 @@
         <Setter Property="TextColor" Value="{StaticResource DarkGrayColor}" />
       </Style>
       <Style x:Key="MultiLineEntryStyle" TargetType="Entry">
-        <Setter Property="BackgroundColor" Value="{StaticResource GrayLightColor}" />
+        <Setter Property="BackgroundColor" Value="White" />
         <Setter Property="PlaceholderColor" Value="{StaticResource GrayColor}" />
         <Setter Property="HeightRequest" Value="150" />
         <Setter Property="WidthRequest" Value="350" />
