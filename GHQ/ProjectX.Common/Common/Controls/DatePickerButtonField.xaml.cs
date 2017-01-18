@@ -145,6 +145,8 @@ namespace Controls
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
+            if (Date == default(DateTime))
+                datePicker.Date = DateTime.Now;
             datePicker.Focus();
             if (Command != null)
             {

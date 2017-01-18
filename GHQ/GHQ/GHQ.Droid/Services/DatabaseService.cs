@@ -30,7 +30,7 @@ namespace GHQ.Droid.Services
 
             // This is where we copy in the prepopulated database
             Console.WriteLine(path);
-            // if (!File.Exists(path))
+            if (!File.Exists(path))
             {
                 var s = Forms.Context.Resources.OpenRawResource(Resource.Raw.Dawayaa);  // RESOURCE NAME ###
 

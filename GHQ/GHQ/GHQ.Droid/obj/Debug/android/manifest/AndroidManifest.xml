@@ -46,13 +46,13 @@
     <activity android:name="com.onesignal.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="Dawaya" android:theme="@style/MainTheme" android:name="md5f187a671dd0a5505795d523bfabaa888.MainActivity" />
+    <activity android:name="md56d2f453e5bee345dca22fc6112464cbe.MediaPickerActivity" />
     <activity android:icon="@drawable/icon" android:label="Dawaya" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5f187a671dd0a5505795d523bfabaa888.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name="md56d2f453e5bee345dca22fc6112464cbe.MediaPickerActivity" />
     <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver" />
     <provider android:authorities="com.Shafafeya.Dawaya.google_measurement_service" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider" />
     <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
@@ -101,6 +101,12 @@
         <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
       </intent-filter>
     </receiver>
+    <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@style/com_facebook_activity_theme" />
+    <activity android:name="com.facebook.CustomTabActivity" android:exported="true"></activity>
+    <activity android:name="com.facebook.CustomTabMainActivity" />
+    <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@style/com_facebook_activity_theme" />
+    <activity android:name="com.facebook.CustomTabActivity" android:exported="true"></activity>
+    <activity android:name="com.facebook.CustomTabMainActivity" />
   </application>
   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
   <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />

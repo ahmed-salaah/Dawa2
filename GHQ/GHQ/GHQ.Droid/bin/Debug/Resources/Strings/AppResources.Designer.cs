@@ -315,6 +315,15 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to اليوم  .
+        /// </summary>
+        internal static string MedicineAddNew_Day {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_Day", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to إضغط هنا لتغير الصورة .
         /// </summary>
         internal static string MedicineAddNew_EditAttachImage {
@@ -468,6 +477,24 @@ namespace GHQ.Resources.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to التوقيت .
+        /// </summary>
+        internal static string MedicineAddNew_Time {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_Time", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to برجاء ادخال {0} .
+        /// </summary>
+        internal static string MedicineAddNew_Validation_PleaseEnter {
+            get {
+                return ResourceManager.GetString("MedicineAddNew_Validation_PleaseEnter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تذكير إسبوع.
         /// </summary>
         internal static string MedicineAddNew_WeeklyReminder {
@@ -482,6 +509,15 @@ namespace GHQ.Resources.Strings {
         internal static string PageHeader_AddNewMedicine {
             get {
                 return ResourceManager.GetString("PageHeader_AddNewMedicine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فلتر التاريخ.
+        /// </summary>
+        internal static string PageHeader_Filter {
+            get {
+                return ResourceManager.GetString("PageHeader_Filter", resourceCulture);
             }
         }
         
@@ -518,6 +554,15 @@ namespace GHQ.Resources.Strings {
         internal static string PageHeader_MedicineSchedule_CurrentMedicine {
             get {
                 return ResourceManager.GetString("PageHeader_MedicineSchedule_CurrentMedicine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إنشاء حساب جديد.
+        /// </summary>
+        internal static string PageHeader_NewAccount {
+            get {
+                return ResourceManager.GetString("PageHeader_NewAccount", resourceCulture);
             }
         }
         

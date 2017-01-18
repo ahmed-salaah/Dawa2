@@ -28,10 +28,10 @@ namespace GHQ.Logic.Service.Lookup
 
         public Medicine SelectedMedicine { get; set; }
 
-		public Medicine FilteredMedicine { get; set; }
+        public Medicine FilteredMedicine { get; set; }
 
 
-		public async Task<Medicine> AddEditMedicine(Medicine medicine)
+        public async Task<Medicine> AddEditMedicine(Medicine medicine)
         {
             try
             {
@@ -44,7 +44,7 @@ namespace GHQ.Logic.Service.Lookup
                 }
                 else
                 {
-                    int rows = database.Insert(m);
+                    int inserted = database.Insert(m);
                 }
 
                 return medicine;
@@ -54,6 +54,10 @@ namespace GHQ.Logic.Service.Lookup
                 return null;
             }
 
+        }
+
+        private void Database_TableChanged(object sender, NotifyTableChangedEventArgs e)
+        {
         }
 
         public async Task<List<Medicine>> GetMedicine(string medicineName, string doctorName, string diesesName, DateTime StartDate, DateTime EndDate)
