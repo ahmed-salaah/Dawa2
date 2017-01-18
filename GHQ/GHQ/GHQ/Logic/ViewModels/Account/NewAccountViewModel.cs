@@ -17,6 +17,7 @@ using GHQ.Logic.Database.Entities;
 using Service.FileHelper;
 using System;
 using GHQ.UI.Pages.Home;
+using System.Linq;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -98,7 +99,7 @@ namespace GHQ.Logic.ViewModels.Account
                 ClearValidationErrors();
 
                 GenderList = new ObservableCollection<LookupData>(await lookupService.GetGenderAsync());
-
+				User = new NewUSer();
             }
             catch (InternetException ex)
             {
@@ -134,11 +135,17 @@ namespace GHQ.Logic.ViewModels.Account
 		{
 			try
 			{
-				ClearValidationErrors();
-			
-				Task<NewUSer> userLogged = accountService.AddEditUser(User);
-				navigationService.NavigateToPage(typeof(HomePage));
-
+				
+				ValidationErrors = new ObservableCollection<ValidatedModel>(User.Validate());
+				if (ValidationErrors.Any())
+				{
+					await dialogService.DisplayAlert("", ErrorMessagesString);
+				}
+				else
+				{
+					Task<NewUSer> userLogged = accountService.AddEditUser(User);
+					navigationService.NavigateToPage(typeof(HomePage));
+				}
 			}
 			catch (InternetException ex)
 			{

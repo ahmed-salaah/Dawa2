@@ -8,25 +8,28 @@ using Models;
 using Service.Localization;
 using Service.Naviagtion;
 using Xamarin.Forms;
-using GHQ.Logic.Database.Entities;
 using System.Threading.Tasks;
 using GHQLogic.Models.Data;
+using System.Linq;
+using Service.Dialog;
+using GHQ.Resources.Strings;
 
 namespace GHQ.Logic.ViewModels.Account
 {
     public class LoginViewModel : BaseViewModel
     {
-        public LoginViewModel(INavigationService _navigationService, IAccountService _accountService)
+        public LoginViewModel(INavigationService _navigationService, IAccountService _accountService, IDialogService _dialogService)
         {
             navigationService = _navigationService;
             accountService = _accountService;
+			dialogService = _dialogService;
         }
 
         #region Private Members
 
         INavigationService navigationService;
         IAccountService accountService;
-
+		IDialogService dialogService;
         #endregion
 
         #region Properties
@@ -69,7 +72,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
-
+				User = new LoginUser();
                 //IsLoading = true;
             }
             catch (System.Exception ex)
@@ -105,16 +108,24 @@ namespace GHQ.Logic.ViewModels.Account
             {
                 IsLoading = true;
                 IsPageEnabled = false;
-				//ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
-				Task <NewUSer> userLogged = accountService.Login(User.UserName, User.Password);
-				if (userLogged != null)
+				ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(User.Validate());
+				if (ValidationErrors.Any())
 				{
-					navigationService.NavigateToPage(typeof(HomePage));
-
+					await dialogService.DisplayAlert("", ErrorMessagesString);
 				}
 				else
 				{
-					
+					NewUSer userLogged = await accountService.Login(User.UserName, User.Password);
+ 					if (userLogged != null)
+					{
+						navigationService.NavigateToPage(typeof(HomePage));
+
+					}
+					else
+					{
+						await dialogService.DisplayAlert("", AppResources.Login_WrongUserNameOrPassword);
+
+					}
 				}
             }
             catch (System.Exception ex)
@@ -186,7 +197,7 @@ namespace GHQ.Logic.ViewModels.Account
 				IsPageEnabled = false;
 				//ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
 
-				navigationService.NavigateToPage(typeof(FilterPage));
+				//navigationService.NavigateToPage(typeof(FilterPage));
 			}
 			catch (System.Exception ex)
 			{

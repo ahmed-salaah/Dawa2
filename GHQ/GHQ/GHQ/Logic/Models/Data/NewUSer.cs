@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using GHQ.Resources.Strings;
 using Models;
 using Xamarin.Forms;
 
@@ -213,9 +214,47 @@ namespace GHQLogic.Models.Data
 			}
 		}
 
+	
 		public override IEnumerable<ValidatedModel> Validate()
 		{
-			throw new NotImplementedException();
+			List<ValidatedModel> errors = new List<ValidatedModel>();
+			if (string.IsNullOrEmpty(UserName))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.login_userName), PropertyName = "UserName" });
+			}
+		
+			if (string.IsNullOrEmpty(Password))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.login_password), PropertyName = "Password" });
+			}
+			if (string.IsNullOrEmpty(ConfirmPassword))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.SignUp_ConfirmPassword), PropertyName = "ConfirmPassword" });
+			}
+			if (Password != ConfirmPassword)
+			{
+				errors.Add(new ValidatedModel() { Error = AppResources.Login_confirmPasswordValidation, PropertyName = "ConfirmPassword" });
+
+			}
+			if (string.IsNullOrEmpty(FirstName))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.signUp_firstName), PropertyName = "FirstName" });
+			}
+			if (BreakFastTime == default(TimeSpan))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.SignUP_BreakFast), PropertyName = "BreakFastTime" });
+			}
+			if (LaunchTime == default(TimeSpan))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.SignUP_launch), PropertyName = "LaunchTime" });
+			}
+			if (DinnerTime == default(TimeSpan))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.SignUP_Dinner), PropertyName = "DinnerTime" });
+			}
+			return errors;
 		}
 	}
+
 }
+

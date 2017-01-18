@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using GHQ.Resources.Strings;
 using Models;
 
 namespace GHQ.Logic.Models.Data
@@ -34,7 +35,17 @@ namespace GHQ.Logic.Models.Data
 
 		public override IEnumerable<ValidatedModel> Validate()
 		{
-			throw new NotImplementedException();
+			List<ValidatedModel> errors = new List<ValidatedModel>();
+			if (string.IsNullOrEmpty(UserName))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.login_userName), PropertyName = "UserName" });
+			}
+
+			if (string.IsNullOrEmpty(Password))
+			{
+				errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.login_password), PropertyName = "Password" });
+			}
+			return errors;
 		}
 	}
 }
