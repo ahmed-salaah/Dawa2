@@ -1,4 +1,5 @@
-﻿using Exceptions;
+﻿using Enums;
+using Exceptions;
 using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
 using GHQ.Logic.Service.Lookup;
@@ -90,10 +91,10 @@ namespace GHQ.Logic.ViewModels.Account
         void LoadReminderOptions(int? id)
         {
             ReminderOptions = new ObservableCollection<RadioButtonGroupItem>();
-            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 1, Value = AppResources.MedicineAddNew_DailyReminder });
-            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 2, Value = AppResources.MedicineAddNew_WeeklyReminder });
-            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 3, Value = AppResources.MedicineAddNew_MonthlyReminder });
-            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 4, Value = AppResources.MedicineAddNew_EventReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.Daily, Value = AppResources.MedicineAddNew_DailyReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.Weekly, Value = AppResources.MedicineAddNew_WeeklyReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.Monthly, Value = AppResources.MedicineAddNew_MonthlyReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.EventBased, Value = AppResources.MedicineAddNew_EventReminder });
 
             if (id == null)
             {
@@ -318,7 +319,7 @@ namespace GHQ.Logic.ViewModels.Account
                     navigationService.GoBack();
                 }
                 var localNotifications = DependencyService.Get<ILocalNotifications>();
-                localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, Medicine.Reminder.Date, Medicine.VoiceNotePath);
+                localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, Medicine.Reminder.Date, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
 
             }
             catch (System.Exception ex)

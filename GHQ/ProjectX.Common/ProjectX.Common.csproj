@@ -71,6 +71,7 @@
     <Compile Include="Common\Exceptions\UnAuthorizedException.cs" />
     <Compile Include="Common\Models\BaseModel.cs" />
     <Compile Include="Common\Models\BaseViewModel.cs" />
+    <Compile Include="Common\Enum\ReminderRepeatOptions.cs" />
     <Compile Include="Common\Models\RadioButtonGroupItem.cs" />
     <Compile Include="Common\Models\LookupData.cs" />
     <Compile Include="Common\Models\MediaFile.cs" />
@@ -237,9 +238,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Common\Service\LocalNotifications\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

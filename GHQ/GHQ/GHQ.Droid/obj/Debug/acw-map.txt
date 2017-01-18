@@ -18,6 +18,10 @@ GHQ.Droid.Services.Helpers.MediaPickerActivity, GHQ.Droid;md56d2f453e5bee345dca2
 GHQ.Droid.Services.Helpers.MediaPickerActivity, GHQ.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56d2f453e5bee345dca22fc6112464cbe.MediaPickerActivity
 GHQ.Droid.Services.Helpers.MediaPickerActivity;md56d2f453e5bee345dca22fc6112464cbe.MediaPickerActivity
 ghq.droid.services.helpers.MediaPickerActivity;md56d2f453e5bee345dca22fc6112464cbe.MediaPickerActivity
+GHQ.Droid.Receivers.AlarmReceiver, GHQ.Droid;md56ec71700c2844ec321b2f5e1e9be0f76.AlarmReceiver
+GHQ.Droid.Receivers.AlarmReceiver, GHQ.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56ec71700c2844ec321b2f5e1e9be0f76.AlarmReceiver
+GHQ.Droid.Receivers.AlarmReceiver;md56ec71700c2844ec321b2f5e1e9be0f76.AlarmReceiver
+ghq.droid.receivers.AlarmReceiver;md56ec71700c2844ec321b2f5e1e9be0f76.AlarmReceiver
 GHQ.Droid.CustomRenderers.ExtendedEntryRenderer, GHQ.Droid;md5e5fe8d9f4c157a03cfaa56c62d46b965.ExtendedEntryRenderer
 GHQ.Droid.CustomRenderers.ExtendedEntryRenderer, GHQ.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e5fe8d9f4c157a03cfaa56c62d46b965.ExtendedEntryRenderer
 GHQ.Droid.CustomRenderers.ExtendedEntryRenderer;md5e5fe8d9f4c157a03cfaa56c62d46b965.ExtendedEntryRenderer
