@@ -84,7 +84,7 @@ namespace GHQ.UWP.Services
             }
         }
 
-        public async void Play()
+        public async void Play(string path)
         {
             MediaElement playback = new MediaElement();
             IRandomAccessStream audio = buffer.CloneStream();

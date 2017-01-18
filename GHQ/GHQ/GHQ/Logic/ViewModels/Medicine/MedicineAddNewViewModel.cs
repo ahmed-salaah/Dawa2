@@ -14,6 +14,7 @@ using Service.Recorder;
 using System;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace GHQ.Logic.ViewModels.Account
@@ -113,26 +114,31 @@ namespace GHQ.Logic.ViewModels.Account
         }
         private async void Intialize()
         {
-			try
-			{
-				IsRecording = false;
-				LoadReminderOptions();
-				if (navigationService.IsExternalAppOpen)
-				{
-					navigationService.IsExternalAppOpen = false;
+            try
+            {
+                IsRecording = false;
+                LoadReminderOptions();
+                if (navigationService.IsExternalAppOpen)
+                {
+                    navigationService.IsExternalAppOpen = false;
 
-					return;
+                    return;
 
-				}
+                }
                 if (medicineService.SelectedMedicine == null)
                 {
                     Medicine = new Medicine();
+                    Medicine.Reminder.SelectedReminderOption = ReminderOptions.FirstOrDefault();
                     AddMode = true;
                 }
                 else
                 {
                     Medicine = medicineService.SelectedMedicine;
                     AddMode = false;
+                    if (Medicine.Reminder.SelectedReminderOption == null)
+                    {
+                        Medicine.Reminder.SelectedReminderOption = ReminderOptions.FirstOrDefault();
+                    }
                     if (!string.IsNullOrEmpty(Medicine.ImagePath))
                     {
                         var byteArray = await DependencyService.Get<IFileHelper>().GetByteArray(Medicine.ImagePath);
@@ -170,7 +176,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 var mediaPicker = DependencyService.Get<IMediaPicker>();
-				navigationService.IsExternalAppOpen = true;
+                navigationService.IsExternalAppOpen = true;
                 MediaFile mediaFile = await mediaPicker.SelectPhotoAsync();
 
                 if (mediaFile != null)
@@ -257,7 +263,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-				DependencyService.Get<IRecorderService>().Play(Medicine.VoiceNotePath);
+                DependencyService.Get<IRecorderService>().Play(Medicine.VoiceNotePath);
             }
             catch (System.Exception ex)
             {
@@ -289,9 +295,17 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                var m = Medicine;
-                Medicine = await medicineService.AddEditMedicine(Medicine);
-                navigationService.GoBack();
+                ValidationErrors = new ObservableCollection<ValidatedModel>(Medicine.Validate());
+                if (ValidationErrors.Any())
+                {
+                    await dialogService.DisplayAlert("", ErrorMessagesString);
+                }
+                else
+                {
+                    Medicine = await medicineService.AddEditMedicine(Medicine);
+                    navigationService.GoBack();
+                }
+
             }
             catch (System.Exception ex)
             {
@@ -323,9 +337,16 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                var m = Medicine;
-                await medicineService.AddEditMedicine(Medicine);
-                Medicine = new Medicine();
+                ValidationErrors = new ObservableCollection<ValidatedModel>(Medicine.Validate());
+                if (ValidationErrors.Any())
+                {
+                    await dialogService.DisplayAlert("", ErrorMessagesString);
+                }
+                else
+                {
+                    await medicineService.AddEditMedicine(Medicine);
+                    Medicine = new Medicine();
+                }
             }
             catch (System.Exception ex)
             {

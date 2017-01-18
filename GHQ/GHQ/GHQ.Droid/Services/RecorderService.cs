@@ -34,7 +34,7 @@ namespace GHQ.Droid.Services
             _recorder.Start();
         }
 
-        public void Play()
+        public void Play(string Path)
         {
 
             _player.SetDataSource(path);

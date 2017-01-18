@@ -239,6 +239,15 @@
   <data name="MedicineAddNew_EndDate" xml:space="preserve">
     <value>تاريخ الأنتهاء</value>
   </data>
+  <data name="MedicineAddNew_Time" xml:space="preserve">
+    <value>التوقيت </value>
+  </data>
+  <data name="MedicineAddNew_Day" xml:space="preserve">
+    <value>اليوم  </value>
+  </data>
+  <data name="MedicineAddNew_Validation_PleaseEnter" xml:space="preserve">
+    <value>برجاء ادخال {0} </value>
+  </data>
   <data name="MedicineAddNew_Entry_DieseaseName" xml:space="preserve">
     <value>أسم المرض</value>
   </data>
@@ -321,5 +330,11 @@
   </data>
   <data name="SignUP_Dinner" xml:space="preserve">
 		   <value>العشاء في الساعه…</value>
+  </data>
+	<data name="PageHeader_NewAccount" xml:space="preserve">
+		   <value>إنشاء حساب جديد</value>
+  </data>
+		<data name="PageHeader_Filter" xml:space="preserve">
+		   <value>فلتر التاريخ</value>
   </data>
 </root>

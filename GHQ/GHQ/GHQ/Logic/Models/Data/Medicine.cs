@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using GHQ.Resources.Strings;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -246,7 +247,26 @@ namespace Logic.Models.Data
         public override IEnumerable<ValidatedModel> Validate()
         {
             List<ValidatedModel> errors = new List<ValidatedModel>();
-
+            if (string.IsNullOrEmpty(Name))
+            {
+                errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_Entry_MedicineName), PropertyName = "Name" });
+            }
+            if (StartDate == default(DateTime))
+            {
+                errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_StartDate), PropertyName = "StartDate" });
+            }
+            if (EndDate == default(DateTime))
+            {
+                errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_EndDate), PropertyName = "EndDate" });
+            }
+            if (Reminder.Date == default(DateTime))
+            {
+                errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_Day), PropertyName = "Date" });
+            }
+            if (Reminder.Time == default(TimeSpan))
+            {
+                errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_Time), PropertyName = "Time" });
+            }
             return errors;
         }
     }
@@ -332,6 +352,7 @@ namespace Logic.Models.Data
         public override IEnumerable<ValidatedModel> Validate()
         {
             List<ValidatedModel> errors = new List<ValidatedModel>();
+
 
             return errors;
         }
