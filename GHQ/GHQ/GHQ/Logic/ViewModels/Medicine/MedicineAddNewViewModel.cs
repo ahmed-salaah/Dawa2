@@ -8,6 +8,7 @@ using Models;
 using Service.Dialog;
 using Service.Exception;
 using Service.FileHelper;
+using Service.ILocalNotifications;
 using Service.Media;
 using Service.Naviagtion;
 using Service.Recorder;
@@ -86,13 +87,25 @@ namespace GHQ.Logic.ViewModels.Account
 
         #region Private Methods
 
-        void LoadReminderOptions()
+        void LoadReminderOptions(int? id)
         {
             ReminderOptions = new ObservableCollection<RadioButtonGroupItem>();
-            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 1, Value = AppResources.MedicineAddNew_DailyReminder, IsSelected = true });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = 1, Value = AppResources.MedicineAddNew_DailyReminder });
             ReminderOptions.Add(new RadioButtonGroupItem() { Id = 2, Value = AppResources.MedicineAddNew_WeeklyReminder });
             ReminderOptions.Add(new RadioButtonGroupItem() { Id = 3, Value = AppResources.MedicineAddNew_MonthlyReminder });
             ReminderOptions.Add(new RadioButtonGroupItem() { Id = 4, Value = AppResources.MedicineAddNew_EventReminder });
+
+            if (id == null)
+            {
+                var option = ReminderOptions.FirstOrDefault();
+                option.IsSelected = true;
+            }
+            else
+            {
+                var option = ReminderOptions.FirstOrDefault(a => a.Id == id);
+                option.IsSelected = true;
+            }
+
         }
         #endregion
 
@@ -117,7 +130,7 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 IsRecording = false;
-                LoadReminderOptions();
+
                 if (navigationService.IsExternalAppOpen)
                 {
                     navigationService.IsExternalAppOpen = false;
@@ -127,6 +140,7 @@ namespace GHQ.Logic.ViewModels.Account
                 }
                 if (medicineService.SelectedMedicine == null)
                 {
+                    LoadReminderOptions(null);
                     Medicine = new Medicine();
                     Medicine.Reminder.SelectedReminderOption = ReminderOptions.FirstOrDefault();
                     AddMode = true;
@@ -134,16 +148,14 @@ namespace GHQ.Logic.ViewModels.Account
                 else
                 {
                     Medicine = medicineService.SelectedMedicine;
+                    LoadReminderOptions(Medicine.Reminder.ReminderOptionId);
                     AddMode = false;
-                    if (Medicine.Reminder.SelectedReminderOption == null)
-                    {
-                        Medicine.Reminder.SelectedReminderOption = ReminderOptions.FirstOrDefault();
-                    }
+
+                    Medicine.Reminder.SelectedReminderOption = ReminderOptions.FirstOrDefault(a => a.Id == Medicine.Reminder.ReminderOptionId);
+
                     if (!string.IsNullOrEmpty(Medicine.ImagePath))
                     {
-                        var byteArray = await DependencyService.Get<IFileHelper>().GetByteArray(Medicine.ImagePath);
-                        Stream stream = new MemoryStream(byteArray);
-                        Medicine.ImageSource = ImageSource.FromStream(() => { return stream; });
+                        Medicine.ImageSource = ImageSource.FromFile(Medicine.ImagePath);
                     }
                 }
             }
@@ -305,6 +317,8 @@ namespace GHQ.Logic.ViewModels.Account
                     Medicine = await medicineService.AddEditMedicine(Medicine);
                     navigationService.GoBack();
                 }
+                var localNotifications = DependencyService.Get<ILocalNotifications>();
+                localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, Medicine.Reminder.Date, Medicine.VoiceNotePath);
 
             }
             catch (System.Exception ex)

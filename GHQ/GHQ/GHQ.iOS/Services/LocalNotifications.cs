@@ -2,7 +2,6 @@
 using GHQ.iOS.Services;
 using System;
 using Service.ILocalNotifications;
-using System.IO;
 using UIKit;
 
 [assembly: Dependency(typeof(LocalNotifications))]
@@ -11,29 +10,32 @@ namespace GHQ.iOS.Services
 {
     public class LocalNotifications : ILocalNotifications
     {
-  
-		public void showNotification(string title, string body, DateTime date, string sound)
-		{
-			// create the notification
-			var notification = new UILocalNotification();
 
-			// set the fire date (the date time in which it will fire)
-			notification.FireDate = (Foundation.NSDate)date;
+        public void ShowNotification(string title, string body, DateTime date, string sound)
+        {
+            // create the notification
+            var notification = new UILocalNotification();
 
-			// configure the alert
+            // set the fire date (the date time in which it will fire)
+            notification.FireDate = (Foundation.NSDate)date;
 
-			notification.AlertAction = title;
-			notification.AlertBody = body;
+            // configure the alert
 
-			// modify the badge
-			notification.ApplicationIconBadgeNumber = 1;
+            notification.AlertAction = title;
+            notification.AlertBody = body;
 
-			// set the sound to be the default sound
-			notification.SoundName =sound;
+            // modify the badge
+            notification.ApplicationIconBadgeNumber = 1;
+
+            if (string.IsNullOrEmpty(sound))
+                notification.SoundName = UILocalNotification.DefaultSoundName;
+            else
+                // set the sound to be the default sound
+                notification.SoundName = sound;
 
 
-			// schedule it
-			UIApplication.SharedApplication.ScheduleLocalNotification(notification);
-		}
-	}
+            // schedule it
+            UIApplication.SharedApplication.ScheduleLocalNotification(notification);
+        }
+    }
 }
