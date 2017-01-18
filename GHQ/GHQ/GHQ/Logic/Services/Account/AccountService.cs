@@ -33,6 +33,7 @@ namespace GHQ.Logic.Service.Account
             dialogService = _dialogService;
         }
 
+		public NewUSer CurrentAccount { get; set; }
         public void HandleUnAuthorizedException(UnAuthorizedException ex)
         {
 
@@ -52,7 +53,7 @@ namespace GHQ.Logic.Service.Account
 				{
 					int rows = database.Insert(m);
 				}
-
+				CurrentAccount = user;
 				return user;
 			}
 			catch (Exception ex)
@@ -71,6 +72,7 @@ namespace GHQ.Logic.Service.Account
 				if (user != null)
 				{
 					var translateduser = UserTranslator.EntityToModel(user);
+					CurrentAccount = translateduser;
 					return translateduser;
 				}
 				else
