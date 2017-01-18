@@ -349,6 +349,8 @@ namespace Logic.Models.Data
             }
         }
 
+        public int ReminderOptionId { get;  set; }
+
         public override IEnumerable<ValidatedModel> Validate()
         {
             List<ValidatedModel> errors = new List<ValidatedModel>();
