@@ -29,7 +29,8 @@ namespace GHQ.iOS.Services
 			notification.ApplicationIconBadgeNumber = 1;
 
 			// set the sound to be the default sound
-			notification.so
+			notification.SoundName =sound;
+
 
 			// schedule it
 			UIApplication.SharedApplication.ScheduleLocalNotification(notification);

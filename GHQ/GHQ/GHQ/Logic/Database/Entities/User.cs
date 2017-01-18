@@ -3,37 +3,35 @@ using System;
 
 namespace GHQ.Logic.Database.Entities
 {
-    public class Medicine
+    public class User
     {
-        public Medicine()
+        public User()
         {
 
         }
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
-        public bool IsMissed { get; set; }
 
-        public string Name { get; set; }
+        public string FirstName { get; set; }
 
-        public string DoctorName { get; set; }
+        public string MiddleName { get; set; }
+		public string FamilyName { get; set; }
 
-        public string DiseaseName { get; set; }
+		public string UserName { get; set; }
+		public string Password { get; set; }
 
-        public DateTime StartDate { get; set; }
 
-        public DateTime EndDate { get; set; }
+		public TimeSpan BreakfastTime { get; set; }
 
-        public DateTime NextDate { get; set; }
+        public TimeSpan LaunchTime { get; set; }
 
-        public string ImagePath { get; set; }
+        public TimeSpan DinnerTime { get; set; }
 
-        public string VoiceNotePath { get; set; }
+        public string UserImage { get; set; }
 
-        public string Note { get; set; }
-        public int ReminderOption_Id { get; set; }
-        public DateTime ReminderDate { get; set; }
+        public string Gender { get; set; }
+        public int Age { get; set; }
 
-        public TimeSpan ReminderTime { get; set; }
     }
 }

@@ -1,72 +1,72 @@
 ﻿
 using Logic.Models.Data;
 using System.Collections.Generic;
+using GHQ.Logic.Database.Entities;
 
 namespace GHQ.Logic.Translators
 {
-    public static class MedicineTranslator
+    public static class UserTranslator
     {
-        public static Medicine EntityToModel(Database.Entities.Medicine entity)
+		public static User EntityToModel(Database.Entities.User entity)
         {
-            Medicine m = new Medicine()
+			User m = new User()
             {
                 Id = entity.Id,
-                DiseaseName = entity.DiseaseName,
-                DoctorName = entity.DoctorName,
-                EndDate = entity.EndDate,
-                ImagePath = entity.ImagePath,
-                IsMissed = entity.IsMissed,
-                Name = entity.Name,
-                NextDate = entity.NextDate,
-                Note = entity.Note,
-                StartDate = entity.StartDate,
-                VoiceNotePath = entity.VoiceNotePath,
+				FirstName = entity.FirstName,
+				MiddleName = entity.MiddleName,
+				FamilyName = entity.FamilyName,
+				UserName = entity.UserName,
+				Password = entity.Password,
+				UserImage = entity.UserImage,
+				BreakfastTime = entity.BreakfastTime,
+				LaunchTime = entity.LaunchTime,
+				DinnerTime = entity.DinnerTime,
+				Age = entity.Age,
+				Gender = entity.Gender
             };
 
             return m;
         }
 
-        public static List<Medicine> EntitiesToModels(List<Database.Entities.Medicine> entities)
+        public static List<User> EntitiesToModels(List<Database.Entities.User> entities)
         {
-            List<Medicine> medicinList = new List<Medicine>();
+            List<User> userList = new List<User>();
             foreach (var item in entities)
             {
-                medicinList.Add(EntityToModel(item));
+                userList.Add(EntityToModel(item));
             }
-            return medicinList;
+            return userList;
         }
 
-        public static Database.Entities.Medicine ModelToEntity(Medicine entity)
+        public static Database.Entities.User ModelToEntity(User entity)
         {
-            Database.Entities.Medicine m = new Database.Entities.Medicine()
+			Database.Entities.User m = new Database.Entities.User()
             {
-                Id = entity.Id,
-                DiseaseName = entity.DiseaseName,
-                DoctorName = entity.DoctorName,
-                EndDate = entity.EndDate,
-                ImagePath = entity.ImagePath,
-                IsMissed = entity.IsMissed,
-                Name = entity.Name,
-                NextDate = entity.NextDate,
-                Note = entity.Note,
-                StartDate = entity.StartDate,
-                VoiceNotePath = entity.VoiceNotePath,
-                ReminderOption_Id = entity.Reminder.SelectedReminderOption.Id,
-                ReminderDate = entity.Reminder.Date,
-                ReminderTime = entity.Reminder.Time,
+                 Id = entity.Id,
+				FirstName = entity.FirstName,
+				MiddleName = entity.MiddleName,
+				FamilyName = entity.FamilyName,
+				UserName = entity.UserName,
+				Password = entity.Password,
+				UserImage = entity.UserImage,
+				BreakfastTime = entity.BreakfastTime,
+				LaunchTime = entity.LaunchTime,
+				DinnerTime = entity.DinnerTime,
+				Age = entity.Age,
+				Gender = entity.Gender
             };
 
             return m;
         }
 
-        public static List<Database.Entities.Medicine> ModelToEntity(List<Medicine> entities)
+        public static List<Database.Entities.User> ModelToEntity(List<User> entities)
         {
-            List<Database.Entities.Medicine> medicinList = new List<Database.Entities.Medicine>();
+            List<Database.Entities.User> userList = new List<Database.Entities.User>();
             foreach (var item in entities)
             {
-                medicinList.Add(ModelToEntity(item));
+                userList.Add(ModelToEntity(item));
             }
-            return medicinList;
+            return userList;
         }
 
     }
