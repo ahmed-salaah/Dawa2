@@ -8,6 +8,7 @@ using Models;
 using Service.Dialog;
 using Service.Exception;
 using Service.FileHelper;
+using Service.ILocalNotifications;
 using Service.Media;
 using Service.Naviagtion;
 using Service.Recorder;
@@ -316,6 +317,8 @@ namespace GHQ.Logic.ViewModels.Account
                     Medicine = await medicineService.AddEditMedicine(Medicine);
                     navigationService.GoBack();
                 }
+                var localNotifications = DependencyService.Get<ILocalNotifications>();
+                localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, Medicine.Reminder.Date, Medicine.VoiceNotePath);
 
             }
             catch (System.Exception ex)
