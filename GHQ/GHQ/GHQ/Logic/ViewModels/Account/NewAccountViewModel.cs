@@ -12,6 +12,11 @@ using Service.Media;
 using GHQLogic.Models.Data;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Threading.Tasks;
+using GHQ.Logic.Database.Entities;
+using Service.FileHelper;
+using System;
+using GHQ.UI.Pages.Home;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -111,9 +116,49 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
-        #region OnOpenGalleryCommand Command
+		 #region Intialize SignUP
 
-        private RelayCommand _OnOpenGalleryCommand;
+        private RelayCommand _OnCreateAccountCommand;
+		public RelayCommand OnCreateAccountCommand
+		{
+			get
+			{
+				if (_OnCreateAccountCommand == null)
+				{
+					_OnCreateAccountCommand = new RelayCommand(CreateAccount);
+				}
+				return _OnCreateAccountCommand;
+			}
+		}
+		private async void CreateAccount()
+		{
+			try
+			{
+				ClearValidationErrors();
+			
+				Task<NewUSer> userLogged = accountService.AddEditUser(User);
+				navigationService.NavigateToPage(typeof(HomePage));
+
+			}
+			catch (InternetException ex)
+			{
+				await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
+			}
+			catch (System.Exception ex)
+			{
+				await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, ex.Message);
+			}
+			finally
+			{
+				IsLoading = false;
+			}
+		}
+
+		#endregion
+
+		#region OnOpenGalleryCommand Command
+
+		private RelayCommand _OnOpenGalleryCommand;
         public RelayCommand OnOpenGalleryCommand
         {
             get
@@ -140,7 +185,7 @@ namespace GHQ.Logic.ViewModels.Account
                     IsLoading = true;
                     var imageBytes = mediaFile.data;
                     User.ImageSource = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-
+					User.ImagePath = await DependencyService.Get<IFileHelper>().SaveImageToDisk(Guid.NewGuid().ToString() + User.UserName + ".jpg", imageBytes, "Medicine");
                 }
 
             }

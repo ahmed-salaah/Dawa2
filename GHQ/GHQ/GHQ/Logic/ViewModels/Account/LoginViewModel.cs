@@ -10,6 +10,7 @@ using Service.Naviagtion;
 using Xamarin.Forms;
 using GHQ.Logic.Database.Entities;
 using System.Threading.Tasks;
+using GHQLogic.Models.Data;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -105,7 +106,7 @@ namespace GHQ.Logic.ViewModels.Account
                 IsLoading = true;
                 IsPageEnabled = false;
 				//ValidationErrors = new System.Collections.ObjectModel.ObservableCollection<ValidatedModel>(LoginData.Validate());
-				Task <User> userLogged = accountService.Login(User.UserName, User.Password);
+				Task <NewUSer> userLogged = accountService.Login(User.UserName, User.Password);
 				if (userLogged != null)
 				{
 					navigationService.NavigateToPage(typeof(HomePage));

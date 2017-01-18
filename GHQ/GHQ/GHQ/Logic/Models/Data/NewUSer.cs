@@ -7,7 +7,18 @@ namespace GHQLogic.Models.Data
 {
 	public class NewUSer : BaseModel
 	{
-
+		private int _Id;
+		public int Id
+		{
+			get
+			{
+				return _Id;
+			}
+			set
+			{
+				Set(() => Id, ref _Id, value);
+			}
+		}
 		private string _UserName;
 		public string UserName
 		{
@@ -84,6 +95,18 @@ namespace GHQLogic.Models.Data
 				Set(() => LastName, ref _LastName, value);
 			}
 		}
+		private string _Gender;
+		public string Gender
+		{
+			get
+			{
+				return _Gender;
+			}
+			set
+			{
+				Set(() => Gender, ref _Gender, value);
+			}
+		}
 
 		private int _Age;
 		public int Age
@@ -120,12 +143,13 @@ namespace GHQLogic.Models.Data
 			}
 			set
 			{
+				Gender = SelectedGender.ValueAr;
 				Set(() => SelectedGender, ref _SelectedGender, value);
 			}
 		}
 
-		private DateTime _BreakFastTime;
-		public DateTime BreakFastTime
+		private TimeSpan _BreakFastTime;
+		public TimeSpan BreakFastTime
 		{
 			get
 			{
@@ -137,8 +161,8 @@ namespace GHQLogic.Models.Data
 			}
 		}
 
-		private DateTime _LaunchTime;
-		public DateTime LaunchTime
+		private TimeSpan _LaunchTime;
+		public TimeSpan LaunchTime
 		{
 			get
 			{
@@ -150,8 +174,8 @@ namespace GHQLogic.Models.Data
 			}
 		}
 
-		private DateTime _DinnerTime;
-		public DateTime DinnerTime
+		private TimeSpan _DinnerTime;
+		public TimeSpan DinnerTime
 		{
 			get
 			{
@@ -175,6 +199,20 @@ namespace GHQLogic.Models.Data
 				Set(() => Image, ref _Image, value);
 			}
 		}
+
+        private string _ImagePath;
+		public string ImagePath
+		{
+			get
+			{
+				return _ImagePath;
+			}
+			set
+			{
+				Set(() => ImagePath, ref _ImagePath, value);
+			}
+		}
+
 		public override IEnumerable<ValidatedModel> Validate()
 		{
 			throw new NotImplementedException();

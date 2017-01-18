@@ -2,23 +2,24 @@
 using Logic.Models.Data;
 using System.Collections.Generic;
 using GHQ.Logic.Database.Entities;
+using GHQLogic.Models.Data;
 
 namespace GHQ.Logic.Translators
 {
     public static class UserTranslator
     {
-		public static User EntityToModel(Database.Entities.User entity)
+		public static NewUSer EntityToModel(Database.Entities.User entity)
         {
-			User m = new User()
+			NewUSer m = new NewUSer()
             {
                 Id = entity.Id,
 				FirstName = entity.FirstName,
 				MiddleName = entity.MiddleName,
-				FamilyName = entity.FamilyName,
+				LastName = entity.FamilyName,
 				UserName = entity.UserName,
 				Password = entity.Password,
-				UserImage = entity.UserImage,
-				BreakfastTime = entity.BreakfastTime,
+				ImagePath = entity.UserImage,
+				BreakFastTime = entity.BreakfastTime,
 				LaunchTime = entity.LaunchTime,
 				DinnerTime = entity.DinnerTime,
 				Age = entity.Age,
@@ -28,9 +29,9 @@ namespace GHQ.Logic.Translators
             return m;
         }
 
-        public static List<User> EntitiesToModels(List<Database.Entities.User> entities)
+		public static List<NewUSer> EntitiesToModels(List<Database.Entities.User> entities)
         {
-            List<User> userList = new List<User>();
+			List<NewUSer> userList = new List<NewUSer>();
             foreach (var item in entities)
             {
                 userList.Add(EntityToModel(item));
@@ -38,18 +39,18 @@ namespace GHQ.Logic.Translators
             return userList;
         }
 
-        public static Database.Entities.User ModelToEntity(User entity)
+		public static Database.Entities.User ModelToEntity(NewUSer entity)
         {
 			Database.Entities.User m = new Database.Entities.User()
             {
                  Id = entity.Id,
 				FirstName = entity.FirstName,
 				MiddleName = entity.MiddleName,
-				FamilyName = entity.FamilyName,
+				FamilyName = entity.LastName,
 				UserName = entity.UserName,
 				Password = entity.Password,
-				UserImage = entity.UserImage,
-				BreakfastTime = entity.BreakfastTime,
+				UserImage = entity.ImagePath,
+				BreakfastTime = entity.BreakFastTime,
 				LaunchTime = entity.LaunchTime,
 				DinnerTime = entity.DinnerTime,
 				Age = entity.Age,
@@ -59,7 +60,7 @@ namespace GHQ.Logic.Translators
             return m;
         }
 
-        public static List<Database.Entities.User> ModelToEntity(List<User> entities)
+        public static List<Database.Entities.User> ModelToEntity(List<NewUSer> entities)
         {
             List<Database.Entities.User> userList = new List<Database.Entities.User>();
             foreach (var item in entities)

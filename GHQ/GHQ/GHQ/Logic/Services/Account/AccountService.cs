@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Exceptions;
 using GHQ.Logic.Database.Entities;
 using GHQ.Logic.Translators;
+using GHQLogic.Models.Data;
 using Service.Database;
 using Service.Dialog;
 using Service.Internet;
@@ -36,7 +37,7 @@ namespace GHQ.Logic.Service.Account
         {
 
         }
-		public async Task<User> AddEditUser(User user)
+		public async Task<NewUSer> AddEditUser(NewUSer user)
 		{
 			try
 			{
@@ -61,7 +62,7 @@ namespace GHQ.Logic.Service.Account
 
 		}
 
-		public async Task<User> Login(string userName, string Password)
+		public async Task<NewUSer> Login(string userName, string Password)
 		{
 			try
 			{
@@ -79,6 +80,7 @@ namespace GHQ.Logic.Service.Account
 			}
 			catch (Exception ex)
 			{
+				return null;
 
 			}
 		
