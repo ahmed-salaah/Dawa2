@@ -53,6 +53,7 @@
       </intent-filter>
     </activity>
     <activity android:name="md56d2f453e5bee345dca22fc6112464cbe.MediaPickerActivity" />
+    <receiver android:name="md56ec71700c2844ec321b2f5e1e9be0f76.AlarmReceiver" />
     <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md5ebcbedcc9f4271e586379ac7977363a7.ConnectivityChangeBroadcastReceiver" />
     <provider android:authorities="com.Shafafeya.Dawaya.google_measurement_service" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementContentProvider" />
     <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService" />
