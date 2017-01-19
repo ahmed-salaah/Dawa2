@@ -9,5 +9,6 @@ namespace GHQ.Logic.Service.Account
 		NewUSer CurrentAccount { get; set; }
 		Task<NewUSer> Login(string userName, string Password);
 		Task<NewUSer> AddEditUser(NewUSer user);
+		void GetLoggedInUser(int userId);
 	}
 }

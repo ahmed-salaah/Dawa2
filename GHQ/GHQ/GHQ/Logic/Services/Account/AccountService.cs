@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Exceptions;
-using GHQ.Logic.Database.Entities;
 using GHQ.Logic.Translators;
 using GHQLogic.Models.Data;
 using Service.Database;
@@ -12,6 +10,8 @@ using Service.Naviagtion;
 using Service.Network;
 using SQLite;
 using Xamarin.Forms;
+using Plugin.Settings;
+using Plugin.Settings.Abstractions;
 
 namespace GHQ.Logic.Service.Account
 {
@@ -32,6 +32,10 @@ namespace GHQ.Logic.Service.Account
             navigationService = _navigationService;
             dialogService = _dialogService;
         }
+		private static ISettings AppSettings
+		{
+			get { return CrossSettings.Current; }
+		}
 
 		public NewUSer CurrentAccount { get; set; }
         public void HandleUnAuthorizedException(UnAuthorizedException ex)
@@ -54,6 +58,7 @@ namespace GHQ.Logic.Service.Account
 					int rows = database.Insert(m);
 				}
 				CurrentAccount = user;
+				AppSettings.AddOrUpdateValue<int>(Constant.Constant.UserIDKey, user.Id);
 				return user;
 			}
 			catch (Exception ex)
@@ -61,6 +66,27 @@ namespace GHQ.Logic.Service.Account
 				return null;
 			}
 
+		}
+
+		public void GetLoggedInUser(int userId)
+		{
+			try
+			{
+				SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+				var user = database.Table<Database.Entities.User>().FirstOrDefault(m => m.Id == userId);
+				if (user != null)
+				{
+					var translateduser = UserTranslator.EntityToModel(user);
+					CurrentAccount = translateduser;
+
+				}
+			
+			}
+			catch (Exception ex)
+			{
+				
+
+			}
 		}
 
 		public async Task<NewUSer> Login(string userName, string Password)
@@ -73,6 +99,7 @@ namespace GHQ.Logic.Service.Account
 				{
 					var translateduser = UserTranslator.EntityToModel(user);
 					CurrentAccount = translateduser;
+					AppSettings.AddOrUpdateValue<int>(Constant.Constant.UserIDKey, translateduser.Id);
 					return translateduser;
 				}
 				else
