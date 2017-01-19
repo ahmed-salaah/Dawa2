@@ -17,6 +17,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace GHQ.Logic.ViewModels.Account
@@ -108,6 +109,35 @@ namespace GHQ.Logic.ViewModels.Account
             }
 
         }
+
+        private async Task<bool> AddMedicin()
+        {
+            try
+            {
+                ValidationErrors = new ObservableCollection<ValidatedModel>(Medicine.Validate());
+                if (ValidationErrors.Any())
+                {
+                    await dialogService.DisplayAlert("", ErrorMessagesString);
+                    return false;
+                }
+                else
+                {
+                    Medicine = await medicineService.AddEditMedicine(Medicine);
+                    var localNotifications = DependencyService.Get<ILocalNotifications>();
+                    localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, Medicine.Reminder.Date, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
+                    return true;
+                }
+
+            }
+            catch (System.Exception ex)
+            {
+                return false;
+            }
+            finally
+            {
+            }
+        }
+
         #endregion
 
         #region Commands
@@ -308,19 +338,11 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                ValidationErrors = new ObservableCollection<ValidatedModel>(Medicine.Validate());
-                if (ValidationErrors.Any())
+                bool isAdded = await AddMedicin();
+                if (isAdded)
                 {
-                    await dialogService.DisplayAlert("", ErrorMessagesString);
-                }
-                else
-                {
-                    Medicine = await medicineService.AddEditMedicine(Medicine);
                     navigationService.GoBack();
                 }
-                var localNotifications = DependencyService.Get<ILocalNotifications>();
-                localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, Medicine.Reminder.Date, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
-
             }
             catch (System.Exception ex)
             {
@@ -352,14 +374,9 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                ValidationErrors = new ObservableCollection<ValidatedModel>(Medicine.Validate());
-                if (ValidationErrors.Any())
+                bool isAdded = await AddMedicin();
+                if (isAdded)
                 {
-                    await dialogService.DisplayAlert("", ErrorMessagesString);
-                }
-                else
-                {
-                    await medicineService.AddEditMedicine(Medicine);
                     Medicine = new Medicine();
                 }
             }

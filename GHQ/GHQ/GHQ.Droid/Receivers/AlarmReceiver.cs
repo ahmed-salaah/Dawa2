@@ -2,6 +2,8 @@ using Android.App;
 using Android.Content;
 using Android.Support.V4.App;
 using Android.Graphics;
+using Xamarin.Forms;
+using Service.Recorder;
 
 namespace GHQ.Droid.Receivers
 {
@@ -45,6 +47,8 @@ namespace GHQ.Droid.Receivers
 
             var notification = builder.Build();
             manager.Notify(0, notification);
+
+            DependencyService.Get<IRecorderService>().Play(soundPath);
         }
     }
 }
