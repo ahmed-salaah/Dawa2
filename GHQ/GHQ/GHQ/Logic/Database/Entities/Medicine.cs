@@ -11,6 +11,7 @@ namespace GHQ.Logic.Database.Entities
         }
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+        public int User_Id { get; set; }
 
         public bool IsMissed { get; set; }
 
