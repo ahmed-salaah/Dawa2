@@ -8,9 +8,9 @@ namespace GHQ.Logic.Translators
 {
     public static class UserTranslator
     {
-		public static NewUSer EntityToModel(Database.Entities.User entity)
+		public static NewUser EntityToModel(Database.Entities.User entity)
         {
-			NewUSer m = new NewUSer()
+			NewUser m = new NewUser()
             {
                 Id = entity.Id,
 				FirstName = entity.FirstName,
@@ -29,9 +29,9 @@ namespace GHQ.Logic.Translators
             return m;
         }
 
-		public static List<NewUSer> EntitiesToModels(List<Database.Entities.User> entities)
+		public static List<NewUser> EntitiesToModels(List<Database.Entities.User> entities)
         {
-			List<NewUSer> userList = new List<NewUSer>();
+			List<NewUser> userList = new List<NewUser>();
             foreach (var item in entities)
             {
                 userList.Add(EntityToModel(item));
@@ -39,7 +39,7 @@ namespace GHQ.Logic.Translators
             return userList;
         }
 
-		public static Database.Entities.User ModelToEntity(NewUSer entity)
+		public static Database.Entities.User ModelToEntity(NewUser entity)
         {
 			Database.Entities.User m = new Database.Entities.User()
             {
@@ -60,7 +60,7 @@ namespace GHQ.Logic.Translators
             return m;
         }
 
-        public static List<Database.Entities.User> ModelToEntity(List<NewUSer> entities)
+        public static List<Database.Entities.User> ModelToEntity(List<NewUser> entities)
         {
             List<Database.Entities.User> userList = new List<Database.Entities.User>();
             foreach (var item in entities)

@@ -115,7 +115,7 @@ namespace GHQ.Logic.ViewModels.Account
 				}
 				else
 				{
-					NewUSer userLogged = await accountService.Login(User.UserName, User.Password);
+					NewUser userLogged = await accountService.Login(User.UserName, User.Password);
  					if (userLogged != null)
 					{
 						navigationService.NavigateToPage(typeof(HomePage));

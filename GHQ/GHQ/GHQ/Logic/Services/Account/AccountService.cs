@@ -37,12 +37,12 @@ namespace GHQ.Logic.Service.Account
 			get { return CrossSettings.Current; }
 		}
 
-		public NewUSer CurrentAccount { get; set; }
+		public NewUser CurrentAccount { get; set; }
         public void HandleUnAuthorizedException(UnAuthorizedException ex)
         {
 
         }
-		public async Task<NewUSer> AddEditUser(NewUSer user)
+		public async Task<NewUser> AddEditUser(NewUser user)
 		{
 			try
 			{
@@ -89,7 +89,7 @@ namespace GHQ.Logic.Service.Account
 			}
 		}
 
-		public async Task<NewUSer> Login(string userName, string Password)
+		public async Task<NewUser> Login(string userName, string Password)
 		{
 			try
 			{
