@@ -100,6 +100,7 @@ namespace GHQ.Logic.ViewModels.Account
 
                 GenderList = new ObservableCollection<LookupData>(await lookupService.GetGenderAsync());
 				User = new NewUSer();
+				User.ImageSource = ImageSource.FromResource("profile_photo.png");;
             }
             catch (InternetException ex)
             {

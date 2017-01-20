@@ -33,6 +33,27 @@ namespace GHQ.iOS.Services
                 // set the sound to be the default sound
                 notification.SoundName = soundPath;
 
+			switch (reminderRepeatOptions)
+			{
+				case ReminderRepeatOptions.Daily:
+					notification.RepeatInterval = Foundation.NSCalendarUnit.Day;
+					break;
+				case ReminderRepeatOptions.Monthly:
+					notification.RepeatInterval = Foundation.NSCalendarUnit.Month;
+					break;
+					
+				case ReminderRepeatOptions.Yearly:
+					notification.RepeatInterval = Foundation.NSCalendarUnit.Year;
+					break;
+				case ReminderRepeatOptions.Weekly:
+					notification.RepeatInterval = Foundation.NSCalendarUnit.Week;
+					break;
+				case ReminderRepeatOptions.EventBased:
+					notification.RepeatInterval = Foundation.NSCalendarUnit.Day;
+					break;
+				default:
+					break;
+			}
 
             // schedule it
             UIApplication.SharedApplication.ScheduleLocalNotification(notification);
