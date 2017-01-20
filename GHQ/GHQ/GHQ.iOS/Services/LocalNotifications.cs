@@ -10,14 +10,14 @@ namespace GHQ.iOS.Services
 {
 	public class LocalNotifications : ILocalNotifications
 	{
-		public void ShowNotification(string title, string body, DateTime date, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
+		public void ShowNotification(string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
 		{
 	
             // create the notification
             var notification = new UILocalNotification();
 
             // set the fire date (the date time in which it will fire)
-            notification.FireDate = (Foundation.NSDate)date;
+			notification.FireDate = (Foundation.NSDate)startDate;
 
             // configure the alert
 
@@ -41,7 +41,6 @@ namespace GHQ.iOS.Services
 				case ReminderRepeatOptions.Monthly:
 					notification.RepeatInterval = Foundation.NSCalendarUnit.Month;
 					break;
-					
 				case ReminderRepeatOptions.Yearly:
 					notification.RepeatInterval = Foundation.NSCalendarUnit.Year;
 					break;
@@ -57,6 +56,10 @@ namespace GHQ.iOS.Services
 
             // schedule it
             UIApplication.SharedApplication.ScheduleLocalNotification(notification);
+
         }
-    }
+
+
+
+	}
 }

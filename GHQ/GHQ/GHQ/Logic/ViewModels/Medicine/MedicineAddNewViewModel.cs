@@ -220,7 +220,19 @@ namespace GHQ.Logic.ViewModels.Account
                 {
                     Medicine = await medicineService.AddEditMedicine(Medicine);
                     var localNotifications = DependencyService.Get<ILocalNotifications>();
-                    localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, Medicine.Reminder.Date, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
+					DateTime reminderDate=Medicine.StartDate;
+					TimeSpan reminderTime = Medicine.Reminder.Time;
+					if (SelectedReminderOption.Id == 5)
+					{
+						if (SelectedMealTime.)
+						{
+
+						}
+					}
+
+					reminderDate = reminderDate.Add(reminderTime);
+
+					localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, reminderDate, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
                     return true;
                 }
 

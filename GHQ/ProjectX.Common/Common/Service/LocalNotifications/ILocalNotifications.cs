@@ -5,6 +5,6 @@ namespace Service.ILocalNotifications
 {
     public interface ILocalNotifications
     {
-        void ShowNotification(string title, string body, DateTime date, string soundPath, ReminderRepeatOptions reminderRepeatOptions);
+        void ShowNotification(string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions);
     }
 }

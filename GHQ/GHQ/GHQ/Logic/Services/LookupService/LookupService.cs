@@ -62,14 +62,17 @@ namespace GHQ.Logic.Service.Lookup
             {
                 List<LookupData> GenderList = new List<LookupData>();
                 LookupData meal = new LookupData();
+				meal.Id = ((int)Enums.MealTime.Before).ToString();
                 meal.ValueEn = AppResources.MedicineAddNew_MealType_Breakfast;
                 meal.ValueAr = AppResources.MedicineAddNew_MealType_Breakfast;
                 GenderList.Add(meal);
                 meal = new LookupData();
+				meal.Id = ((int)Enums.MealTime.Middle).ToString();
                 meal.ValueEn = AppResources.MedicineAddNew_MealType_Lunch;
                 meal.ValueAr = AppResources.MedicineAddNew_MealType_Lunch;
                 GenderList.Add(meal);
                 meal = new LookupData();
+				meal.Id = ((int)Enums.MealTime.After).ToString();
                 meal.ValueEn = AppResources.MedicineAddNew_MealType_Dinner;
                 meal.ValueAr = AppResources.MedicineAddNew_MealType_Dinner;
                 GenderList.Add(meal);
@@ -99,14 +102,17 @@ namespace GHQ.Logic.Service.Lookup
             {
                 List<LookupData> mealTime = new List<LookupData>();
                 LookupData meal = new LookupData();
+				meal.Id = ((int)Enums.MealType.BreakFast).ToString();
                 meal.ValueEn = AppResources.MedicineAddNew_MealTypeTime_After;
                 meal.ValueAr = AppResources.MedicineAddNew_MealTypeTime_After;
                 mealTime.Add(meal);
                 meal = new LookupData();
+				meal.Id = ((int)Enums.MealType.Launch).ToString();
                 meal.ValueEn = AppResources.MedicineAddNew_MealTypeTime_Before;
                 meal.ValueAr = AppResources.MedicineAddNew_MealTypeTime_Before;
                 mealTime.Add(meal);
                 meal = new LookupData();
+				meal.Id = ((int)Enums.MealType.Dinner).ToString();
                 meal.ValueEn = AppResources.MedicineAddNew_MealTypeTime_Between;
                 meal.ValueAr = AppResources.MedicineAddNew_MealTypeTime_Between;
                 mealTime.Add(meal);

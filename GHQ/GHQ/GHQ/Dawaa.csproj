@@ -106,6 +106,7 @@
     <Compile Include="Logic\ViewModels\Medicine\FilterMedicineViewModel.cs" />
     <Compile Include="Logic\Database\Entities\User.cs" />
     <Compile Include="Logic\Translators\UserTranslator.cs" />
+    <Compile Include="Logic\Enum\Meal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">

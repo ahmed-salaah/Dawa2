@@ -14,7 +14,7 @@ namespace GHQ.Droid.Services
 {
     public class LocalNotifications : ILocalNotifications
     {
-        public void ShowNotification(string title, string body, DateTime date, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
+		public void ShowNotification(string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
         {
             Intent alarmIntent = new Intent(Forms.Context, typeof(AlarmReceiver));
             alarmIntent.PutExtra("message", body);
@@ -25,10 +25,12 @@ namespace GHQ.Droid.Services
             AlarmManager alarmManager = (AlarmManager)Forms.Context.GetSystemService(Context.AlarmService);
 
             //TODO: For demo set after 5 seconds.
-            alarmManager.Set(AlarmType.ElapsedRealtime, SystemClock.ElapsedRealtime() + 5 * 1000, pendingIntent);
+			alarmManager.Set(AlarmType.ElapsedRealtime, SystemClock.ElapsedRealtime() + startDate.Millisecond, pendingIntent);
 
             //alarmManager.SetRepeating(AlarmType.ElapsedRealtime,;
 
         }
-    }
+
+	
+	}
 }
