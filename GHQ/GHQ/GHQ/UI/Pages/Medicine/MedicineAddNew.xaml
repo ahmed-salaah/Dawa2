@@ -64,23 +64,36 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineReminder} " Style="{StaticResource LabelHeaderEntryStyle}"/>
 
-            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding Medicine.Reminder.SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White" ColumnSpacing="5"
+            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White" ColumnSpacing="5"
                                         BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
 
 
 
-            <Grid>
+            <Grid IsVisible="{Binding IsEventBasedSelected,Converter={StaticResource BooleanNegateConverter}}" ColumnSpacing="0">
               <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <controls:TimePickerButtonField Grid.Column="0"  Placeholder = "{i18n:Translate MedicineAddNew_ChooseTime}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
-
-              <controls:DatePickerButtonField Grid.Column="1" Placeholder = "{i18n:Translate MedicineAddNew_ChooseDate}"  Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
-
+              <controls:DatePickerButtonField Grid.Column="0" IsVisible="{Binding IsDailySelected,Converter={StaticResource BooleanNegateConverter}}" Placeholder = "{i18n:Translate MedicineAddNew_ChooseDate}"  Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
+              
+              <controls:TimePickerButtonField Grid.Column="1"  Placeholder = "{i18n:Translate MedicineAddNew_ChooseTime}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
             </Grid>
+
+            <Grid IsVisible="{Binding IsEventBasedSelected}">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+
+              <controls:PickerField Grid.Column="0"   SelectedLookupValue = "{Binding SelectedMealType}" LookupValues = "{Binding MealTypesList,Mode=TwoWay}"/>
+
+              <controls:PickerField Grid.Column="1"  SelectedLookupValue = "{Binding SelectedMealTime}" LookupValues = "{Binding MealTimeList,Mode=TwoWay}"/>
+
+            </Grid>
+
+
 
           </StackLayout>
 

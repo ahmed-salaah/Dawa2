@@ -27,16 +27,16 @@ namespace GHQ.Logic.Service.Lookup
         {
             try
             {
-                List<LookupData> GenderList = new List<LookupData>();
+                List<LookupData> gender = new List<LookupData>();
                 LookupData male = new LookupData();
                 male.ValueEn = "Male";
                 male.ValueAr = "ذكر";
-                GenderList.Add(male);
+                gender.Add(male);
                 LookupData female = new LookupData();
                 female.ValueEn = "Female";
                 female.ValueAr = "أنثي";
-                GenderList.Add(female);
-                return GenderList;
+                gender.Add(female);
+                return gender;
             }
             catch (InternetException ex)
             {
@@ -97,20 +97,20 @@ namespace GHQ.Logic.Service.Lookup
         {
             try
             {
-                List<LookupData> GenderList = new List<LookupData>();
+                List<LookupData> mealTime = new List<LookupData>();
                 LookupData meal = new LookupData();
                 meal.ValueEn = AppResources.MedicineAddNew_MealTypeTime_After;
                 meal.ValueAr = AppResources.MedicineAddNew_MealTypeTime_After;
-                GenderList.Add(meal);
+                mealTime.Add(meal);
                 meal = new LookupData();
                 meal.ValueEn = AppResources.MedicineAddNew_MealTypeTime_Before;
                 meal.ValueAr = AppResources.MedicineAddNew_MealTypeTime_Before;
-                GenderList.Add(meal);
+                mealTime.Add(meal);
                 meal = new LookupData();
                 meal.ValueEn = AppResources.MedicineAddNew_MealTypeTime_Between;
                 meal.ValueAr = AppResources.MedicineAddNew_MealTypeTime_Between;
-                GenderList.Add(meal);
-                return GenderList;
+                mealTime.Add(meal);
+                return mealTime;
             }
             catch (InternetException ex)
             {

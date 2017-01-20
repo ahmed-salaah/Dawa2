@@ -186,8 +186,9 @@
       <Style x:Key="PickerStyle" TargetType="Picker">
         <Setter Property="BackgroundColor" Value="White" />
         <Setter Property="TextColor" Value="{StaticResource GreenColor}" />
-        <Setter Property="Margin" Value="15,0,15,0"  />
+        <Setter Property="Margin" Value="5,0,5,0"  />
         <Setter Property="WidthRequest" Value="350" />
+        <Setter Property="HeightRequest" Value="50" />
       </Style>
       <Style x:Key="DatePickerStyle" TargetType="DatePicker">
         <Setter Property="BackgroundColor" Value="White" />

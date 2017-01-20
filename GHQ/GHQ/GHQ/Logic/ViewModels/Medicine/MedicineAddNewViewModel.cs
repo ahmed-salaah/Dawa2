@@ -24,13 +24,15 @@ namespace GHQ.Logic.ViewModels.Account
 {
     public class MedicineAddNewViewModel : BaseViewModel
     {
-        public MedicineAddNewViewModel(IAccountService _accountService, IMedicineService _medicineService, INavigationService _naviagtionService, IDialogService _dialogService, IExceptionService _exceptionService)
+        public MedicineAddNewViewModel(IAccountService _accountService, IMedicineService _medicineService, INavigationService _naviagtionService,
+            IDialogService _dialogService, IExceptionService _exceptionService, ILookupService _lookupService)
         {
             accountService = _accountService;
             navigationService = _naviagtionService;
             medicineService = _medicineService;
             exceptionService = _exceptionService;
             dialogService = _dialogService;
+            lookupService = _lookupService;
         }
 
         #region Private Members
@@ -40,6 +42,7 @@ namespace GHQ.Logic.ViewModels.Account
         IMedicineService medicineService;
         IExceptionService exceptionService;
         IDialogService dialogService;
+        ILookupService lookupService;
         #endregion
 
         #region Properties
@@ -85,6 +88,98 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
+        private RadioButtonGroupItem _SelectedReminderOption;
+        public RadioButtonGroupItem SelectedReminderOption
+        {
+            get { return _SelectedReminderOption; }
+            set
+            {
+                Set(() => SelectedReminderOption, ref _SelectedReminderOption, value);
+                Medicine.Reminder.SelectedReminderOption = value;
+                if (value.Id == 5)
+                    IsEventBasedSelected = true;
+                else
+                    IsEventBasedSelected = false;
+
+                if (value.Id == 0)
+                    IsDailySelected = true;
+                else
+                    IsDailySelected = false;
+            }
+        }
+
+        private bool _IsEventBasedSelected;
+        public bool IsEventBasedSelected
+        {
+            get { return _IsEventBasedSelected; }
+            set
+            {
+                Set(() => IsEventBasedSelected, ref _IsEventBasedSelected, value);
+            }
+        }
+
+        private bool _IsDailySelected;
+        public bool IsDailySelected
+        {
+            get { return _IsDailySelected; }
+            set
+            {
+                Set(() => IsDailySelected, ref _IsDailySelected, value);
+            }
+        }
+
+        private ObservableCollection<LookupData> _MealTypesList;
+        public ObservableCollection<LookupData> MealTypesList
+        {
+            get
+            {
+                return _MealTypesList;
+            }
+            set
+            {
+                Set(() => MealTypesList, ref _MealTypesList, value);
+            }
+        }
+
+        private LookupData _SelectedMealType;
+        public LookupData SelectedMealType
+        {
+            get
+            {
+                return _SelectedMealType;
+            }
+            set
+            {
+                Set(() => SelectedMealType, ref _SelectedMealType, value);
+            }
+        }
+
+        private ObservableCollection<LookupData> _MealTimeList;
+        public ObservableCollection<LookupData> MealTimeList
+        {
+            get
+            {
+                return _MealTimeList;
+            }
+            set
+            {
+                Set(() => MealTimeList, ref _MealTimeList, value);
+            }
+        }
+
+        private LookupData _SelectedMealTime;
+        public LookupData SelectedMealTime
+        {
+            get
+            {
+                return _SelectedMealTime;
+            }
+            set
+            {
+                Set(() => SelectedMealTime, ref _SelectedMealTime, value);
+            }
+        }
+
         #endregion
 
         #region Private Methods
@@ -92,10 +187,11 @@ namespace GHQ.Logic.ViewModels.Account
         void LoadReminderOptions(int? id)
         {
             ReminderOptions = new ObservableCollection<RadioButtonGroupItem>();
-            ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.Daily, Value = AppResources.MedicineAddNew_DailyReminder });
             ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.Weekly, Value = AppResources.MedicineAddNew_WeeklyReminder });
-            ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.Monthly, Value = AppResources.MedicineAddNew_MonthlyReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.Daily, Value = AppResources.MedicineAddNew_DailyReminder });
             ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.EventBased, Value = AppResources.MedicineAddNew_EventReminder });
+            ReminderOptions.Add(new RadioButtonGroupItem() { Id = (int)ReminderRepeatOptions.Monthly, Value = AppResources.MedicineAddNew_MonthlyReminder });
+
 
             if (id == null)
             {
@@ -160,8 +256,13 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+                MealTimeList = new ObservableCollection<LookupData>(await lookupService.GetMealTimeTypesAsync());
+                SelectedMealTime = MealTimeList.FirstOrDefault();
+                MealTypesList = new ObservableCollection<LookupData>(await lookupService.GetMealTypesAsync());
+                SelectedMealType = MealTypesList.FirstOrDefault();
+
                 Medicine = null;
-                   IsRecording = false;
+                IsRecording = false;
                 if (navigationService.IsExternalAppOpen)
                 {
                     navigationService.IsExternalAppOpen = false;
