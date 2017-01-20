@@ -26,6 +26,9 @@ namespace GHQ.Droid.Services
 
             //TODO: For demo set after 5 seconds.
             alarmManager.Set(AlarmType.ElapsedRealtime, SystemClock.ElapsedRealtime() + 5 * 1000, pendingIntent);
+
+            //alarmManager.SetRepeating(AlarmType.ElapsedRealtime,;
+
         }
     }
 }

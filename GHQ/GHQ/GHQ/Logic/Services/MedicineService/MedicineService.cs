@@ -22,7 +22,7 @@ namespace GHQ.Logic.Service.Lookup
         IAccountService accountService;
         #endregion
 
-        public MedicineService(INetworkService _networkService, IInternetService _internetService,IAccountService _accountService)
+        public MedicineService(INetworkService _networkService, IInternetService _internetService, IAccountService _accountService)
         {
             accountService = _accountService;
             networkService = _networkService;
@@ -40,7 +40,7 @@ namespace GHQ.Logic.Service.Lookup
             {
                 SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
                 Database.Entities.Medicine m = MedicineTranslator.ModelToEntity(medicine);
-                m.User_Id = 1;
+                m.User_Id = accountService.CurrentAccount.Id;
                 if (medicine.Id != 0)
                 {
                     int rows = database.Update(m);
@@ -66,7 +66,8 @@ namespace GHQ.Logic.Service.Lookup
         public async Task<List<Medicine>> GetMedicine(string medicineName, string doctorName, string diesesName, DateTime StartDate, DateTime EndDate)
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
-            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.Name == medicineName || m.DoctorName == doctorName || m.DiseaseName == diesesName || m.StartDate.Date == StartDate.Date || m.EndDate == EndDate);
+            var currentUserId = accountService.CurrentAccount.Id;
+            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.User_Id == currentUserId && m.Name == medicineName || m.DoctorName == doctorName || m.DiseaseName == diesesName || m.StartDate.Date == StartDate.Date || m.EndDate == EndDate);
             if (medicineList != null && medicineList.Count() > 0)
             {
                 var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
@@ -81,7 +82,8 @@ namespace GHQ.Logic.Service.Lookup
         public async Task<List<Medicine>> GetCurrentMedicine()
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
-            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.StartDate <= DateTime.Now || m.EndDate >= DateTime.Now);
+            var currentUserId = accountService.CurrentAccount.Id;
+            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.User_Id == currentUserId && m.StartDate <= DateTime.Now || m.EndDate >= DateTime.Now);
             if (medicineList != null && medicineList.Count() > 0)
             {
                 var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
@@ -97,7 +99,8 @@ namespace GHQ.Logic.Service.Lookup
         public async Task<List<Medicine>> GetAllMedicine()
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
-            var medicineList = database.Table<Database.Entities.Medicine>().OrderByDescending(m => m.StartDate);
+            var currentUserId = accountService.CurrentAccount.Id;
+            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.User_Id == currentUserId).OrderByDescending(m => m.StartDate);
             if (medicineList != null && medicineList.Count() > 0)
             {
                 var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
@@ -112,7 +115,8 @@ namespace GHQ.Logic.Service.Lookup
         public async Task<Medicine> MissedMedicine(int medicineId)
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
-            var medicine = database.Table<Database.Entities.Medicine>().FirstOrDefault(m => m.Id == medicineId);
+            var currentUserId = accountService.CurrentAccount.Id;
+            var medicine = database.Table<Database.Entities.Medicine>().FirstOrDefault(m => m.User_Id == currentUserId && m.Id == medicineId);
             medicine.IsMissed = false;
             int rows = database.Update(medicine);
             var translatedMedicine = MedicineTranslator.EntityToModel(medicine);
@@ -123,7 +127,8 @@ namespace GHQ.Logic.Service.Lookup
         public async Task<Medicine> GetNextMedicine()
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
-            var medicine = database.Table<Database.Entities.Medicine>().OrderByDescending(m => m.NextDate).FirstOrDefault();
+            var currentUserId = accountService.CurrentAccount.Id;
+            var medicine = database.Table<Database.Entities.Medicine>().OrderByDescending(m => m.NextDate).FirstOrDefault(m => m.User_Id == currentUserId);
             var translatedMedicine = MedicineTranslator.EntityToModel(medicine);
             return translatedMedicine;
 
