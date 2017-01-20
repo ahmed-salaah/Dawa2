@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -9,6 +10,18 @@ namespace Controls
         public DatePickerButtonField()
         {
             InitializeComponent();
+        }
+
+        protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            base.OnPropertyChanged(propertyName);
+            if (propertyName == "Date")
+            {
+                if (default(DateTime) != Date)
+                    Title = Date.ToString();
+                else
+                    Title = Placeholder;
+            }
         }
 
         #region ItemHeight p
@@ -43,6 +56,17 @@ namespace Controls
         {
             get { return (string)GetValue(TitleProperty); }
             set { SetValue(TitleProperty, value); }
+        }
+
+        #endregion
+
+        #region Placeholder p
+
+        public static readonly BindableProperty PlaceholderProperty = BindableProperty.Create<DatePickerButtonField, string>(p => p.Placeholder, default(string));
+        public string Placeholder
+        {
+            get { return (string)GetValue(PlaceholderProperty); }
+            set { SetValue(PlaceholderProperty, value); }
         }
 
         #endregion
@@ -147,6 +171,8 @@ namespace Controls
         {
             if (Date == default(DateTime))
                 datePicker.Date = DateTime.Now;
+
+            datePicker.Unfocus();
             datePicker.Focus();
             if (Command != null)
             {

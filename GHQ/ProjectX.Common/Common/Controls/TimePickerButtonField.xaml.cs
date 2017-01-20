@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -10,6 +11,20 @@ namespace Controls
         {
             InitializeComponent();
         }
+
+        protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            base.OnPropertyChanged(propertyName);
+
+            if (propertyName == "Time")
+            {
+                if (default(TimeSpan) != Time)
+                    Title = Time.ToString();
+                else
+                    Title = Placeholder;
+            }
+        }
+
 
         #region ItemHeight p
 
@@ -47,7 +62,18 @@ namespace Controls
 
         #endregion
 
-        #region Date p
+        #region Placeholder p
+
+        public static readonly BindableProperty PlaceholderProperty = BindableProperty.Create<TimePickerButtonField, string>(p => p.Placeholder, default(string));
+        public string Placeholder
+        {
+            get { return (string)GetValue(PlaceholderProperty); }
+            set { SetValue(PlaceholderProperty, value); }
+        }
+
+        #endregion
+
+        #region Time p
 
         public static readonly BindableProperty TimeProperty = BindableProperty.Create<TimePickerButtonField, TimeSpan>(p => p.Time, default(TimeSpan));
         public TimeSpan Time
@@ -144,8 +170,8 @@ namespace Controls
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-			datePicker.Unfocus();
-            datePicker.Focus();
+            timePicker.Unfocus();
+            timePicker.Focus();
             if (Command != null)
             {
                 if (Command.CanExecute(CommandParamter))

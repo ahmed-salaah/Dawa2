@@ -75,13 +75,10 @@
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
+              <controls:TimePickerButtonField Grid.Column="0"  Placeholder = "{i18n:Translate MedicineAddNew_ChooseTime}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
-              <controls:TimePickerButtonField Grid.Column="0" IsVisible="{Binding Medicine.Reminder.HasTime,Mode=TwoWay}" Title = "{Binding Medicine.Reminder.FormatedTime}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time = "{Binding Medicine.Reminder.FormatedTime,Mode=TwoWay}"/>
+              <controls:DatePickerButtonField Grid.Column="1" Placeholder = "{i18n:Translate MedicineAddNew_ChooseDate}"  Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
 
-              <controls:DatePickerButtonField Grid.Column="1" IsVisible="{Binding Medicine.Reminder.HastDate,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
-
-              <controls:DatePickerButtonField Grid.Column="1" IsVisible="{Binding Medicine.Reminder.HastDate}" Title = "{Binding Medicine.Reminder.Date}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
 
             </Grid>
 
@@ -104,13 +101,11 @@
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0" IsVisible="{Binding Medicine.HasStartDate,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
+              <!--<controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0"  Title="{i18n:Translate MedicineAddNew_StartDate}" Placeholder="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />-->
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0" IsVisible="{Binding Medicine.HasStartDate}" Title="{Binding Medicine.StartDate,Mode=TwoWay}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="edit_start_end_dates_ico.png" />
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1" IsVisible="{Binding Medicine.HasEndDate,Mode=TwoWay,Converter={StaticResource BooleanNegateConverter}}" Title="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
+              <!--<controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  Title="{i18n:Translate MedicineAddNew_EndDate}" Placeholder="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />-->
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  IsVisible="{Binding Medicine.HasEndDate}" Title="{Binding Medicine.EndDate,Mode=TwoWay}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="edit_start_end_dates_ico.png" />
 
             </Grid>
 

@@ -160,15 +160,14 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-                IsRecording = false;
-
+                Medicine = null;
+                   IsRecording = false;
                 if (navigationService.IsExternalAppOpen)
                 {
                     navigationService.IsExternalAppOpen = false;
-
                     return;
-
                 }
+
                 if (medicineService.SelectedMedicine == null)
                 {
                     LoadReminderOptions(null);

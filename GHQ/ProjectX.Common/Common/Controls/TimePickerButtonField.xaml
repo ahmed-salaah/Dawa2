@@ -15,7 +15,7 @@
       <ColumnDefinition Width="Auto" />
     </Grid.ColumnDefinitions>
 
-    <TimePicker x:Name="datePicker" IsEnabled ="{Binding IsEnabled,Source={x:Reference ParentView}}"  Time="{Binding Time,Source={x:Reference ParentView}}"  Style="{StaticResource TimePickerStyle}" IsVisible="False"/>
+    <TimePicker x:Name="timePicker" IsEnabled ="{Binding IsEnabled,Source={x:Reference ParentView}}"  Time="{Binding Time,Source={x:Reference ParentView}}"  Style="{StaticResource TimePickerStyle}" IsVisible="False"/>
     <Image  Grid.Column="0"  Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="{Binding LeftImage,Source={x:Reference ParentView}}"/>
     <Label Grid.Column="1" Text="{Binding Title,Source={x:Reference ParentView}}" HorizontalOptions="End" HorizontalTextAlignment = "{Binding HorizontalTextAlignment,Source={x:Reference ParentView}}" Margin = "10,0,0,0" VerticalOptions="Center" TextColor= "{Binding TextColor,Source={x:Reference ParentView}}" />
     <Image Grid.Column="2" Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="{Binding RightImage,Source={x:Reference ParentView}}"/>

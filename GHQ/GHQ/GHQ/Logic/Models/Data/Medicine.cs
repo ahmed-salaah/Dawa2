@@ -89,24 +89,9 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => StartDate, ref _StartDate, value);
-                RaisePropertyChanged("HasStartDate");
             }
         }
 
-        public bool HasStartDate
-        {
-            get
-            {
-                if (StartDate == null || StartDate == DateTime.MinValue)
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
-            }
-        }
 
         private DateTime _EndDate;
         public DateTime EndDate
@@ -118,21 +103,6 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => EndDate, ref _EndDate, value);
-                RaisePropertyChanged("HasEndDate");
-            }
-        }
-        public bool HasEndDate
-        {
-            get
-            {
-                if (EndDate == null || EndDate == DateTime.MinValue)
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
             }
         }
 
@@ -294,25 +264,10 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => Date, ref _Date, value);
-                RaisePropertyChanged("HastDate");
             }
         }
 
-        public bool HastDate
-        {
-            get
-            {
-                if (Date == null || Date == default(DateTime))
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
-            }
-        }
-
+   
         private TimeSpan _Time;
         public TimeSpan Time
         {
@@ -323,7 +278,6 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => Time, ref _Time, value);
-                RaisePropertyChanged("HasTime");
                 RaisePropertyChanged("FormatedTime");
             }
         }
@@ -332,20 +286,6 @@ namespace Logic.Models.Data
             get
             {
                 return Time.ToString(@"hh\:mm");
-            }
-        }
-        public bool HasTime
-        {
-            get
-            {
-                if (Time == null || Time == default(TimeSpan))
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
             }
         }
 
