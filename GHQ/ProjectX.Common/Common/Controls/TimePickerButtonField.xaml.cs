@@ -144,6 +144,7 @@ namespace Controls
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
+			datePicker.Unfocus();
             datePicker.Focus();
             if (Command != null)
             {
