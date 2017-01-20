@@ -6,9 +6,9 @@ namespace GHQ.Logic.Service.Account
 {
     public interface IAccountService
     {
-		NewUSer CurrentAccount { get; set; }
-		Task<NewUSer> Login(string userName, string Password);
-		Task<NewUSer> AddEditUser(NewUSer user);
+		NewUser CurrentAccount { get; set; }
+		Task<NewUser> Login(string userName, string Password);
+		Task<NewUser> AddEditUser(NewUser user);
 		void GetLoggedInUser(int userId);
 	}
 }

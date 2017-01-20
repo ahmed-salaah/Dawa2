@@ -101,7 +101,7 @@
       <DependentUpon>FilterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Logic\Models\Data\LoginUser.cs" />
-    <Compile Include="Logic\Models\Data\NewUSer.cs" />
+    <Compile Include="Logic\Models\Data\NewUser.cs" />
     <Compile Include="Common\FacebookLoginButton.cs" />
     <Compile Include="Logic\ViewModels\Medicine\FilterMedicineViewModel.cs" />
     <Compile Include="Logic\Database\Entities\User.cs" />

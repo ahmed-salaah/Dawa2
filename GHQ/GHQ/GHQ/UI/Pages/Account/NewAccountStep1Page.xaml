@@ -45,7 +45,7 @@
             <controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate login_password}" IsPassword = "true" Title = "{Binding User.Password,Mode=TwoWay}"/>
             <controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate SignUp_ConfirmPassword}" IsPassword = "true" Title = "{Binding User.ConfirmPassword,Mode=TwoWay}"/>
 
-					</Grid>
+          </Grid>
           <Grid Grid.Row="2">
             <Grid.RowDefinitions>
               <RowDefinition Height="Auto" />
