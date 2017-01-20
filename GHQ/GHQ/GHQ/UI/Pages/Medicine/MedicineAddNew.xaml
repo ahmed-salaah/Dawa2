@@ -72,12 +72,11 @@
             <Grid IsVisible="{Binding IsEventBasedSelected,Converter={StaticResource BooleanNegateConverter}}" ColumnSpacing="0">
               <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <controls:DatePickerButtonField Grid.Column="0" IsVisible="{Binding IsDailySelected,Converter={StaticResource BooleanNegateConverter}}" Placeholder = "{i18n:Translate MedicineAddNew_ChooseDate}"  Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>
+              <!--<controls:DatePickerButtonField Grid.Column="0" IsVisible="{Binding IsDailySelected,Converter={StaticResource BooleanNegateConverter}}" Placeholder = "{i18n:Translate MedicineAddNew_ChooseDate}"  Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>-->
               
-              <controls:TimePickerButtonField Grid.Column="1"  Placeholder = "{i18n:Translate MedicineAddNew_ChooseTime}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
+              <controls:TimePickerButtonField Grid.Column="0"  Placeholder = "{i18n:Translate MedicineAddNew_ChooseTime}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
             </Grid>
 
@@ -87,9 +86,9 @@
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <controls:PickerField Grid.Column="0"   SelectedLookupValue = "{Binding SelectedMealType}" LookupValues = "{Binding MealTypesList,Mode=TwoWay}"/>
+              <controls:PickerField Grid.Column="0"   SelectedLookupValue = "{Binding SelectedMealType,Mode=TwoWay}" LookupValues = "{Binding MealTypesList,Mode=TwoWay}"/>
 
-              <controls:PickerField Grid.Column="1"  SelectedLookupValue = "{Binding SelectedMealTime}" LookupValues = "{Binding MealTimeList,Mode=TwoWay}"/>
+              <controls:PickerField Grid.Column="1"  SelectedLookupValue = "{Binding SelectedMealTime,Mode=TwoWay}" LookupValues = "{Binding MealTimeList,Mode=TwoWay}"/>
 
             </Grid>
 
