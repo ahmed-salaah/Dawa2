@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GHQ.UI.Pages.Account.LoginPage"
              xmlns:controls="clr-namespace:Controls;assembly=ProjectX.Common"
+			 xmlns:xamarinNativeFacebook="clr-namespace:XamarinNativeFacebook;assembly=XamarinNativeFacebook"
            	 xmlns:i18n="clr-namespace:Service.Localization;assembly=GHQ" >
   <RelativeLayout>
     <Image  Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
@@ -47,7 +48,8 @@
               </TapGestureRecognizer>
             </Label.GestureRecognizers>
           </Label>
-
+             <xamarinNativeFacebook:FacebookLoginButton BackgroundColor="Navy"  WidthRequest="240" Text="Facebook Login"  TextColor="White"  HorizontalOptions="Center"></xamarinNativeFacebook:FacebookLoginButton>
+           
           <controls:ButtonField Grid.Row="5" Margin="0,40,0,0" IsEnabled="True" Title="{i18n:Translate login_NewAccountButton}" TextColor="White" BGColor="{StaticResource ButtonGreenColor}" ItemHeight="50"
                                Command="{Binding OnSignUpCommand}" />
 
