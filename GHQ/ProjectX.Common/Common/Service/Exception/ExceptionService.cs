@@ -19,9 +19,9 @@ namespace Service.Exception
 #if DEBUG
 //Do Nothing
 #else
-            Xamarin.Insights.Report(ex, new Dictionary<string, string> {
-                    {"error-local-time", DateTime.Now.ToString()}, {"Caller", caller}, {"filePath", filePath}, {"lineNumber", lineNumber.HasValue?lineNumber.Value.ToString():"-1" }
-                }, Xamarin.Insights.Severity.Error);
+            //Xamarin.Insights.Report(ex, new Dictionary<string, string> {
+            //        {"error-local-time", DateTime.Now.ToString()}, {"Caller", caller}, {"filePath", filePath}, {"lineNumber", lineNumber.HasValue?lineNumber.Value.ToString():"-1" }
+            //    }, Xamarin.Insights.Severity.Error);
 #endif
 
         }
