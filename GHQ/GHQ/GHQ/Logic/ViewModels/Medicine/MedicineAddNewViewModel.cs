@@ -220,39 +220,38 @@ namespace GHQ.Logic.ViewModels.Account
                 {
                     Medicine = await medicineService.AddEditMedicine(Medicine);
                     var localNotifications = DependencyService.Get<ILocalNotifications>();
-					DateTime reminderDate=Medicine.StartDate;
-					TimeSpan reminderTime = Medicine.Reminder.Time;
+                    DateTime reminderDate = Medicine.StartDate;
+                    TimeSpan reminderTime;
+                    if (Medicine.Reminder!=null)
+                    reminderTime = Medicine.Reminder.Time;
 
-					if (SelectedReminderOption.Id == 5)
-					{
-						if (int.Parse(SelectedMealType.Id) == (int)Enums.MealType.BreakFast)
-						{
-							reminderTime = accountService.CurrentAccount.BreakFastTime;
-						}
-						else if (int.Parse(SelectedMealType.Id) == (int)Enums.MealType.Launch)
-						{
-							reminderTime = accountService.CurrentAccount.LaunchTime;
+                    if (SelectedReminderOption.Id == 5)
+                    {
+                        if (int.Parse(SelectedMealType.Id) == (int)Enums.MealType.BreakFast)
+                        {
+                            reminderTime = accountService.CurrentAccount.BreakFastTime;
+                        }
+                        else if (int.Parse(SelectedMealType.Id) == (int)Enums.MealType.Launch)
+                        {
+                            reminderTime = accountService.CurrentAccount.LaunchTime;
+                        }
+                        else if (int.Parse(SelectedMealType.Id) == (int)Enums.MealType.Dinner)
+                        {
+                            reminderTime = accountService.CurrentAccount.DinnerTime;
+                        }
 
-						}
-						else if (int.Parse(SelectedMealType.Id) == (int)Enums.MealType.Dinner)
-						{
-							reminderTime = accountService.CurrentAccount.DinnerTime;
+                        if (int.Parse(SelectedMealTime.Id) == (int)Enums.MealTime.After)
+                        {
+                            reminderTime=reminderTime.Add(new TimeSpan(0, 30, 0));
+                        }
+                        else if (int.Parse(SelectedMealTime.Id) == (int)Enums.MealTime.Before)
+                        {
+                            reminderTime= reminderTime.Add(new TimeSpan(0, -30, 0));
+                        }
+                    }
+                    reminderDate = reminderDate.Add(reminderTime);
 
-						}
-					
-
-						if (int.Parse(SelectedMealTime.Id) == (int)Enums.MealTime.After)
-						{
-							reminderTime.Add(new TimeSpan(0,30,0));
-						}
-						else if (int.Parse(SelectedMealTime.Id) ==(int) Enums.MealTime.Before)
-						{
-							reminderTime.Add(new TimeSpan(0, -30, 0));
-						}
-					}
-					reminderDate = reminderDate.Add(reminderTime);
-
-					localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, reminderDate, Medicine.EndDate,Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
+                    localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, reminderDate, Medicine.EndDate, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
                     return true;
                 }
 
@@ -293,7 +292,6 @@ namespace GHQ.Logic.ViewModels.Account
                 MealTypesList = new ObservableCollection<LookupData>(await lookupService.GetMealTypesAsync());
                 SelectedMealType = MealTypesList.FirstOrDefault();
 
-                Medicine = null;
                 IsRecording = false;
                 if (navigationService.IsExternalAppOpen)
                 {

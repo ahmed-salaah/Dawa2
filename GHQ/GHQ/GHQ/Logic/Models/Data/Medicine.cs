@@ -229,14 +229,14 @@ namespace Logic.Models.Data
             {
                 errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_EndDate), PropertyName = "EndDate" });
             }
-            if (Reminder.Date == default(DateTime))
-            {
-                errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_Day), PropertyName = "Date" });
-            }
-            if (Reminder.Time == default(TimeSpan))
-            {
-                errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_Time), PropertyName = "Time" });
-            }
+            //if (Reminder.Date == default(DateTime))
+            //{
+            //    errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_Day), PropertyName = "Date" });
+            //}
+            //if (Reminder.Time == default(TimeSpan))
+            //{
+            //    errors.Add(new ValidatedModel() { Error = string.Format(AppResources.MedicineAddNew_Validation_PleaseEnter, AppResources.MedicineAddNew_Time), PropertyName = "Time" });
+            //}
             return errors;
         }
     }
