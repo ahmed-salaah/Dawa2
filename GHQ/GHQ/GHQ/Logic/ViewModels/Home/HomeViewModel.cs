@@ -83,7 +83,7 @@ namespace GHQ.Logic.ViewModels.Account
                 DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
 
                 int userId = CrossSettings.Current.GetValueOrDefault<int>(Constant.Constant.UserIDKey);
-                accountService.GetLoggedInUser(userId);
+                accountService.GetUser(userId);
 
                 Medicine = await medicineService.GetNextMedicine();
                 var diffHour = DateTime.Now.Hour - Medicine.NextDate.Hour;

@@ -1,5 +1,7 @@
 ﻿using GHQ.Logic;
 using GHQ.Logic.ViewModels.Account;
+using GHQ.UI.Pages.Account;
+using System;
 using Xamarin.Forms;
 
 namespace GHQ.UI.Pages.Home
@@ -11,7 +13,13 @@ namespace GHQ.UI.Pages.Home
         {
             InitializeComponent();
             BindingContext = HomeViewModel;
-			NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasNavigationBar(this, true);
+            Action action = () =>
+            {
+                Locator.Default.NavigationService.NavigateToPage(typeof(NewAccountStep1Page));
+            };
+            ToolbarItems.Add(
+            new ToolbarItem("", "profile_ico.png", action, ToolbarItemOrder.Primary));
 
         }
 

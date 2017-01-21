@@ -17,6 +17,7 @@ using Service.FileHelper;
 using System;
 using GHQ.UI.Pages.Home;
 using System.Linq;
+using Plugin.Settings;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -96,9 +97,24 @@ namespace GHQ.Logic.ViewModels.Account
             try
             {
                 ClearValidationErrors();
+                var genders = await lookupService.GetGenderAsync();
+                GenderList = new ObservableCollection<LookupData>(genders);
 
-                GenderList = new ObservableCollection<LookupData>(await lookupService.GetGenderAsync());
-                User = new NewUser();
+                int userId = CrossSettings.Current.GetValueOrDefault<int>(Constant.Constant.UserIDKey);
+                if (userId == 0)
+                {
+                    User = new NewUser();
+                    User.SelectedGender = GenderList.FirstOrDefault();
+                }
+                else
+                {
+                    User = accountService.GetUser(userId);
+                    if (!string.IsNullOrEmpty(User.ImagePath))
+                    {
+                        User.ImageSource = ImageSource.FromFile(User.ImagePath);
+                    }
+                    User.SelectedGender = GenderList.FirstOrDefault(a => a.Id == User.Gender);
+                }
             }
             catch (InternetException ex)
             {
@@ -116,7 +132,7 @@ namespace GHQ.Logic.ViewModels.Account
 
         #endregion
 
-        #region Intialize SignUP
+        #region  OnCreateAccountCommand
 
         private RelayCommand _OnCreateAccountCommand;
         public RelayCommand OnCreateAccountCommand
@@ -134,7 +150,6 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-
                 ValidationErrors = new ObservableCollection<ValidatedModel>(User.Validate());
                 if (ValidationErrors.Any())
                 {
