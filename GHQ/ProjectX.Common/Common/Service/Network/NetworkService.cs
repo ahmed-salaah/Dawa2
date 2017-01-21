@@ -10,7 +10,7 @@ namespace Service.Network
 {
     public class NetworkService : INetworkService
     {
-        public string AccessToken { get; set; } 
+        public string AccessToken { get; set; }
 
 
         HttpClient client;
@@ -119,42 +119,60 @@ namespace Service.Network
 
         public async Task<HttpResult<T>> HttpPostAsync<T>(string url, object content, Dictionary<string, string> headers = null) where T : class
         {
-            var json = JsonConvert.SerializeObject(content);
-            var jsonContent = new StringContent(json, Encoding.UTF8, "application/json");
-            var request = new HttpRequestMessage()
+            HttpResponseMessage result = null;
+            try
             {
-                RequestUri = new Uri(url),
-                Method = HttpMethod.Post,
-                Content = jsonContent,
-            };
 
-            if (headers != null)
-            {
-                foreach (var header in headers)
+
+                var json = JsonConvert.SerializeObject(content);
+                var jsonContent = new StringContent(json, Encoding.UTF8, "application/json");
+                var request = new HttpRequestMessage()
                 {
-                    request.Headers.Add(header.Key, header.Value);
+                    RequestUri = new Uri(url),
+                    Method = HttpMethod.Post,
+                    Content = jsonContent,
+                };
+
+                if (headers != null)
+                {
+                    foreach (var header in headers)
+                    {
+                        request.Headers.Add(header.Key, header.Value);
+                    }
                 }
-            }
 
-            HttpResponseMessage result = await client.SendAsync(request);
-            var responseJSON = await result.Content.ReadAsStringAsync();
-            if (result.IsSuccessStatusCode)
-            {
-                var responseObject = JsonConvert.DeserializeObject<T>(responseJSON);
-                return new HttpResult<T>(responseObject, null, result);
-            }
-            else
-            {
-                if (result.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                result = await client.SendAsync(request);
+                var responseJSON = await result.Content.ReadAsStringAsync();
+                if (result.IsSuccessStatusCode)
                 {
-                    throw new UnAuthorizedException("UnAuthorized", headers, url);
+                    var responseObject = JsonConvert.DeserializeObject<T>(responseJSON);
+                    return new HttpResult<T>(responseObject, null, result);
                 }
                 else
                 {
-                    var responseObject = JsonConvert.DeserializeObject<ErrorResponse>(responseJSON);
-                    return new HttpResult<T>(null, responseObject, result);
+                    if (result.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                    {
+                        throw new UnAuthorizedException("UnAuthorized", headers, url);
+                    }
+                    else
+                    {
+                        var responseObject = JsonConvert.DeserializeObject<ErrorResponse>(responseJSON);
+                        return new HttpResult<T>(null, responseObject, result);
+                    }
                 }
             }
+            catch (UnAuthorizedException ex)
+            {
+                throw ex;
+            }
+            catch (System.Exception ex)
+            {
+                List<string> errors = new List<string>();
+                errors.Add(ex.Message);
+                ErrorResponse newError = new ErrorResponse() { ErrorMessages = errors };
+                return new HttpResult<T>(null, newError, result);
+            }
+
         }
 
         public async Task<HttpResult<T>> HttpPutAsync<T>(string url, object content, Dictionary<string, string> headers = null) where T : class

@@ -51,7 +51,7 @@ namespace Validations
             {
                 return false;
             }
-            Regex regex = new Regex("^[\u0600-\u06ff]|[\u0750-\u077f]|[\ufb50-\ufc3f]|[\ufe70-\ufefc] +$");
+            Regex regex = new Regex("^(\\s*[\u0621-\u064A\040])+$");
             Match match = regex.Match(name);
             if (match.Success)
                 return true;
@@ -61,6 +61,10 @@ namespace Validations
 
         static public bool ValidateHasSpecialCharchters(string name)
         {
+            if (string.IsNullOrEmpty(name))
+            {
+                return false;
+            }
             string specialCharacters = @"%!@#$%^&*()?/>.<,:;'\|}]{[_~`+=-" + "\"";
             char[] specialCharactersArray = specialCharacters.ToCharArray();
 
@@ -70,6 +74,68 @@ namespace Validations
                 return false;
             else
                 return true;
+        }
+
+        static public bool ValidateHasSpecialCharchtersExceptDotAndDash(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return false;
+            }
+            string specialCharacters = @"%!@#$%^&*()?/><:;'\|}]{[_~`+=" + "\"";
+            char[] specialCharactersArray = specialCharacters.ToCharArray();
+
+            int index = name.IndexOfAny(specialCharactersArray);
+            //index == -1 no special characters
+            if (index == -1)
+                return false;
+            else
+                return true;
+        }
+
+        static public bool ValidateMobileNumber(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return false;
+            }
+            Regex regex = new Regex(@"^05[0-9]{6,8}$");
+            Match match = regex.Match(name);
+            if (match.Success)
+                return true;
+            else
+                return false;
+        }
+
+        static public bool ValidateMobileNumber2(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return false;
+            }
+            Regex regex = new Regex(@"^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0 - 9]{1,9}$");
+            Match match = regex.Match(name);
+            if (match.Success)
+                return true;
+            else
+                return false;
+        }
+        
+       
+
+        static public bool ValidatePhoneNumber(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return false;
+            }
+            Regex regex = new Regex(@"^02[0-9]{6,7}$");
+            Match match = regex.Match(name);
+            if (match.Success)
+                return true;
+            else
+                return false;
+
         }
     }
 }

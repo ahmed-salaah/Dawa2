@@ -3,6 +3,7 @@ using GHQ.Resources.Strings;
 using Plugin.Toasts;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System;
 
 namespace Service.Dialog
 {
@@ -26,6 +27,11 @@ namespace Service.Dialog
             {
                 await App.Current.MainPage.DisplayAlert(title, description, accept, cancel);
             }
+        }
+
+        public Task DisplayErrorAlert(string title, string description, string accept = null, string cancel = null)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task ShowToast(string title, string description)
