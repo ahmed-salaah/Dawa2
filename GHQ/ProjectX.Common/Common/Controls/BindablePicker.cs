@@ -104,7 +104,7 @@ namespace Controls
         private static void OnSelectedItemPropertyChanged(BindableObject bindable, object value, object newValue)
         {
             var picker = (BindablePicker)bindable;
-            if (picker.ItemsSource != null)
+            if (picker.ItemsSource != null && picker.ItemsSource.Count() > 0)
             {
                 var pickerItmes = picker.ItemsSource.ToList();
                 var item = pickerItmes.IndexOf(picker.SelectedItem);

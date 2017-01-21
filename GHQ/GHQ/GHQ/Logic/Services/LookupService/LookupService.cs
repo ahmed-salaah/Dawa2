@@ -1,4 +1,5 @@
-﻿using Exceptions;
+﻿using Enums;
+using Exceptions;
 using GHQ.Resources.Strings;
 using Models;
 using Service.Internet;
@@ -29,10 +30,12 @@ namespace GHQ.Logic.Service.Lookup
             {
                 List<LookupData> gender = new List<LookupData>();
                 LookupData male = new LookupData();
+                male.Id =((int)Gender.Male).ToString();
                 male.ValueEn = "Male";
                 male.ValueAr = "ذكر";
                 gender.Add(male);
                 LookupData female = new LookupData();
+                male.Id = ((int)Gender.Female).ToString();
                 female.ValueEn = "Female";
                 female.ValueAr = "أنثي";
                 gender.Add(female);

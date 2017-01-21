@@ -38,16 +38,16 @@
               <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="80"
                                  Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
 
-              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
+              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" HeightRequest="200" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
 
             </StackLayout>
 
             <StackLayout IsVisible="{Binding AddMode,Converter={StaticResource BooleanNegateConverter}}">
 
-              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}"/>
+              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" HeightRequest="200" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}"/>
 
-              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="80"
-                                   Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
+              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_EditAttachImage}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="50"
+                                   Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="edit_white_ico.png"/>
 
             </StackLayout>
 
@@ -64,7 +64,7 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineReminder} " Style="{StaticResource LabelHeaderEntryStyle}"/>
 
-            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White" ColumnSpacing="5"
+            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico.png" ItemHeight="50" TextColor="White" ColumnSpacing="5"
                                         BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
 
 
@@ -74,8 +74,6 @@
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <!--<controls:DatePickerButtonField Grid.Column="0" IsVisible="{Binding IsDailySelected,Converter={StaticResource BooleanNegateConverter}}" Placeholder = "{i18n:Translate MedicineAddNew_ChooseDate}"  Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>-->
-              
               <controls:TimePickerButtonField Grid.Column="0"  Placeholder = "{i18n:Translate MedicineAddNew_ChooseTime}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
             </Grid>
@@ -112,12 +110,9 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0"  Title="{i18n:Translate MedicineAddNew_EndDate}" Placeholder="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0"  Title="{i18n:Translate MedicineAddNew_StartDate}" Placeholder="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
-
-
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  Title="{i18n:Translate MedicineAddNew_EndDate}" Placeholder="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
-
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  Title="{i18n:Translate MedicineAddNew_StartDate}" Placeholder="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
 
             </Grid>
 
