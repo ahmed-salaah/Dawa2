@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace XamarinNativeFacebook
+namespace Controls
 {
     public class FacebookLoginButton : Button
     {

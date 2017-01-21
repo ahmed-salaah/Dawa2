@@ -1,13 +1,14 @@
+using Dawaa.iOS;
 using GHQ;
 using MonoTouch.FacebookConnect;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using XamarinNativeFacebook;
-using XamarinNativeFacebook.iOS;
+using Dawaa;
+using System.Collections.Generic;
 
 [assembly: ExportRenderer(typeof(FacebookLoginButton), typeof(FacebookLoginButtonRendererIos))]
-namespace XamarinNativeFacebook.iOS
+namespace Dawaa.iOS
 {
     public class FacebookLoginButtonRendererIos : ButtonRenderer
     {
@@ -35,13 +36,25 @@ namespace XamarinNativeFacebook.iOS
             }
             else
             {
-                FBSession.ActiveSession.Open(FBSessionLoginBehavior.UseSystemAccountIfPresent, (aSession, status, error) =>
-                {
-                    if (error == null)
-                    {
-                        App.PostSuccessFacebookAction(aSession.AccessTokenData.AccessToken);
-                    }
-                });
+				List<string> permissions = new List<string>();
+				permissions.Add("public_profile");
+
+
+				FBSession.OpenActiveSession(null, true, (session, status, error) =>
+				{
+					if (error == null)
+	                {
+						App.PostSuccessFacebookAction(session.AccessTokenData.AccessToken);
+	                }
+				});
+					
+				//FBSession.ActiveSession.Open(FBSessionLoginBehavior.UseSystemAccountIfPresent, (aSession, status, error) =>
+    //            {
+    //                if (error == null)
+    //                {
+    //                    App.PostSuccessFacebookAction(aSession.AccessTokenData.AccessToken);
+    //                }
+    //            });
             }
 
         }

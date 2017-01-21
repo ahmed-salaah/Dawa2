@@ -139,8 +139,53 @@ namespace GHQ.Logic.ViewModels.Account
         }
         #endregion
 
-        #region SignUP Command
-        private RelayCommand _OnSignUpCommand;
+		#region FacebookLogin Command
+		private RelayCommand _OnFacebookLoginCommand;
+		public RelayCommand OnFacebookLoginCommand
+		{
+			get
+			{
+				if (_OnFacebookLoginCommand == null)
+				{
+					_OnFacebookLoginCommand = new RelayCommand(OnFacebook);
+				}
+				return _OnFacebookLoginCommand;
+			}
+		}
+
+		private async void OnFacebook()
+		{
+			try
+			{
+				IsLoading = true;
+				IsPageEnabled = false;
+
+            App.PostSuccessFacebookAction =  token =>
+				{
+				//you can use this token to authenticate to the server here
+				//call your FacebookLoginService.LoginToServer(token)
+				//I'll just navigate to a screen that displays the token
+
+					navigationService.NavigateToPage(typeof(HomePage));
+
+
+				};
+			}
+			catch (System.Exception ex)
+			{
+			}
+			finally
+			{
+				IsLoading = false;
+				IsPageEnabled = true;
+			}
+		}
+
+
+		#endregion
+
+		#region SignUP Command
+		private RelayCommand _OnSignUpCommand;
         public RelayCommand OnSignUpCommand
         {
             get

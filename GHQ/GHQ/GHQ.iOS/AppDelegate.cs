@@ -20,8 +20,8 @@ namespace GHQ.iOS
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
-		private const string FacebookAppId = "653625414809303";
-		private const string FacebookAppName = "Dawaya";
+		private const string FacebookAppId = "1435079850078846";
+		private const string FacebookAppName = "Mosa3ed";
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
@@ -54,6 +54,19 @@ namespace GHQ.iOS
 
             return base.FinishedLaunching(app, options);
         }
+		public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
+		{
+			base.OpenUrl(application, url, sourceApplication, annotation);
+			return FBSession.ActiveSession.HandleOpenURL(url);
+		}
+
+		public override void OnActivated(UIApplication application)
+		{
+			base.OnActivated(application);
+			// We need to properly handle activation of the application with regards to SSO
+			// (e.g., returning from iOS 6.0 authorization dialog or from fast app switching).
+			FBSession.ActiveSession.HandleDidBecomeActive();
+		}
 
     }
 }

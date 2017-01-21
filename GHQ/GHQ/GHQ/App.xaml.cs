@@ -9,7 +9,8 @@ namespace GHQ
 {
     public partial class App : Application
     {
-        public App()
+
+		public App()
         {
             InitializeComponent();
             Logic.Locator locator = new Logic.Locator();
