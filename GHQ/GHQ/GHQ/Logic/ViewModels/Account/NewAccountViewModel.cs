@@ -96,6 +96,11 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+                if (navigationService.IsExternalAppOpen)
+                {
+                    navigationService.IsExternalAppOpen = false;
+                    return;
+                }
                 ClearValidationErrors();
                 var genders = await lookupService.GetGenderAsync();
                 GenderList = new ObservableCollection<LookupData>(genders);
@@ -199,7 +204,6 @@ namespace GHQ.Logic.ViewModels.Account
                 var mediaPicker = DependencyService.Get<IMediaPicker>();
                 navigationService.IsExternalAppOpen = true;
                 var mediaFile = await mediaPicker.SelectPhotoAsync();
-                navigationService.IsExternalAppOpen = false;
                 if (mediaFile != null)
                 {
                     User.Image = mediaFile;

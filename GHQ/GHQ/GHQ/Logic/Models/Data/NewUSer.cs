@@ -109,8 +109,8 @@ namespace GHQLogic.Models.Data
             }
         }
 
-        private int? _Age;
-        public int? Age
+        private string _Age;
+        public string Age
         {
             get
             {
@@ -144,7 +144,7 @@ namespace GHQLogic.Models.Data
             }
             set
             {
-                Gender = value?.ValueAr;
+                Gender = value?.Id;
                 Set(() => SelectedGender, ref _SelectedGender, value);
             }
         }

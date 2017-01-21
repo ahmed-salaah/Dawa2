@@ -42,6 +42,7 @@
     <Compile Include="Common\TranslateExtension.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Logic\Database\Entities\Medicine.cs" />
+    <Compile Include="Logic\Enum\Gender.cs" />
     <Compile Include="Logic\Models\Data\Medicine.cs" />
     <Compile Include="Logic\Services\MedicineService\IMedicineService.cs" />
     <Compile Include="Logic\Services\MedicineService\MedicineService.cs" />
@@ -233,7 +234,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Logic\Enum\" />
     <Folder Include="Logic\Models\Requests\" />
     <Folder Include="Logic\Models\Response\" />
     <Folder Include="Resources\Images\" />

@@ -222,8 +222,8 @@ namespace GHQ.Logic.ViewModels.Account
                     var localNotifications = DependencyService.Get<ILocalNotifications>();
                     DateTime reminderDate = Medicine.StartDate;
                     TimeSpan reminderTime;
-                    if (Medicine.Reminder!=null)
-                    reminderTime = Medicine.Reminder.Time;
+                    if (Medicine.Reminder != null)
+                        reminderTime = Medicine.Reminder.Time;
 
                     if (SelectedReminderOption.Id == 5)
                     {
@@ -242,11 +242,11 @@ namespace GHQ.Logic.ViewModels.Account
 
                         if (int.Parse(SelectedMealTime.Id) == (int)Enums.MealTime.After)
                         {
-                            reminderTime=reminderTime.Add(new TimeSpan(0, 30, 0));
+                            reminderTime = reminderTime.Add(new TimeSpan(0, 30, 0));
                         }
                         else if (int.Parse(SelectedMealTime.Id) == (int)Enums.MealTime.Before)
                         {
-                            reminderTime= reminderTime.Add(new TimeSpan(0, -30, 0));
+                            reminderTime = reminderTime.Add(new TimeSpan(0, -30, 0));
                         }
                     }
                     reminderDate = reminderDate.Add(reminderTime);

@@ -74,8 +74,6 @@
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <!--<controls:DatePickerButtonField Grid.Column="0" IsVisible="{Binding IsDailySelected,Converter={StaticResource BooleanNegateConverter}}" Placeholder = "{i18n:Translate MedicineAddNew_ChooseDate}"  Title = "{i18n:Translate MedicineAddNew_ChooseDate}"  BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Date = "{Binding Medicine.Reminder.Date,Mode=TwoWay}"/>-->
-              
               <controls:TimePickerButtonField Grid.Column="0"  Placeholder = "{i18n:Translate MedicineAddNew_ChooseTime}" Title = "{i18n:Translate MedicineAddNew_ChooseTime}"   BGColor = "White" TextColor = "{StaticResource DarkGrayColor}" IsEnabled = "true" Time="{Binding Medicine.Reminder.Time,Mode=TwoWay}"/>
 
             </Grid>
@@ -112,12 +110,9 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0"  Title="{i18n:Translate MedicineAddNew_EndDate}" Placeholder="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0"  Title="{i18n:Translate MedicineAddNew_StartDate}" Placeholder="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
-
-
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  Title="{i18n:Translate MedicineAddNew_EndDate}" Placeholder="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
-
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  Title="{i18n:Translate MedicineAddNew_StartDate}" Placeholder="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true" Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="" />
 
             </Grid>
 

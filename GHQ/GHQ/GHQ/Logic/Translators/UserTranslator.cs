@@ -22,7 +22,7 @@ namespace GHQ.Logic.Translators
                 BreakFastTime = entity.BreakfastTime,
                 LaunchTime = entity.LaunchTime,
                 DinnerTime = entity.DinnerTime,
-                Age = entity.Age,
+                Age = entity.Age.ToString(),
                 Gender = entity.Gender
             };
 
@@ -53,8 +53,8 @@ namespace GHQ.Logic.Translators
                 BreakfastTime = entity.BreakFastTime,
                 LaunchTime = entity.LaunchTime,
                 DinnerTime = entity.DinnerTime,
-                Age = entity.Age.HasValue ? entity.Age.Value : 0,
-                Gender = entity.Gender
+                Age = int.Parse(entity.Age),
+                Gender = entity.SelectedGender?.Id
             };
 
             return m;
