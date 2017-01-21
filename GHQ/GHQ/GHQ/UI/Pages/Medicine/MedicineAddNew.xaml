@@ -38,16 +38,16 @@
               <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="80"
                                  Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
 
-              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
+              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" HeightRequest="200" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}" />
 
             </StackLayout>
 
             <StackLayout IsVisible="{Binding AddMode,Converter={StaticResource BooleanNegateConverter}}">
 
-              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}"/>
+              <Image  HorizontalOptions="Center" Aspect="AspectFit" Margin="0,0,0,20" HeightRequest="200" VerticalOptions="Center" Source="{Binding Medicine.ImageSource,Mode=TwoWay}"/>
 
-              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_AttachImage}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="80"
-                                   Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="camera_ico.png"/>
+              <controls:ButtonField IsEnabled="True" Title="{i18n:Translate MedicineAddNew_EditAttachImage}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" ItemHeight="50"
+                                   Command="{Binding OnOpenGalleryCommand}"  LeftImage="plus_ico.png" RightImage="edit_white_ico.png"/>
 
             </StackLayout>
 
@@ -64,7 +64,7 @@
 
             <Label Text="{i18n:Translate MedicineAddNew_Header_MedicineReminder} " Style="{StaticResource LabelHeaderEntryStyle}"/>
 
-            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico" ItemHeight="50" TextColor="White" ColumnSpacing="5"
+            <controls:RadioButtonGroup  Items="{Binding ReminderOptions}" SelectedItem="{Binding SelectedReminderOption,Mode=TwoWay}" RightImage="checked_ico.png" ItemHeight="50" TextColor="White" ColumnSpacing="5"
                                         BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
 
 

@@ -38,6 +38,7 @@ namespace Controls
                 t.TextColor = TextColor;
                 t.BGColor = BGColor;
                 t.ToogledBGColor = ToogledBGColor;
+                t.ShowImageOnToogleOnly = true;
                 t.IsToogled = Items[i].IsSelected;
                 t.ItemHeight = ItemHeight;
                 t.RightImage = RightImage;
