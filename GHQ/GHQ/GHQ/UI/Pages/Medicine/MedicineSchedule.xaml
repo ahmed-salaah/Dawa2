@@ -18,6 +18,7 @@
 
       <controls:RadioButtonGroup  Items="{Binding ModeOptions}" SelectedItem="{Binding SelectedModeOption,Mode=TwoWay}"  ItemHeight="50" TextColor="White" ColumnSpacing="0"
                                     BGColor="{StaticResource LightBlackColor}" ToogledBGColor="{StaticResource BabyBlueColor}" ></controls:RadioButtonGroup>
+      
       <Grid  Grid.Row="1" Style="{StaticResource GridContentStyle}">
 
         <Grid.RowDefinitions>

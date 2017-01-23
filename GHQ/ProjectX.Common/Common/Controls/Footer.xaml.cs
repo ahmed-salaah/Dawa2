@@ -1,16 +1,14 @@
 ﻿using Models;
-using System;
 using System.Collections.ObjectModel;
-using System.Windows.Input;
 using Xamarin.Forms;
 using System.Runtime.CompilerServices;
 using GalaSoft.MvvmLight.Command;
 
 namespace Controls
 {
-    public partial class RadioButtonGroup : ContentView
+    public partial class Footer : ContentView
     {
-        public RadioButtonGroup()
+        public Footer()
         {
             InitializeComponent();
         }
@@ -30,8 +28,8 @@ namespace Controls
             mainGrid.ColumnSpacing = ColumnSpacing;
             for (int i = 0; i < Items.Count; i++)
             {
-                var left = i % 2;
-                var top = (int)Math.Floor(i / 2f);
+                var left = i;
+                var top = 0;
                 ToogleButtonField t = new ToogleButtonField();
                 t.IsEnabled = IsEnabled;
                 t.Title = Items[i].Value;
@@ -54,7 +52,7 @@ namespace Controls
         #region Items p
 
 
-        public static readonly BindableProperty ItemsProperty = BindableProperty.Create<RadioButtonGroup, ObservableCollection<RadioButtonGroupItem>>(p => p.Items, null);
+        public static readonly BindableProperty ItemsProperty = BindableProperty.Create<Footer, ObservableCollection<RadioButtonGroupItem>>(p => p.Items, null);
         public ObservableCollection<RadioButtonGroupItem> Items
         {
             get { return (ObservableCollection<RadioButtonGroupItem>)GetValue(ItemsProperty); }
@@ -66,7 +64,7 @@ namespace Controls
         #region SelectedItem p
 
 
-        public static readonly BindableProperty SelectedItemProperty = BindableProperty.Create<RadioButtonGroup, RadioButtonGroupItem>(p => p.SelectedItem, null);
+        public static readonly BindableProperty SelectedItemProperty = BindableProperty.Create<Footer, RadioButtonGroupItem>(p => p.SelectedItem, null);
         public RadioButtonGroupItem SelectedItem
         {
             get { return (RadioButtonGroupItem)GetValue(SelectedItemProperty); }
@@ -78,7 +76,7 @@ namespace Controls
         #region Height p
 
 
-        public static readonly BindableProperty ItemHeightProperty = BindableProperty.Create<RadioButtonGroup, int>(p => p.ItemHeight, 50);
+        public static readonly BindableProperty ItemHeightProperty = BindableProperty.Create<Footer, int>(p => p.ItemHeight, 50);
         public int ItemHeight
         {
             get { return (int)GetValue(ItemHeightProperty); }
@@ -90,7 +88,7 @@ namespace Controls
         #region ColumnSpacing p
 
 
-        public static readonly BindableProperty ColumnSpacingProperty = BindableProperty.Create<RadioButtonGroup, int>(p => p.ColumnSpacing, 0);
+        public static readonly BindableProperty ColumnSpacingProperty = BindableProperty.Create<Footer, int>(p => p.ColumnSpacing, 0);
         public int ColumnSpacing
         {
             get { return (int)GetValue(ColumnSpacingProperty); }
@@ -102,7 +100,7 @@ namespace Controls
         #region IsEnabled p
 
 
-        public static readonly BindableProperty EnabledProperty = BindableProperty.Create<RadioButtonGroup, bool>(p => p.IsEnabled, true);
+        public static readonly BindableProperty EnabledProperty = BindableProperty.Create<Footer, bool>(p => p.IsEnabled, true);
         public bool IsEnabled
         {
             get { return (bool)GetValue(EnabledProperty); }
@@ -114,7 +112,7 @@ namespace Controls
         #region ShowImageOnToogleOnly p
 
 
-        public static readonly BindableProperty ShowImageOnToogleOnlyProperty = BindableProperty.Create<RadioButtonGroup, bool>(p => p.ShowImageOnToogleOnly, false);
+        public static readonly BindableProperty ShowImageOnToogleOnlyProperty = BindableProperty.Create<Footer, bool>(p => p.ShowImageOnToogleOnly, false);
         public bool ShowImageOnToogleOnly
         {
             get { return (bool)GetValue(ShowImageOnToogleOnlyProperty); }
@@ -125,7 +123,7 @@ namespace Controls
 
         #region TextColor p
 
-        public static readonly BindableProperty TextColorProperty = BindableProperty.Create<RadioButtonGroup, Xamarin.Forms.Color>(p => p.TextColor, Color.White);
+        public static readonly BindableProperty TextColorProperty = BindableProperty.Create<Footer, Xamarin.Forms.Color>(p => p.TextColor, Color.White);
         public Xamarin.Forms.Color TextColor
         {
             get { return (Xamarin.Forms.Color)GetValue(TextColorProperty); }
@@ -136,7 +134,7 @@ namespace Controls
 
         #region BGColor p
 
-        public static readonly BindableProperty BGColorProperty = BindableProperty.Create<RadioButtonGroup, Xamarin.Forms.Color>(p => p.BGColor, Color.Red);
+        public static readonly BindableProperty BGColorProperty = BindableProperty.Create<Footer, Xamarin.Forms.Color>(p => p.BGColor, Color.Red);
 
         public Xamarin.Forms.Color BGColor
         {
@@ -148,7 +146,7 @@ namespace Controls
 
         #region ToogledBGColor p
 
-        public static readonly BindableProperty ToogledBGColorProperty = BindableProperty.Create<RadioButtonGroup, Xamarin.Forms.Color>(p => p.ToogledBGColor, Color.Red);
+        public static readonly BindableProperty ToogledBGColorProperty = BindableProperty.Create<Footer, Xamarin.Forms.Color>(p => p.ToogledBGColor, Color.Red);
 
         public Xamarin.Forms.Color ToogledBGColor
         {
@@ -161,7 +159,7 @@ namespace Controls
         #region RightImage p
 
 
-        public static readonly BindableProperty RightImageProperty = BindableProperty.Create<RadioButtonGroup, ImageSource>(p => p.RightImage, null);
+        public static readonly BindableProperty RightImageProperty = BindableProperty.Create<Footer, ImageSource>(p => p.RightImage, null);
         public ImageSource RightImage
         {
             get { return (ImageSource)GetValue(RightImageProperty); }
@@ -173,7 +171,7 @@ namespace Controls
         #region LeftImage p
 
 
-        public static readonly BindableProperty LeftImageProperty = BindableProperty.Create<RadioButtonGroup, ImageSource>(p => p.LeftImage, null);
+        public static readonly BindableProperty LeftImageProperty = BindableProperty.Create<Footer, ImageSource>(p => p.LeftImage, null);
 
         public ImageSource LeftImage
         {
