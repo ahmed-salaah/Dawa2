@@ -53,7 +53,7 @@ namespace GHQ.Logic.Translators
                 BreakfastTime = entity.BreakFastTime,
                 LaunchTime = entity.LaunchTime,
                 DinnerTime = entity.DinnerTime,
-                Age = int.Parse(entity.Age),
+                Age = string.IsNullOrEmpty(entity.Age) ? 0 : int.Parse(entity.Age),
                 Gender = entity.SelectedGender?.Id
             };
 

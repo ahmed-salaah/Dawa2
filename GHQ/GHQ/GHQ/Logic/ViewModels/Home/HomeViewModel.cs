@@ -11,6 +11,7 @@ using System;
 using Xamarin.Forms;
 using GHQ.UI.Pages.Filter;
 using Plugin.Settings;
+using GHQ.UI.Pages.Account;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -83,7 +84,11 @@ namespace GHQ.Logic.ViewModels.Account
                 DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("ar-EG"));
 
                 int userId = CrossSettings.Current.GetValueOrDefault<int>(Constant.Constant.UserIDKey);
-                accountService.GetUser(userId);
+                var user = accountService.GetUser(userId);
+                if (user == null)
+                {
+                    naviagtionService.NavigateToPage(typeof(LoginPage));
+                }
 
                 Medicine = await medicineService.GetNextMedicine();
                 var diffHour = DateTime.Now.Hour - Medicine.NextDate.Hour;

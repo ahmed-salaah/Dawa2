@@ -162,8 +162,16 @@ namespace GHQ.Logic.ViewModels.Account
                 }
                 else
                 {
-                    Task<NewUser> userLogged = accountService.AddEditUser(User);
-                    navigationService.NavigateToPage(typeof(HomePage));
+                    NewUser userLogged = await accountService.AddEditUser(User);
+                    if (userLogged == null)
+                    {
+                        await dialogService.DisplayAlert("", AppResources.Error_GeneralTitle);
+                    }
+                    else
+                    {
+                        navigationService.NavigateToPage(typeof(HomePage));
+                    }
+
                 }
             }
             catch (InternetException ex)
