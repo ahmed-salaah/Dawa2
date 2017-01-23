@@ -218,11 +218,12 @@ namespace GHQ.Logic.ViewModels.Account
                 }
                 else
                 {
-                    Medicine = await medicineService.AddEditMedicine(Medicine);
-					if (Medicine == null)
-					{
-						return false;
-					}
+                    var medicin = await medicineService.AddEditMedicine(Medicine);
+                    if (medicin == null)
+                    {
+                        return false;
+                    }
+                    Medicine = medicin;
                     var localNotifications = DependencyService.Get<ILocalNotifications>();
                     DateTime reminderDate = Medicine.StartDate;
                     TimeSpan reminderTime;
@@ -291,17 +292,19 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
+                if (navigationService.IsExternalAppOpen)
+                {
+                    navigationService.IsExternalAppOpen = false;
+                    return;
+                }
+
                 MealTimeList = new ObservableCollection<LookupData>(await lookupService.GetMealTimeTypesAsync());
                 SelectedMealTime = MealTimeList.FirstOrDefault();
                 MealTypesList = new ObservableCollection<LookupData>(await lookupService.GetMealTypesAsync());
                 SelectedMealType = MealTypesList.FirstOrDefault();
 
                 IsRecording = false;
-                if (navigationService.IsExternalAppOpen)
-                {
-                    navigationService.IsExternalAppOpen = false;
-                    return;
-                }
+
 
                 if (medicineService.SelectedMedicine == null)
                 {

@@ -25,12 +25,7 @@ namespace GHQ.Droid.Receivers
             style.BigText(message);
 
             int resourceId = Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-            //if (App.SelectedModel.VehicleType == "Car")
-            //    resourceId = Resource.Drawable.Car;
-            //else if (App.SelectedModel.VehicleType == "Bike")
-            //    resourceId = Resource.Drawable.Bike;
-            //else
-            //    resourceId = Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+
 
             var wearableExtender = new NotificationCompat.WearableExtender().SetBackground(BitmapFactory.DecodeResource(context.Resources, resourceId));
 
