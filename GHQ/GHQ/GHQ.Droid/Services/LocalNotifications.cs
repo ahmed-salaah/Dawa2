@@ -14,6 +14,11 @@ namespace GHQ.Droid.Services
 {
     public class LocalNotifications : ILocalNotifications
     {
+        public static long ConvertHoursToMilliseconds(double hours)
+        {
+            return long.Parse(TimeSpan.FromHours(hours).TotalMilliseconds.ToString());
+        }
+
         public void ShowNotification(string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
         {
             Intent alarmIntent = new Intent(Forms.Context, typeof(AlarmReceiver));
@@ -24,11 +29,32 @@ namespace GHQ.Droid.Services
             PendingIntent pendingIntent = PendingIntent.GetBroadcast(Forms.Context, 0, alarmIntent, PendingIntentFlags.UpdateCurrent);
             AlarmManager alarmManager = (AlarmManager)Forms.Context.GetSystemService(Context.AlarmService);
 
-            //TODO: For demo set after 5 seconds.
+            long repeatEvery = 0;
+            switch (reminderRepeatOptions)
+            {
+                case ReminderRepeatOptions.Daily:
+                    repeatEvery = ConvertHoursToMilliseconds(24);
+                    break;
+                case ReminderRepeatOptions.EventBased:
+                    repeatEvery = ConvertHoursToMilliseconds(24);
+                    break;
+                case ReminderRepeatOptions.Weekly:
+                    repeatEvery = ConvertHoursToMilliseconds(24 * 7);
+                    break;
+                case ReminderRepeatOptions.Monthly:
+                    repeatEvery = ConvertHoursToMilliseconds(24 * 7 * 30);
+                    break;
+                case ReminderRepeatOptions.Yearly:
+                    repeatEvery = ConvertHoursToMilliseconds(24 * 7 * 30 * 12);
+                    break;
+                default:
+                    break;
+            }
+
             var after = startDate.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
             var afterlng = SystemClock.ElapsedRealtime() + long.Parse(after.ToString());
-            alarmManager.Set(AlarmType.ElapsedRealtime, afterlng, pendingIntent);
-            //alarmManager.SetRepeating(AlarmType.ElapsedRealtime,;
+            afterlng = SystemClock.ElapsedRealtime() + 5000;
+            alarmManager.SetRepeating(AlarmType.ElapsedRealtime, afterlng, repeatEvery, pendingIntent);
 
         }
 
