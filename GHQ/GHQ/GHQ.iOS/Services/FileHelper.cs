@@ -29,8 +29,9 @@ namespace GHQ.iOS.Services
 
         public string GetLocalFilePath(string filename)
         {
-            string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            string libFolder = Path.Combine(docFolder, "..", "Library", "Databases");
+			string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            
+			string libFolder = Path.Combine(docFolder, "..", "Library", "Databases");
 
             if (!Directory.Exists(libFolder))
             {
@@ -43,8 +44,9 @@ namespace GHQ.iOS.Services
 
         public async Task<string> SaveByteArrayToDisk(string filename, byte[] imageData, string folderName = "")
         {
-            var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var filePath = Path.Combine(documents, filename);
+            //var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+			var documents = NSBundle.MainBundle.ResourcePath;
+			var filePath = Path.Combine(documents, filename);
             File.WriteAllBytes(filePath, imageData);
             return filePath;
         }

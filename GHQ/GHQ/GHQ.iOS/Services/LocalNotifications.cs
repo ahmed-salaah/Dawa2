@@ -4,6 +4,8 @@ using System;
 using Service.ILocalNotifications;
 using UIKit;
 using Enums;
+using Foundation;
+
 [assembly: Dependency(typeof(LocalNotifications))]
 
 namespace GHQ.iOS.Services
@@ -12,26 +14,28 @@ namespace GHQ.iOS.Services
 	{
 		public void ShowNotification(string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
 		{
-	
-            // create the notification
-            var notification = new UILocalNotification();
 
-            // set the fire date (the date time in which it will fire)
-			notification.FireDate = (Foundation.NSDate)startDate;
+			// create the notification
+			var notification = new UILocalNotification();
 
-            // configure the alert
+			// set the fire date (the date time in which it will fire)
+			DateTime reference = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(2001, 1, 1, 0, 0, 0));
+			notification.FireDate = NSDate.FromTimeIntervalSinceReferenceDate(
+				(startDate - reference).TotalSeconds);
 
-            notification.AlertAction = title;
-            notification.AlertBody = body;
+			// configure the alert
 
-            // modify the badge
-            notification.ApplicationIconBadgeNumber = 1;
+			notification.AlertAction = title;
+			notification.AlertBody = body;
 
-            if (string.IsNullOrEmpty(soundPath))
+			// modify the badge
+			notification.ApplicationIconBadgeNumber = 1;
+
+			if (string.IsNullOrEmpty(soundPath))
 				notification.SoundName = UILocalNotification.DefaultSoundName;
-            else
-                // set the sound to be the default sound
-                notification.SoundName = soundPath;
+			else
+				// set the sound to be the default sound
+				notification.SoundName = "cashReg.wav";
 
 			switch (reminderRepeatOptions)
 			{
@@ -54,10 +58,10 @@ namespace GHQ.iOS.Services
 					break;
 			}
 
-            // schedule it
-            UIApplication.SharedApplication.ScheduleLocalNotification(notification);
+			// schedule it
+			UIApplication.SharedApplication.ScheduleLocalNotification(notification);
 
-        }
+		}
 
 
 

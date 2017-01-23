@@ -95,7 +95,7 @@ namespace GHQ.iOS.Services
 			}
 
 			NSError err;
-			soundEffect = new AVAudioPlayer(new NSUrl(path), "wav", out err);
+			soundEffect = new AVAudioPlayer(new NSUrl(Path), "wav", out err);
 			soundEffect.Volume = EffectsVolume;
 			soundEffect.FinishedPlaying += delegate
 			{

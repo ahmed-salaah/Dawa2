@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using Plugin.Toasts;
 using UserNotifications;
 using MonoTouch.FacebookConnect;
+using Service.Recorder;
 
 namespace GHQ.iOS
 {
@@ -67,6 +68,20 @@ namespace GHQ.iOS
 			// (e.g., returning from iOS 6.0 authorization dialog or from fast app switching).
 			FBSession.ActiveSession.HandleDidBecomeActive();
 		}
+		public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, System.Action<UIBackgroundFetchResult> completionHandler)
+		{
+			base.DidReceiveRemoteNotification(application, userInfo, completionHandler);
+		}
+		public override void ReceivedLocalNotification(UIApplication application, UILocalNotification notification)
+		{
+			string soundPath = notification.SoundName;
+			DependencyService.Get<IRecorderService>().Play(soundPath);
+			//base.ReceivedLocalNotification(application, notification);
 
+		}
+		public override void HandleAction(UIApplication application, string actionIdentifier, UILocalNotification localNotification, System.Action completionHandler)
+		{
+			base.HandleAction(application, actionIdentifier, localNotification, completionHandler);
+		}
     }
 }

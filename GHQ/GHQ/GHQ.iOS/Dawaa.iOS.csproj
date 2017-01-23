@@ -125,6 +125,7 @@
     <Compile Include="CustomRenderer\FacebookLoginButtonRendererIos.cs" />
     <BundleResource Include="Resources\Dawayaa.sqlite" />
     <Compile Include="Services\LocalNotifications.cs" />
+    <BundleResource Include="Resources\cashReg.wav" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

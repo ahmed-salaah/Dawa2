@@ -250,6 +250,7 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => SelectedReminderOption, ref _SelectedReminderOption, value);
+				ReminderOptionId = value == null?0:value.Id;
             }
         }
 
