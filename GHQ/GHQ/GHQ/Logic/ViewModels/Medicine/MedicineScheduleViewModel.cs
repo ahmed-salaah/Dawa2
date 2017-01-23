@@ -109,7 +109,7 @@ namespace GHQ.Logic.ViewModels.Account
         {
             ModeOptions = new ObservableCollection<RadioButtonGroupItem>();
             ModeOptions.Add(new RadioButtonGroupItem() { Id = 1, Value = AppResources.PageHeader_MedicineSchedule_AllMedicine });
-            ModeOptions.Add(new RadioButtonGroupItem() { Id = 0, Value = "" });
+            //ModeOptions.Add(new RadioButtonGroupItem() { Id = 0, Value = "" });
             ModeOptions.Add(new RadioButtonGroupItem() { Id = 2, Value = AppResources.PageHeader_MedicineSchedule_CurrentMedicine, IsSelected = true });
 
         }
