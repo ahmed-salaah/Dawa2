@@ -1,62 +1,92 @@
 using Dawaa.iOS;
-using GHQ;
 using MonoTouch.FacebookConnect;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using Dawaa;
-using System.Collections.Generic;
+using System;
+using System.Linq;
+using GHQ;
 
 [assembly: ExportRenderer(typeof(FacebookLoginButton), typeof(FacebookLoginButtonRendererIos))]
 namespace Dawaa.iOS
 {
-    public class FacebookLoginButtonRendererIos : ButtonRenderer
+    public class FacebookLoginButtonRendererIos : ViewRenderer<FacebookLoginButton, FBLoginView>
     {
+		 	protected override void OnElementChanged(ElementChangedEventArgs<FacebookLoginButton> e)
+		{
+			base.OnElementChanged(e);
 
-        protected override void OnElementChanged(ElementChangedEventArgs<Button> e)
-        {
-            base.OnElementChanged(e);
+			var element = e.NewElement;
 
-            if (Control != null)
-            {
-                UIButton button = Control;
-
-                button.TouchUpInside += delegate
-                {
-                    HandleFacebookLoginClicked();
-                };
-            }
-        }
-
-        private void HandleFacebookLoginClicked()
-        {
-            if (FBSession.ActiveSession.IsOpen)
-            {
-                App.PostSuccessFacebookAction(FBSession.ActiveSession.AccessTokenData.AccessToken);
-            }
-            else
-            {
-				List<string> permissions = new List<string>();
-				permissions.Add("public_profile");
+			var session = FBSession.ActiveSession;
+			//if (element != null)
+			//{
+			//	element.LoggedIn = session != null && session.IsOpen;
+			//}
 
 
-				FBSession.OpenActiveSession(null, true, (session, status, error) =>
-				{
-					if (error == null)
-	                {
-						App.PostSuccessFacebookAction(session.AccessTokenData.AccessToken);
-	                }
-				});
-					
-				//FBSession.ActiveSession.Open(FBSessionLoginBehavior.UseSystemAccountIfPresent, (aSession, status, error) =>
-    //            {
-    //                if (error == null)
-    //                {
-    //                    App.PostSuccessFacebookAction(aSession.AccessTokenData.AccessToken);
-    //                }
-    //            });
-            }
 
-        }
+
+			var control = new FBLoginView(element.ReadPermissions);
+
+			SetNativeControl(control);
+			control.ShowingLoggedInUser += (s, ea) =>
+			{
+				var session2 = FBSession.ActiveSession;
+
+				var accessToken = (session2 != null && session2.IsOpen) ? session2.AccessTokenData.AccessToken : null;
+				App.PostSuccessFacebookAction(accessToken);
+
+			};
+
+			//control.ShowingLoggedOutUser += (s, ea) => { element.SendShowingLoggedOutUser(); };
+
+			if (element.PublishPermissions != null)
+				control.PublishPermissions = element.PublishPermissions;
+			if (element.ReadPermissions != null)
+				control.ReadPermissions = element.ReadPermissions;
+
+			MessagingCenter.Subscribe(this, "Login", (s) =>
+			{
+				Login();
+			}, element);
+
+			MessagingCenter.Subscribe(this, "Logout", (s) =>
+			{
+				Logout();
+			}, element);
+		}
+
+		void Login()
+		{
+			var session = FBSession.ActiveSession;
+			if (session != null && session.IsOpen)
+				return;
+
+			var button = Control.Subviews.Select(x => x as UIButton).FirstOrDefault(x => x != null);
+			if (button == null)
+				throw new Exception("cannot find FB login button");
+			button.SendActionForControlEvents(UIControlEvent.TouchUpInside);
+		}
+
+		void Logout()
+		{
+			var session = FBSession.ActiveSession;
+			if (session == null)
+				return;
+
+			session.CloseAndClearTokenInformation();
+		}
+
+		protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			base.OnElementPropertyChanged(sender, e);
+
+			if (e.PropertyName == FacebookLoginButton.ReadPermissionsProperty.PropertyName)
+				Control.ReadPermissions = Element.ReadPermissions;
+			else if (e.PropertyName == FacebookLoginButton.PublishPermissionsProperty.PropertyName)
+				Control.PublishPermissions = Element.PublishPermissions;
+		}
     }
 }

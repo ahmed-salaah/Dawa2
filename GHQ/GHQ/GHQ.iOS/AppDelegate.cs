@@ -20,8 +20,8 @@ namespace GHQ.iOS
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
-		private const string FacebookAppId = "1435079850078846";
-		private const string FacebookAppName = "Mosa3ed";
+		private const string FacebookAppId = "1215800281836993";
+		private const string FacebookAppName = "Dawaya";
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
@@ -56,7 +56,7 @@ namespace GHQ.iOS
         }
 		public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
 		{
-			base.OpenUrl(application, url, sourceApplication, annotation);
+			//base.OpenUrl(application, url, sourceApplication, annotation);
 			return FBSession.ActiveSession.HandleOpenURL(url);
 		}
 

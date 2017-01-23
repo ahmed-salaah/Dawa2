@@ -1,9 +1,10 @@
 using System;
 using Android.App;
-using Android.Content;
+
+using Dawaa;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using XamarinNativeFacebook;
+
 using XamarinNativeFacebook.Droid;
 using Object = Java.Lang.Object;
 using View = Android.Views.View;

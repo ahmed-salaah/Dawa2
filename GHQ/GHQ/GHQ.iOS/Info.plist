@@ -21,13 +21,13 @@
 	<key>MinimumOSVersion</key>
 	<string>6.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>Dawak</string>
+	<string>Dawaya</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.shafafya.Dawak</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleName</key>
-	<string>Dawak</string>
+	<string>Dawaya</string>
 	<key>CFBundleShortVersionString</key>
 	<string></string>
 	<key>UIBackgroundModes</key>
@@ -46,17 +46,18 @@
 	<array>
 		<dict>
 			<key>URL FacebookAppID</key>
-			<string>1066414026732641</string>
+			<string>1215800281836993</string>
 			<key>FacebookDisplayName</key>
-			<string>Mosa3ed</string>
+			<string>Dawaya</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1066414026732641</string>
+				<string>fb1215800281836993</string>
 			</array>
 		</dict>
 	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>fb</string>
 		<string>fbapi</string>
 		<string>fb-messenger-api</string>
 		<string>fbauth2</string>
