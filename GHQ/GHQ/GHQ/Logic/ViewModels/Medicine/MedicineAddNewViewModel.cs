@@ -219,6 +219,10 @@ namespace GHQ.Logic.ViewModels.Account
                 else
                 {
                     Medicine = await medicineService.AddEditMedicine(Medicine);
+					if (Medicine == null)
+					{
+						return false;
+					}
                     var localNotifications = DependencyService.Get<ILocalNotifications>();
                     DateTime reminderDate = Medicine.StartDate;
                     TimeSpan reminderTime;
