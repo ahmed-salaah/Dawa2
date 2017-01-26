@@ -19,7 +19,7 @@ namespace Controls
             if (propertyName == "Time")
             {
                 if (default(TimeSpan) != Time)
-                    Title = Time.ToString();
+					Title = Time.ToString("c");
                 else
                     Title = Placeholder;
             }

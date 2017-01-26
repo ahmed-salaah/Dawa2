@@ -18,7 +18,7 @@ namespace Controls
 			if (propertyName == "Date")
 			{
 				if (default(DateTime) != Date)
-					Title = Date.ToString();
+					Title = Date.ToString("yyyy MMMMM dd");
 				else
 					Title = Placeholder;
 			}

@@ -85,10 +85,10 @@ namespace GHQ.Logic.ViewModels.Account
 
                 int userId = CrossSettings.Current.GetValueOrDefault<int>(Constant.Constant.UserIDKey);
                 var user = accountService.GetUser(userId);
-                if (user == null)
-                {
-                    naviagtionService.NavigateToPage(typeof(LoginPage));
-                }
+                //if (user == null)
+                //{
+                //    naviagtionService.NavigateToPage(typeof(LoginPage));
+                //}
 
                 Medicine = await medicineService.GetNextMedicine();
                 var diffHour = DateTime.Now.Hour - Medicine.NextDate.Hour;

@@ -13,7 +13,9 @@ namespace GHQ.UI.Pages.Home
         {
             InitializeComponent();
             BindingContext = HomeViewModel;
-            NavigationPage.SetHasNavigationBar(this, true);
+			NavigationPage.SetHasNavigationBar(this, true);
+			NavigationPage.SetHasBackButton(this, false);
+			Title = "DAWAYA";
             Action action = () =>
             {
                 Locator.Default.NavigationService.NavigateToPage(typeof(NewAccountStep1Page));
