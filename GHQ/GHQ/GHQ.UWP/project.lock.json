@@ -11,6 +11,7 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -1930,6 +1931,7 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -3702,6 +3704,7 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -5438,6 +5441,7 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -7216,6 +7220,7 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -8952,6 +8957,7 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -10730,6 +10736,7 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -12468,6 +12475,17 @@
         "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.21": {
+      "sha512": "sgHu4mIt0+NVGyI12Bj4hLPypNK55UOH+ologj2LqDCjxq3EbIxe/uAtHjY+fEwbE1dtsAHG8SXHf+V/EYbKTg==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Bcl.Build.1.0.21.nupkg.sha512",
+        "Microsoft.Bcl.Build.nuspec",
+        "build/Microsoft.Bcl.Build.Tasks.dll",
+        "build/Microsoft.Bcl.Build.targets"
       ]
     },
     "Microsoft.CSharp/4.0.0": {
@@ -16119,6 +16137,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Microsoft.Bcl.Build >= 1.0.21",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
       "MvvmLightLibs >= 5.3.0",
       "Newtonsoft.Json >= 9.0.1",
