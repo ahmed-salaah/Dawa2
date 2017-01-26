@@ -25,6 +25,7 @@ namespace GHQ.Droid.Services
             alarmIntent.PutExtra("message", body);
             alarmIntent.PutExtra("title", title);
             alarmIntent.PutExtra("soundPath", soundPath);
+            alarmIntent.PutExtra("endDate", endDate.ToString());
 
             PendingIntent pendingIntent = PendingIntent.GetBroadcast(Forms.Context, 0, alarmIntent, PendingIntentFlags.UpdateCurrent);
             AlarmManager alarmManager = (AlarmManager)Forms.Context.GetSystemService(Context.AlarmService);
@@ -51,8 +52,15 @@ namespace GHQ.Droid.Services
                     break;
             }
 
+            
+
             var after = startDate.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
             var afterlng = SystemClock.ElapsedRealtime() + long.Parse(after.ToString());
+
+            var repeatEveryInHourse = TimeSpan.FromMilliseconds(repeatEvery).TotalHours;
+
+            var afterInMin = TimeSpan.FromMilliseconds(afterlng).TotalMinutes;
+
             afterlng = SystemClock.ElapsedRealtime() + 5000;
             alarmManager.SetRepeating(AlarmType.ElapsedRealtime, afterlng, repeatEvery, pendingIntent);
 
