@@ -4,6 +4,7 @@ using Android.Support.V4.App;
 using Android.Graphics;
 using Xamarin.Forms;
 using Service.Recorder;
+using System;
 
 namespace GHQ.Droid.Receivers
 {
@@ -17,6 +18,7 @@ namespace GHQ.Droid.Receivers
             var message = intent.GetStringExtra("message");
             var title = intent.GetStringExtra("title");
             var soundPath = intent.GetStringExtra("soundPath");
+            DateTime endDate = DateTime.Parse(intent.GetStringExtra("endDate"));
             var notIntent = new Intent(context, typeof(MainActivity));
             var contentIntent = PendingIntent.GetActivity(context, 0, notIntent, PendingIntentFlags.CancelCurrent);
             var manager = NotificationManagerCompat.From(context);
