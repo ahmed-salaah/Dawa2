@@ -53,7 +53,7 @@ namespace GHQ.Droid.Services
             }
 
             var fireAt = startDate.Subtract(DateTime.Now);
-            long afterlng = 0;
+            long afterlng = -1;
             var afterInMin = fireAt.TotalMinutes;
             if (afterInMin > 0)
             {
@@ -61,7 +61,7 @@ namespace GHQ.Droid.Services
                 afterlng = long.Parse(milliSeconds.ToString());
             }
 
-            alarmManager.SetRepeating(AlarmType.ElapsedRealtimeWakeup,afterlng, repeatEvery, pendingIntent);
+            alarmManager.SetRepeating(AlarmType.RtcWakeup, afterlng, repeatEvery, pendingIntent);
         }
     }
 }
