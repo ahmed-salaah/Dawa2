@@ -116,7 +116,7 @@
       <Color x:Key="ContactUsBGColor">#fef5ec</Color>
       <Color x:Key="WhiteColor">#ffffff</Color>
 
-      <Color x:Key="DarkGrayColor">#676868</Color>
+      <Color x:Key="DarkGrayColor">#5d5d5d</Color>
       <Color x:Key="ButtonGreenColor">#1B7C79</Color>
       <Color x:Key="DefaultBackgroundColor">#E2E3DE</Color>
 

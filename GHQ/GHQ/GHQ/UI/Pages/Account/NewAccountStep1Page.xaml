@@ -24,9 +24,9 @@
           <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
               <ColumnDefinition Width="*" />
-              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" Text="{i18n:Translate signUp_uploadPhotos}" HorizontalOptions="Center" Margin = "10,0,0,0" VerticalOptions="Center" TextColor= "#317C76" />
+            <Label Grid.Column="0" Text="{i18n:Translate signUp_uploadPhotos}" HorizontalTextAlignment = "End" HorizontalOptions="End" Margin = "10,0,0,0" VerticalOptions="Center" TextColor= "#317C76" />
             <Image Grid.Column="1" HorizontalOptions="Center" Aspect="AspectFit" Margin = "0,20,0,20" VerticalOptions="Center" Source="{Binding User.ImageSource,Mode=TwoWay}">
               <Image.GestureRecognizers>
                 <TapGestureRecognizer

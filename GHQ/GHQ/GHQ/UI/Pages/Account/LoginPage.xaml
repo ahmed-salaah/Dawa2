@@ -27,14 +27,14 @@
 					<controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false" AllowSpecialCharchters="False" ShowValidation="False" IsPassword="true" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate login_password}"
 						Title="{Binding User.Password,Mode=TwoWay}" />
 					<controls:ButtonField Grid.Row="3" IsEnabled="True" Title="{i18n:Translate login_logInButton}" TextColor="White" BGColor="{StaticResource OrangeColor}" ItemHeight="50" Command="{Binding OnLoginCommand}" />
-					<Label Grid.Row="4" Margin="0,20,0,0" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center">
+					<Label Grid.Row="4" Margin="0,20,0,0" Text="{i18n:Translate login_ForgotButton}" HorizontalOptions="Center" TextColor = "#0a7c79">
 						<Label.GestureRecognizers>
 							<TapGestureRecognizer Command="{Binding OnforgotPasswordCommand}" NumberOfTapsRequired="1">
 							</TapGestureRecognizer>
 						</Label.GestureRecognizers>
 					</Label>
-					<!--<xamarinNativeFacebook:FacebookLoginButton Grid.Row="5" Margin="0,40,0,0"  WidthRequest="350" HeightRequest = "50"  HorizontalOptions="Center">
-					</xamarinNativeFacebook:FacebookLoginButton>-->
+					<xamarinNativeFacebook:FacebookLoginButton Grid.Row="5" Margin="0,40,0,0"  WidthRequest="350" HeightRequest = "50"  HorizontalOptions="Center">
+					</xamarinNativeFacebook:FacebookLoginButton>
 					<controls:ButtonField Grid.Row="6" Margin="0,10,0,0" IsEnabled="True" Title="{i18n:Translate login_NewAccountButton}" TextColor="White" BGColor="{StaticResource ButtonGreenColor}" ItemHeight="50" Command="{Binding OnSignUpCommand}" />
 				</Grid>
 			</ScrollView>
