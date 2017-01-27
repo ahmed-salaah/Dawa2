@@ -92,6 +92,8 @@ namespace Logic.Models.Data
             }
         }
 
+        public string StartDateFormated { get { return StartDate.ToString("yyyy MMMMM dd"); } }
+
 
         private DateTime _EndDate;
         public DateTime EndDate
@@ -105,6 +107,8 @@ namespace Logic.Models.Data
                 Set(() => EndDate, ref _EndDate, value);
             }
         }
+
+        public string EndDateFormated { get { return EndDate.ToString("yyyy MMMMM dd"); } }
 
         private DateTime _NextDate;
         public DateTime NextDate

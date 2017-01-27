@@ -1,15 +1,12 @@
-﻿
-using GalaSoft.MvvmLight.Command;
+﻿using GalaSoft.MvvmLight.Command;
 using GHQ.Logic.Service.Account;
 using GHQ.Logic.Service.Lookup;
-
+using GHQ.UI.Pages.Medicine;
 using Logic.Models.Data;
 using Models;
 using Service.Dialog;
 using Service.Exception;
-
 using Service.Naviagtion;
-
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -45,7 +42,7 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-       
+
 
         #endregion
 
@@ -69,19 +66,19 @@ namespace GHQ.Logic.ViewModels.Account
                 return _OnIntializeCommand;
             }
         }
-        private  void Intialize()
+        private void Intialize()
         {
             try
             {
-                
+
                 if (navigationService.IsExternalAppOpen)
                     return;
-               
-                
-                    Medicine = new Medicine();
-                    
-             
-        
+
+
+                Medicine = new Medicine();
+
+
+
             }
             catch (System.Exception ex)
             {
@@ -92,12 +89,6 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
-
-        
-       
-
-   
-
 
         #region OnFilter Command
 
@@ -117,7 +108,8 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-				medicineService.FilteredMedicine = Medicine;
+                medicineService.FilteredMedicine = Medicine;
+                navigationService.NavigateToPage(typeof(MedicineHistory));
             }
             catch (System.Exception ex)
             {
@@ -128,8 +120,6 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
-
-     
 
         #endregion
     }
