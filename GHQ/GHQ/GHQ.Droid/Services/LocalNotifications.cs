@@ -53,23 +53,15 @@ namespace GHQ.Droid.Services
             }
 
             var fireAt = startDate.Subtract(DateTime.Now);
-            //var after = startDate.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
-            //var afterlng = SystemClock.ElapsedRealtime() + long.Parse(after.ToString());
-
-            var repeatEveryInHourse = TimeSpan.FromMilliseconds(repeatEvery).TotalHours;
             long afterlng = 0;
             var afterInMin = fireAt.TotalMinutes;
             if (afterInMin > 0)
             {
-                var milliSeconds = fireAt.TotalMilliseconds.ToString();
-                afterlng = long.Parse(milliSeconds);
+                var milliSeconds = (int)fireAt.TotalMilliseconds;
+                afterlng = long.Parse(milliSeconds.ToString());
             }
 
-            //afterlng = SystemClock.ElapsedRealtime() + 5000;
-            alarmManager.SetRepeating(AlarmType.ElapsedRealtime, afterlng, repeatEvery, pendingIntent);
-
+            alarmManager.SetRepeating(AlarmType.ElapsedRealtimeWakeup,afterlng, repeatEvery, pendingIntent);
         }
-
-
     }
 }
