@@ -310,7 +310,7 @@ namespace GHQ.Logic.ViewModels.Account
                 {
                     LoadReminderOptions(null);
                     Medicine = new Medicine();
-                    Medicine.Reminder.SelectedReminderOption = ReminderOptions.FirstOrDefault();
+                   SelectedReminderOption = ReminderOptions.FirstOrDefault();
                     AddMode = true;
                 }
                 else
@@ -319,7 +319,7 @@ namespace GHQ.Logic.ViewModels.Account
                     LoadReminderOptions(Medicine.Reminder.ReminderOptionId);
                     AddMode = false;
 
-                    Medicine.Reminder.SelectedReminderOption = ReminderOptions.FirstOrDefault(a => a.Id == Medicine.Reminder.ReminderOptionId);
+                   SelectedReminderOption = ReminderOptions.FirstOrDefault(a => a.Id == Medicine.Reminder.ReminderOptionId);
 
                     if (!string.IsNullOrEmpty(Medicine.ImagePath))
                     {
