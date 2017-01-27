@@ -218,19 +218,11 @@ namespace GHQ.Logic.ViewModels.Account
                 }
                 else
                 {
-                    var medicin = await medicineService.AddEditMedicine(Medicine);
-                    if (medicin == null)
-                    {
-                        return false;
-                    }
-                    Medicine = medicin;
-                    var localNotifications = DependencyService.Get<ILocalNotifications>();
-                    DateTime reminderDate = Medicine.StartDate;
                     TimeSpan reminderTime;
                     if (Medicine.Reminder != null)
                         reminderTime = Medicine.Reminder.Time;
 
-                    if (SelectedReminderOption.Id == 5)
+                    if (SelectedReminderOption.Id == 5) //Event Based
                     {
                         if (int.Parse(SelectedMealType.Id) == (int)Enums.MealType.BreakFast)
                         {
@@ -254,8 +246,18 @@ namespace GHQ.Logic.ViewModels.Account
                             reminderTime = reminderTime.Add(new TimeSpan(0, -30, 0));
                         }
                     }
+                    DateTime reminderDate = Medicine.StartDate;
                     reminderDate = reminderDate.Add(reminderTime);
+                    Medicine.StartDate = reminderDate;
+                    Medicine.NextDate = reminderDate;
 
+                    var medicin = await medicineService.AddEditMedicine(Medicine);
+                    if (medicin == null)
+                    {
+                        return false;
+                    }
+
+                    var localNotifications = DependencyService.Get<ILocalNotifications>();
                     localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, reminderDate, Medicine.EndDate, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
                     return true;
                 }
