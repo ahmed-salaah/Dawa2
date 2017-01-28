@@ -8,23 +8,22 @@ namespace GHQ
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
             Logic.Locator locator = new Logic.Locator();
 
             int userId = CrossSettings.Current.GetValueOrDefault<int>(Constant.UserIDKey);
-            //if (Device.OS == TargetPlatform.Windows)
-            //{
-            //    MainPage = new NavigationPage(new HomePage())
-            //    {
-            //        BarBackgroundColor = Color.FromHex("#C7e4e4"),
-            //        BarTextColor = Color.FromHex("#333333"),
-            //    };
-            //}
-            //else
-            //{
+            if (Device.OS == TargetPlatform.Windows)
+            {
+                MainPage = new NavigationPage(new HomePage())
+                {
+                    BarBackgroundColor = Color.FromHex("#C7e4e4"),
+                    BarTextColor = Color.FromHex("#333333"),
+                };
+            }
+            else
+            {
                 if (CrossSettings.Current.Contains(Constant.UserIDKey) && userId > 0)
                 {
                     MainPage = new NavigationPage(new HomePage())
@@ -41,7 +40,7 @@ namespace GHQ
                         BarTextColor = Color.FromHex("#333333"),
                     };
                 }
-            //}
+            }
         }
         public static Action<string> PostSuccessFacebookAction { get; set; }
 

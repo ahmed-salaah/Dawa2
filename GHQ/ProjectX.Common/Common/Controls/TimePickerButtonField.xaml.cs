@@ -170,7 +170,6 @@ namespace Controls
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            
 			Device.BeginInvokeOnMainThread(() =>
 			{
 				timePicker.Unfocus();
