@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Enums;
 
 namespace GHQ.Logic.Service.Lookup
 {
@@ -139,6 +140,34 @@ namespace GHQ.Logic.Service.Lookup
             var translatedMedicine = MedicineTranslator.EntityToModel(medicine);
             return translatedMedicine;
 
+        }
+
+        public async Task<Medicine> UpdateNextMedicin(int medicineId, ReminderRepeatOptions option)
+        {
+            SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
+            var currentUserId = accountService.CurrentAccount.Id;
+            var medicine = database.Table<Database.Entities.Medicine>().FirstOrDefault(m => m.User_Id == currentUserId && m.Id == medicineId);
+            var addedDays = 0;
+            if (option == ReminderRepeatOptions.Daily || option == ReminderRepeatOptions.EventBased)
+            {
+                addedDays = 1;
+            }
+            else if (option == ReminderRepeatOptions.Weekly)
+            {
+                addedDays = 7;
+            }
+            else if (option == ReminderRepeatOptions.Monthly)
+            {
+                addedDays = 24;
+            }
+            else if (option == ReminderRepeatOptions.Yearly)
+            {
+                addedDays = 365;
+            }
+            medicine.NextDate = medicine.NextDate.AddDays(addedDays);
+            int rows = database.Update(medicine);
+            var translatedMedicine = MedicineTranslator.EntityToModel(medicine);
+            return translatedMedicine;
         }
     }
 }

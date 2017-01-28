@@ -5,8 +5,6 @@ using GHQ.Logic.ViewModels.Account;
 using GHQ.Logic.ViewModels.ContactUs;
 using GHQ.Resources.Strings;
 using Microsoft.Practices.ServiceLocation;
-using Service.Database;
-//using Service.DatabaseService;
 using Service.Dialog;
 using Service.Exception;
 using Service.Internet;
@@ -54,7 +52,7 @@ namespace GHQ.Logic
             SimpleIoc.Default.Register<MedicineHistoryViewModel>();
             SimpleIoc.Default.Register<MedicineScheduleViewModel>();
             SimpleIoc.Default.Register<MedicineAddNewViewModel>();
-			SimpleIoc.Default.Register<FilterMedicineViewModel>();
+            SimpleIoc.Default.Register<FilterMedicineViewModel>();
 
         }
 
@@ -103,8 +101,6 @@ namespace GHQ.Logic
         }
 
         #endregion
-
-
 
         #region View Model Properties
 
@@ -173,19 +169,19 @@ namespace GHQ.Logic
             }
         }
 
-		public FilterMedicineViewModel FilterMedicineViewModel
-		{
-			get
-			{
-				return ServiceLocator.Current.GetInstance<FilterMedicineViewModel>();
-			}
+        public FilterMedicineViewModel FilterMedicineViewModel
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<FilterMedicineViewModel>();
+            }
 
-		}
-		#endregion
+        }
+        #endregion
 
-			#region ContactUs
+        #region ContactUs
 
-		public ContactUsViewModel ContactUsViewModel
+        public ContactUsViewModel ContactUsViewModel
         {
             get
             {

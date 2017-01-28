@@ -258,7 +258,7 @@ namespace GHQ.Logic.ViewModels.Account
                     }
 
                     var localNotifications = DependencyService.Get<ILocalNotifications>();
-                    localNotifications.ShowNotification(string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, reminderDate, Medicine.EndDate, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
+                    localNotifications.ShowNotification(Medicine.Id, string.Format("Reminder for {0}", Medicine.Name), Medicine.Name, reminderDate, Medicine.EndDate, Medicine.VoiceNotePath, (ReminderRepeatOptions)Medicine.Reminder.SelectedReminderOption.Id);
                     return true;
                 }
 
@@ -312,7 +312,7 @@ namespace GHQ.Logic.ViewModels.Account
                 {
                     LoadReminderOptions(null);
                     Medicine = new Medicine();
-                   SelectedReminderOption = ReminderOptions.FirstOrDefault();
+                    SelectedReminderOption = ReminderOptions.FirstOrDefault();
                     AddMode = true;
                 }
                 else
@@ -321,7 +321,7 @@ namespace GHQ.Logic.ViewModels.Account
                     LoadReminderOptions(Medicine.Reminder.ReminderOptionId);
                     AddMode = false;
 
-                   SelectedReminderOption = ReminderOptions.FirstOrDefault(a => a.Id == Medicine.Reminder.ReminderOptionId);
+                    SelectedReminderOption = ReminderOptions.FirstOrDefault(a => a.Id == Medicine.Reminder.ReminderOptionId);
 
                     if (!string.IsNullOrEmpty(Medicine.ImagePath))
                     {

@@ -19,13 +19,15 @@ namespace GHQ.Droid.Services
             return long.Parse(TimeSpan.FromHours(hours).TotalMilliseconds.ToString());
         }
 
-        public void ShowNotification(string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
+        public void ShowNotification(int medicinId, string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
         {
             Intent alarmIntent = new Intent(Forms.Context, typeof(AlarmReceiver));
+            alarmIntent.PutExtra("medicinId", medicinId.ToString());
             alarmIntent.PutExtra("message", body);
             alarmIntent.PutExtra("title", title);
             alarmIntent.PutExtra("soundPath", soundPath);
             alarmIntent.PutExtra("endDate", endDate.ToString());
+            alarmIntent.PutExtra("reminderOptionId", ((int)reminderRepeatOptions).ToString());
 
             PendingIntent pendingIntent = PendingIntent.GetBroadcast(Forms.Context, 0, alarmIntent, PendingIntentFlags.UpdateCurrent);
             AlarmManager alarmManager = (AlarmManager)Forms.Context.GetSystemService(Context.AlarmService);
