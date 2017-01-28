@@ -36,10 +36,16 @@ namespace GHQ.Droid.Services
 
         public void Play(string Path)
         {
+            try
+            {
+                _player.SetDataSource(path);
+                _player.Prepare();
+                _player.Start();
+            }
+            catch (System.Exception ex)
+            {
+            }
 
-            _player.SetDataSource(path);
-            _player.Prepare();
-            _player.Start();
         }
 
         public async Task<byte[]> Stop()

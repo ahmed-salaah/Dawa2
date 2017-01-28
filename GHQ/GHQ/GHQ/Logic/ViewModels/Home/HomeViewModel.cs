@@ -91,8 +91,11 @@ namespace GHQ.Logic.ViewModels.Account
                 //}
 
                 Medicine = await medicineService.GetNextMedicine();
-                var diffHour = DateTime.Now.Hour - Medicine.NextDate.Hour;
-                var diffMin = DateTime.Now.Minute - Medicine.NextDate.Minute;
+
+                var fireAt = Medicine.NextDate.Subtract(DateTime.Now);
+
+                var diffHour = fireAt.Hours;
+                var diffMin = fireAt.Minutes;
                 NextReminder = string.Format(AppResources.Home_NextReminderDate, diffHour, diffMin);
             }
             catch (System.Exception ex)

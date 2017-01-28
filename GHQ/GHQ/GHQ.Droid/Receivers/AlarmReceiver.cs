@@ -14,7 +14,6 @@ namespace GHQ.Droid.Receivers
         //https://nnish.com/tag/xamarin/
         public override void OnReceive(Context context, Intent intent)
         {
-
             var message = intent.GetStringExtra("message");
             var title = intent.GetStringExtra("title");
             var soundPath = intent.GetStringExtra("soundPath");

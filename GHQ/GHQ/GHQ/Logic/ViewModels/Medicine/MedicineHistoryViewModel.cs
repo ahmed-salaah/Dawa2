@@ -73,14 +73,19 @@ namespace GHQ.Logic.ViewModels.Account
         {
             try
             {
-				if (medicineService.FilteredMedicine == null)
-				{
-					MedicineList = new ObservableCollection<Medicine>(await medicineService.GetAllMedicine());
-				}
-				else
-				{
-					MedicineList = new ObservableCollection<Medicine>(await medicineService.GetMedicine(medicineService.FilteredMedicine.Name, medicineService.FilteredMedicine.DoctorName, medicineService.FilteredMedicine.DiseaseName, medicineService.FilteredMedicine.StartDate, medicineService.FilteredMedicine.EndDate));
-				}
+                MedicineList = new ObservableCollection<Medicine>();
+                if (medicineService.FilteredMedicine == null)
+                {
+                    var medicinList = await medicineService.GetAllMedicine();
+                    if (medicinList != null)
+                        MedicineList = new ObservableCollection<Medicine>(medicinList);
+                }
+                else
+                {
+                    var medicinList = await medicineService.GetMedicine(medicineService.FilteredMedicine.Name, medicineService.FilteredMedicine.DoctorName, medicineService.FilteredMedicine.DiseaseName, medicineService.FilteredMedicine.StartDate, medicineService.FilteredMedicine.EndDate);
+                    if (medicinList != null)
+                        MedicineList = new ObservableCollection<Medicine>(medicinList);
+                }
 
             }
             catch (System.Exception ex)

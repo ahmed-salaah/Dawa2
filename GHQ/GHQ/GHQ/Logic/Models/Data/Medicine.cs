@@ -92,6 +92,8 @@ namespace Logic.Models.Data
             }
         }
 
+        public string StartDateFormated { get { return StartDate.ToString("yyyy MMMMM dd"); } }
+
 
         private DateTime _EndDate;
         public DateTime EndDate
@@ -105,6 +107,8 @@ namespace Logic.Models.Data
                 Set(() => EndDate, ref _EndDate, value);
             }
         }
+
+        public string EndDateFormated { get { return EndDate.ToString("yyyy MMMMM dd"); } }
 
         private DateTime _NextDate;
         public DateTime NextDate
@@ -250,7 +254,7 @@ namespace Logic.Models.Data
             set
             {
                 Set(() => SelectedReminderOption, ref _SelectedReminderOption, value);
-				ReminderOptionId = value == null?0:value.Id;
+                ReminderOptionId = value == null ? 0 : value.Id;
             }
         }
 
@@ -268,7 +272,7 @@ namespace Logic.Models.Data
             }
         }
 
-   
+
         private TimeSpan _Time;
         public TimeSpan Time
         {
@@ -290,7 +294,7 @@ namespace Logic.Models.Data
             }
         }
 
-        public int ReminderOptionId { get;  set; }
+        public int ReminderOptionId { get; set; }
 
         public override IEnumerable<ValidatedModel> Validate()
         {

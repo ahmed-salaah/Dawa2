@@ -67,7 +67,14 @@ namespace GHQ.Logic.Service.Lookup
         {
             SQLiteConnection database = DependencyService.Get<IDatabaseService>().GetInstance();
             var currentUserId = accountService.CurrentAccount.Id;
-            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.User_Id == currentUserId && m.Name == medicineName || m.DoctorName == doctorName || m.DiseaseName == diesesName || m.StartDate.Date == StartDate.Date || m.EndDate == EndDate);
+
+            var medicineList = database.Table<Database.Entities.Medicine>().Where(m => m.User_Id == currentUserId &&
+            m.Name.ToLower().Contains(medicineName) ||
+            m.DoctorName.ToLower().Contains(doctorName) ||
+            m.DiseaseName.ToLower().Contains(diesesName) ||
+            m.StartDate == StartDate ||
+            m.EndDate == EndDate);
+
             if (medicineList != null && medicineList.Count() > 0)
             {
                 var translatedMedicineList = MedicineTranslator.EntitiesToModels(medicineList.ToList());
