@@ -84,13 +84,13 @@
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
 
-              <controls:PickerField Grid.Column="0"   SelectedLookupValue = "{Binding SelectedMealType,Mode=TwoWay}" LookupValues = "{Binding MealTypesList,Mode=TwoWay}"/>
+              <controls:PickerButtonField  Grid.Column="0" Title =""  LookupValues = "{Binding MealTypesList}" LeftImage="down.png"
+                                      SelectedLookupValue = "{Binding SelectedMealType,Mode=TwoWay}" BGColor = "White" HorizontalTextAlignment="End" />
 
-              <controls:PickerField Grid.Column="1"  SelectedLookupValue = "{Binding SelectedMealTime,Mode=TwoWay}" LookupValues = "{Binding MealTimeList,Mode=TwoWay}"/>
+              <controls:PickerButtonField  Grid.Column="1" Title =""  LookupValues = "{Binding MealTimeList}" LeftImage="down.png"
+                                       SelectedLookupValue = "{Binding SelectedMealTime,Mode=TwoWay}" BGColor = "White" HorizontalTextAlignment="End" />
 
             </Grid>
-
-
 
           </StackLayout>
 
@@ -111,10 +111,10 @@
                 <ColumnDefinition Width="*" />
               </Grid.ColumnDefinitions>
               <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="0"  Title="{i18n:Translate MedicineAddNew_EndDate}"
-                                               Placeholder="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true" 
+                                               Placeholder="{i18n:Translate MedicineAddNew_EndDate}" IsEnabled="true"
                                                Date="{Binding Medicine.EndDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="edit_start_end_dates_ico.png" />
 
-              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  Title="{i18n:Translate MedicineAddNew_StartDate}" 
+              <controls:DatePickerButtonField  Grid.Row="0" Grid.Column="1"  Title="{i18n:Translate MedicineAddNew_StartDate}"
                                                Placeholder="{i18n:Translate MedicineAddNew_StartDate}" IsEnabled="true"
                                                Date="{Binding Medicine.StartDate,Mode=TwoWay}" TextColor="White" BGColor="{StaticResource BabyBlueColor}" RightImage="edit_start_end_dates_ico.png" />
 

@@ -19,7 +19,7 @@ namespace Controls
             if (propertyName == "Time")
             {
                 if (default(TimeSpan) != Time)
-					Title = Time.ToString("c");
+                    Title = Time.ToString("c");
                 else
                     Title = Placeholder;
             }
@@ -170,12 +170,17 @@ namespace Controls
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-			Device.BeginInvokeOnMainThread(() =>
-			{
-				timePicker.Unfocus();
-				timePicker.Focus();
-			});
-            
+            if (Time == default(TimeSpan))
+                timePicker.Time = DateTime.Now.TimeOfDay;
+
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                if (Device.OS == TargetPlatform.Windows)
+                    timePicker.IsVisible = true;
+                timePicker.Unfocus();
+                timePicker.Focus();
+            });
+
             if (Command != null)
             {
                 if (Command.CanExecute(CommandParamter))

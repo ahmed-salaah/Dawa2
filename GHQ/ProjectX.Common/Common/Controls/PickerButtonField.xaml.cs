@@ -210,10 +210,12 @@ namespace Controls
         {
 
             Device.BeginInvokeOnMainThread(() =>
-        {
-            Picker.Unfocus();
-            Picker.Focus();
-        });
+            {
+                if (Device.OS == TargetPlatform.Windows)
+                    Picker.IsVisible = true;
+                Picker.Unfocus();
+                Picker.Focus();
+            });
             if (Command != null)
             {
                 if (Command.CanExecute(CommandParamter))

@@ -22,7 +22,7 @@
                               SelectedIndex="{Binding SelectedLookupValueIndex,Mode=TwoWay,Source={x:Reference ParentView}}"
                               SelectedItem="{Binding SelectedLookupValue,Mode=TwoWay,Source={x:Reference ParentView}}"
                               IsEnabled ="{Binding IsEnabled,Source={x:Reference ParentView}}"
-							  IsVisible="False" />
+							                IsVisible="False" />
 
     <Image  Grid.Column="0"  Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="{Binding LeftImage,Source={x:Reference ParentView}}"/>
 
