@@ -18,6 +18,7 @@ using System;
 using GHQ.UI.Pages.Home;
 using System.Linq;
 using Plugin.Settings;
+using GHQ.UI.Pages.Account;
 
 namespace GHQ.Logic.ViewModels.Account
 {
@@ -55,16 +56,16 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-		private bool _isLoggedIn;
-		public bool isLoggedIn
+		private bool _IsLoggedIn;
+		public bool IsLoggedIn
 		{
 			get
 			{
-				return _isLoggedIn;
+				return _IsLoggedIn;
 			}
 			set
 			{
-				Set(() => isLoggedIn, ref _isLoggedIn, value);
+				Set(() => IsLoggedIn, ref _IsLoggedIn, value);
 			}
 		}
 
@@ -121,13 +122,13 @@ namespace GHQ.Logic.ViewModels.Account
                 int userId = CrossSettings.Current.GetValueOrDefault<int>(Constant.Constant.UserIDKey);
                 if (userId == 0)
                 {
-					isLoggedIn = false;
+					IsLoggedIn = false;
                     User = new NewUser();
                     User.SelectedGender = GenderList.FirstOrDefault();
                 }
                 else
                 {
-					isLoggedIn = true;
+					IsLoggedIn = true;
                     User = accountService.GetUser(userId);
                     if (!string.IsNullOrEmpty(User.ImagePath))
                     {
@@ -252,7 +253,7 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
-		#region OnOpenGalleryCommand Command
+		#region LogOutCommand Command
 
         private RelayCommand _LogOutCommand;
 		public RelayCommand LogOutCommand
@@ -272,6 +273,7 @@ namespace GHQ.Logic.ViewModels.Account
 			{
 
 				CrossSettings.Current.Remove(Constant.Constant.UserIDKey);
+				navigationService.NavigateToPage(typeof(LoginPage));
 
 			}
 			catch (InternetException ex)
