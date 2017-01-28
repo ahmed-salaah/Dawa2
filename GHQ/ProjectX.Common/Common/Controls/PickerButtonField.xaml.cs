@@ -26,7 +26,6 @@ namespace Controls
 					Title = Placeholder;
 			}else if (propertyName == "HorizontalTextAlignment")
 			{
-				Title = Placeholder;
 			}
 		}
 

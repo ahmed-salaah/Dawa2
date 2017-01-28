@@ -55,7 +55,20 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-        private ObservableCollection<LookupData> _GenderList;
+		private bool _isLoggedIn;
+		public bool isLoggedIn
+		{
+			get
+			{
+				return _isLoggedIn;
+			}
+			set
+			{
+				Set(() => isLoggedIn, ref _isLoggedIn, value);
+			}
+		}
+
+		private ObservableCollection<LookupData> _GenderList;
         public ObservableCollection<LookupData> GenderList
         {
             get
@@ -108,11 +121,13 @@ namespace GHQ.Logic.ViewModels.Account
                 int userId = CrossSettings.Current.GetValueOrDefault<int>(Constant.Constant.UserIDKey);
                 if (userId == 0)
                 {
+					isLoggedIn = false;
                     User = new NewUser();
                     User.SelectedGender = GenderList.FirstOrDefault();
                 }
                 else
                 {
+					isLoggedIn = true;
                     User = accountService.GetUser(userId);
                     if (!string.IsNullOrEmpty(User.ImagePath))
                     {
@@ -237,7 +252,42 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
+		#region OnOpenGalleryCommand Command
 
-        #endregion
-    }
+        private RelayCommand _LogOutCommand;
+		public RelayCommand LogOutCommand
+		{
+			get
+			{
+				if (_LogOutCommand == null)
+				{
+					_LogOutCommand = new RelayCommand(LogOut);
+				}
+				return _LogOutCommand;
+			}
+		}
+		private async void LogOut()
+		{
+			try
+			{
+
+				CrossSettings.Current.Remove(Constant.Constant.UserIDKey);
+
+			}
+			catch (InternetException ex)
+			{
+				await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
+			}
+			catch (System.Exception ex)
+			{
+				await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, ex.Message);
+			}
+			finally
+			{
+			}
+		}
+
+		#endregion
+		#endregion
+	}
 }

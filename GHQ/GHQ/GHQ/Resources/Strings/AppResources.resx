@@ -253,22 +253,22 @@
 	<data name="MedicineAddNew_Entry_DoctorName" xml:space="preserve">
     <value>أسم الدكتور</value>
   </data>
-  <data name="MedicineAddNew_MealType_Breakfast" xml:space="preserve">
+	<data name="MedicineAddNew_MealType_Breakfast" xml:space="preserve">
     <value>الإفطار</value>
   </data>
-  <data name="MedicineAddNew_MealType_Lunch" xml:space="preserve">
+	<data name="MedicineAddNew_MealType_Lunch" xml:space="preserve">
     <value>الغداء</value>
   </data>
-  <data name="MedicineAddNew_MealType_Dinner" xml:space="preserve">
+	<data name="MedicineAddNew_MealType_Dinner" xml:space="preserve">
     <value>عشاء</value>
   </data>
-  <data name="MedicineAddNew_MealTypeTime_Before" xml:space="preserve">
+	<data name="MedicineAddNew_MealTypeTime_Before" xml:space="preserve">
     <value>قبل</value>
   </data>
-  <data name="MedicineAddNew_MealTypeTime_After" xml:space="preserve">
+	<data name="MedicineAddNew_MealTypeTime_After" xml:space="preserve">
     <value>بعد </value>
   </data>
-  <data name="MedicineAddNew_MealTypeTime_Between" xml:space="preserve">
+	<data name="MedicineAddNew_MealTypeTime_Between" xml:space="preserve">
     <value>منتصف</value>
   </data>
 	<data name="MedicineAddNew_Entry_MedicineName" xml:space="preserve">
@@ -357,5 +357,8 @@
 		</data>
 	<data name="Login_WrongUserNameOrPassword" xml:space="preserve">
 		<value>برجاء التأكد من البيانات</value>
+		</data>
+	<data name="logOut_buttonTitle" xml:space="preserve">
+		<value>خروج</value>
 		</data>
 </root>
