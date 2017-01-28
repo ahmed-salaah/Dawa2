@@ -64,7 +64,7 @@
             <controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_middleName}"  Title = "{Binding User.MiddleName,Mode=TwoWay}"/>
             <controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_lastName}" 	 Title = "{Binding User.LastName,Mode=TwoWay}"/>
             <controls:InputField Grid.Row="3" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_age}" Keyboard="Numeric"		 Title = "{Binding User.Age,Mode=TwoWay}"/>
-            <controls:PickerButtonField  Grid.Row="4" Title ="{i18n:Translate signUp_gender}"  LookupValues = "{Binding GenderList}" SelectedLookupValue = "{Binding User.SelectedGender,Mode=TwoWay}" Margin = "15,0,15,0" BGColor = "White" HorizontalTextAlignment="End" />
+            <controls:PickerButtonField  Grid.Row="4" Title ="{i18n:Translate signUp_gender}"  LookupValues = "{Binding GenderList}" SelectedLookupValue = "{Binding User.SelectedGender,Mode=TwoWay}" Margin = "15,0,15,0" BGColor = "White" HorizontalTextAlignment = "End" />
 <!--<controls:PickerField Grid.Row="4" Margin="15,0,15,10"  Placeholder = "{i18n:Translate signUp_gender}" LookupValues = "{Binding GenderList}" SelectedLookupValue = "{Binding User.SelectedGender,Mode=TwoWay}"/>-->
           </Grid>
           <Grid Grid.Row="4">

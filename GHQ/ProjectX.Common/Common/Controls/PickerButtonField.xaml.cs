@@ -24,6 +24,9 @@ namespace Controls
 					Title = SelectedLookupValue.ValueAr;
 				else
 					Title = Placeholder;
+			}else if (propertyName == "HorizontalTextAlignment")
+			{
+				Title = Placeholder;
 			}
 		}
 
@@ -133,7 +136,7 @@ namespace Controls
 
 		#region TextAlignment p
 
-		public static readonly BindableProperty HorizontalTextAlignmentProperty = BindableProperty.Create<TimePickerButtonField, TextAlignment>(p => p.HorizontalTextAlignment, TextAlignment.Center);
+		public static readonly BindableProperty HorizontalTextAlignmentProperty = BindableProperty.Create<PickerButtonField, TextAlignment>(p => p.HorizontalTextAlignment, TextAlignment.End);
 
 		public TextAlignment HorizontalTextAlignment
 		{
