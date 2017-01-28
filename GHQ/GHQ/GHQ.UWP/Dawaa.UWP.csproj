@@ -126,6 +126,7 @@
     <Content Include="background.png" />
     <Content Include="camera_ico.png" />
     <Content Include="checked_ico.png" />
+    <Content Include="down.png" />
     <Content Include="edit_audio_ico.png" />
     <Content Include="edit_audio_message_bg.png" />
     <Content Include="edit_green_ico.png" />

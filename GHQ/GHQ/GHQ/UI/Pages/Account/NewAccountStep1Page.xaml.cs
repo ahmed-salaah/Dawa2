@@ -1,6 +1,5 @@
 ﻿using GHQ.Logic;
 using GHQ.Logic.ViewModels.Account;
-using Xamarin.Forms;
 
 namespace GHQ.UI.Pages.Account
 {

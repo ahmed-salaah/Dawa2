@@ -5,15 +5,19 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Models;
 
 namespace Service.Network
 {
     public class NetworkService : INetworkService
     {
-        public string AccessToken { get; set; }
+        //public string AccessToken { get; set; }
 
 
         HttpClient client;
+
+        public event UnAuthroirzedChangedEventHandler UnAuthorizedChanged;
+
         public NetworkService()
         {
             client = new HttpClient();
@@ -46,6 +50,7 @@ namespace Service.Network
             {
                 if (result.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {
+                    UnAuthorizedChanged.Invoke(headers, new UnAuthroirzedChangedEventArgs() { URL = url, Headers = headers });
                     throw new UnAuthorizedException("UnAuthorized", headers, url);
                 }
                 else
@@ -93,6 +98,7 @@ namespace Service.Network
                 {
                     if (result.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                     {
+                        UnAuthorizedChanged.Invoke(headers, new UnAuthroirzedChangedEventArgs() { URL = url, Headers = headers });
                         throw new UnAuthorizedException("UnAuthorized", headers, url);
                     }
                     else
@@ -152,6 +158,7 @@ namespace Service.Network
                 {
                     if (result.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                     {
+                        UnAuthorizedChanged.Invoke(headers, new UnAuthroirzedChangedEventArgs() { URL = url, Headers = headers });
                         throw new UnAuthorizedException("UnAuthorized", headers, url);
                     }
                     else
@@ -205,6 +212,7 @@ namespace Service.Network
             {
                 if (result.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {
+                    UnAuthorizedChanged.Invoke(headers, new UnAuthroirzedChangedEventArgs() { URL = url, Headers = headers });
                     throw new UnAuthorizedException("UnAuthorized", headers, url);
                 }
                 else

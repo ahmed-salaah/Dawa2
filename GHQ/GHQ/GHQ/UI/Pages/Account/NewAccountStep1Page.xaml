@@ -64,8 +64,8 @@
             <controls:InputField Grid.Row="1" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_middleName}"  Title = "{Binding User.MiddleName,Mode=TwoWay}"/>
             <controls:InputField Grid.Row="2" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_lastName}" 	 Title = "{Binding User.LastName,Mode=TwoWay}"/>
             <controls:InputField Grid.Row="3" IsRequired="True" MaxLength="18" ShowHeader="false"  AllowSpecialCharchters="False" ShowValidation="False" ValidationMessage="" IsEnabled="true" Placeholder="{i18n:Translate signUp_age}" Keyboard="Numeric"		 Title = "{Binding User.Age,Mode=TwoWay}"/>
-            <controls:PickerButtonField  Grid.Row="4" Title ="{i18n:Translate signUp_gender}"  LookupValues = "{Binding GenderList}" SelectedLookupValue = "{Binding User.SelectedGender,Mode=TwoWay}" Margin = "15,0,15,0" BGColor = "White" HorizontalTextAlignment = "End" />
-<!--<controls:PickerField Grid.Row="4" Margin="15,0,15,10"  Placeholder = "{i18n:Translate signUp_gender}" LookupValues = "{Binding GenderList}" SelectedLookupValue = "{Binding User.SelectedGender,Mode=TwoWay}"/>-->
+            <controls:PickerButtonField  Grid.Row="4" Title ="{i18n:Translate signUp_gender}"  LookupValues = "{Binding GenderList}" LeftImage="down.png"
+                                         SelectedLookupValue = "{Binding User.SelectedGender,Mode=TwoWay}" Margin = "15,0,15,0" BGColor = "White" HorizontalTextAlignment="End" />
           </Grid>
           <Grid Grid.Row="4">
             <Grid.RowDefinitions>
@@ -95,9 +95,13 @@
           <Grid Grid.Row="7">
             <Grid.RowDefinitions>
               <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate signUp_buttonTitle}" Command="{Binding OnCreateAccountCommand}" Margin="15,20,15,20">
-            </Button>
+
+            <Button Grid.Row="0" Style="{StaticResource ButtonSolidStyle}" Text="{i18n:Translate signUp_buttonTitle}" Command="{Binding OnCreateAccountCommand}" Margin="15,20,15,20"/>
+
+            <Button Grid.Row="1" Style="{StaticResource ButtonLogOutStyle}" Text="{i18n:Translate logOut_buttonTitle}" Command="{Binding LogOutCommand}" Margin="15,20,15,20" IsVisible = "{Binding IsLoggedIn}" />
+
           </Grid>
         </Grid>
       </ScrollView>

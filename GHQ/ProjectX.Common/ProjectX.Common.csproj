@@ -74,6 +74,7 @@
     <Compile Include="Common\Exceptions\UnAuthorizedException.cs" />
     <Compile Include="Common\Exceptions\UnHandledException.cs" />
     <Compile Include="Common\Exceptions\ValidationException.cs" />
+    <Compile Include="Common\Service\Network\UnAuthroirzedChangedEventHandler.cs" />
     <Compile Include="Common\Models\BaseModel.cs" />
     <Compile Include="Common\Models\BaseViewModel.cs" />
     <Compile Include="Common\Enum\ReminderRepeatOptions.cs" />
