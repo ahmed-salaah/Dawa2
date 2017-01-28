@@ -1,6 +1,7 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Models;
 using Xamarin.Forms;
@@ -14,17 +15,17 @@ namespace Controls
 			InitializeComponent();
 		}
 
-		//protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
-		//{
-		//	base.OnPropertyChanged(propertyName);
-		//	if (propertyName == "Date")
-		//	{
-		//		if (default(DateTime) != Date)
-		//			Title = Date.ToString("yyyy MMMMM dd");
-		//		else
-		//			Title = Placeholder;
-		//	}
-		//}
+		protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
+		{
+			base.OnPropertyChanged(propertyName);
+			if (propertyName == "SelectedLookupValue")
+			{
+				if (SelectedLookupValue != null)
+					Title = SelectedLookupValue.ValueAr;
+				else
+					Title = Placeholder;
+			}
+		}
 
 		#region ItemHeight p
 
@@ -75,7 +76,7 @@ namespace Controls
 		#region LookupValues p
 
 
-		public static readonly BindableProperty LookupValuesProperty = BindableProperty.Create<PickerField, ObservableCollection<LookupData>>(p => p.LookupValues, default(ObservableCollection<LookupData>));
+		public static readonly BindableProperty LookupValuesProperty = BindableProperty.Create<PickerButtonField, ObservableCollection<LookupData>>(p => p.LookupValues, default(ObservableCollection<LookupData>));
 		public ObservableCollection<LookupData> LookupValues
 		{
 			get { return (ObservableCollection<LookupData>)GetValue(LookupValuesProperty); }
@@ -86,7 +87,7 @@ namespace Controls
 		#region SelectedLookupValue p
 
 
-		public static readonly BindableProperty SelectedLookupValueProperty = BindableProperty.Create<PickerField, LookupData>(p => p.SelectedLookupValue, default(LookupData));
+		public static readonly BindableProperty SelectedLookupValueProperty = BindableProperty.Create<PickerButtonField, LookupData>(p => p.SelectedLookupValue, default(LookupData));
 		public LookupData SelectedLookupValue
 		{
 			get { return (LookupData)GetValue(SelectedLookupValueProperty); }
@@ -98,7 +99,7 @@ namespace Controls
 		#region SelectedLookupValueIndex p
 
 
-		public static readonly BindableProperty SelectedLookupValueIndexProperty = BindableProperty.Create<PickerField, int>(p => p.SelectedLookupValueIndex, default(int));
+		public static readonly BindableProperty SelectedLookupValueIndexProperty = BindableProperty.Create<PickerButtonField, int>(p => p.SelectedLookupValueIndex, default(int));
 		public int SelectedLookupValueIndex
 		{
 			get { return (int)GetValue(SelectedLookupValueIndexProperty); }
@@ -121,7 +122,7 @@ namespace Controls
 
 		#region TextColor p
 
-		public static readonly BindableProperty TextColorProperty = BindableProperty.Create<PickerButtonField, Xamarin.Forms.Color>(p => p.TextColor, Color.White);
+		public static readonly BindableProperty TextColorProperty = BindableProperty.Create<PickerButtonField, Xamarin.Forms.Color>(p => p.TextColor, Color.Black);
 		public Xamarin.Forms.Color TextColor
 		{
 			get { return (Xamarin.Forms.Color)GetValue(TextColorProperty); }

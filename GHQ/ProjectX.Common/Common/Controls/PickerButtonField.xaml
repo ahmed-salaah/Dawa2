@@ -21,7 +21,9 @@
                               Style="{StaticResource PickerStyle}"
                               SelectedIndex="{Binding SelectedLookupValueIndex,Mode=TwoWay,Source={x:Reference ParentView}}"
                               SelectedItem="{Binding SelectedLookupValue,Mode=TwoWay,Source={x:Reference ParentView}}"
-                              IsEnabled ="{Binding IsEnabled,Source={x:Reference ParentView}}"/>    <Image  Grid.Column="0"  Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="{Binding LeftImage,Source={x:Reference ParentView}}"/>
+                              IsEnabled ="{Binding IsEnabled,Source={x:Reference ParentView}}"
+							  IsVisible="False" />  
+		<Image  Grid.Column="0"  Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="{Binding LeftImage,Source={x:Reference ParentView}}"/>
     <Label Grid.Column="1" Text="{Binding Title,Source={x:Reference ParentView}}" HorizontalOptions="Center"  HorizontalTextAlignment = "{Binding HorizontalTextAlignment,Source={x:Reference ParentView}}" Margin = "10,0,0,0" VerticalOptions="Center" TextColor= "{Binding TextColor,Source={x:Reference ParentView}}" />
     <Image Grid.Column="2" Aspect="AspectFit" Margin = "10,5,10,5" VerticalOptions="Center" Source="{Binding RightImage,Source={x:Reference ParentView}}"/>
   </Grid>
