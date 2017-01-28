@@ -12,7 +12,6 @@ using Service.Media;
 using GHQLogic.Models.Data;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Threading.Tasks;
 using Service.FileHelper;
 using System;
 using GHQ.UI.Pages.Home;
@@ -56,20 +55,20 @@ namespace GHQ.Logic.ViewModels.Account
             }
         }
 
-		private bool _IsLoggedIn;
-		public bool IsLoggedIn
-		{
-			get
-			{
-				return _IsLoggedIn;
-			}
-			set
-			{
-				Set(() => IsLoggedIn, ref _IsLoggedIn, value);
-			}
-		}
+        private bool _IsLoggedIn;
+        public bool IsLoggedIn
+        {
+            get
+            {
+                return _IsLoggedIn;
+            }
+            set
+            {
+                Set(() => IsLoggedIn, ref _IsLoggedIn, value);
+            }
+        }
 
-		private ObservableCollection<LookupData> _GenderList;
+        private ObservableCollection<LookupData> _GenderList;
         public ObservableCollection<LookupData> GenderList
         {
             get
@@ -122,13 +121,13 @@ namespace GHQ.Logic.ViewModels.Account
                 int userId = CrossSettings.Current.GetValueOrDefault<int>(Constant.Constant.UserIDKey);
                 if (userId == 0)
                 {
-					IsLoggedIn = false;
+                    IsLoggedIn = false;
                     User = new NewUser();
                     User.SelectedGender = GenderList.FirstOrDefault();
                 }
                 else
                 {
-					IsLoggedIn = true;
+                    IsLoggedIn = true;
                     User = accountService.GetUser(userId);
                     if (!string.IsNullOrEmpty(User.ImagePath))
                     {
@@ -253,43 +252,45 @@ namespace GHQ.Logic.ViewModels.Account
         }
 
         #endregion
-		#region LogOutCommand Command
+
+        #region LogOutCommand Command
 
         private RelayCommand _LogOutCommand;
-		public RelayCommand LogOutCommand
-		{
-			get
-			{
-				if (_LogOutCommand == null)
-				{
-					_LogOutCommand = new RelayCommand(LogOut);
-				}
-				return _LogOutCommand;
-			}
-		}
-		private async void LogOut()
-		{
-			try
-			{
+        public RelayCommand LogOutCommand
+        {
+            get
+            {
+                if (_LogOutCommand == null)
+                {
+                    _LogOutCommand = new RelayCommand(LogOut);
+                }
+                return _LogOutCommand;
+            }
+        }
+        private async void LogOut()
+        {
+            try
+            {
 
-				CrossSettings.Current.Remove(Constant.Constant.UserIDKey);
-				navigationService.NavigateToPage(typeof(LoginPage));
+                CrossSettings.Current.Remove(Constant.Constant.UserIDKey);
+                navigationService.NavigateToPage(typeof(LoginPage));
 
-			}
-			catch (InternetException ex)
-			{
-				await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
-			}
-			catch (System.Exception ex)
-			{
-				await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, ex.Message);
-			}
-			finally
-			{
-			}
-		}
+            }
+            catch (InternetException ex)
+            {
+                await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, AppResources.Error_NoInternet);
+            }
+            catch (System.Exception ex)
+            {
+                await excpetionService.LogExceptionAndDisplayAlert(ex, AppResources.Error_GeneralTitle, ex.Message);
+            }
+            finally
+            {
+            }
+        }
 
-		#endregion
-		#endregion
-	}
+        #endregion
+
+        #endregion
+    }
 }

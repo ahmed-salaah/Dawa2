@@ -106,7 +106,8 @@
       <Color x:Key="LightBlackColor">#5c5d5d</Color>
       <Color x:Key="DarkBlueColor">#1B7C79</Color>
       <Color x:Key="OrangeColor">#FBAA18</Color>
-
+      <Color x:Key="RedColor">#ff0000</Color>
+      
       <Color x:Key="GoldColor">#ae803a</Color>
       <Color x:Key="GoldLightColor">#b9904d</Color>
       <Color x:Key="GreenColor">#347249</Color>
