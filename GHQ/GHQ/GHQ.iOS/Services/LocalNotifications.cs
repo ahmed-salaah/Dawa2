@@ -12,7 +12,7 @@ namespace GHQ.iOS.Services
 {
 	public class LocalNotifications : ILocalNotifications
 	{
-		public void ShowNotification(string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
+		public void ShowNotification(int medicinId, string title, string body, DateTime startDate, DateTime endDate, string soundPath, ReminderRepeatOptions reminderRepeatOptions)
 		{
 
 			// create the notification

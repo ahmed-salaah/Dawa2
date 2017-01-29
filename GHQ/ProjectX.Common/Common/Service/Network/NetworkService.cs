@@ -128,8 +128,6 @@ namespace Service.Network
             HttpResponseMessage result = null;
             try
             {
-
-
                 var json = JsonConvert.SerializeObject(content);
                 var jsonContent = new StringContent(json, Encoding.UTF8, "application/json");
                 var request = new HttpRequestMessage()
@@ -137,6 +135,61 @@ namespace Service.Network
                     RequestUri = new Uri(url),
                     Method = HttpMethod.Post,
                     Content = jsonContent,
+                };
+
+                if (headers != null)
+                {
+                    foreach (var header in headers)
+                    {
+                        request.Headers.Add(header.Key, header.Value);
+                    }
+                }
+
+                result = await client.SendAsync(request);
+                var responseJSON = await result.Content.ReadAsStringAsync();
+                if (result.IsSuccessStatusCode)
+                {
+                    var responseObject = JsonConvert.DeserializeObject<T>(responseJSON);
+                    return new HttpResult<T>(responseObject, null, result);
+                }
+                else
+                {
+                    if (result.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                    {
+                        UnAuthorizedChanged.Invoke(headers, new UnAuthroirzedChangedEventArgs() { URL = url, Headers = headers });
+                        throw new UnAuthorizedException("UnAuthorized", headers, url);
+                    }
+                    else
+                    {
+                        var responseObject = JsonConvert.DeserializeObject<ErrorResponse>(responseJSON);
+                        return new HttpResult<T>(null, responseObject, result);
+                    }
+                }
+            }
+            catch (UnAuthorizedException ex)
+            {
+                throw ex;
+            }
+            catch (System.Exception ex)
+            {
+                List<string> errors = new List<string>();
+                errors.Add(ex.Message);
+                ErrorResponse newError = new ErrorResponse() { ErrorMessages = errors };
+                return new HttpResult<T>(null, newError, result);
+            }
+
+        }
+
+        public async Task<HttpResult<T>> HttpPostAsync<T>(string url, HttpContent content, Dictionary<string, string> headers = null) where T : class
+        {
+            HttpResponseMessage result = null;
+            try
+            {
+                var request = new HttpRequestMessage()
+                {
+                    RequestUri = new Uri(url),
+                    Method = HttpMethod.Post,
+                    Content = content,
                 };
 
                 if (headers != null)
