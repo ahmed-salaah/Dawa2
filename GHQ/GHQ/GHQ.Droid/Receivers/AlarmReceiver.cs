@@ -26,7 +26,11 @@ namespace GHQ.Droid.Receivers
             var reminderId = intent.GetStringExtra("reminderOptionId");
             var reminder = int.Parse(reminderId);
             ReminderRepeatOptions reminderRepeatOptions = (ReminderRepeatOptions)reminder;
-            var notIntent = new Intent(context, typeof(MainActivity));
+            var notIntent = new Intent(context, typeof(ReminderActivity));
+            notIntent.PutExtra("title", title);
+            notIntent.PutExtra("message", message);
+            notIntent.PutExtra("medicinId", medicin);
+
             var contentIntent = PendingIntent.GetActivity(context, 0, notIntent, PendingIntentFlags.CancelCurrent);
             var manager = NotificationManagerCompat.From(context);
 

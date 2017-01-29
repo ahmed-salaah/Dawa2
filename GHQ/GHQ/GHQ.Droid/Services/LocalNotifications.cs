@@ -63,7 +63,19 @@ namespace GHQ.Droid.Services
                 afterlng = long.Parse(milliSeconds.ToString());
             }
 
-            alarmManager.SetRepeating(AlarmType.RtcWakeup, afterlng, repeatEvery, pendingIntent);
+            afterlng = 2000;
+            alarmManager.SetRepeating(AlarmType.ElapsedRealtimeWakeup, SystemClock.ElapsedRealtime() +  afterlng, repeatEvery, pendingIntent);
+        }
+
+        public double GetTimeInterval(DateTime dt)
+        {
+            DateTime now = DateTime.Now;
+            if (dt <= now)
+            {
+                dt = dt.AddDays(1);
+            }
+
+            return (dt - now).TotalMilliseconds;
         }
     }
 }

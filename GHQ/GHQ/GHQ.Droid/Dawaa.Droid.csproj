@@ -217,6 +217,7 @@
     <Compile Include="Services\MediaPicker\TaskUtils.cs" />
     <Compile Include="Services\Reflection.cs" />
     <Compile Include="Services\Localize.cs" />
+    <Compile Include="ReminderActivity.cs" />
     <Compile Include="SplashActivity.cs" />
     <Compile Include="CustomRenderer\FacebookLoginButtonRendererAndroid.cs" />
     <Compile Include="FacebookActivity.cs" />
@@ -229,6 +230,9 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\raw\Dawayaa.sqlite" />
+    <AndroidResource Include="Resources\layout\ReminderLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

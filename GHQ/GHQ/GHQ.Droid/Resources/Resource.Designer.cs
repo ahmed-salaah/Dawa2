@@ -4505,6 +4505,12 @@ namespace GHQ.Droid
 			// aapt resource value: 0x7f0c0048
 			public const int box_count = 2131492936;
 			
+			// aapt resource value: 0x7f0c00c5
+			public const int btnOk = 2131493061;
+			
+			// aapt resource value: 0x7f0c00c6
+			public const int btnSnooz = 2131493062;
+			
 			// aapt resource value: 0x7f0c0049
 			public const int button = 2131492937;
 			
@@ -4609,6 +4615,12 @@ namespace GHQ.Droid
 			
 			// aapt resource value: 0x7f0c004c
 			public const int display_always = 2131492940;
+			
+			// aapt resource value: 0x7f0c00c4
+			public const int editDescription = 2131493060;
+			
+			// aapt resource value: 0x7f0c00c3
+			public const int editMedecin = 2131493059;
 			
 			// aapt resource value: 0x7f0c0072
 			public const int edit_query = 2131492978;
@@ -4919,8 +4931,8 @@ namespace GHQ.Droid
 			// aapt resource value: 0x7f0c001e
 			public const int showTitle = 2131492894;
 			
-			// aapt resource value: 0x7f0c00c3
-			public const int sliding_tabs = 2131493059;
+			// aapt resource value: 0x7f0c00c7
+			public const int sliding_tabs = 2131493063;
 			
 			// aapt resource value: 0x7f0c004f
 			public const int small = 2131492943;
@@ -4985,8 +4997,8 @@ namespace GHQ.Droid
 			// aapt resource value: 0x7f0c005e
 			public const int title_template = 2131492958;
 			
-			// aapt resource value: 0x7f0c00c4
-			public const int toolbar = 2131493060;
+			// aapt resource value: 0x7f0c00c8
+			public const int toolbar = 2131493064;
 			
 			// aapt resource value: 0x7f0c003d
 			public const int top = 2131492925;
@@ -5295,22 +5307,25 @@ namespace GHQ.Droid
 			public const int place_autocomplete_progress = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int select_dialog_item_material = 2130903105;
+			public const int ReminderLayout = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int select_dialog_multichoice_material = 2130903106;
+			public const int select_dialog_item_material = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int select_dialog_singlechoice_material = 2130903107;
+			public const int select_dialog_multichoice_material = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int support_simple_spinner_dropdown_item = 2130903108;
+			public const int select_dialog_singlechoice_material = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int Tabbar = 2130903109;
+			public const int support_simple_spinner_dropdown_item = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int Toolbar = 2130903110;
+			public const int Tabbar = 2130903110;
+			
+			// aapt resource value: 0x7f030047
+			public const int Toolbar = 2130903111;
 			
 			static Layout()
 			{
