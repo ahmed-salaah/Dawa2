@@ -64,7 +64,7 @@ namespace GHQ.Droid.Services
             }
 
             afterlng = 2000;
-            alarmManager.SetRepeating(AlarmType.ElapsedRealtimeWakeup, SystemClock.ElapsedRealtime() +  afterlng, repeatEvery, pendingIntent);
+            alarmManager.SetRepeating(AlarmType.ElapsedRealtimeWakeup, SystemClock.ElapsedRealtime() + afterlng, repeatEvery, pendingIntent);
         }
 
         public double GetTimeInterval(DateTime dt)

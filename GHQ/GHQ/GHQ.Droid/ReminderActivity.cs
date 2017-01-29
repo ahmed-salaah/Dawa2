@@ -2,7 +2,6 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Widget;
-using static Android.Views.View;
 
 namespace GHQ.Droid
 {
@@ -32,7 +31,14 @@ namespace GHQ.Droid
 
         private void BtnOk_Click(object sender, System.EventArgs e)
         {
-            throw new System.NotImplementedException();
+        }
+
+        private void BtnSnooz_Click(object sender, System.EventArgs e)
+        {
+        }
+
+        private void BtnPlay_Click(object sender, System.EventArgs e)
+        {
         }
     }
 }
